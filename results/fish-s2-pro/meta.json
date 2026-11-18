@@ -32,5 +32,6 @@
   "s20": 0.94
  },
  "generated": "2026-11-18",
- "notes": "Served by the publisher's API instead of self-hosted; per_sentence_s is the API round trip. Self-hosting on Modal was stopped after about 40 minutes. Given plain Hebrew."
+ "notes": "Served by the publisher's API instead of self-hosted; per_sentence_s is the API round trip. Self-hosting on Modal was stopped after about 40 minutes. Given plain Hebrew.",
+ "generated_via": "Fish Audio API (api.fish.audio, model s2-pro)"
 }

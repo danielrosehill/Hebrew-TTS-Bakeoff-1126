@@ -69,5 +69,6 @@
     "mispronunciation": "Mispronunciation"
   },
   "rank_reject_reason": "Rejected in ranking (both bad)",
-  "notes_private": false
+  "notes_private": false,
+  "annotator": "Daniel Rosehill"
 }

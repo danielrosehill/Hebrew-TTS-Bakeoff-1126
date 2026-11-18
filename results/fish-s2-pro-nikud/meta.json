@@ -32,5 +32,6 @@
   "s20": 1.12
  },
  "generated": "2026-11-18",
- "notes": "Served by the publisher's API instead of self-hosted; per_sentence_s is the API round trip. Self-hosting on Modal was stopped after about 40 minutes. Given the checked nikud as text."
+ "notes": "Served by the publisher's API instead of self-hosted; per_sentence_s is the API round trip. Self-hosting on Modal was stopped after about 40 minutes. Given the checked nikud as text.",
+ "generated_via": "Fish Audio API (api.fish.audio, model s2-pro)"
 }

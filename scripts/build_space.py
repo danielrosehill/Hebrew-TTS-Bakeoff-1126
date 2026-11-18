@@ -33,11 +33,26 @@ def rank(slug):
     return (ORDER.index(b) if b in ORDER else 99, list(VARIANTS.values()).index(v) + 1 if v else 0)
 
 
+def generated_via(meta):
+    """How a run's clips were made, in words, for the annotation app (Daniel, 2026-11-18: "record when the clips were
+    generated, how they were generated"). An explicit meta `generated_via` (API runs set it) wins."""
+    if meta.get("generated_via"):
+        return meta["generated_via"]
+    hw = str(meta.get("gpu") or "")
+    if "api" in hw.lower():
+        return hw
+    hw = "CPU" if "cpu" in hw.lower() or hw.lower().startswith("none") else (hw.replace("|", " or ") + " GPU").replace("NVIDIA ", "")
+    return f"self-hosted on Modal ({hw})"
+
+
 def runs():
     found = {}
     for meta in sorted(ROOT.glob("results/*/meta.json")):
         slug = meta.parent.name
-        found[slug] = (json.loads(meta.read_text()), meta.parent)
+        m = json.loads(meta.read_text())
+        m["generated_via"] = generated_via(m)
+        m.setdefault("generated", "2026-11-18")
+        found[slug] = (m, meta.parent)
         if (meta.parent / "plain").is_dir():
             m = dict(found[slug][0], slug=f"{slug}-plain",
                      notes="Same voice and nikud, without the Phonikud stress and vocal-shva marks (plain phonemize()): "

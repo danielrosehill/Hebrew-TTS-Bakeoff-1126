@@ -1,6 +1,6 @@
 # Daniel's private Hebrew deployment of the public starter, pinned to one commit; only config.json is ours.
 FROM python:3.12-slim
-ARG STARTER_COMMIT=ac69633ce2d48a4209489f09aad07434659897cc
+ARG STARTER_COMMIT=20cf9eac95ca1f67cef6a2fcdbc909b28e56d87d
 ENV STARTER_COMMIT=$STARTER_COMMIT
 RUN apt-get update && apt-get install -y --no-install-recommends git && rm -rf /var/lib/apt/lists/* \
  && git clone https://github.com/danielrosehill/TTS-Pronunciation-Annotation-Starter /app \
