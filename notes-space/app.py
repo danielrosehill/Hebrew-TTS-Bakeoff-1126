@@ -1,10 +1,12 @@
-"""Private listening notes for the Hebrew TTS bake-off: three 1-5 ratings and a note per model and sentence.
+"""Private listening notes for the Hebrew TTS bake-off.
 
-Axes (Daniel, 2026-11-18): voice quality, accuracy of the Hebrew, accuracy of the nikud (do the vowels heard match the
-pointed text on the card). Each save appends one JSON line to notes.jsonl in the private dataset NOTES_REPO; the latest
-line per (model, sentence) wins. Sentence "overall" holds a note on the model as a whole.
+Per clip (model run x sentence), Daniel 2026-11-18: naturalness, clarity, Hebrew accuracy, nikud accuracy (1-5), whether
+he would use the voice as the recorder's reference ("Use it?": yes / maybe / no) and a free note. Two ways through:
+one sentence across every run (compare like with like; Blind hides the run name and shuffles the order) or one run
+across all 20 sentences. Each save appends one JSON line to notes.jsonl in the private dataset NOTES_REPO; the latest
+line per (run, sentence) wins. Sentence "overall" holds a note on a run as a whole.
 """
-import json, os, time, urllib.request
+import json, os, random, time, urllib.request
 
 import gradio as gr
 from huggingface_hub import HfApi, hf_hub_download
@@ -12,9 +14,14 @@ from huggingface_hub import HfApi, hf_hub_download
 SPACE = "Hebrish/Hebrew-TTS-Bakeoff-1126"
 BASE = f"https://huggingface.co/spaces/{SPACE}/resolve/main/"
 NOTES_REPO = os.environ.get("NOTES_REPO", "danielrosehill/Hebrew-TTS-Bakeoff-1126-Notes")
-AXES = [("voice", "Voice quality"), ("hebrew", "Hebrew accuracy"), ("nikud", "Nikud accuracy (vowels heard match the card)")]
+TOKEN = os.environ.get("HF_TOKEN")
+AXES = [("naturalness", "Naturalness", "Does it sound like a person?"),
+        ("clarity", "Clarity", "Every syllable easy to make out and copy?"),
+        ("hebrew", "Hebrew accuracy", "Right words, stress and accent for Israeli Hebrew?"),
+        ("nikud", "Nikud accuracy", "Do the vowels you hear match the pointed text?")]
 SCALE = ["1", "2", "3", "4", "5"]
-api = HfApi(token=os.environ.get("HF_TOKEN"))
+USE = ["Yes", "Maybe", "No"]
+api = HfApi(token=TOKEN)
 LOCAL = "/tmp/notes.jsonl"
 
 
@@ -25,7 +32,7 @@ def load_data():
 
 def load_notes():
     try:
-        p = hf_hub_download(NOTES_REPO, "notes.jsonl", repo_type="dataset", token=os.environ.get("HF_TOKEN"), force_download=True)
+        p = hf_hub_download(NOTES_REPO, "notes.jsonl", repo_type="dataset", token=TOKEN, force_download=True)
         lines = open(p, encoding="utf8").read().splitlines()
     except Exception:
         lines = []
@@ -40,76 +47,133 @@ def load_notes():
 
 D = load_data()
 NOTES = load_notes()
-MODELS = {m["name"]: m for m in D["models"]}
-SENTS = [s["id"] for s in D["sentences"]] + ["overall"]
+RUNS = {m["slug"]: m for m in D["models"]}
+NAMES = {m["name"]: m["slug"] for m in D["models"]}
+SIDS = [s["id"] for s in D["sentences"]]
 SBY = {s["id"]: s for s in D["sentences"]}
+SENT_LABELS = {f"{s['id']} · {s['english']}": s["id"] for s in D["sentences"]}
 
 
-def show(model_name, sid):
-    m = MODELS[model_name]
-    n = NOTES.get((m["slug"], sid), {})
+def queue(mode, model_name, sent_label, blind):
+    """The clips to walk through, as (run slug, sentence id)."""
+    if mode == "One sentence, every voice":
+        sid = SENT_LABELS[sent_label]
+        slugs = [m["slug"] for m in D["models"] if sid in m["clips"]]
+        if blind:
+            random.Random(sid).shuffle(slugs)  # stable per sentence, so Previous/Next keep their place
+        return [(s, sid) for s in slugs]
+    slug = NAMES[model_name]
+    return [(slug, sid) for sid in SIDS if sid in RUNS[slug]["clips"]] + [(slug, "overall")]
+
+
+def run_label(m, blind, i):
+    if blind:
+        return f"Voice {chr(65 + i)}"
+    how = "given the nikud" if m["run"].get("input") == "nikud" else "plain text, infers the vowels"
+    return f"{m['name']} ({how})"
+
+
+def view(mode, model_name, sent_label, blind, pos):
+    q = queue(mode, model_name, sent_label, blind)
+    pos = max(0, min(pos, len(q) - 1))
+    slug, sid = q[pos]
+    m, n = RUNS[slug], NOTES.get((slug, sid), {})
     if sid == "overall":
-        card = f"### {model_name}: overall\nA note on the model as a whole."
-        audio = None
+        card, audio = f"### {m['name']}: overall\nA note on this voice as a whole.", None
     else:
         s = SBY[sid]
-        card = (f"**{sid}** · {s['focus']}\n\n<div dir='rtl' style='font-size:22px'>{s['text']}</div>\n\n"
-                f"<div dir='rtl' style='font-size:28px'>{s['text_nikud']}</div>\n\n{s['english']}")
-        audio = BASE + m["clips"][sid] if sid in m["clips"] else None
-    done = sum(1 for x in SENTS if (m["slug"], x) in NOTES)
-    status = f"{done}/{len(SENTS)} rated for {model_name}" + (f" · last saved {n['saved']}" if n else "")
-    return [card, audio] + [n.get(k) for k, _ in AXES] + [n.get("note", ""), status]
+        card = (f"<div style='color:#888'>{sid} · {s['focus']}</div>"
+                f"<div dir='rtl' style='font-size:22px;margin-top:6px'>{s['text']}</div>"
+                f"<div dir='rtl' style='font-size:30px;color:#c98a00'>{s['text_nikud']}</div>"
+                f"<div style='margin-top:4px'>{s['english']}</div>")
+        audio = BASE + m["clips"][sid]
+    done = sum(1 for k in q if k in NOTES)
+    head = f"**{run_label(m, blind, pos)}** · clip {pos + 1} of {len(q)} · {done} rated here"
+    if n:
+        head += f" · saved {n['saved']}"
+    return [pos, card, head, audio] + [n.get(k) for k, _, _ in AXES] + [n.get("use"), n.get("note", "")]
 
 
-def save(model_name, sid, voice, hebrew, nikud, note):
-    m = MODELS[model_name]
-    row = {"model": m["slug"], "model_name": model_name, "sentence": sid, "voice": voice, "hebrew": hebrew, "nikud": nikud,
-           "note": note or "", "saved": time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())}
+def save(mode, model_name, sent_label, blind, pos, *vals):
+    q = queue(mode, model_name, sent_label, blind)
+    slug, sid = q[pos]
+    m = RUNS[slug]
+    *scores, use, note = vals
+    row = {"model": slug, "model_name": m["name"], "input": m["run"].get("input"), "sentence": sid,
+           **{k: v for (k, _, _), v in zip(AXES, scores)}, "use": use, "note": note or "", "blind": bool(blind),
+           "saved": time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())}
     with open(LOCAL, "a", encoding="utf8") as f:
         f.write(json.dumps(row, ensure_ascii=False) + "\n")
     api.create_repo(NOTES_REPO, repo_type="dataset", private=True, exist_ok=True)
     api.upload_file(path_or_fileobj=LOCAL, path_in_repo="notes.jsonl", repo_id=NOTES_REPO, repo_type="dataset",
-                    commit_message=f"{m['slug']} {sid}")
-    NOTES[(m["slug"], sid)] = row
-    nxt = SENTS[min(SENTS.index(sid) + 1, len(SENTS) - 1)]
-    return [gr.update(value=nxt)] + show(model_name, nxt)
+                    commit_message=f"{slug} {sid}")
+    NOTES[(slug, sid)] = row
+    reveal = f"Saved: that was **{m['name']}**." if blind else "Saved."
+    nxt = view(mode, model_name, sent_label, blind, min(pos + 1, len(q) - 1))
+    return nxt + [reveal]
 
 
-def step(sid, d):
-    return gr.update(value=SENTS[max(0, min(len(SENTS) - 1, SENTS.index(sid) + d))])
+def summary():
+    rows = []
+    for m in D["models"]:
+        ns = [n for (slug, sid), n in NOTES.items() if slug == m["slug"] and sid != "overall"]
+        if not ns:
+            continue
+        mean = lambda k: round(sum(int(n[k]) for n in ns if n.get(k)) / max(1, sum(1 for n in ns if n.get(k))), 2)
+        means = [mean(k) for k, _, _ in AXES]
+        rows.append([m["name"], len(ns), *means, round(sum(means) / len(means), 2),
+                     sum(1 for n in ns if n.get("use") == "Yes"), sum(1 for n in ns if n.get("use") == "No")])
+    return sorted(rows, key=lambda r: -r[-3])
 
 
-def table():
-    return [[n["model_name"], n["sentence"], n["voice"], n["hebrew"], n["nikud"], n["note"], n["saved"]]
+def all_notes():
+    return [[n["model_name"], n["sentence"], *[n.get(k) for k, _, _ in AXES], n.get("use"), n["note"], n["saved"]]
             for n in sorted(NOTES.values(), key=lambda n: (n["model"], n["sentence"]))]
 
 
-with gr.Blocks(title="TTS bake-off notes") as demo:
-    gr.Markdown("## Hebrew TTS bake-off: listening notes\n1 = bad, 5 = native-perfect. Nikud accuracy: do the vowels you "
-                "hear match the pointed text? On a clip made from plain text (no nikud given) that score is the model's "
-                "**nikud inference**; on a clip given the nikud it is how faithfully it follows it.")
+CSS = ".gradio-container {max-width: 900px !important} #save {min-height: 52px; font-size: 18px}"
+with gr.Blocks(title="Hebrew TTS bake-off: listening notes", css=CSS, theme=gr.themes.Soft()) as demo:
+    gr.Markdown("## Hebrew TTS bake-off: listening notes\n1 = poor, 5 = native-perfect. Leave a score empty if you "
+                "can't judge it. On a plain-text clip, **Nikud accuracy** measures the model's nikud inference. "
+                "[Listening page](https://huggingface.co/spaces/Hebrish/Hebrew-TTS-Bakeoff-1126)")
     with gr.Tab("Rate"):
         with gr.Row():
-            model = gr.Dropdown(list(MODELS), value=list(MODELS)[0], label="Model")
-            sent = gr.Dropdown(SENTS, value=SENTS[0], label="Sentence")
-        card = gr.Markdown()
+            mode = gr.Radio(["One sentence, every voice", "One voice, every sentence"], value="One sentence, every voice",
+                            label="Go through")
+            blind = gr.Checkbox(value=True, label="Blind (hide the voice's name until saved)")
+        with gr.Row():
+            sent = gr.Dropdown(list(SENT_LABELS), value=list(SENT_LABELS)[0], label="Sentence")
+            model = gr.Dropdown(list(NAMES), value=list(NAMES)[0], label="Voice", visible=False)
+        pos = gr.State(0)
+        head = gr.Markdown()
+        card = gr.HTML()
         audio = gr.Audio(type="filepath", label="Clip", interactive=False, autoplay=True)
-        radios = [gr.Radio(SCALE, label=lbl) for _, lbl in AXES]
-        note = gr.Textbox(label="Note", lines=2)
+        radios = [gr.Radio(SCALE, label=lbl, info=info) for _, lbl, info in AXES]
+        use = gr.Radio(USE, label="Use it as the reference voice?")
+        note = gr.Textbox(label="Note", lines=2, placeholder="What stood out: a wrong vowel, odd stress, accent, artefacts...")
         with gr.Row():
             prev = gr.Button("◀ Previous")
-            sv = gr.Button("Save and next ▶", variant="primary")
-            nxt = gr.Button("Skip ▶")
-        status = gr.Markdown()
+            sv = gr.Button("Save and next ▶", variant="primary", elem_id="save")
+            skip = gr.Button("Skip ▶")
+        saved = gr.Markdown()
+    with gr.Tab("Summary"):
+        gr.Markdown("Mean score per voice over the clips you rated (overall notes excluded), best first.")
+        summ = gr.Dataframe(headers=["voice", "clips", *[l for _, l, _ in AXES], "mean", "use: yes", "use: no"], wrap=True)
+        gr.Button("Refresh").click(summary, outputs=summ)
     with gr.Tab("All notes"):
-        grid = gr.Dataframe(headers=["model", "sentence", "voice", "hebrew", "nikud", "note", "saved"], wrap=True)
-        gr.Button("Refresh").click(table, outputs=grid)
-    outs = [card, audio, *radios, note, status]
-    for c in (model.change, sent.change):
-        c(show, [model, sent], outs)
-    sv.click(save, [model, sent, *radios, note], [sent, *outs])
-    prev.click(lambda s: step(s, -1), sent, sent)
-    nxt.click(lambda s: step(s, 1), sent, sent)
-    demo.load(show, [model, sent], outs)
+        grid = gr.Dataframe(headers=["voice", "sentence", *[l for _, l, _ in AXES], "use", "note", "saved"], wrap=True)
+        gr.Button("Refresh").click(all_notes, outputs=grid)
+
+    sel = [mode, model, sent, blind]
+    outs = [pos, card, head, audio, *radios, use, note]
+    mode.change(lambda m: (gr.update(visible=m != "One sentence, every voice"), gr.update(visible=m == "One sentence, every voice")),
+                mode, [model, sent])
+    for c in (mode.change, model.change, sent.change, blind.change):
+        c(lambda *a: view(*a, 0), sel, outs)
+    sv.click(save, [*sel, pos, *radios, use, note], [*outs, saved])
+    prev.click(lambda *a: view(*a[:-1], a[-1] - 1), [*sel, pos], outs)
+    skip.click(lambda *a: view(*a[:-1], a[-1] + 1), [*sel, pos], outs)
+    demo.load(lambda *a: view(*a, 0), sel, outs)
+    demo.load(summary, outputs=summ)
 
 demo.launch()

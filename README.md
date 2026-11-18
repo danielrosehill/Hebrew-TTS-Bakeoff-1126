@@ -100,9 +100,10 @@ those that were inferred. Run settings, voices, hardware and timings are in `res
 | `notes-space/` | A private Gradio app for listening notes |
 | `hub/eval-set/` | The eval set's Hub card |
 
-The listening notes rate each clip from 1 to 5 on three axes: voice quality, Hebrew accuracy, and nikud accuracy
-(whether the vowels heard match the card). The notes app lives in a private Space, and the notes are saved to a
-private dataset.
+The listening notes rate each clip from 1 to 5 on naturalness, clarity, Hebrew accuracy and nikud accuracy (whether
+the vowels heard match the card), plus "use it as the reference voice?" (yes / maybe / no) and a note. You can go one
+sentence across every voice, blind (names hidden and order shuffled until saved), or one voice across all sentences.
+A summary tab ranks the voices. The app is a private Space; the notes go to a private dataset.
 
 ## Cost
 
