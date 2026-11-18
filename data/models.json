@@ -35,7 +35,14 @@
    "SASPEECH as data for Shaul",
    "exact voice used"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 8e-05,
+   "basis": "self-hosted on Modal 4 vCPU: 0.08 s warm for 25 chars x $2.62e-05/s; excludes cold start (5.56 s load)",
+   "source": "https://modal.com/pricing",
+   "as_of": "2026-11-18",
+   "kind": "compute estimate"
+  }
  },
  {
   "slug": "piper-he-noa",
@@ -65,7 +72,14 @@
    "publisher identity beyond handle",
    "parameter count"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.00012,
+   "basis": "self-hosted on Modal 4 vCPU: 1.06 s warm for 235 chars x $2.62e-05/s; excludes cold start (3.56 s load)",
+   "source": "https://modal.com/pricing",
+   "as_of": "2026-11-18",
+   "kind": "compute estimate"
+  }
  },
  {
   "slug": "kokoro-hebrew",
@@ -96,7 +110,14 @@
    "params 82M",
    "release date of original beyond HF createdAt"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.00069,
+   "basis": "self-hosted on Modal 4 vCPU: 6.2 s warm for 235 chars x $2.62e-05/s; excludes cold start (5.1 s load)",
+   "source": "https://modal.com/pricing",
+   "as_of": "2026-11-18",
+   "kind": "compute estimate"
+  }
  },
  {
   "slug": "bluev3",
@@ -134,7 +155,14 @@
    "from-scratch (no base model stated)",
    "no formal ivrit.ai affiliation found: ivrit.ai merely hosts the V2 demo Space and arena entry; notmax123 has write access to that Space. V3 not confirmed as in the arena"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.00218,
+   "basis": "self-hosted on Modal 4 vCPU: 2.08 s warm for 25 chars x $2.62e-05/s; excludes cold start (9.1 s load)",
+   "source": "https://modal.com/pricing",
+   "as_of": "2026-11-18",
+   "kind": "compute estimate"
+  }
  },
  {
   "slug": "zonos3-mini",
@@ -169,7 +197,14 @@
    "from scratch",
    "hebrew_input behaviour"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.03721,
+   "basis": "self-hosted on Modal L4: 4.19 s warm for 25 chars x $0.000222/s; excludes cold start (10.96 s load)",
+   "source": "https://modal.com/pricing",
+   "as_of": "2026-11-18",
+   "kind": "compute estimate"
+  }
  },
  {
   "slug": "chatterbox-multilingual",
@@ -201,7 +236,14 @@
    "training_origin detail",
    "hebrew_input"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.13107,
+   "basis": "self-hosted on Modal L4: 14.76 s warm for 25 chars x $0.000222/s; excludes cold start (43.29 s load)",
+   "source": "https://modal.com/pricing",
+   "as_of": "2026-11-18",
+   "kind": "compute estimate"
+  }
  },
  {
   "slug": "voxcpm2",
@@ -234,7 +276,14 @@
    "publisher_type",
    "hebrew_input"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.01225,
+   "basis": "self-hosted on Modal L4: 1.38 s warm for 25 chars x $0.000222/s; excludes cold start (160.88 s load)",
+   "source": "https://modal.com/pricing",
+   "as_of": "2026-11-18",
+   "kind": "compute estimate"
+  }
  },
  {
   "slug": "omnivoice",
@@ -269,7 +318,14 @@
    "hebrew_input",
    "Hebrew explicitly in language list not checked"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.03293,
+   "basis": "self-hosted on Modal A10G: 2.69 s warm for 25 chars x $0.000306/s; excludes cold start (36.42 s load)",
+   "source": "https://modal.com/pricing",
+   "as_of": "2026-11-18",
+   "kind": "compute estimate"
+  }
  },
  {
   "slug": "f5-hebrew-v2",
@@ -297,7 +353,14 @@
    "params",
    "input requirement for inference"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.05932,
+   "basis": "self-hosted on Modal L4: 6.68 s warm for 25 chars x $0.000222/s; excludes cold start (27.5 s load)",
+   "source": "https://modal.com/pricing",
+   "as_of": "2026-11-18",
+   "kind": "compute estimate"
+  }
  },
  {
   "slug": "fish-s2-pro",
@@ -331,7 +394,14 @@
    "hebrew_input",
    "company origin"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.03,
+   "basis": "$15 per 1M UTF-8 bytes (Hebrew letters are 2 bytes)",
+   "source": "https://docs.fish.audio/developer-guide/models-pricing/pricing-and-rate-limits",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
  },
  {
   "slug": "gemini-flash-tts",
@@ -363,7 +433,14 @@
    "release date",
    "Arena rank (from the brief, not re-checked)"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.0333,
+   "basis": "$20 per 1M audio output tokens (preview); ~25 tokens/s assumed",
+   "source": "https://aistudio.google.com/docs/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
  },
  {
   "slug": "openai-tts",
@@ -395,7 +472,14 @@
    "Hebrew training data",
    "base model"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.008,
+   "basis": "$12 per 1M audio output tokens; ~600 tokens/min assumed (unpublished)",
+   "source": "https://developers.openai.com/api/docs/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
  },
  {
   "slug": "elevenlabs-v3",
@@ -427,7 +511,14 @@
    "release date",
    "architecture"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.1,
+   "basis": "$0.10 per 1k characters on fal",
+   "source": "https://fal.ai/models/fal-ai/elevenlabs/tts/eleven-v3",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
  },
  {
   "slug": "google-cloud-tts",
@@ -459,7 +550,14 @@
    "release date",
    "Hebrew training data"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.03,
+   "basis": "$30 per 1M characters (Chirp 3: HD)",
+   "source": "https://cloud.google.com/text-to-speech/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
  },
  {
   "slug": "gemini-3.8-flash-tts",
@@ -489,7 +587,14 @@
    "architecture",
    "release date"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.015,
+   "basis": "$9 per 1M audio output tokens to 2026-12-31, then $18 ($0.030/1k chars); batch half",
+   "source": "https://aistudio.google.com/docs/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
  },
  {
   "slug": "gemini-3.8-flash-lite-tts",
@@ -519,7 +624,14 @@
    "architecture",
    "release date"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.01,
+   "basis": "$6 per 1M audio output tokens to 2026-12-31, then $12 ($0.020/1k chars); batch half",
+   "source": "https://aistudio.google.com/docs/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
  },
  {
   "slug": "gemini-2.5-pro-tts",
@@ -549,7 +661,14 @@
    "architecture",
    "release date"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.0333,
+   "basis": "$20 per 1M audio output tokens",
+   "source": "https://aistudio.google.com/docs/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
  },
  {
   "slug": "gemini-2.5-flash-tts",
@@ -579,7 +698,14 @@
    "architecture",
    "release date"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.0167,
+   "basis": "$10 per 1M audio output tokens",
+   "source": "https://aistudio.google.com/docs/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
  },
  {
   "slug": "elevenlabs-v4",
@@ -610,7 +736,14 @@
    "release date",
    "architecture"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.08,
+   "basis": "$0.08 per 1k characters on fal (from fal's listing; page not fetched)",
+   "source": "https://fal.ai/models/elevenlabs/tts/eleven-v4",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
  },
  {
   "slug": "minimax-speech-2.8-hd",
@@ -641,7 +774,14 @@
    "architecture",
    "whether Hebrew is intelligible (see listening)"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.1,
+   "basis": "$0.10 per 1k characters on fal",
+   "source": "https://fal.ai/models/fal-ai/minimax/speech-2.8-hd",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
  },
  {
   "slug": "inworld-tts-2",
@@ -671,7 +811,14 @@
    "architecture",
    "Yael voice existence (see meta voice field)"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.025,
+   "basis": "Replicate price not shown; Inworld direct $25 per 1M characters on demand",
+   "source": "https://inworld.ai/realtime-tts-2",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
  },
  {
   "slug": "xai-tts",
@@ -702,7 +849,14 @@
    "architecture",
    "whether output is Hebrew or garbage (see listening)"
   ],
-  "category": "tts"
+  "category": "tts",
+  "cost": {
+   "usd_per_1k_chars": 0.015,
+   "basis": "$0.015 per 1k characters on fal",
+   "source": "https://fal.ai/models/xai/tts/v1",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
  },
  {
   "slug": "seed-speech-v2",
@@ -756,7 +910,14 @@
   "inferred": [
    "release date unknown"
   ],
-  "category": "native-audio"
+  "category": "native-audio",
+  "cost": {
+   "usd_per_1k_chars": 0.0427,
+   "basis": "$64 per 1M audio output tokens; ~600 tokens/min assumed (unpublished)",
+   "source": "https://developers.openai.com/api/docs/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
  },
  {
   "slug": "gemini-3.8-live",
@@ -783,7 +944,14 @@
   ],
   "confirmed": [
    "model id gemini-3.8-live listed by the Gemini models API with bidiGenerateContent on 2026-11-18; generated s01 through the v1alpha Live endpoint"
-  ]
+  ],
+  "cost": {
+   "usd_per_1k_chars": 0.02,
+   "basis": "$12 per 1M audio output tokens ($0.018/min); Live sessions also bill input",
+   "source": "https://aistudio.google.com/docs/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
  },
  {
   "slug": "gemini-3.1-flash-live",
@@ -810,7 +978,14 @@
   ],
   "confirmed": [
    "model id gemini-3.1-flash-live-preview listed by the Gemini models API with bidiGenerateContent on 2026-11-18; generated s01 through the v1alpha Live endpoint"
-  ]
+  ],
+  "cost": {
+   "usd_per_1k_chars": 0.02,
+   "basis": "$12 per 1M audio output tokens ($0.018/min)",
+   "source": "https://aistudio.google.com/docs/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
  },
  {
   "slug": "gemini-2.5-native-audio",
@@ -837,6 +1012,13 @@
   ],
   "confirmed": [
    "model id gemini-2.5-flash-native-audio-latest listed by the Gemini models API with bidiGenerateContent on 2026-11-18; generated s01 through the v1alpha Live endpoint"
-  ]
+  ],
+  "cost": {
+   "usd_per_1k_chars": 0.02,
+   "basis": "$12 per 1M audio output tokens",
+   "source": "https://aistudio.google.com/docs/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
  }
 ]

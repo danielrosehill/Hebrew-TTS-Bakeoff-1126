@@ -43,6 +43,8 @@ def script_for(run):
     """(script, is_api, runs it writes). API scripts write the plain and -nikud run together."""
     base = run.removesuffix("-nikud")
     api = ROOT / f"models/{base}-api.py"
+    if not api.exists() and ("-live" in base or "native-audio" in base):
+        api = ROOT / "models/gemini-live-api.py"  # one script for all Gemini Live (native-audio) runs
     if api.exists():
         return api, True, [base, base + "-nikud"]
     return ROOT / f"models/{run}.py", False, [run]
@@ -83,7 +85,9 @@ def main():
         subprocess.run(["rsync", "-a", f"{HOST}:{REMOTE}/results/", f"{scratch}/results/"], check=True)
     for sc, (api, _) in jobs.items():
         if api:
-            subprocess.run(["with-secrets", "uv", "run", "-q", "--with", "google-auth", "--with", "requests", "python", str(scratch / "models" / sc.name)], cwd=scratch)
+            # _api_common scripts default to --ids s01 (round 1); give them the round's items
+            ids = ["--ids", ",".join(i["id"] for i in items)] if "--ids" in sc.read_text() or "_api_common" in sc.read_text() else []
+            subprocess.run(["with-secrets", "uv", "run", "-q", "--with", "google-auth", "--with", "requests", "--with", "google-genai", "python", str(scratch / "models" / sc.name), *ids], cwd=scratch)
     for run in sorted({w for _, (_, ws) in jobs.items() for w in ws}):
         src, dst = scratch / "results" / run, ROOT / "results" / run
         if not (src / "meta.json").exists():

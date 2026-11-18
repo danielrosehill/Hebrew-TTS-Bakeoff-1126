@@ -29,7 +29,11 @@ def load(f):
 
 
 def main():
-    from build_space import runs
+    from build_space import runs, base_of
+    prov = {m["slug"]: m for m in json.loads((ROOT / "data/models.json").read_text())}
+    pv = load("pairs.jsonl") + load("pairs-voice.jsonl")
+    undone = {p.get("target") for p in pv if p.get("type") == "undo"}
+    votes = [p for p in pv if p.get("type") not in ("undo", "explanation") and p.get("outcome") in ("left", "right", "tie") and p["id"] not in undone]
     rows = sorted(load("screen.jsonl") + load("screen-voice.jsonl"), key=lambda r: r.get("saved", ""))
     latest = {}
     for r in rows:
@@ -53,13 +57,18 @@ def main():
                      "fail_reasons": sorted({x for r in fails.values() for x in r.get("fail_reasons") or []}),
                      "observations": sorted({x for r in items.values() for x in r.get("observations") or []}),
                      "first_fail": first, "gender": next((r.get("gender") for r in items.values() if r.get("gender")), None),
-                     "annotator_words": (words[0] or "")[:600] if words else "", "annotator": next((r.get("annotator") for r in items.values() if r.get("annotator")), None)}
+                     "annotator_words": (words[0] or "")[:600] if words else "", "annotator": next((r.get("annotator") for r in items.values() if r.get("annotator")), None),
+                     "arena": {"wins": sum(1 for v in votes if (v["outcome"] == "left" and v["left"] == slug) or (v["outcome"] == "right" and v["right"] == slug)),
+                               "played": sum(1 for v in votes if slug in (v["left"], v["right"]))},
+                     "cost": prov.get(base_of(slug)[0], {}).get("cost")}
     (ROOT / "data/screen_results.json").write_text(json.dumps(out, ensure_ascii=False, indent=1))
     order = {"survivor": 0, "out": 1, "not screened": 2}
-    lines = ["| Run | Status | Items heard | Why it failed | Observations | In the annotator's words |", "| --- | --- | --- | --- | --- | --- |"]
+    lines = ["| Run | Status | Items heard | Arena (won / played) | $ per 1k chars | Why it failed | Observations | In the annotator's words |", "| --- | --- | --- | --- | --- | --- | --- | --- |"]
     for slug, r in sorted(out.items(), key=lambda kv: (order[kv[1]["status"]], kv[0])):
         q = r["annotator_words"].replace("|", "/").replace("\n", " ")
-        lines.append(f"| `{slug}` | {r['status']} | {', '.join(f'{k} {v}' for k, v in r['verdicts'].items()) or '-'} | {', '.join(r['fail_reasons']) or '-'} | "
+        lines.append(f"| `{slug}` | {r['status']} | {', '.join(f'{k} {v}' for k, v in r['verdicts'].items()) or '-'} | "
+                     f"{(str(r['arena']['wins']) + ' / ' + str(r['arena']['played'])) if r['arena']['played'] else '-'} | "
+                     f"{('%.4g' % r['cost']['usd_per_1k_chars'] + (' (API)' if r['cost'].get('kind') == 'API list price' else ' (compute)')) if r.get('cost') else '-'} | {', '.join(r['fail_reasons']) or '-'} | "
                      f"{', '.join(r['observations']) or '-'} | {(q[:220] + '…') if len(q) > 220 else q} |")
     block = "<!-- screen:begin -->\n" + "\n".join(lines) + "\n<!-- screen:end -->"
     readme = (ROOT / "README.md").read_text()
