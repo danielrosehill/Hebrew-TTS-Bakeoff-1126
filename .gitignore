@@ -2,4 +2,3 @@ results/*/*.wav
 !results/.keep
 __pycache__/
 space/
-hf/
