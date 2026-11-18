@@ -164,13 +164,13 @@ Female bracket (as of 2026-11-18):
 
 | Voice (all given checked nikud unless marked plain) | Arena | $ / 1k chars | Notes |
 | --- | --- | --- | --- |
-| **Gemini 3.1 Flash TTS** | **unbeaten leader**: 3 wins (Piper, xAI, Gemini 2.5 Pro), 4 ties (its win over Chatterbox no longer counts: voice gender unrecorded) | 0.033 | "Superb", possibly the best Hebrew synthesis he has heard |
-| Gemini 3.8 Flash TTS | unbeaten: beat xAI (plain), tied the leader | 0.015 (0.030 from 2027) | at par with the leader, half the price |
-| Gemini 3.8 Flash Lite TTS | unbeaten: tied the leader and 3.8 Live | 0.010 (0.020 from 2027) | at par with the leader, a third of the price: **best value so far** |
-| Gemini 3.8 Live (plain, native audio) | unbeaten: beat Piper, tied the leader | 0.020 | a conversational model reading verbatim |
-| ElevenLabs v4 | unbeaten: beat xAI (plain), tied the leader | 0.08 | |
-| gpt-audio-1.5 | unbeaten: tied Gemini 2.5 Pro; not yet met the leader | 0.043 | |
-| Gemini 3.8 Live (native audio) | unbeaten: tied 3.8 Flash Lite; not yet met the leader | 0.020 | |
+| **Gemini 3.1 Flash TTS** | **unbeaten leader**: 6 wins (Piper, xAI, Gemini 2.5 Pro, gpt-audio-1.5, 3.8 Live and ElevenLabs v4 in tie-breaks), 6 ties | 0.033 | "Superb", possibly the best Hebrew synthesis he has heard |
+| Gemini 3.8 Flash Lite TTS | unbeaten: tied the leader twice (tie-break drawn too) and 3.8 Live | 0.010 (0.020 from 2027) | at par with the leader, a third of the price: **best value so far** |
+| Gemini 3.8 Flash TTS | unbeaten: beat xAI (plain) and Piper, tied the leader; tie-break still to play | 0.015 (0.030 from 2027) | at par with the leader, half the price |
+| Gemini 3.8 Live (native audio) | unbeaten: tied 3.8 Flash Lite and the leader; tie-break still to play | 0.020 | |
+| Gemini 3.8 Live (plain, native audio) | out: lost the tie-break to the leader (beat Piper) | 0.020 | a conversational model reading verbatim |
+| ElevenLabs v4 | out: lost the tie-break to the leader (beat xAI plain) | 0.08 | |
+| gpt-audio-1.5 | out: lost to the leader (tied Gemini 2.5 Pro) | 0.043 | |
 | Gemini 2.5 Pro TTS | out: lost to the leader (tied gpt-audio-1.5) | 0.033 | |
 | xAI TTS | out: lost to the leader (beat Gemini 2.5 native audio) | 0.015 | |
 | Piper Hebrew noa | out: lost to the leader, to 3.8 Live and to 3.8 Flash (too fast, few pauses at punctuation) | ~0.0001 (CPU) | "a preceding generation of TTS" |
@@ -179,11 +179,11 @@ Female bracket (as of 2026-11-18):
 | Kokoro Hebrew (plain, male voice) | out: both bad against Chatterbox (its loss to Piper crossed genders and no longer counts) | ~0.0007 (CPU) | very rushed |
 | Gemini 2.5 Flash native audio | out: lost to xAI | 0.020 | |
 
-**Where it stands:** Gemini 3.1 Flash TTS has never lost, and four voices have held it to a tie by ear: Gemini 3.8 Flash, 3.8
-Flash Lite, 3.8 Live and ElevenLabs v4. On price, Gemini 3.8 Flash Lite ties the leader at about a third of the cost. The
-next Arena session: tie-break rematches between the leader and those four, and gpt-audio-1.5 and Gemini 3.8 Live (nikud)
-against the leader. The recorder's ▶ Listen uses Gemini 3.1 Flash TTS (Recorder release 534); if a 3.8 model wins the
-rematches, the switch is one environment variable.
+**Where it stands (female bracket, 2026-11-18 evening):** Gemini 3.1 Flash TTS has never lost. Three voices are still
+unbeaten beside it: Gemini 3.8 Flash Lite drew both the play-off and the tie-break (so Bradley-Terry decides between
+them, at about a third of the price), and Gemini 3.8 Flash and 3.8 Live (nikud) each owe a tie-break. 3.8 Live (plain),
+ElevenLabs v4 and gpt-audio-1.5 lost to the leader. The recorder's ▶ Listen uses Gemini 3.1 Flash TTS (Recorder
+release 534); if a 3.8 model wins, the switch is one environment variable.
 
 **Best by voice:** the best female voice is Gemini 3.1 Flash TTS (Kore). The male bracket opened on 2026-11-18: 9 of
 the 12 male runs passed Screening on s01 (Gemini 3.1 Flash male, plain and nikud, and gpt-audio-1.5 male + nikud are
