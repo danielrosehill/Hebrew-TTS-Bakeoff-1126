@@ -20,24 +20,30 @@ a Hebrew config. The app code is not copied in. The `Dockerfile` clones the star
 
 ## Hebrew config
 
-The config sets these:
+The method is **screen, then rank** (the `ai-eval` plugin's `screen-then-rank` skill):
 
-- **Display:** right to left, Noto Sans Hebrew, language pack `he`. The pack holds the IPA keypad, a tooltip per
-  symbol, and an IPA help drawer with the Hebrew cliff notes.
-- **Sentence fields:** `text_nikud` is the line with tappable words. `text` is shown small above it, and `english`
-  below.
-- **Rows to answer:**
-  - Naturalness, Clarity and Hebrew accuracy, each 1 to 5.
-  - **"Vowels match the nikud?"**, yes or no on the keys V and X. On a plain-text clip this measures the model's
-    nikud inference.
-  - **"Use it as the reference voice?"**, Yes / Maybe / No on the keys Y, M and N.
-- **Evaluations:** listed from the public registry `Hebrish/Hebrew-TTS-Evaluations` (`evals.jsonl`).
-- **Annotations:** saved to the private dataset `danielrosehill/Hebrew-TTS-Listening-Notes`, at
-  `annotations/<eval_id>.jsonl`. The format is `tts-annotation/1`; see the starter's
-  `schema/annotation.schema.json`.
-- **Word references:** each sentence in the manifest has a `words` list with IPA, syllables and stress, from
-  Phonikud. It is labelled "Machine reference (Phonikud): check it" because it is sometimes wrong. For example, s12
-  הַסַּפָּר is marked as stressed on "sa", but the correct reading is sa-PAR.
+- **Pass 1, Screen:** judge the whole clip, Pass (P) or Fail (X).
+  - A fail needs one tap on a category (keys 1-6): Mispronunciation, Wrong emphasis (stress), Glitch / artefact,
+    Truncated / skipped words, Wrong voice or language, Other (with a comment).
+  - Voice gender is recorded with F, M or U.
+  - A vowel that doesn't match the nikud is a Fail: Mispronunciation. There is no separate nikud axis.
+  - **Add detail** is optional and collapsed. It holds word issues: the stressed syllable heard vs. the one it should
+    be, and the IPA heard vs. expected, with the Hebrew IPA keypad and IPA help. Quality ratings are off in this
+    config.
+- **Pass 2, Rank:** blind A/B comparisons among the clips that passed, as an adaptive play-off per sentence.
+  - Keys: 1 = A better, 2 = B better, 3 = tie, 4 = both bad (both go back as late fails), U = undo.
+  - Results give a Bradley–Terry ranking.
+
+The rest of the config:
+
+- **Display:** right to left, Noto Sans Hebrew, language pack `he`.
+- **Sentence fields:** `text_nikud` is the line with tappable words, `text` sits above it and `english` below.
+- **Evaluations:** listed from the public registry `Hebrish/Hebrew-TTS-Evaluations`.
+- **Annotations:** in the private dataset `danielrosehill/Hebrew-TTS-Listening-Notes`:
+  - `annotations/<eval_id>/screen.jsonl`, schema `tts-annotation/2`;
+  - `annotations/<eval_id>/pairs.jsonl`, schema `tts-pairwise/1`.
+- **Word reference:** from Phonikud, labelled "Machine reference (Phonikud): check it", because it is sometimes
+  wrong. For example, s12 הַסַּפָּר is marked as stressed on "sa", but the correct reading is sa-PAR.
 
 Space secret `HF_TOKEN` needs write access to the annotations dataset.
 
