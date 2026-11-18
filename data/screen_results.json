@@ -122,7 +122,7 @@
   "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 1,
-   "played": 3
+   "played": 4
   },
   "cost": {
    "usd_per_1k_chars": 0.00012,
@@ -494,8 +494,8 @@
   "annotator_words": "",
   "annotator": "Daniel Rosehill",
   "arena": {
-   "wins": 7,
-   "played": 13
+   "wins": 8,
+   "played": 19
   },
   "cost": {
    "usd_per_1k_chars": 0.0333,
@@ -709,17 +709,19 @@
   }
  },
  "elevenlabs-v4": {
-  "status": "not screened",
-  "verdicts": {},
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass"
+  },
   "fail_reasons": [],
   "observations": [],
   "first_fail": null,
   "gender": null,
   "annotator_words": "",
-  "annotator": null,
+  "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 0
+   "played": 3
   },
   "cost": {
    "usd_per_1k_chars": 0.08,
@@ -751,14 +753,18 @@
   }
  },
  "gemini-2.5-native-audio": {
-  "status": "not screened",
-  "verdicts": {},
-  "fail_reasons": [],
+  "status": "out",
+  "verdicts": {
+   "s01": "fail"
+  },
+  "fail_reasons": [
+   "Wrong stress"
+  ],
   "observations": [],
-  "first_fail": null,
+  "first_fail": "s01",
   "gender": null,
   "annotator_words": "",
-  "annotator": null,
+  "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
    "played": 0
@@ -835,17 +841,19 @@
   }
  },
  "gemini-3.8-flash-tts": {
-  "status": "not screened",
-  "verdicts": {},
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass"
+  },
   "fail_reasons": [],
   "observations": [],
   "first_fail": null,
   "gender": null,
   "annotator_words": "",
-  "annotator": null,
+  "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 0
+   "played": 1
   },
   "cost": {
    "usd_per_1k_chars": 0.015,
@@ -879,14 +887,16 @@
   }
  },
  "inworld-tts-2": {
-  "status": "not screened",
-  "verdicts": {},
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass"
+  },
   "fail_reasons": [],
   "observations": [],
   "first_fail": null,
   "gender": null,
   "annotator_words": "",
-  "annotator": null,
+  "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
    "played": 0
@@ -900,14 +910,16 @@
   }
  },
  "minimax-speech-2.8-hd": {
-  "status": "not screened",
-  "verdicts": {},
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass"
+  },
   "fail_reasons": [],
   "observations": [],
   "first_fail": null,
   "gender": null,
   "annotator_words": "",
-  "annotator": null,
+  "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
    "played": 0
@@ -921,17 +933,19 @@
   }
  },
  "openai-gpt-audio": {
-  "status": "not screened",
-  "verdicts": {},
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass"
+  },
   "fail_reasons": [],
   "observations": [],
   "first_fail": null,
   "gender": null,
   "annotator_words": "",
-  "annotator": null,
+  "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 0
+   "played": 1
   },
   "cost": {
    "usd_per_1k_chars": 0.0427,
@@ -1057,14 +1071,16 @@
   }
  },
  "gemini-3.1-flash-live-nikud": {
-  "status": "not screened",
-  "verdicts": {},
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass"
+  },
   "fail_reasons": [],
   "observations": [],
   "first_fail": null,
-  "gender": null,
+  "gender": "female",
   "annotator_words": "",
-  "annotator": null,
+  "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
    "played": 0
@@ -1090,7 +1106,7 @@
   "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 3
+   "played": 5
   },
   "cost": {
    "usd_per_1k_chars": 0.01,
@@ -1112,8 +1128,8 @@
   "annotator_words": "",
   "annotator": "Daniel Rosehill",
   "arena": {
-   "wins": 1,
-   "played": 2
+   "wins": 2,
+   "played": 5
   },
   "cost": {
    "usd_per_1k_chars": 0.015,
@@ -1136,7 +1152,7 @@
   "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 2
+   "played": 3
   },
   "cost": {
    "usd_per_1k_chars": 0.02,
@@ -1244,17 +1260,19 @@
   }
  },
  "elevenlabs-v4-male": {
-  "status": "not screened",
-  "verdicts": {},
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass"
+  },
   "fail_reasons": [],
   "observations": [],
   "first_fail": null,
   "gender": null,
   "annotator_words": "",
-  "annotator": null,
+  "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 0
+   "played": 2
   },
   "cost": {
    "usd_per_1k_chars": 0.08,
@@ -1265,17 +1283,19 @@
   }
  },
  "gemini-3.8-flash-lite-tts-male": {
-  "status": "not screened",
-  "verdicts": {},
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass"
+  },
   "fail_reasons": [],
   "observations": [],
   "first_fail": null,
   "gender": null,
   "annotator_words": "",
-  "annotator": null,
+  "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 0
+   "played": 3
   },
   "cost": {
    "usd_per_1k_chars": 0.01,
@@ -1286,17 +1306,19 @@
   }
  },
  "gemini-3.8-flash-tts-male": {
-  "status": "not screened",
-  "verdicts": {},
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass"
+  },
   "fail_reasons": [],
   "observations": [],
   "first_fail": null,
   "gender": null,
   "annotator_words": "",
-  "annotator": null,
+  "annotator": "Daniel Rosehill",
   "arena": {
-   "wins": 0,
-   "played": 0
+   "wins": 2,
+   "played": 5
   },
   "cost": {
    "usd_per_1k_chars": 0.015,
@@ -1307,17 +1329,19 @@
   }
  },
  "gemini-3.8-live-male": {
-  "status": "not screened",
-  "verdicts": {},
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass"
+  },
   "fail_reasons": [],
   "observations": [],
   "first_fail": null,
   "gender": null,
   "annotator_words": "",
-  "annotator": null,
+  "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 0
+   "played": 2
   },
   "cost": {
    "usd_per_1k_chars": 0.02,
@@ -1328,17 +1352,19 @@
   }
  },
  "openai-gpt-audio-male": {
-  "status": "not screened",
-  "verdicts": {},
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass"
+  },
   "fail_reasons": [],
   "observations": [],
   "first_fail": null,
   "gender": null,
   "annotator_words": "",
-  "annotator": null,
+  "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 0
+   "played": 2
   },
   "cost": {
    "usd_per_1k_chars": 0.0427,
@@ -1349,17 +1375,19 @@
   }
  },
  "elevenlabs-v4-male-nikud": {
-  "status": "not screened",
-  "verdicts": {},
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass"
+  },
   "fail_reasons": [],
   "observations": [],
   "first_fail": null,
   "gender": null,
   "annotator_words": "",
-  "annotator": null,
+  "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 0
+   "played": 2
   },
   "cost": {
    "usd_per_1k_chars": 0.08,
@@ -1370,17 +1398,19 @@
   }
  },
  "gemini-3.8-flash-lite-tts-male-nikud": {
-  "status": "not screened",
-  "verdicts": {},
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass"
+  },
   "fail_reasons": [],
   "observations": [],
   "first_fail": null,
   "gender": null,
   "annotator_words": "",
-  "annotator": null,
+  "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 0
+   "played": 1
   },
   "cost": {
    "usd_per_1k_chars": 0.01,
@@ -1391,17 +1421,19 @@
   }
  },
  "gemini-3.8-flash-tts-male-nikud": {
-  "status": "not screened",
-  "verdicts": {},
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass"
+  },
   "fail_reasons": [],
   "observations": [],
   "first_fail": null,
   "gender": null,
   "annotator_words": "",
-  "annotator": null,
+  "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 0
+   "played": 2
   },
   "cost": {
    "usd_per_1k_chars": 0.015,
@@ -1412,17 +1444,19 @@
   }
  },
  "gemini-3.8-live-male-nikud": {
-  "status": "not screened",
-  "verdicts": {},
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass"
+  },
   "fail_reasons": [],
   "observations": [],
   "first_fail": null,
   "gender": null,
   "annotator_words": "",
-  "annotator": null,
+  "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 0
+   "played": 1
   },
   "cost": {
    "usd_per_1k_chars": 0.02,
@@ -1433,14 +1467,16 @@
   }
  },
  "openai-gpt-audio-male-nikud": {
-  "status": "not screened",
-  "verdicts": {},
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass"
+  },
   "fail_reasons": [],
   "observations": [],
   "first_fail": null,
   "gender": null,
   "annotator_words": "",
-  "annotator": null,
+  "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
    "played": 0
