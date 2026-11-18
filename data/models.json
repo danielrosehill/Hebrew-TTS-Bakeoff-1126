@@ -34,7 +34,8 @@
    "mapping paper recipe onto released Shaul/Michael checkpoints",
    "SASPEECH as data for Shaul",
    "exact voice used"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "piper-he-noa",
@@ -63,7 +64,8 @@
   "inferred": [
    "publisher identity beyond handle",
    "parameter count"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "kokoro-hebrew",
@@ -93,7 +95,8 @@
   "inferred": [
    "params 82M",
    "release date of original beyond HF createdAt"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "bluev3",
@@ -130,7 +133,8 @@
    "notmax123 == maxmelichov (same name 'Maxim Melichov' on HF and GitHub, BlueTTS logo 'by Maxim Melichov')",
    "from-scratch (no base model stated)",
    "no formal ivrit.ai affiliation found: ivrit.ai merely hosts the V2 demo Space and arena entry; notmax123 has write access to that Space. V3 not confirmed as in the arena"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "zonos3-mini",
@@ -164,7 +168,8 @@
   "inferred": [
    "from scratch",
    "hebrew_input behaviour"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "chatterbox-multilingual",
@@ -195,7 +200,8 @@
   "inferred": [
    "training_origin detail",
    "hebrew_input"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "voxcpm2",
@@ -227,7 +233,8 @@
   "inferred": [
    "publisher_type",
    "hebrew_input"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "omnivoice",
@@ -261,7 +268,8 @@
    "Xiaomi link",
    "hebrew_input",
    "Hebrew explicitly in language list not checked"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "f5-hebrew-v2",
@@ -288,7 +296,8 @@
   "inferred": [
    "params",
    "input requirement for inference"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "fish-s2-pro",
@@ -321,7 +330,8 @@
   "inferred": [
    "hebrew_input",
    "company origin"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "gemini-flash-tts",
@@ -352,7 +362,8 @@
    "architecture",
    "release date",
    "Arena rank (from the brief, not re-checked)"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "openai-tts",
@@ -383,7 +394,8 @@
    "architecture",
    "Hebrew training data",
    "base model"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "elevenlabs-v3",
@@ -414,7 +426,8 @@
    "Hebrew support list",
    "release date",
    "architecture"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "google-cloud-tts",
@@ -445,7 +458,8 @@
    "architecture",
    "release date",
    "Hebrew training data"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "gemini-3.8-flash-tts",
@@ -474,7 +488,8 @@
   "inferred": [
    "architecture",
    "release date"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "gemini-3.8-flash-lite-tts",
@@ -503,7 +518,8 @@
   "inferred": [
    "architecture",
    "release date"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "gemini-2.5-pro-tts",
@@ -532,7 +548,8 @@
   "inferred": [
    "architecture",
    "release date"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "gemini-2.5-flash-tts",
@@ -561,7 +578,8 @@
   "inferred": [
    "architecture",
    "release date"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "elevenlabs-v4",
@@ -591,7 +609,8 @@
    "Hebrew support list",
    "release date",
    "architecture"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "minimax-speech-2.8-hd",
@@ -621,7 +640,8 @@
    "release date",
    "architecture",
    "whether Hebrew is intelligible (see listening)"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "inworld-tts-2",
@@ -650,7 +670,8 @@
   "inferred": [
    "architecture",
    "Yael voice existence (see meta voice field)"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "xai-tts",
@@ -680,7 +701,8 @@
    "release date",
    "architecture",
    "whether output is Hebrew or garbage (see listening)"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "seed-speech-v2",
@@ -707,7 +729,8 @@
   ],
   "inferred": [
    "only one voice tried"
-  ]
+  ],
+  "category": "tts"
  },
  {
   "slug": "openai-gpt-audio",
@@ -732,6 +755,88 @@
   ],
   "inferred": [
    "release date unknown"
+  ],
+  "category": "native-audio"
+ },
+ {
+  "slug": "gemini-3.8-live",
+  "name": "Gemini 3.8 Live (native audio, voice Kore)",
+  "hf_id": null,
+  "publisher": "Google (Google DeepMind / Gemini API)",
+  "publisher_type": "company",
+  "publisher_note": "US AI company",
+  "release_date": null,
+  "architecture": "multimodal native-audio model (Live API, bidiGenerateContent), used as TTS",
+  "params": null,
+  "base_model": null,
+  "training_origin": "proprietary",
+  "hebrew_training_data": null,
+  "hebrew_input": "plain or pointed text sent as a user turn; system instruction: read verbatim, neutral modern Israeli pronunciation",
+  "licence": "Google Gemini API terms",
+  "sources": [
+   "https://ai.google.dev/gemini-api/docs/live"
+  ],
+  "category": "native-audio",
+  "inferred": [
+   "release date unknown",
+   "Hebrew support claimed for the Gemini family, not confirmed per model"
+  ],
+  "confirmed": [
+   "model id gemini-3.8-live listed by the Gemini models API with bidiGenerateContent on 2026-11-18; generated s01 through the v1alpha Live endpoint"
+  ]
+ },
+ {
+  "slug": "gemini-3.1-flash-live",
+  "name": "Gemini 3.1 Flash Live preview (native audio, voice Kore)",
+  "hf_id": null,
+  "publisher": "Google (Google DeepMind / Gemini API)",
+  "publisher_type": "company",
+  "publisher_note": "US AI company",
+  "release_date": null,
+  "architecture": "multimodal native-audio model (Live API, bidiGenerateContent), used as TTS",
+  "params": null,
+  "base_model": null,
+  "training_origin": "proprietary",
+  "hebrew_training_data": null,
+  "hebrew_input": "plain or pointed text sent as a user turn; system instruction: read verbatim, neutral modern Israeli pronunciation",
+  "licence": "Google Gemini API terms",
+  "sources": [
+   "https://ai.google.dev/gemini-api/docs/live"
+  ],
+  "category": "native-audio",
+  "inferred": [
+   "release date unknown",
+   "Hebrew support claimed for the Gemini family, not confirmed per model"
+  ],
+  "confirmed": [
+   "model id gemini-3.1-flash-live-preview listed by the Gemini models API with bidiGenerateContent on 2026-11-18; generated s01 through the v1alpha Live endpoint"
+  ]
+ },
+ {
+  "slug": "gemini-2.5-native-audio",
+  "name": "Gemini 2.5 Flash native audio (voice Kore)",
+  "hf_id": null,
+  "publisher": "Google (Google DeepMind / Gemini API)",
+  "publisher_type": "company",
+  "publisher_note": "US AI company",
+  "release_date": null,
+  "architecture": "multimodal native-audio model (Live API, bidiGenerateContent), used as TTS",
+  "params": null,
+  "base_model": null,
+  "training_origin": "proprietary",
+  "hebrew_training_data": null,
+  "hebrew_input": "plain or pointed text sent as a user turn; system instruction: read verbatim, neutral modern Israeli pronunciation",
+  "licence": "Google Gemini API terms",
+  "sources": [
+   "https://ai.google.dev/gemini-api/docs/live"
+  ],
+  "category": "native-audio",
+  "inferred": [
+   "release date unknown",
+   "Hebrew support claimed for the Gemini family, not confirmed per model"
+  ],
+  "confirmed": [
+   "model id gemini-2.5-flash-native-audio-latest listed by the Gemini models API with bidiGenerateContent on 2026-11-18; generated s01 through the v1alpha Live endpoint"
   ]
  }
 ]

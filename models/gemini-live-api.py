@@ -18,7 +18,7 @@ SYSTEM = ("You are a text-to-speech engine. When the user sends Hebrew text, rea
 async def say(model, text):
     from google import genai
     from google.genai import types
-    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"], http_options={"api_version": "v1alpha"})
     cfg = types.LiveConnectConfig(response_modalities=["AUDIO"], system_instruction=SYSTEM,
                                   speech_config=types.SpeechConfig(voice_config=types.VoiceConfig(prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name=VOICE))))
     pcm = bytearray()
