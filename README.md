@@ -127,18 +127,30 @@ second (Gemini) or about 600 per minute (OpenAI) and 15 characters per second of
 warm Modal compute measured on our clips, excluding cold start. The basis and source of each figure are in
 `data/models.json` (`cost`).
 
-**Arena, first head-to-head round** (blind A vs B on the paragraph p01, 3 votes):
+**Arena** (blind A vs B on the paragraph p01; 16 votes on 2026-11-18; a head-to-head loss puts a voice out):
 
-| Voice | Result | $ / 1k chars | Why, in the annotator's words (tidied) |
+| Voice (all given checked nikud unless marked plain) | Arena | $ / 1k chars | Notes |
 | --- | --- | --- | --- |
-| Gemini 3.1 Flash TTS, given nikud | 2-0, preferred over Chatterbox and Piper | 0.033 (API) | "Superb", possibly the best Hebrew synthesis heard; expressive, good prosody and nikud |
-| Piper Hebrew noa, given nikud | 1-1, preferred over Kokoro | ~0.0001 (CPU) | More human and expressive than Kokoro; next to Gemini, "a preceding generation of TTS" |
-| Chatterbox Multilingual, given nikud | 0-1 | ~0.13 (GPU est.) | Robotic, staccato, clipped |
-| Kokoro Hebrew | 0-1 | ~0.0007 (CPU) | Very rushed and distracting |
+| **Gemini 3.1 Flash TTS** | **unbeaten leader**: 4 wins (Chatterbox, Piper, xAI, Gemini 2.5 Pro), 4 ties | 0.033 | "Superb", possibly the best Hebrew synthesis he has heard |
+| Gemini 3.8 Flash TTS | unbeaten: beat xAI (plain), tied the leader | 0.015 (0.030 from 2027) | at par with the leader, half the price |
+| Gemini 3.8 Flash Lite TTS | unbeaten: tied the leader and 3.8 Live | 0.010 (0.020 from 2027) | at par with the leader, a third of the price: **best value so far** |
+| Gemini 3.8 Live (plain, native audio) | unbeaten: beat Piper, tied the leader | 0.020 | a conversational model reading verbatim |
+| ElevenLabs v4 | unbeaten: beat xAI (plain), tied the leader | 0.08 | |
+| gpt-audio-1.5 | unbeaten: tied Gemini 2.5 Pro; not yet met the leader | 0.043 | |
+| Gemini 3.8 Live (native audio) | unbeaten: tied 3.8 Flash Lite; not yet met the leader | 0.020 | |
+| Gemini 2.5 Pro TTS | out: lost to the leader (tied gpt-audio-1.5) | 0.033 | |
+| xAI TTS | out: lost to the leader (beat Gemini 2.5 native audio) | 0.015 | |
+| Piper Hebrew noa | out: lost to the leader and to 3.8 Live (beat Kokoro) | ~0.0001 (CPU) | "a preceding generation of TTS" |
+| xAI TTS (plain) | out: lost to ElevenLabs v4 and 3.8 Flash | 0.015 | |
+| Chatterbox Multilingual | out: lost to the leader; both bad against Kokoro | ~0.13 (GPU est.) | robotic, staccato, clipped |
+| Kokoro Hebrew (plain) | out: lost to Piper; both bad against Chatterbox | ~0.0007 (CPU) | very rushed |
+| Gemini 2.5 Flash native audio | out: lost to xAI | 0.020 | |
 
-**Passed Screening and now in the Arena** (they had no paragraph clip for round 1; p01 was generated on 2026-11-18):
-Gemini 3.8 Flash TTS ($0.015 to 2026-12-31, then $0.030), Gemini 3.8 Flash Lite TTS ($0.010, then $0.020), Gemini
-2.5 Pro TTS ($0.033), ElevenLabs v4 via fal ($0.08) and OpenAI gpt-audio-1.5 ($0.043), all given nikud.
+**Where it stands:** Gemini 3.1 Flash TTS has never lost, and four voices have held it to a tie by ear: Gemini 3.8 Flash, 3.8
+Flash Lite, 3.8 Live and ElevenLabs v4. On price, Gemini 3.8 Flash Lite ties the leader at about a third of the cost. The
+next Arena session: tie-break rematches between the leader and those four, and gpt-audio-1.5 and Gemini 3.8 Live (nikud)
+against the leader. The recorder's ▶ Listen uses Gemini 3.1 Flash TTS (Recorder release 534); if a 3.8 model wins the
+rematches, the switch is one environment variable.
 
 **Out at Screening:** 23 runs, each with its reason, in the table below. **Waiting for Screening:** 17 runs. These
 include a new category, multimodal models with native audio output: Gemini 3.8 Live, Gemini 3.1 Flash Live and
@@ -153,22 +165,21 @@ Every run's pass/fail record from Daniel's listening, written by `scripts/screen
 <!-- screen:begin -->
 | Run | Status | Items heard | Arena (won / played) | $ per 1k chars | Why it failed | Observations | In the annotator's words |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `chatterbox-multilingual-nikud` | survivor | s01 pass, s03 pass, s05 pass, s06 pass | 0 / 1 | 0.1311 (compute) | - | - | This one is fine, and what's interesting to me is the different pacing in these clips. So this one sounded a little bit like a little bit rushed. I'm sure if we measure the WPM, in fact, this might be a very useful thing… |
-| `elevenlabs-v4-nikud` | survivor | s01 pass | - | 0.08 (API) | - | - |  |
-| `gemini-2.5-native-audio-nikud` | survivor | s01 pass | - | 0.02 (API) | - | - | Pacing is very unnaturally slow, but passing is because it's worth hearing how well it does on a longer multi-sentence narration And especially given that conditioning for speed is possible. |
-| `gemini-2.5-pro-tts-nikud` | survivor | s01 pass | - | 0.0333 (API) | - | - |  |
-| `gemini-3.8-flash-lite-tts-nikud` | survivor | s01 pass | - | 0.01 (API) | - | - |  |
-| `gemini-3.8-flash-tts-nikud` | survivor | s01 pass | - | 0.015 (API) | - | - |  |
-| `gemini-3.8-live` | survivor | s01 pass | - | 0.02 (API) | - | - |  |
-| `gemini-3.8-live-nikud` | survivor | s01 pass | - | 0.02 (API) | - | - |  |
-| `gemini-flash-tts-nikud` | survivor | s01 pass, s02 pass, s03 pass, s04 pass, s05 pass, s06 pass | 2 / 2 | 0.0333 (API) | - | - |  |
-| `kokoro-hebrew` | survivor | s01 pass, s02 pass, s03 pass, s04 pass, s05 pass, s06 pass | 0 / 1 | 0.00069 (compute) | - | - | This one is is okay. It's not like mind-blowingly clear or whatever, fairly straightforward delivery of the sentence. |
-| `openai-gpt-audio-nikud` | survivor | s01 pass | - | 0.0427 (API) | - | - |  |
-| `piper-he-noa-nikud` | survivor | s01 pass, s02 pass, s03 pass, s04 pass, s05 pass, s06 pass | 1 / 2 | 0.00012 (compute) | - | - | Okay, so um female voice, אני הייתי עושה את זה שוב. Um sounds good. Tiny note, really not important but I guess just to be thorough in my annotations here. Um אני הייתי עושה את זה שוב, עושה. Um the vowelization is for fo… |
-| `xai-tts` | survivor | s01 pass | - | 0.015 (API) | - | - |  |
-| `xai-tts-nikud` | survivor | s01 pass | - | 0.015 (API) | - | - |  |
+| `elevenlabs-v4-nikud` | survivor | s01 pass | 1 / 2 | 0.08 (API) | - | - |  |
+| `gemini-2.5-native-audio-nikud` | survivor | s01 pass | 0 / 1 | 0.02 (API) | - | - | Pacing is very unnaturally slow, but passing is because it's worth hearing how well it does on a longer multi-sentence narration And especially given that conditioning for speed is possible. |
+| `gemini-2.5-pro-tts-nikud` | survivor | s01 pass | 0 / 2 | 0.0333 (API) | - | - |  |
+| `gemini-3.8-flash-lite-tts-nikud` | survivor | s01 pass | 0 / 2 | 0.01 (API) | - | - |  |
+| `gemini-3.8-flash-tts-nikud` | survivor | s01 pass | 1 / 2 | 0.015 (API) | - | - |  |
+| `gemini-3.8-live` | survivor | s01 pass | 1 / 2 | 0.02 (API) | - | - |  |
+| `gemini-3.8-live-nikud` | survivor | s01 pass | 0 / 1 | 0.02 (API) | - | - |  |
+| `gemini-flash-tts-nikud` | survivor | s01 pass, s02 pass, s03 pass, s04 pass, s05 pass, s06 pass | 4 / 8 | 0.0333 (API) | - | - |  |
+| `openai-gpt-audio-nikud` | survivor | s01 pass | 0 / 1 | 0.0427 (API) | - | - |  |
+| `piper-he-noa-nikud` | survivor | s01 pass, s02 pass, s03 pass, s04 pass, s05 pass, s06 pass | 1 / 3 | 0.00012 (compute) | - | - | Okay, so um female voice, אני הייתי עושה את זה שוב. Um sounds good. Tiny note, really not important but I guess just to be thorough in my annotations here. Um אני הייתי עושה את זה שוב, עושה. Um the vowelization is for fo… |
+| `xai-tts` | survivor | s01 pass | 0 / 2 | 0.015 (API) | - | - |  |
+| `xai-tts-nikud` | survivor | s01 pass | 1 / 2 | 0.015 (API) | - | - |  |
 | `bluev3` | out | s01 pass, s02 fail | - | 0.00218 (compute) | Wrong stress | - | So this one, ze lo ze lo kashe im ata lomed. Ze lo kashe im ata lomed, it kind of went really, really up at the end. And I feel like I'm being a bit strict in terms of like the failing ones because I feel like maybe a fe… |
 | `chatterbox-multilingual` | out | s01 fail | - | 0.1311 (compute) | Glitch / artefact, Mispronunciation, Not Hebrew / wrong voice, Wrong stress | - | Same failure mode as the previous model that just sounded like it was not able to do Hebrew at all. This just is not intelligible as anything, any language I'm familiar with anyway. Certainly not Hebrew. Well, it did it … |
+| `chatterbox-multilingual-nikud` | out | p01 fail, s01 pass, s03 pass, s05 pass, s06 pass | 0 / 1 | 0.1311 (compute) | Rejected in ranking (both bad) | - |  |
 | `elevenlabs-v3` | out | s01 pass, s02 pass, s03 pass, s04 fail | - | 0.1 (API) | Other | - | Accented |
 | `elevenlabs-v3-nikud` | out | s01 pass, s02 pass, s04 fail | - | 0.1 (API) | Foreign accent, Mispronunciation | - | Uh, this is a very interesting one. I don't think we've heard it before. And I would say it was very accented. And sounded to me like one that didn't really have that average, like a multilingual TTS model that advertise… |
 | `f5-hebrew-v2` | out | s02 fail | - | 0.05932 (compute) | Truncated / skipped words | - | Another case of what went wrong here, I'm not sure, but it sounded like someone like started with the Hebrew word, then words were just missing and truncated. So, you couldn't listen to this. |
@@ -179,6 +190,7 @@ Every run's pass/fail record from Daniel's listening, written by `scripts/screen
 | `google-cloud-tts` | out | s01 pass, s02 pass, s03 pass, s05 fail | - | 0.03 (API) | Mispronunciation | - |  |
 | `google-cloud-tts-nikud` | out | s02 fail | - | 0.03 (API) | Mispronunciation | - |  |
 | `inworld-tts-2-nikud` | out | s01 fail | - | 0.025 (API) | Mispronunciation | - |  |
+| `kokoro-hebrew` | out | p01 fail, s01 pass, s02 pass, s03 pass, s04 pass, s05 pass, s06 pass | 0 / 1 | 0.00069 (compute) | Rejected in ranking (both bad) | - |  |
 | `kokoro-hebrew-nikud` | out | s01 pass, s03 pass, s04 fail | - | 0.00069 (compute) | Wrong stress | - |  |
 | `minimax-speech-2.8-hd-nikud` | out | s01 fail | - | 0.1 (API) | Intonation, Not Hebrew / wrong voice | - |  |
 | `omnivoice` | out | s01 fail | - | 0.03293 (compute) | Wrong stress | - | This one is an intriguing one. אני הייתי עושה את זה שוב. So, I'm this is my I guess there's a there's an element in annotation maybe kind of why I why I like doing this and why I like evaluations that is subjective. And … |

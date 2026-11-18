@@ -122,7 +122,7 @@
   "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 1,
-   "played": 2
+   "played": 3
   },
   "cost": {
    "usd_per_1k_chars": 0.00012,
@@ -133,8 +133,9 @@
   }
  },
  "kokoro-hebrew": {
-  "status": "survivor",
+  "status": "out",
   "verdicts": {
+   "p01": "fail",
    "s01": "pass",
    "s02": "pass",
    "s03": "pass",
@@ -142,11 +143,13 @@
    "s05": "pass",
    "s06": "pass"
   },
-  "fail_reasons": [],
+  "fail_reasons": [
+   "Rejected in ranking (both bad)"
+  ],
   "observations": [],
-  "first_fail": null,
+  "first_fail": "p01",
   "gender": "male",
-  "annotator_words": "This one is is okay. It's not like mind-blowingly clear or whatever, fairly straightforward delivery of the sentence.",
+  "annotator_words": "",
   "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
@@ -318,18 +321,21 @@
   }
  },
  "chatterbox-multilingual-nikud": {
-  "status": "survivor",
+  "status": "out",
   "verdicts": {
+   "p01": "fail",
    "s01": "pass",
    "s03": "pass",
    "s05": "pass",
    "s06": "pass"
   },
-  "fail_reasons": [],
+  "fail_reasons": [
+   "Rejected in ranking (both bad)"
+  ],
   "observations": [],
-  "first_fail": null,
+  "first_fail": "p01",
   "gender": "male",
-  "annotator_words": "This one is fine, and what's interesting to me is the different pacing in these clips. So this one sounded a little bit like a little bit rushed. I'm sure if we measure the WPM, in fact, this might be a very useful thing to add in the evaluation or the annotation, because that's something that can be computed programmatically very easily. I'd be surprised if this didn't show maybe 20-30% above baseline, which is, you know, might be fine here and there, but if you were using one of these voices for for narrating a book, this one is a less rich sounding voice, I would say, firstly. But I can see",
+  "annotator_words": "",
   "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
@@ -488,8 +494,8 @@
   "annotator_words": "",
   "annotator": "Daniel Rosehill",
   "arena": {
-   "wins": 2,
-   "played": 2
+   "wins": 4,
+   "played": 8
   },
   "cost": {
    "usd_per_1k_chars": 0.0333,
@@ -819,8 +825,8 @@
   "annotator_words": "",
   "annotator": "Daniel Rosehill",
   "arena": {
-   "wins": 0,
-   "played": 0
+   "wins": 1,
+   "played": 2
   },
   "cost": {
    "usd_per_1k_chars": 0.02,
@@ -906,7 +912,7 @@
   "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 0
+   "played": 2
   },
   "cost": {
    "usd_per_1k_chars": 0.015,
@@ -928,8 +934,8 @@
   "annotator_words": "",
   "annotator": "Daniel Rosehill",
   "arena": {
-   "wins": 0,
-   "played": 0
+   "wins": 1,
+   "played": 2
   },
   "cost": {
    "usd_per_1k_chars": 0.08,
@@ -973,7 +979,7 @@
   "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 0
+   "played": 1
   },
   "cost": {
    "usd_per_1k_chars": 0.02,
@@ -996,7 +1002,7 @@
   "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 0
+   "played": 2
   },
   "cost": {
    "usd_per_1k_chars": 0.0333,
@@ -1040,7 +1046,7 @@
   "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 0
+   "played": 2
   },
   "cost": {
    "usd_per_1k_chars": 0.01,
@@ -1062,8 +1068,8 @@
   "annotator_words": "",
   "annotator": "Daniel Rosehill",
   "arena": {
-   "wins": 0,
-   "played": 0
+   "wins": 1,
+   "played": 2
   },
   "cost": {
    "usd_per_1k_chars": 0.015,
@@ -1086,7 +1092,7 @@
   "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 0
+   "played": 1
   },
   "cost": {
    "usd_per_1k_chars": 0.02,
@@ -1160,7 +1166,7 @@
   "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 0
+   "played": 1
   },
   "cost": {
    "usd_per_1k_chars": 0.0427,
@@ -1182,8 +1188,8 @@
   "annotator_words": "",
   "annotator": "Daniel Rosehill",
   "arena": {
-   "wins": 0,
-   "played": 0
+   "wins": 1,
+   "played": 2
   },
   "cost": {
    "usd_per_1k_chars": 0.015,
