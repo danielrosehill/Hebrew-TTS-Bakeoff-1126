@@ -184,7 +184,7 @@ a male against a female voice is mostly a judgement of the voices, not of the mo
 genders (Kokoro vs Piper, Gemini 3.1 Flash vs Chatterbox, Kokoro vs Chatterbox); they stay in the data but no longer
 count. Every decision like this is logged in the annotations dataset, `annotations/hebrew-tts-bakeoff-1126/decisions.jsonl`.
 
-Final standings, Arena closed 2026-11-18 at 21:12 UTC (W-T-L on p01; a voice is out at its first loss). Nearly every vote between the
+Standings on 2026-11-18 at 21:12 UTC (W-T-L on p01; a voice is out at its first loss). Nearly every vote between the
 leading voices is a tie: by ear on this paragraph they are not separable, so Bradley-Terry only orders them loosely.
 
 **Female bracket: decided.** Gemini 3.1 Flash TTS (Kore, nikud) never lost; five voices are unbeaten beside it, each
@@ -211,9 +211,8 @@ having drawn with it (same-clip rematches are off: a draw stays a draw, and Brad
 Chatterbox and Kokoro (plain, male voice) went out as "both bad" against each other; their other votes crossed genders
 and no longer count.
 
-**Male bracket: closed with a leader.** Gemini 3.1 Flash TTS (Charon, with nikud) beat the previous leader, Gemini 3.8
-Flash (Charon, plain), and ElevenLabs v4 Brian, and tied 3.8 Flash Lite and 3.8 Live. The Arena was closed at that point
-(the annotator: "there's really not much in the remaining ones"); four play-off matches against it were left unplayed.
+**Male bracket.** Gemini 3.1 Flash TTS (Charon, with nikud) beat the previous leader, Gemini 3.8 Flash (Charon, plain),
+and ElevenLabs v4 Brian, and tied 3.8 Flash Lite and 3.8 Live. Four play-off matches against it remain.
 
 | Voice (Charon unless named) | W-T-L | Status | The annotator |
 | --- | --- | --- | --- |
@@ -221,9 +220,9 @@ Flash (Charon, plain), and ElevenLabs v4 Brian, and tied 3.8 Flash Lite and 3.8 
 | Gemini 3.1 Flash TTS (plain) | 0-2-0 | unbeaten | |
 | Gemini 3.8 Flash Lite TTS (plain) | 0-4-0 | unbeaten | brighter audio |
 | Gemini 3.8 Live (plain) | 0-3-0 | unbeaten | deep announcer voice: announcements and phone trees, too flat for narration |
-| Gemini 3.8 Flash TTS (nikud) | 0-2-0 | unbeaten, not played vs the leader | competent, not expressive |
-| Gemini 3.8 Flash Lite TTS (nikud) | 0-1-0 | unbeaten, not played vs the leader | "a little bit of personality": meaning carried beyond the words; his pick for a use |
-| ElevenLabs v4 (Brian, nikud) | 0-2-0 | unbeaten, not played vs the leader | deep, announcer, too flat for narration |
+| Gemini 3.8 Flash TTS (nikud) | 0-2-0 | unbeaten, to play the leader | competent, not expressive |
+| Gemini 3.8 Flash Lite TTS (nikud) | 0-1-0 | unbeaten, to play the leader | "a little bit of personality": meaning carried beyond the words; his pick for a use |
+| ElevenLabs v4 (Brian, nikud) | 0-2-0 | unbeaten, to play the leader | deep, announcer, too flat for narration |
 | Gemini 3.8 Flash TTS (plain) | 2-4-1 | out: lost to 3.1 Flash | more personality and prosody, less robotic |
 | ElevenLabs v4 (Brian, plain) | 0-2-1 | out: lost to 3.1 Flash | native-sounding, one non-native R (בבוקר) |
 | gpt-audio-1.5 (cedar, plain) | 0-1-1 | out: lost to 3.8 Flash | |
