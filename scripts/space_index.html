@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hebrew TTS Bake-off 11/26</title>
+<style>
+  :root { --bg:#0f1115; --card:#181b22; --line:#2a2f3a; --fg:#e8eaf0; --dim:#9aa3b5; --acc:#6ea8fe; --nik:#ffd479; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.5 system-ui, sans-serif; background:var(--bg); color:var(--fg); }
+  header { padding:20px 24px 8px; max-width:1100px; margin:auto; }
+  h1 { margin:0 0 4px; font-size:22px; }
+  header p { margin:4px 0; color:var(--dim); }
+  a { color:var(--acc); }
+  nav { display:flex; gap:8px; margin:14px 0 4px; flex-wrap:wrap; }
+  nav button, select { background:var(--card); color:var(--fg); border:1px solid var(--line); border-radius:8px; padding:6px 12px; font:inherit; cursor:pointer; }
+  nav button.on { border-color:var(--acc); color:var(--acc); }
+  main { max-width:1100px; margin:auto; padding:0 24px 40px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin:14px 0; }
+  .meta { color:var(--dim); font-size:13px; }
+  .he { direction:rtl; text-align:right; font-size:24px; line-height:1.6; font-family:"Noto Sans Hebrew","Arial Hebrew",Arial,sans-serif; }
+  .he.nikud { color:var(--nik); font-size:28px; }
+  .he.raw { font-size:18px; color:var(--dim); text-decoration:line-through; }
+  .lbl { font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--dim); margin-top:8px; }
+  .row { display:grid; grid-template-columns: 260px 1fr; gap:10px; align-items:center; padding:6px 0; border-top:1px solid var(--line); }
+  .row:first-of-type { border-top:0; }
+  audio { width:100%; height:34px; }
+  .badge { display:inline-block; font-size:11px; padding:1px 7px; border-radius:10px; border:1px solid var(--line); color:var(--dim); margin-left:6px; }
+  .badge.nk { border-color:var(--nik); color:var(--nik); }
+  table { border-collapse:collapse; width:100%; font-size:13px; }
+  th, td { border-bottom:1px solid var(--line); padding:7px 8px; text-align:left; vertical-align:top; }
+  th { color:var(--dim); font-weight:600; position:sticky; top:0; background:var(--bg); }
+  .scroll { overflow-x:auto; }
+  .fix { color:var(--dim); font-size:13px; }
+  @media (max-width:700px) { .row { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Hebrew TTS Bake-off 11/26</h1>
+  <p>Open Hebrew text-to-speech models on the same 20 sentences, to choose the reference voice that plays before a
+    learner reads a Hebrew sentence aloud from nikud in the <a href="https://hebrish.app">Hebrish</a> recorder.</p>
+  <p class="meta">Sentences: <a href="https://huggingface.co/datasets/Hebrish/Hebrew-TTS-Eval-Set">Hebrish/Hebrew-TTS-Eval-Set</a>
+    · Code and method: <a href="https://github.com/danielrosehill/Hebrew-TTS-Bakeoff-1126">GitHub</a>
+    · <span id="built"></span></p>
+  <nav>
+    <button data-v="sent" class="on">By sentence</button>
+    <button data-v="model">By model</button>
+    <button data-v="info">Models</button>
+  </nav>
+</header>
+<main id="main"></main>
+<script>
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+let D, view = "sent", pick = null;
+const inputBadge = (m) => m.run.input === "nikud" ? `<span class="badge nk">reads nikud</span>` : `<span class="badge">plain text</span>`;
+function sentHead(s) {
+  const raw = s.nikud_corrections ? `<div class="lbl">Diacritizer output (corrected)</div><div class="he raw">${esc(s.nikud_model_output)}</div><div class="fix">${esc(s.nikud_corrections)}</div>` : "";
+  return `<div class="meta">${esc(s.id)} · ${esc(s.focus)}</div>
+    <div class="lbl">Without nikud</div><div class="he">${esc(s.text)}</div>
+    <div class="lbl">With nikud</div><div class="he nikud">${esc(s.text_nikud)}</div>${raw}
+    <div class="lbl">English</div><div>${esc(s.english)}</div>`;
+}
+function bySentence() {
+  return D.sentences.map((s) => `<div class="card">${sentHead(s)}<div class="lbl" style="margin-top:14px">Models</div>` +
+    D.models.map((m) => m.clips[s.id] ? `<div class="row"><div>${esc(m.name)}${inputBadge(m)}</div><audio controls preload="none" src="${m.clips[s.id]}"></audio></div>` : "").join("") +
+    `</div>`).join("");
+}
+function byModel() {
+  pick = pick || D.models[0]?.slug;
+  const m = D.models.find((x) => x.slug === pick);
+  const opts = D.models.map((x) => `<option value="${x.slug}" ${x.slug === pick ? "selected" : ""}>${esc(x.name)}</option>`).join("");
+  return `<div class="card"><select id="pick">${opts}</select> ${inputBadge(m)}</div>` +
+    D.sentences.map((s) => `<div class="card"><div class="meta">${esc(s.id)} · ${esc(s.english)}</div><div class="he nikud">${esc(s.text_nikud)}</div>` +
+      (m.clips[s.id] ? `<audio controls preload="none" src="${m.clips[s.id]}"></audio>` : `<div class="meta">no clip</div>`) + `</div>`).join("");
+}
+function info() {
+  const mean = (o) => { const v = Object.values(o || {}); return v.length ? (v.reduce((a, b) => a + b, 0) / v.length).toFixed(2) + " s" : ""; };
+  const rows = D.models.map((m) => { const p = m.provenance || {}, r = m.run;
+    return `<tr><td><b>${esc(m.name)}</b><br><a href="https://huggingface.co/${esc(r.hf_id)}">${esc(r.hf_id)}</a></td>
+      <td>${esc(p.publisher)}<br><span class="meta">${esc(p.publisher_type)}${p.publisher_note ? " · " + esc(p.publisher_note) : ""}</span></td>
+      <td>${esc(p.release_date)}</td><td>${esc(p.training_origin)}${p.base_model ? `<br><span class="meta">base: ${esc(p.base_model)}</span>` : ""}</td>
+      <td>${esc(p.hebrew_training_data)}</td><td>${esc(r.input)}${p.hebrew_input ? `<br><span class="meta">${esc(p.hebrew_input)}</span>` : ""}</td>
+      <td>${esc(r.voice)}</td><td>${esc(r.sample_rate)}</td><td>${esc(r.gpu)}<br><span class="meta">${mean(r.per_sentence_s)} per sentence</span></td>
+      <td>${esc(p.licence || r.licence)}</td></tr>`; }).join("");
+  return `<div class="card scroll"><table><thead><tr><th>Model</th><th>Publisher</th><th>Released</th><th>Training</th><th>Hebrew data</th>
+    <th>Input</th><th>Voice</th><th>Hz</th><th>Hardware</th><th>Licence</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+function render() {
+  document.querySelectorAll("nav button").forEach((b) => b.classList.toggle("on", b.dataset.v === view));
+  document.getElementById("main").innerHTML = view === "sent" ? bySentence() : view === "model" ? byModel() : info();
+  document.getElementById("pick")?.addEventListener("change", (e) => { pick = e.target.value; render(); });
+}
+document.querySelector("nav").addEventListener("click", (e) => { if (e.target.dataset.v) { view = e.target.dataset.v; render(); } });
+// One clip at a time.
+document.addEventListener("play", (e) => document.querySelectorAll("audio").forEach((a) => a !== e.target && a.pause()), true);
+fetch("data.json").then((r) => r.json()).then((d) => { D = d; document.getElementById("built").textContent = `${d.models.length} models · built ${d.built}`; render(); });
+</script>
+</body>
+</html>
