@@ -212,7 +212,7 @@ Chatterbox and Kokoro (plain, male voice) went out as "both bad" against each ot
 and no longer count.
 
 **Male bracket.** Gemini 3.1 Flash TTS (Charon, with nikud) beat the previous leader, Gemini 3.8 Flash (Charon, plain),
-and ElevenLabs v4 Brian, and tied 3.8 Flash Lite and 3.8 Live. Four play-off matches against it remain.
+and ElevenLabs v4 Brian, and tied 3.8 Flash Lite and 3.8 Live.
 
 | Voice (Charon unless named) | W-T-L | Status | The annotator |
 | --- | --- | --- | --- |
@@ -220,9 +220,9 @@ and ElevenLabs v4 Brian, and tied 3.8 Flash Lite and 3.8 Live. Four play-off mat
 | Gemini 3.1 Flash TTS (plain) | 0-2-0 | unbeaten | |
 | Gemini 3.8 Flash Lite TTS (plain) | 0-4-0 | unbeaten | brighter audio |
 | Gemini 3.8 Live (plain) | 0-3-0 | unbeaten | deep announcer voice: announcements and phone trees, too flat for narration |
-| Gemini 3.8 Flash TTS (nikud) | 0-2-0 | unbeaten, to play the leader | competent, not expressive |
-| Gemini 3.8 Flash Lite TTS (nikud) | 0-1-0 | unbeaten, to play the leader | "a little bit of personality": meaning carried beyond the words; his pick for a use |
-| ElevenLabs v4 (Brian, nikud) | 0-2-0 | unbeaten, to play the leader | deep, announcer, too flat for narration |
+| Gemini 3.8 Flash TTS (nikud) | 0-2-0 | unbeaten | competent, not expressive |
+| Gemini 3.8 Flash Lite TTS (nikud) | 0-1-0 | unbeaten | "a little bit of personality": meaning carried beyond the words; his pick for a use |
+| ElevenLabs v4 (Brian, nikud) | 0-2-0 | unbeaten | deep, announcer, too flat for narration |
 | Gemini 3.8 Flash TTS (plain) | 2-4-1 | out: lost to 3.1 Flash | more personality and prosody, less robotic |
 | ElevenLabs v4 (Brian, plain) | 0-2-1 | out: lost to 3.1 Flash | native-sounding, one non-native R (בבוקר) |
 | gpt-audio-1.5 (cedar, plain) | 0-1-1 | out: lost to 3.8 Flash | |
