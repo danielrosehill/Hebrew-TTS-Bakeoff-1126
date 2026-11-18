@@ -7,6 +7,9 @@ with and without nikud.
   Its views are by sentence, by model, nikud inference, and a table of the models.
 - **Sentences:** [`Hebrish/Hebrew-TTS-Eval-Set`](https://huggingface.co/datasets/Hebrish/Hebrew-TTS-Eval-Set),
   20 rows, each with and without nikud. It is meant to be reused.
+- **Registry:** [`Hebrish/Hebrew-TTS-Evaluations`](https://huggingface.co/datasets/Hebrish/Hebrew-TTS-Evaluations) records
+  every Hebrew TTS evaluation, with its date, models and raw run parameters (`scripts/register_eval.py`). All my Hebrew
+  evaluations are indexed by task in [Hebrew-AI-Evaluations](https://github.com/danielrosehill/Hebrew-AI-Evaluations).
 - **All clips:** [`Hebrish/Hebrew-TTS-Bakeoff-1126`](https://huggingface.co/datasets/Hebrish/Hebrew-TTS-Bakeoff-1126).
   This dataset has 340 rows, one per run and sentence, with an audio player, run settings and model provenance.
 
@@ -97,6 +100,8 @@ those that were inferred. Run settings, voices, hardware and timings are in `res
 | `results/<run>/` | `meta.json`, plus `ipa.json` / `phonemes.json` / `nikud.json` where they exist. The WAVs are gitignored; they are in the results dataset. |
 | `scripts/build_space.py` | Builds and pushes the listening Space (`--push`) |
 | `scripts/publish_results.py` | Pushes the results dataset |
+| `scripts/register_eval.py` | Registers this evaluation (`--push`) in `Hebrish/Hebrew-TTS-Evaluations` |
+| `hub/evaluations/` | That registry's Hub card and its last pushed rows |
 | `notes-space/` | A private Gradio app for listening notes |
 | `hub/eval-set/` | The eval set's Hub card |
 
