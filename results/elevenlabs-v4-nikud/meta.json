@@ -1,0 +1,18 @@
+{
+ "slug": "elevenlabs-v4-nikud",
+ "hf_id": null,
+ "revision": "elevenlabs/tts/eleven-v4",
+ "licence": "ElevenLabs Terms of Service via fal.ai",
+ "input": "nikud",
+ "voice": "Rachel (fal default, female)",
+ "reference_clip": null,
+ "gpu": "API",
+ "sample_rate": 44100,
+ "load_s": null,
+ "per_sentence_s": {
+  "s01": 74.83
+ },
+ "generated": "2026-11-18",
+ "generated_via": "api:fal elevenlabs/tts/eleven-v4",
+ "notes": "Given the checked nikud as text. per_sentence_s is the request round trip. Round 1: ids s01 only. language_code he."
+}

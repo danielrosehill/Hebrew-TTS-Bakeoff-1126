@@ -29,9 +29,18 @@
   "s17": 3.63,
   "s18": 3.55,
   "s19": 2.99,
-  "s20": 5.13
+  "s20": 5.13,
+  "p01": 9.89
  },
  "generated": "2026-11-18",
  "generated_via": "api:Google Gemini API generateContent gemini-3.1-flash-tts-preview",
- "notes": "Given plain Hebrew. per_sentence_s is the request round trip. "
+ "notes": "Given plain Hebrew. per_sentence_s is the request round trip. ",
+ "rounds": {
+  "2": {
+   "items": [
+    "p01"
+   ],
+   "generated": "2026-11-18"
+  }
+ }
 }

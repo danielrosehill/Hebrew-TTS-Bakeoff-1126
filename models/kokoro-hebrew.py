@@ -44,7 +44,7 @@ def run(rows: list[dict]) -> dict:
             "reference_clip": "none (built-in voice, only voice in voices-hebrew.bin)", "gpu": "none (CPU, 4 vCPU, ONNX Runtime)",
             "sample_rate": sr, "load_s": round(load_s, 1), "per_sentence_s": per,
             "generated": datetime.date.today().isoformat(),
-            "notes": f"Model card and official examples/hebrew.py (kokoro-onnx) use renikud-onnx on PLAIN text, not Phonikud on nikud; followed that, so text_nikud unused. Stress marks (ˈ/ˌ) in phonemes: {stress}. continuous=True as in the official example. Voice is male (only one in the bundle). Phonemes sample: {ph['s01']}"}
+            "notes": f"Model card and official examples/hebrew.py (kokoro-onnx) use renikud-onnx on PLAIN text, not Phonikud on nikud; followed that, so text_nikud unused. Stress marks (ˈ/ˌ) in phonemes: {stress}. continuous=True as in the official example. Voice is male (only one in the bundle). Phonemes sample: {next(iter(ph.values()))}"}
     return {"wavs": out, "meta": meta, "phonemes": ph}
 
 

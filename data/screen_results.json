@@ -1,0 +1,548 @@
+{
+ "phonikud-piper": {
+  "status": "out",
+  "verdicts": {
+   "s01": "fail"
+  },
+  "fail_reasons": [
+   "Wrong stress"
+  ],
+  "observations": [],
+  "first_fail": "s01",
+  "gender": null,
+  "annotator_words": "Okay, so um this one I've marked as fail because it just came out weird. Ani hayiti ose et ze shuv. Ani hayiti ose et ze shuv. Shuv, flat towards the end, and this voice just kind of is like it's kind of a it's a crazy one. Ani, it kind of says 'ani, ani hayiti ose et ze shuv, shuv?' It kind of comes up at the end in this in this strange way. So, I guess the annotation is intonation. Um, the sentence in English 'I would do it again', 'I would do it again' leads to kind of fairly flat prosody, I would say, um whereas this this coming up at the end just doesn't make sense given the context.",
+  "annotator": "Daniel Rosehill"
+ },
+ "phonikud-piper-auto": {
+  "status": "out",
+  "verdicts": {
+   "s02": "fail"
+  },
+  "fail_reasons": [
+   "Mispronunciation"
+  ],
+  "observations": [],
+  "first_fail": "s02",
+  "gender": "male",
+  "annotator_words": "The pacing was very wrong here. That had kind of a French feeling to it, like it sounded like a bit like a French Hebrew speaker was the kind of pronunciation pattern. But regardless, pacing was so awkward that I don't think it would be usable.",
+  "annotator": "Daniel Rosehill"
+ },
+ "phonikud-piper-plain": {
+  "status": "out",
+  "verdicts": {
+   "s01": "fail"
+  },
+  "fail_reasons": [
+   "Wrong stress"
+  ],
+  "observations": [],
+  "first_fail": "s01",
+  "gender": "male",
+  "annotator_words": "",
+  "annotator": "Daniel Rosehill"
+ },
+ "piper-he-noa": {
+  "status": "out",
+  "verdicts": {
+   "s01": "pass",
+   "s02": "pass",
+   "s03": "pass",
+   "s04": "fail"
+  },
+  "fail_reasons": [
+   "Mispronunciation"
+  ],
+  "observations": [
+   "Slightly noisy or muddy"
+  ],
+  "first_fail": "s04",
+  "gender": "female",
+  "annotator_words": "",
+  "annotator": "Daniel Rosehill"
+ },
+ "piper-he-noa-nikud": {
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass",
+   "s02": "pass",
+   "s03": "pass",
+   "s04": "pass",
+   "s05": "pass",
+   "s06": "pass"
+  },
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": "female",
+  "annotator_words": "Okay, so um female voice, אני הייתי עושה את זה שוב. Um sounds good. Tiny note, really not important but I guess just to be thorough in my annotations here. Um אני הייתי עושה את זה שוב, עושה. Um the vowelization is for for if a woman were reading the sentence it would be um the vowel would be different, but uh nothing wrong with the voice or the emphasis or the pronunciation. Sounds good. First feedback note reported.",
+  "annotator": "Daniel Rosehill"
+ },
+ "kokoro-hebrew": {
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass",
+   "s02": "pass",
+   "s03": "pass",
+   "s04": "pass",
+   "s05": "pass",
+   "s06": "pass"
+  },
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": "male",
+  "annotator_words": "This one is is okay. It's not like mind-blowingly clear or whatever, fairly straightforward delivery of the sentence.",
+  "annotator": "Daniel Rosehill"
+ },
+ "kokoro-hebrew-nikud": {
+  "status": "out",
+  "verdicts": {
+   "s01": "pass",
+   "s03": "pass",
+   "s04": "fail"
+  },
+  "fail_reasons": [
+   "Wrong stress"
+  ],
+  "observations": [],
+  "first_fail": "s04",
+  "gender": "male",
+  "annotator_words": "",
+  "annotator": "Daniel Rosehill"
+ },
+ "bluev3": {
+  "status": "out",
+  "verdicts": {
+   "s01": "pass",
+   "s02": "fail"
+  },
+  "fail_reasons": [
+   "Wrong stress"
+  ],
+  "observations": [],
+  "first_fail": "s02",
+  "gender": "female",
+  "annotator_words": "So this one, ze lo ze lo kashe im ata lomed. Ze lo kashe im ata lomed, it kind of went really, really up at the end. And I feel like I'm being a bit strict in terms of like the failing ones because I feel like maybe a few years ago you could say, yeah, we can't be too picky here, that's basically right. But these are exactly the kind of things that when we're trying to get like good TTS that actually is enjoyable, normal to listen to, defects like this are just like jump, jump out at you from the first listen, so hence failure.",
+  "annotator": "Daniel Rosehill"
+ },
+ "f5-hebrew-v2": {
+  "status": "out",
+  "verdicts": {
+   "s02": "fail"
+  },
+  "fail_reasons": [
+   "Truncated / skipped words"
+  ],
+  "observations": [],
+  "first_fail": "s02",
+  "gender": "male",
+  "annotator_words": "Another case of what went wrong here, I'm not sure, but it sounded like someone like started with the Hebrew word, then words were just missing and truncated. So, you couldn't listen to this.",
+  "annotator": "Daniel Rosehill"
+ },
+ "f5-hebrew-v2-nikud": {
+  "status": "out",
+  "verdicts": {
+   "s01": "pass",
+   "s02": "fail"
+  },
+  "fail_reasons": [
+   "Glitch / artefact"
+  ],
+  "observations": [],
+  "first_fail": "s02",
+  "gender": "male",
+  "annotator_words": "Edge case again because pronunciation correct, but very, very noisy in the background. I suspect, I'm going to go out on a hunch with this, that this is one of the ones that Claude had to manually regain because the baseline gain was so low. So, I stand by what I said, I think that that's a non-viable strategy and the fact that having to do it was just a crude gain introduces background hiss, I think actually demonstrates why that's not a viable approach. You could of course do stuff like proper denoising, but yeah, I think if it's if the generative model, the TTS model path results in audio t",
+  "annotator": "Daniel Rosehill"
+ },
+ "zonos3-mini": {
+  "status": "out",
+  "verdicts": {
+   "s01": "fail"
+  },
+  "fail_reasons": [
+   "Not Hebrew / wrong voice"
+  ],
+  "observations": [],
+  "first_fail": "s01",
+  "gender": "female",
+  "annotator_words": "Okay, not sure what went wrong here, but this isn't even Hebrew. It came out as non- a non-intelligible language, whatever it was supposed to be. So yeah, this one is a this one is a hard fail. I'll be interested to know exactly what I'm guessing a mismatch from the input and the model what it could handle because or maybe didn't have Hebrew support. I don't know. Anyway, this one did not work.",
+  "annotator": "Daniel Rosehill"
+ },
+ "chatterbox-multilingual": {
+  "status": "out",
+  "verdicts": {
+   "s01": "fail"
+  },
+  "fail_reasons": [
+   "Glitch / artefact",
+   "Mispronunciation",
+   "Not Hebrew / wrong voice",
+   "Wrong stress"
+  ],
+  "observations": [],
+  "first_fail": "s01",
+  "gender": "male",
+  "annotator_words": "Same failure mode as the previous model that just sounded like it was not able to do Hebrew at all. This just is not intelligible as anything, any language I'm familiar with anyway. Certainly not Hebrew. Well, it did it did kind of say it did start with an 'ani'. So I'm actually kind of intrigued like what was this? Maybe an output that said it had Hebrew support but actually fails catastrophically. That would actually be very interesting to note. But yeah, this is not understandable or intelligible in any way.",
+  "annotator": null
+ },
+ "chatterbox-multilingual-nikud": {
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass",
+   "s03": "pass",
+   "s05": "pass",
+   "s06": "pass"
+  },
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": "male",
+  "annotator_words": "This one is fine, and what's interesting to me is the different pacing in these clips. So this one sounded a little bit like a little bit rushed. I'm sure if we measure the WPM, in fact, this might be a very useful thing to add in the evaluation or the annotation, because that's something that can be computed programmatically very easily. I'd be surprised if this didn't show maybe 20-30% above baseline, which is, you know, might be fine here and there, but if you were using one of these voices for for narrating a book, this one is a less rich sounding voice, I would say, firstly. But I can see",
+  "annotator": "Daniel Rosehill"
+ },
+ "voxcpm2": {
+  "status": "out",
+  "verdicts": {
+   "s02": "fail"
+  },
+  "fail_reasons": [
+   "Audio quality (noise, narrowband, muddy, level)"
+  ],
+  "observations": [],
+  "first_fail": "s02",
+  "gender": "male",
+  "annotator_words": "Super weird one actually here. Sounded like pronunciation correct, audio quality very poor. Sounded like some guy, sounded like a slightly angry man shouting down a bad telephone connection. Like sounded very narrowband, not good.",
+  "annotator": "Daniel Rosehill"
+ },
+ "omnivoice": {
+  "status": "out",
+  "verdicts": {
+   "s01": "fail"
+  },
+  "fail_reasons": [
+   "Wrong stress"
+  ],
+  "observations": [],
+  "first_fail": "s01",
+  "gender": "female",
+  "annotator_words": "This one is an intriguing one. אני הייתי עושה את זה שוב. So, I'm this is my I guess there's a there's an element in annotation maybe kind of why I why I like doing this and why I like evaluations that is subjective. And I'm annotating and rating according to my own subjective view of, you know, how good these are. Some a person might say, 'אני אני הייתי עושה את זה שוב.' That that's fine. My the reason that I'm marking it fail is that there was a pause after אני, I, that wasn't in the source. So, if the input text was 'אני' dot dot dot or whatever the language supported, if we're talk, you know",
+  "annotator": "Daniel Rosehill"
+ },
+ "fish-s2-pro": {
+  "status": "out",
+  "verdicts": {
+   "s01": "fail"
+  },
+  "fail_reasons": [
+   "Pacing / rhythm"
+  ],
+  "observations": [
+   "Borderline pass"
+  ],
+  "first_fail": "s01",
+  "gender": "male",
+  "annotator_words": "Borderline but I'm marking it fail because I wouldn't personally use it. And 'ani', it just sounded, the voice wasn't very, didn't sound natural. And the timing, the pacing wasn't good.",
+  "annotator": "Daniel Rosehill"
+ },
+ "fish-s2-pro-nikud": {
+  "status": "out",
+  "verdicts": {
+   "s01": "fail"
+  },
+  "fail_reasons": [
+   "Not Hebrew / wrong voice"
+  ],
+  "observations": [],
+  "first_fail": "s01",
+  "gender": "female",
+  "annotator_words": "Okay, so, right, this is this is this is fascinating and I'm actually enjoying the fact that it's it's blinded because otherwise I'd be like, what the hell was that? Okay, first impression, this sounds like Farsi. The the general way in which it was delivered had the general prosody feel of Farsi. And I know this from watching episodes of, what's the one I'm trying to think of? Doesn't matter. You know, the one where they go into the reactors and, you know, you know what, every language has its kind of vocal range signature. So that was number one. And the and the second classic here, I don't ",
+  "annotator": "Daniel Rosehill"
+ },
+ "gemini-flash-tts": {
+  "status": "out",
+  "verdicts": {
+   "s02": "pass",
+   "s03": "fail"
+  },
+  "fail_reasons": [
+   "Mispronunciation"
+  ],
+  "observations": [],
+  "first_fail": "s03",
+  "gender": "female",
+  "annotator_words": "Technically she said, hamatanah hazot i lechaver sheli, not hi. Tiny one, but there you go.",
+  "annotator": "Daniel Rosehill"
+ },
+ "gemini-flash-tts-nikud": {
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass",
+   "s02": "pass",
+   "s03": "pass",
+   "s04": "pass",
+   "s05": "pass",
+   "s06": "pass"
+  },
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": "female",
+  "annotator_words": "",
+  "annotator": "Daniel Rosehill"
+ },
+ "elevenlabs-v3": {
+  "status": "out",
+  "verdicts": {
+   "s01": "pass",
+   "s02": "pass",
+   "s03": "pass",
+   "s04": "fail"
+  },
+  "fail_reasons": [
+   "Other"
+  ],
+  "observations": [],
+  "first_fail": "s04",
+  "gender": "female",
+  "annotator_words": "Accented",
+  "annotator": "Daniel Rosehill"
+ },
+ "elevenlabs-v3-nikud": {
+  "status": "out",
+  "verdicts": {
+   "s01": "pass",
+   "s02": "pass",
+   "s04": "fail"
+  },
+  "fail_reasons": [
+   "Foreign accent",
+   "Mispronunciation"
+  ],
+  "observations": [],
+  "first_fail": "s04",
+  "gender": "female",
+  "annotator_words": "Uh, this is a very interesting one. I don't think we've heard it before. And I would say it was very accented. And sounded to me like one that didn't really have that average, like a multilingual TTS model that advertised it could do Hebrew and didn't really have a lot of training on it. 'Tishbor et habeitsim'. The trill or 'r', which again, depending on where you come from, could be just a quirk or or a feature if you're looking for an accent that does that. But right now, I would say this evaluation we're kind of biased heavily towards, or I'm biased heavily towards just standard modern Hebr",
+  "annotator": "Daniel Rosehill"
+ },
+ "openai-tts": {
+  "status": "out",
+  "verdicts": {
+   "s01": "pass",
+   "s03": "fail"
+  },
+  "fail_reasons": [
+   "Pacing / rhythm"
+  ],
+  "observations": [],
+  "first_fail": "s03",
+  "gender": "female",
+  "annotator_words": "Pacing here was very awkward.",
+  "annotator": "Daniel Rosehill"
+ },
+ "openai-tts-nikud": {
+  "status": "out",
+  "verdicts": {
+   "s01": "pass",
+   "s02": "fail"
+  },
+  "fail_reasons": [
+   "Truncated / skipped words"
+  ],
+  "observations": [],
+  "first_fail": "s02",
+  "gender": "female",
+  "annotator_words": "This one is is is kind of comical actually. So actually managed to get the nikud correct, notwithstanding the female nikud mismatch, but just the pacing was like all over the place. It also sounded slightly like an Asian speaker of Hebrew, slight accenting I would say. But more importantly, the stops made it, I would say, a good reason to fail it.",
+  "annotator": "Daniel Rosehill"
+ },
+ "google-cloud-tts": {
+  "status": "out",
+  "verdicts": {
+   "s01": "pass",
+   "s02": "pass",
+   "s03": "pass",
+   "s05": "fail"
+  },
+  "fail_reasons": [
+   "Mispronunciation"
+  ],
+  "observations": [],
+  "first_fail": "s05",
+  "gender": "female",
+  "annotator_words": "",
+  "annotator": "Daniel Rosehill"
+ },
+ "google-cloud-tts-nikud": {
+  "status": "out",
+  "verdicts": {
+   "s02": "fail"
+  },
+  "fail_reasons": [
+   "Mispronunciation"
+  ],
+  "observations": [],
+  "first_fail": "s02",
+  "gender": "female",
+  "annotator_words": "",
+  "annotator": "Daniel Rosehill"
+ },
+ "elevenlabs-v4": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null
+ },
+ "gemini-2.5-flash-tts": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null
+ },
+ "gemini-2.5-pro-tts": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null
+ },
+ "gemini-3.8-flash-lite-tts": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null
+ },
+ "gemini-3.8-flash-tts": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null
+ },
+ "inworld-tts-2": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null
+ },
+ "minimax-speech-2.8-hd": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null
+ },
+ "xai-tts": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null
+ },
+ "elevenlabs-v4-nikud": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null
+ },
+ "gemini-2.5-flash-tts-nikud": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null
+ },
+ "gemini-2.5-pro-tts-nikud": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null
+ },
+ "gemini-3.8-flash-lite-tts-nikud": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null
+ },
+ "gemini-3.8-flash-tts-nikud": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null
+ },
+ "inworld-tts-2-nikud": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null
+ },
+ "minimax-speech-2.8-hd-nikud": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null
+ },
+ "xai-tts-nikud": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null
+ }
+}

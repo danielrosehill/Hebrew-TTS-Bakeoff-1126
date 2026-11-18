@@ -29,9 +29,18 @@
   "s17": 12.17,
   "s18": 14.7,
   "s19": 38.51,
-  "s20": 8.16
+  "s20": 8.16,
+  "p01": 13.47
  },
  "generated": "2026-11-18",
  "generated_via": "api:fal fal-ai/elevenlabs/tts/eleven-v3",
- "notes": "Given plain Hebrew. per_sentence_s is the request round trip. Native output MP3 44.1 kHz 128 kbps (default output_format), converted to WAV with ffmpeg."
+ "notes": "Given plain Hebrew. per_sentence_s is the request round trip. Native output MP3 44.1 kHz 128 kbps (default output_format), converted to WAV with ffmpeg.",
+ "rounds": {
+  "2": {
+   "items": [
+    "p01"
+   ],
+   "generated": "2026-11-18"
+  }
+ }
 }

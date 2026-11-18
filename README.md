@@ -116,6 +116,56 @@ those that were inferred. Run settings, voices, hardware and timings are in `res
 - **piper-he-noa** was first run through piper-tts's built-in Hebrew front end (Nakdimon), which is not the one the
   voice was trained on. It was redone with renikud. The first run is kept in `results/piper-he-noa/nakdimon-default/`.
 
+## Screen results (pass 1)
+
+Every run's pass/fail record from Daniel's listening, written by `scripts/screen_summary.py` from the public annotations dataset [`danielrosehill/Hebrew-TTS-Listening-Notes`](https://huggingface.co/datasets/danielrosehill/Hebrew-TTS-Listening-Notes). A run is out at its first fail; survivors go on to head-to-head ranking on the round-2 paragraph.
+
+<!-- screen:begin -->
+| Run | Status | Items heard | Why it failed | Observations | In the annotator's words |
+| --- | --- | --- | --- | --- | --- |
+| `chatterbox-multilingual-nikud` | survivor | s01 pass, s03 pass, s05 pass, s06 pass | - | - | This one is fine, and what's interesting to me is the different pacing in these clips. So this one sounded a little bit like a little bit rushed. I'm sure if we measure the WPM, in fact, this might be a very useful thing… |
+| `gemini-flash-tts-nikud` | survivor | s01 pass, s02 pass, s03 pass, s04 pass, s05 pass, s06 pass | - | - |  |
+| `kokoro-hebrew` | survivor | s01 pass, s02 pass, s03 pass, s04 pass, s05 pass, s06 pass | - | - | This one is is okay. It's not like mind-blowingly clear or whatever, fairly straightforward delivery of the sentence. |
+| `piper-he-noa-nikud` | survivor | s01 pass, s02 pass, s03 pass, s04 pass, s05 pass, s06 pass | - | - | Okay, so um female voice, אני הייתי עושה את זה שוב. Um sounds good. Tiny note, really not important but I guess just to be thorough in my annotations here. Um אני הייתי עושה את זה שוב, עושה. Um the vowelization is for fo… |
+| `bluev3` | out | s01 pass, s02 fail | Wrong stress | - | So this one, ze lo ze lo kashe im ata lomed. Ze lo kashe im ata lomed, it kind of went really, really up at the end. And I feel like I'm being a bit strict in terms of like the failing ones because I feel like maybe a fe… |
+| `chatterbox-multilingual` | out | s01 fail | Glitch / artefact, Mispronunciation, Not Hebrew / wrong voice, Wrong stress | - | Same failure mode as the previous model that just sounded like it was not able to do Hebrew at all. This just is not intelligible as anything, any language I'm familiar with anyway. Certainly not Hebrew. Well, it did it … |
+| `elevenlabs-v3` | out | s01 pass, s02 pass, s03 pass, s04 fail | Other | - | Accented |
+| `elevenlabs-v3-nikud` | out | s01 pass, s02 pass, s04 fail | Foreign accent, Mispronunciation | - | Uh, this is a very interesting one. I don't think we've heard it before. And I would say it was very accented. And sounded to me like one that didn't really have that average, like a multilingual TTS model that advertise… |
+| `f5-hebrew-v2` | out | s02 fail | Truncated / skipped words | - | Another case of what went wrong here, I'm not sure, but it sounded like someone like started with the Hebrew word, then words were just missing and truncated. So, you couldn't listen to this. |
+| `f5-hebrew-v2-nikud` | out | s01 pass, s02 fail | Glitch / artefact | - | Edge case again because pronunciation correct, but very, very noisy in the background. I suspect, I'm going to go out on a hunch with this, that this is one of the ones that Claude had to manually regain because the base… |
+| `fish-s2-pro` | out | s01 fail | Pacing / rhythm | Borderline pass | Borderline but I'm marking it fail because I wouldn't personally use it. And 'ani', it just sounded, the voice wasn't very, didn't sound natural. And the timing, the pacing wasn't good. |
+| `fish-s2-pro-nikud` | out | s01 fail | Not Hebrew / wrong voice | - | Okay, so, right, this is this is this is fascinating and I'm actually enjoying the fact that it's it's blinded because otherwise I'd be like, what the hell was that? Okay, first impression, this sounds like Farsi. The th… |
+| `gemini-flash-tts` | out | s02 pass, s03 fail | Mispronunciation | - | Technically she said, hamatanah hazot i lechaver sheli, not hi. Tiny one, but there you go. |
+| `google-cloud-tts` | out | s01 pass, s02 pass, s03 pass, s05 fail | Mispronunciation | - |  |
+| `google-cloud-tts-nikud` | out | s02 fail | Mispronunciation | - |  |
+| `kokoro-hebrew-nikud` | out | s01 pass, s03 pass, s04 fail | Wrong stress | - |  |
+| `omnivoice` | out | s01 fail | Wrong stress | - | This one is an intriguing one. אני הייתי עושה את זה שוב. So, I'm this is my I guess there's a there's an element in annotation maybe kind of why I why I like doing this and why I like evaluations that is subjective. And … |
+| `openai-tts` | out | s01 pass, s03 fail | Pacing / rhythm | - | Pacing here was very awkward. |
+| `openai-tts-nikud` | out | s01 pass, s02 fail | Truncated / skipped words | - | This one is is is kind of comical actually. So actually managed to get the nikud correct, notwithstanding the female nikud mismatch, but just the pacing was like all over the place. It also sounded slightly like an Asian… |
+| `phonikud-piper` | out | s01 fail | Wrong stress | - | Okay, so um this one I've marked as fail because it just came out weird. Ani hayiti ose et ze shuv. Ani hayiti ose et ze shuv. Shuv, flat towards the end, and this voice just kind of is like it's kind of a it's a crazy o… |
+| `phonikud-piper-auto` | out | s02 fail | Mispronunciation | - | The pacing was very wrong here. That had kind of a French feeling to it, like it sounded like a bit like a French Hebrew speaker was the kind of pronunciation pattern. But regardless, pacing was so awkward that I don't t… |
+| `phonikud-piper-plain` | out | s01 fail | Wrong stress | - |  |
+| `piper-he-noa` | out | s01 pass, s02 pass, s03 pass, s04 fail | Mispronunciation | Slightly noisy or muddy |  |
+| `voxcpm2` | out | s02 fail | Audio quality (noise, narrowband, muddy, level) | - | Super weird one actually here. Sounded like pronunciation correct, audio quality very poor. Sounded like some guy, sounded like a slightly angry man shouting down a bad telephone connection. Like sounded very narrowband,… |
+| `zonos3-mini` | out | s01 fail | Not Hebrew / wrong voice | - | Okay, not sure what went wrong here, but this isn't even Hebrew. It came out as non- a non-intelligible language, whatever it was supposed to be. So yeah, this one is a this one is a hard fail. I'll be interested to know… |
+| `elevenlabs-v4` | not screened | - | - | - |  |
+| `elevenlabs-v4-nikud` | not screened | - | - | - |  |
+| `gemini-2.5-flash-tts` | not screened | - | - | - |  |
+| `gemini-2.5-flash-tts-nikud` | not screened | - | - | - |  |
+| `gemini-2.5-pro-tts` | not screened | - | - | - |  |
+| `gemini-2.5-pro-tts-nikud` | not screened | - | - | - |  |
+| `gemini-3.8-flash-lite-tts` | not screened | - | - | - |  |
+| `gemini-3.8-flash-lite-tts-nikud` | not screened | - | - | - |  |
+| `gemini-3.8-flash-tts` | not screened | - | - | - |  |
+| `gemini-3.8-flash-tts-nikud` | not screened | - | - | - |  |
+| `inworld-tts-2` | not screened | - | - | - |  |
+| `inworld-tts-2-nikud` | not screened | - | - | - |  |
+| `minimax-speech-2.8-hd` | not screened | - | - | - |  |
+| `minimax-speech-2.8-hd-nikud` | not screened | - | - | - |  |
+| `xai-tts` | not screened | - | - | - |  |
+| `xai-tts-nikud` | not screened | - | - | - |  |
+<!-- screen:end -->
+
 ## Layout
 
 | Path | What |

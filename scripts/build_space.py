@@ -103,8 +103,21 @@ def add_words(sentences):
         s["words_source"] = "Phonikud phonemize() on the checked nikud with Phonikud diacritizer stress marks (machine reference)"
 
 
+ROUND1 = ["s01"]  # what round 1 actually played; s02-s20 were generated up front (2026-11-18) and are not served
+
+
+def load_items():
+    """The 20 eval-set sentences plus the items of later rounds (data/rounds/round<N>.jsonl), each with its `round`."""
+    items = [json.loads(l) for l in open(ROOT / "data/sentences.jsonl", encoding="utf8")]
+    for s in items:
+        s["round"] = 1 if s["id"] in ROUND1 else None
+    for f in sorted((ROOT / "data/rounds").glob("round*.jsonl")):
+        items += [json.loads(l) for l in open(f, encoding="utf8") if l.strip()]
+    return items
+
+
 def main():
-    sentences = [json.loads(l) for l in open(ROOT / "data/sentences.jsonl", encoding="utf8")]
+    sentences = load_items()
     add_words(sentences)
     prov = {m["slug"]: m for m in json.loads((ROOT / "data/models.json").read_text())} if (ROOT / "data/models.json").exists() else {}
     if OUT.exists():

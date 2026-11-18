@@ -45,8 +45,8 @@ def measure(wav):
 
 
 def main():
-    from build_space import add_words, runs
-    sentences = [json.loads(l) for l in open(ROOT / "data/sentences.jsonl", encoding="utf8")]
+    from build_space import add_words, load_items, runs
+    sentences = load_items()
     add_words(sentences)
     syl = {s["id"]: sum(len(w["syllables"]) for w in s.get("words", [])) or None for s in sentences}
     out = {}

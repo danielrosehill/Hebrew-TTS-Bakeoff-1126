@@ -29,9 +29,18 @@
   "s17": 6.9,
   "s18": 9.58,
   "s19": 15.23,
-  "s20": 13.23
+  "s20": 13.23,
+  "p01": 113.97
  },
  "generated": "2026-11-18",
  "generated_via": "api:fal fal-ai/elevenlabs/tts/eleven-v3",
- "notes": "Given the checked nikud as text. per_sentence_s is the request round trip. Native output MP3 44.1 kHz 128 kbps (default output_format), converted to WAV with ffmpeg."
+ "notes": "Given the checked nikud as text. per_sentence_s is the request round trip. Native output MP3 44.1 kHz 128 kbps (default output_format), converted to WAV with ffmpeg.",
+ "rounds": {
+  "2": {
+   "items": [
+    "p01"
+   ],
+   "generated": "2026-11-18"
+  }
+ }
 }

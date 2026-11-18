@@ -10,14 +10,14 @@ import json, sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from build_space import ROOT, base_of, runs  # noqa: E402
+from build_space import ROOT, base_of, load_items, runs  # noqa: E402
 
 REPO = "Hebrish/Hebrew-TTS-Bakeoff-1126"
 
 
 def main():
     from datasets import Audio, Dataset
-    sentences = [json.loads(l) for l in open(ROOT / "data/sentences.jsonl", encoding="utf8")]
+    sentences = load_items()
     prov = {m["slug"]: m for m in json.loads((ROOT / "data/models.json").read_text())}
     rows = []
     for slug, (meta, folder) in runs():

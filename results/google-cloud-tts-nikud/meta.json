@@ -29,9 +29,24 @@
   "s17": 0.93,
   "s18": 1.06,
   "s19": 0.95,
-  "s20": 1.07
+  "s20": 1.07,
+  "p01": 2.69
  },
  "generated": "2026-11-18",
  "generated_via": "api:Google Cloud TTS v1 text:synthesize he-IL-Chirp3-HD-Kore",
- "notes": "Given the checked nikud as text. per_sentence_s is the request round trip. "
+ "notes": "Given the checked nikud as text. per_sentence_s is the request round trip. ",
+ "rounds": {
+  "2": {
+   "items": [
+    "p01"
+   ],
+   "generated": "2026-11-18"
+  },
+  "2": {
+   "items": [
+    "p01"
+   ],
+   "generated": "2026-11-18"
+  }
+ }
 }

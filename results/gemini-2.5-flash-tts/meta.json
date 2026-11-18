@@ -1,0 +1,18 @@
+{
+ "slug": "gemini-2.5-flash-tts",
+ "hf_id": null,
+ "revision": "gemini-2.5-flash-preview-tts",
+ "licence": "Google Gemini API Additional Terms of Service",
+ "input": "plain",
+ "voice": "Kore (prebuilt, female)",
+ "reference_clip": null,
+ "gpu": "API",
+ "sample_rate": 24000,
+ "load_s": null,
+ "per_sentence_s": {
+  "s01": 2.15
+ },
+ "generated": "2026-11-18",
+ "generated_via": "api:Google Gemini API generateContent gemini-2.5-flash-preview-tts",
+ "notes": "Given plain Hebrew. per_sentence_s is the request round trip. Round 1: ids s01 only. "
+}

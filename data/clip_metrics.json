@@ -9,7 +9,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.26,
-   "pace_vs_median": -0.05
+   "pace_vs_median": -0.14
   },
   "s02": {
    "duration_s": 1.88,
@@ -231,7 +231,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.41,
-   "pace_vs_median": -0.03
+   "pace_vs_median": -0.12
   },
   "s02": {
    "duration_s": 1.95,
@@ -453,7 +453,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.13,
-   "pace_vs_median": -0.08
+   "pace_vs_median": -0.16
   },
   "s02": {
    "duration_s": 2.05,
@@ -675,7 +675,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.13,
-   "pace_vs_median": 0.1
+   "pace_vs_median": 0.0
   },
   "s02": {
    "duration_s": 1.64,
@@ -885,6 +885,15 @@
    "longest_pause_s": 0,
    "syll_per_s": 5.09,
    "pace_vs_median": -0.04
+  },
+  "p01": {
+   "duration_s": 20.43,
+   "lufs": -19.8,
+   "true_peak": -1.2,
+   "clipped": false,
+   "speech_s": 20.43,
+   "pauses": 3,
+   "longest_pause_s": 0.4
   }
  },
  "piper-he-noa-nikud": {
@@ -897,7 +906,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.85,
-   "pace_vs_median": 0.05
+   "pace_vs_median": -0.05
   },
   "s02": {
    "duration_s": 1.65,
@@ -1107,6 +1116,15 @@
    "longest_pause_s": 0.29,
    "syll_per_s": 5.03,
    "pace_vs_median": -0.05
+  },
+  "p01": {
+   "duration_s": 19.26,
+   "lufs": -20.2,
+   "true_peak": -1.1,
+   "clipped": false,
+   "speech_s": 19.26,
+   "pauses": 3,
+   "longest_pause_s": 0.37
   }
  },
  "kokoro-hebrew": {
@@ -1119,7 +1137,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.94,
-   "pace_vs_median": 0.25
+   "pace_vs_median": 0.13
   },
   "s02": {
    "duration_s": 1.68,
@@ -1329,6 +1347,15 @@
    "longest_pause_s": 0,
    "syll_per_s": 6.35,
    "pace_vs_median": 0.2
+  },
+  "p01": {
+   "duration_s": 15.02,
+   "lufs": -27.7,
+   "true_peak": -8.9,
+   "clipped": false,
+   "speech_s": 14.74,
+   "pauses": 3,
+   "longest_pause_s": 0.31
   }
  },
  "kokoro-hebrew-nikud": {
@@ -1341,7 +1368,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.94,
-   "pace_vs_median": 0.25
+   "pace_vs_median": 0.13
   },
   "s02": {
    "duration_s": 1.68,
@@ -1551,6 +1578,15 @@
    "longest_pause_s": 0,
    "syll_per_s": 6.29,
    "pace_vs_median": 0.19
+  },
+  "p01": {
+   "duration_s": 15.07,
+   "lufs": -27.6,
+   "true_peak": -8.6,
+   "clipped": false,
+   "speech_s": 14.79,
+   "pauses": 3,
+   "longest_pause_s": 0.3
   }
  },
  "bluev3": {
@@ -1563,7 +1599,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.56,
-   "pace_vs_median": 0.0
+   "pace_vs_median": -0.09
   },
   "s02": {
    "duration_s": 2.16,
@@ -1785,7 +1821,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 10.64,
-   "pace_vs_median": 0.91
+   "pace_vs_median": 0.74
   },
   "s02": {
    "duration_s": 0.81,
@@ -2007,7 +2043,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.85,
-   "pace_vs_median": 0.23
+   "pace_vs_median": 0.12
   },
   "s02": {
    "duration_s": 1.29,
@@ -2229,7 +2265,7 @@
    "pauses": 3,
    "longest_pause_s": 0.7,
    "syll_per_s": 1.44,
-   "pace_vs_median": -0.74
+   "pace_vs_median": -0.77
   },
   "s02": {
    "duration_s": 2.27,
@@ -2451,7 +2487,7 @@
    "pauses": 1,
    "longest_pause_s": 0.36,
    "syll_per_s": 4.15,
-   "pace_vs_median": -0.25
+   "pace_vs_median": -0.32
   },
   "s02": {
    "duration_s": 1.88,
@@ -2673,7 +2709,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 9.09,
-   "pace_vs_median": 0.63
+   "pace_vs_median": 0.48
   },
   "s02": {
    "duration_s": 1.36,
@@ -2883,6 +2919,15 @@
    "longest_pause_s": 0,
    "syll_per_s": 6.0,
    "pace_vs_median": 0.13
+  },
+  "p01": {
+   "duration_s": 15.92,
+   "lufs": -16.3,
+   "true_peak": 1.3,
+   "clipped": true,
+   "speech_s": 15.41,
+   "pauses": 5,
+   "longest_pause_s": 0.43
   }
  },
  "voxcpm2": {
@@ -2895,7 +2940,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.25,
-   "pace_vs_median": 0.12
+   "pace_vs_median": 0.02
   },
   "s02": {
    "duration_s": 1.44,
@@ -3117,7 +3162,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.33,
-   "pace_vs_median": 0.14
+   "pace_vs_median": 0.03
   },
   "s02": {
    "duration_s": 2.12,
@@ -3339,7 +3384,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 4.39,
-   "pace_vs_median": -0.21
+   "pace_vs_median": -0.28
   },
   "s02": {
    "duration_s": 1.72,
@@ -3561,7 +3606,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 3.85,
-   "pace_vs_median": -0.31
+   "pace_vs_median": -0.37
   },
   "s02": {
    "duration_s": 2.55,
@@ -3773,228 +3818,6 @@
    "pace_vs_median": -0.25
   }
  },
- "elevenlabs-v3": {
-  "s01": {
-   "duration_s": 1.31,
-   "lufs": -14.3,
-   "true_peak": -1.0,
-   "clipped": false,
-   "speech_s": 1.31,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 7.63,
-   "pace_vs_median": 0.37
-  },
-  "s02": {
-   "duration_s": 1.49,
-   "lufs": -15.3,
-   "true_peak": -1.2,
-   "clipped": false,
-   "speech_s": 1.49,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 6.04,
-   "pace_vs_median": 0.1
-  },
-  "s03": {
-   "duration_s": 1.72,
-   "lufs": -14.6,
-   "true_peak": -1.0,
-   "clipped": false,
-   "speech_s": 1.72,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 6.98,
-   "pace_vs_median": 0.18
-  },
-  "s04": {
-   "duration_s": 2.19,
-   "lufs": -15.9,
-   "true_peak": -1.0,
-   "clipped": false,
-   "speech_s": 2.19,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.57,
-   "pace_vs_median": -0.05
-  },
-  "s05": {
-   "duration_s": 2.59,
-   "lufs": -15.6,
-   "true_peak": -0.4,
-   "clipped": false,
-   "speech_s": 2.59,
-   "pauses": 1,
-   "longest_pause_s": 0.3,
-   "syll_per_s": 5.79,
-   "pace_vs_median": 0.04
-  },
-  "s06": {
-   "duration_s": 2.35,
-   "lufs": -13.2,
-   "true_peak": -0.5,
-   "clipped": false,
-   "speech_s": 2.35,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.96,
-   "pace_vs_median": 0.19
-  },
-  "s07": {
-   "duration_s": 2.27,
-   "lufs": -14.6,
-   "true_peak": -0.8,
-   "clipped": false,
-   "speech_s": 2.27,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.73,
-   "pace_vs_median": 0.17
-  },
-  "s08": {
-   "duration_s": 2.51,
-   "lufs": -15.2,
-   "true_peak": -0.8,
-   "clipped": false,
-   "speech_s": 2.51,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 6.37,
-   "pace_vs_median": 0.18
-  },
-  "s09": {
-   "duration_s": 3.24,
-   "lufs": -16.8,
-   "true_peak": -1.3,
-   "clipped": false,
-   "speech_s": 3.24,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 6.17,
-   "pace_vs_median": 0.12
-  },
-  "s10": {
-   "duration_s": 2.69,
-   "lufs": -15.4,
-   "true_peak": -1.1,
-   "clipped": false,
-   "speech_s": 2.69,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 6.69,
-   "pace_vs_median": 0.02
-  },
-  "s11": {
-   "duration_s": 2.27,
-   "lufs": -15.7,
-   "true_peak": -1.4,
-   "clipped": false,
-   "speech_s": 2.27,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 6.17,
-   "pace_vs_median": 0.07
-  },
-  "s12": {
-   "duration_s": 4.44,
-   "lufs": -15.2,
-   "true_peak": -1.1,
-   "clipped": false,
-   "speech_s": 4.44,
-   "pauses": 1,
-   "longest_pause_s": 0.76,
-   "syll_per_s": 5.41,
-   "pace_vs_median": -0.01
-  },
-  "s13": {
-   "duration_s": 2.04,
-   "lufs": -14.4,
-   "true_peak": -1.4,
-   "clipped": false,
-   "speech_s": 2.04,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 6.86,
-   "pace_vs_median": 0.25
-  },
-  "s14": {
-   "duration_s": 2.69,
-   "lufs": -14.1,
-   "true_peak": -0.5,
-   "clipped": false,
-   "speech_s": 2.69,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 6.32,
-   "pace_vs_median": 0.09
-  },
-  "s15": {
-   "duration_s": 3.0,
-   "lufs": -15.8,
-   "true_peak": -1.7,
-   "clipped": false,
-   "speech_s": 3.0,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.67,
-   "pace_vs_median": 0.09
-  },
-  "s16": {
-   "duration_s": 2.93,
-   "lufs": -14.5,
-   "true_peak": -0.7,
-   "clipped": false,
-   "speech_s": 2.93,
-   "pauses": 1,
-   "longest_pause_s": 0.42,
-   "syll_per_s": 5.46,
-   "pace_vs_median": -0.02
-  },
-  "s17": {
-   "duration_s": 2.77,
-   "lufs": -14.6,
-   "true_peak": -1.7,
-   "clipped": false,
-   "speech_s": 2.77,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 6.5,
-   "pace_vs_median": 0.18
-  },
-  "s18": {
-   "duration_s": 3.63,
-   "lufs": -14.7,
-   "true_peak": -1.5,
-   "clipped": false,
-   "speech_s": 3.63,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 6.61,
-   "pace_vs_median": 0.15
-  },
-  "s19": {
-   "duration_s": 2.59,
-   "lufs": -15.4,
-   "true_peak": -0.5,
-   "clipped": false,
-   "speech_s": 2.59,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.41,
-   "pace_vs_median": 0.06
-  },
-  "s20": {
-   "duration_s": 5.41,
-   "lufs": -15.6,
-   "true_peak": -0.7,
-   "clipped": false,
-   "speech_s": 5.41,
-   "pauses": 1,
-   "longest_pause_s": 0.37,
-   "syll_per_s": 5.36,
-   "pace_vs_median": 0.01
-  }
- },
  "gemini-flash-tts": {
   "s01": {
    "duration_s": 2.6,
@@ -4005,7 +3828,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.1,
-   "pace_vs_median": -0.08
+   "pace_vs_median": -0.17
   },
   "s02": {
    "duration_s": 2.08,
@@ -4215,228 +4038,708 @@
    "longest_pause_s": 0.35,
    "syll_per_s": 4.79,
    "pace_vs_median": -0.1
+  },
+  "p01": {
+   "duration_s": 21.32,
+   "lufs": -16.6,
+   "true_peak": -1.8,
+   "clipped": false,
+   "speech_s": 20.68,
+   "pauses": 3,
+   "longest_pause_s": 0.73
   }
  },
- "google-cloud-tts": {
+ "gemini-flash-tts-nikud": {
   "s01": {
-   "duration_s": 2.24,
-   "lufs": -23.3,
-   "true_peak": -6.6,
+   "duration_s": 2.48,
+   "lufs": -15.3,
+   "true_peak": -2.4,
    "clipped": false,
-   "speech_s": 1.48,
+   "speech_s": 1.91,
    "pauses": 0,
    "longest_pause_s": 0,
-   "syll_per_s": 6.76,
-   "pace_vs_median": 0.22
+   "syll_per_s": 5.24,
+   "pace_vs_median": -0.15
   },
   "s02": {
-   "duration_s": 1.36,
-   "lufs": -19.5,
-   "true_peak": -5.3,
+   "duration_s": 2.08,
+   "lufs": -17.8,
+   "true_peak": -3.5,
    "clipped": false,
-   "speech_s": 1.36,
+   "speech_s": 1.5,
    "pauses": 0,
    "longest_pause_s": 0,
-   "syll_per_s": 6.62,
-   "pace_vs_median": 0.21
+   "syll_per_s": 6.0,
+   "pace_vs_median": 0.09
   },
   "s03": {
-   "duration_s": 2.68,
-   "lufs": -19.6,
-   "true_peak": -4.0,
+   "duration_s": 2.44,
+   "lufs": -17.1,
+   "true_peak": -2.9,
    "clipped": false,
-   "speech_s": 1.99,
+   "speech_s": 1.86,
    "pauses": 0,
    "longest_pause_s": 0,
-   "syll_per_s": 6.03,
-   "pace_vs_median": 0.02
+   "syll_per_s": 6.45,
+   "pace_vs_median": 0.09
   },
   "s04": {
-   "duration_s": 2.8,
-   "lufs": -20.1,
-   "true_peak": -3.9,
+   "duration_s": 2.64,
+   "lufs": -17.3,
+   "true_peak": -2.7,
    "clipped": false,
-   "speech_s": 2.14,
+   "speech_s": 2.05,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.88,
+   "pace_vs_median": 0.01
+  },
+  "s05": {
+   "duration_s": 3.36,
+   "lufs": -14.7,
+   "true_peak": -1.5,
+   "clipped": false,
+   "speech_s": 2.74,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.47,
+   "pace_vs_median": -0.02
+  },
+  "s06": {
+   "duration_s": 4.12,
+   "lufs": -15.9,
+   "true_peak": -1.5,
+   "clipped": false,
+   "speech_s": 3.48,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.02,
+   "pace_vs_median": -0.2
+  },
+  "s07": {
+   "duration_s": 3.32,
+   "lufs": -15.0,
+   "true_peak": -1.6,
+   "clipped": false,
+   "speech_s": 2.69,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.83,
+   "pace_vs_median": -0.02
+  },
+  "s08": {
+   "duration_s": 4.04,
+   "lufs": -17.2,
+   "true_peak": -1.7,
+   "clipped": false,
+   "speech_s": 3.38,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.73,
+   "pace_vs_median": -0.12
+  },
+  "s09": {
+   "duration_s": 5.0,
+   "lufs": -17.2,
+   "true_peak": -1.8,
+   "clipped": false,
+   "speech_s": 4.66,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.29,
+   "pace_vs_median": -0.22
+  },
+  "s10": {
+   "duration_s": 3.92,
+   "lufs": -17.1,
+   "true_peak": -2.5,
+   "clipped": false,
+   "speech_s": 3.26,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.52,
+   "pace_vs_median": -0.16
+  },
+  "s11": {
+   "duration_s": 3.4,
+   "lufs": -16.2,
+   "true_peak": -1.6,
+   "clipped": false,
+   "speech_s": 2.79,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.02,
+   "pace_vs_median": -0.13
+  },
+  "s12": {
+   "duration_s": 5.76,
+   "lufs": -15.8,
+   "true_peak": -1.9,
+   "clipped": false,
+   "speech_s": 5.08,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.72,
+   "pace_vs_median": -0.14
+  },
+  "s13": {
+   "duration_s": 3.64,
+   "lufs": -16.1,
+   "true_peak": -1.6,
+   "clipped": false,
+   "speech_s": 3.06,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.58,
+   "pace_vs_median": -0.17
+  },
+  "s14": {
+   "duration_s": 4.16,
+   "lufs": -15.1,
+   "true_peak": -1.6,
+   "clipped": false,
+   "speech_s": 3.88,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.38,
+   "pace_vs_median": -0.24
+  },
+  "s15": {
+   "duration_s": 4.48,
+   "lufs": -14.7,
+   "true_peak": -1.6,
+   "clipped": false,
+   "speech_s": 3.88,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.38,
+   "pace_vs_median": -0.16
+  },
+  "s16": {
+   "duration_s": 3.64,
+   "lufs": -16.0,
+   "true_peak": -1.7,
+   "clipped": false,
+   "speech_s": 3.04,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.26,
+   "pace_vs_median": -0.06
+  },
+  "s17": {
+   "duration_s": 4.2,
+   "lufs": -15.2,
+   "true_peak": -1.1,
+   "clipped": false,
+   "speech_s": 3.54,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.08,
+   "pace_vs_median": -0.08
+  },
+  "s18": {
+   "duration_s": 4.28,
+   "lufs": -14.7,
+   "true_peak": -1.4,
+   "clipped": false,
+   "speech_s": 3.69,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.5,
+   "pace_vs_median": 0.13
+  },
+  "s19": {
+   "duration_s": 3.4,
+   "lufs": -15.5,
+   "true_peak": -1.5,
+   "clipped": false,
+   "speech_s": 2.83,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.95,
+   "pace_vs_median": -0.03
+  },
+  "s20": {
+   "duration_s": 6.2,
+   "lufs": -16.0,
+   "true_peak": -0.9,
+   "clipped": false,
+   "speech_s": 5.55,
+   "pauses": 1,
+   "longest_pause_s": 0.29,
+   "syll_per_s": 5.23,
+   "pace_vs_median": -0.01
+  },
+  "p01": {
+   "duration_s": 21.32,
+   "lufs": -17.5,
+   "true_peak": -1.1,
+   "clipped": false,
+   "speech_s": 20.69,
+   "pauses": 5,
+   "longest_pause_s": 0.64
+  }
+ },
+ "elevenlabs-v3": {
+  "s01": {
+   "duration_s": 1.31,
+   "lufs": -14.3,
+   "true_peak": -1.0,
+   "clipped": false,
+   "speech_s": 1.31,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 7.63,
+   "pace_vs_median": 0.24
+  },
+  "s02": {
+   "duration_s": 1.49,
+   "lufs": -15.3,
+   "true_peak": -1.2,
+   "clipped": false,
+   "speech_s": 1.49,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.04,
+   "pace_vs_median": 0.1
+  },
+  "s03": {
+   "duration_s": 1.72,
+   "lufs": -14.6,
+   "true_peak": -1.0,
+   "clipped": false,
+   "speech_s": 1.72,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.98,
+   "pace_vs_median": 0.18
+  },
+  "s04": {
+   "duration_s": 2.19,
+   "lufs": -15.9,
+   "true_peak": -1.0,
+   "clipped": false,
+   "speech_s": 2.19,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.57,
+   "pace_vs_median": -0.05
+  },
+  "s05": {
+   "duration_s": 2.59,
+   "lufs": -15.6,
+   "true_peak": -0.4,
+   "clipped": false,
+   "speech_s": 2.59,
+   "pauses": 1,
+   "longest_pause_s": 0.3,
+   "syll_per_s": 5.79,
+   "pace_vs_median": 0.04
+  },
+  "s06": {
+   "duration_s": 2.35,
+   "lufs": -13.2,
+   "true_peak": -0.5,
+   "clipped": false,
+   "speech_s": 2.35,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.96,
+   "pace_vs_median": 0.19
+  },
+  "s07": {
+   "duration_s": 2.27,
+   "lufs": -14.6,
+   "true_peak": -0.8,
+   "clipped": false,
+   "speech_s": 2.27,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.73,
+   "pace_vs_median": 0.17
+  },
+  "s08": {
+   "duration_s": 2.51,
+   "lufs": -15.2,
+   "true_peak": -0.8,
+   "clipped": false,
+   "speech_s": 2.51,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.37,
+   "pace_vs_median": 0.18
+  },
+  "s09": {
+   "duration_s": 3.24,
+   "lufs": -16.8,
+   "true_peak": -1.3,
+   "clipped": false,
+   "speech_s": 3.24,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.17,
+   "pace_vs_median": 0.12
+  },
+  "s10": {
+   "duration_s": 2.69,
+   "lufs": -15.4,
+   "true_peak": -1.1,
+   "clipped": false,
+   "speech_s": 2.69,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.69,
+   "pace_vs_median": 0.02
+  },
+  "s11": {
+   "duration_s": 2.27,
+   "lufs": -15.7,
+   "true_peak": -1.4,
+   "clipped": false,
+   "speech_s": 2.27,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.17,
+   "pace_vs_median": 0.07
+  },
+  "s12": {
+   "duration_s": 4.44,
+   "lufs": -15.2,
+   "true_peak": -1.1,
+   "clipped": false,
+   "speech_s": 4.44,
+   "pauses": 1,
+   "longest_pause_s": 0.76,
+   "syll_per_s": 5.41,
+   "pace_vs_median": -0.01
+  },
+  "s13": {
+   "duration_s": 2.04,
+   "lufs": -14.4,
+   "true_peak": -1.4,
+   "clipped": false,
+   "speech_s": 2.04,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.86,
+   "pace_vs_median": 0.25
+  },
+  "s14": {
+   "duration_s": 2.69,
+   "lufs": -14.1,
+   "true_peak": -0.5,
+   "clipped": false,
+   "speech_s": 2.69,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.32,
+   "pace_vs_median": 0.09
+  },
+  "s15": {
+   "duration_s": 3.0,
+   "lufs": -15.8,
+   "true_peak": -1.7,
+   "clipped": false,
+   "speech_s": 3.0,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.67,
+   "pace_vs_median": 0.09
+  },
+  "s16": {
+   "duration_s": 2.93,
+   "lufs": -14.5,
+   "true_peak": -0.7,
+   "clipped": false,
+   "speech_s": 2.93,
+   "pauses": 1,
+   "longest_pause_s": 0.42,
+   "syll_per_s": 5.46,
+   "pace_vs_median": -0.02
+  },
+  "s17": {
+   "duration_s": 2.77,
+   "lufs": -14.6,
+   "true_peak": -1.7,
+   "clipped": false,
+   "speech_s": 2.77,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.5,
+   "pace_vs_median": 0.18
+  },
+  "s18": {
+   "duration_s": 3.63,
+   "lufs": -14.7,
+   "true_peak": -1.5,
+   "clipped": false,
+   "speech_s": 3.63,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.61,
+   "pace_vs_median": 0.15
+  },
+  "s19": {
+   "duration_s": 2.59,
+   "lufs": -15.4,
+   "true_peak": -0.5,
+   "clipped": false,
+   "speech_s": 2.59,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.41,
+   "pace_vs_median": 0.06
+  },
+  "s20": {
+   "duration_s": 5.41,
+   "lufs": -15.6,
+   "true_peak": -0.7,
+   "clipped": false,
+   "speech_s": 5.41,
+   "pauses": 1,
+   "longest_pause_s": 0.37,
+   "syll_per_s": 5.36,
+   "pace_vs_median": 0.01
+  },
+  "p01": {
+   "duration_s": 20.11,
+   "lufs": -15.5,
+   "true_peak": -0.7,
+   "clipped": false,
+   "speech_s": 20.11,
+   "pauses": 6,
+   "longest_pause_s": 0.85
+  }
+ },
+ "elevenlabs-v3-nikud": {
+  "s01": {
+   "duration_s": 1.49,
+   "lufs": -15.1,
+   "true_peak": -1.8,
+   "clipped": false,
+   "speech_s": 1.49,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.71,
+   "pace_vs_median": 0.09
+  },
+  "s02": {
+   "duration_s": 1.88,
+   "lufs": -14.9,
+   "true_peak": -1.2,
+   "clipped": false,
+   "speech_s": 1.88,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.79,
+   "pace_vs_median": -0.13
+  },
+  "s03": {
+   "duration_s": 2.12,
+   "lufs": -14.1,
+   "true_peak": -1.0,
+   "clipped": false,
+   "speech_s": 2.12,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.66,
+   "pace_vs_median": -0.05
+  },
+  "s04": {
+   "duration_s": 2.69,
+   "lufs": -17.1,
+   "true_peak": -1.6,
+   "clipped": false,
+   "speech_s": 2.69,
+   "pauses": 1,
+   "longest_pause_s": 0.33,
+   "syll_per_s": 3.72,
+   "pace_vs_median": -0.23
+  },
+  "s05": {
+   "duration_s": 2.69,
+   "lufs": -15.7,
+   "true_peak": -0.8,
+   "clipped": false,
+   "speech_s": 2.69,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.58,
+   "pace_vs_median": 0.0
+  },
+  "s06": {
+   "duration_s": 3.0,
+   "lufs": -14.1,
+   "true_peak": -0.4,
+   "clipped": false,
+   "speech_s": 3.0,
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 4.67,
-   "pace_vs_median": -0.03
+   "pace_vs_median": -0.07
   },
-  "s05": {
-   "duration_s": 4.44,
-   "lufs": -21.5,
-   "true_peak": -5.5,
+  "s07": {
+   "duration_s": 2.43,
+   "lufs": -13.8,
+   "true_peak": -0.8,
    "clipped": false,
-   "speech_s": 3.98,
-   "pauses": 1,
-   "longest_pause_s": 0.97,
-   "syll_per_s": 3.77,
-   "pace_vs_median": -0.32
+   "speech_s": 2.43,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.35,
+   "pace_vs_median": 0.09
   },
-  "s06": {
-   "duration_s": 2.96,
-   "lufs": -17.0,
-   "true_peak": 0.3,
-   "clipped": true,
+  "s08": {
+   "duration_s": 2.69,
+   "lufs": -15.5,
+   "true_peak": -0.4,
+   "clipped": false,
+   "speech_s": 2.69,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.95,
+   "pace_vs_median": 0.1
+  },
+  "s09": {
+   "duration_s": 3.63,
+   "lufs": -16.9,
+   "true_peak": -1.2,
+   "clipped": false,
+   "speech_s": 3.63,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.51,
+   "pace_vs_median": 0.0
+  },
+  "s10": {
+   "duration_s": 2.85,
+   "lufs": -14.8,
+   "true_peak": -0.7,
+   "clipped": false,
+   "speech_s": 2.85,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.32,
+   "pace_vs_median": -0.04
+  },
+  "s11": {
+   "duration_s": 2.51,
+   "lufs": -15.8,
+   "true_peak": -1.2,
+   "clipped": false,
    "speech_s": 2.51,
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.58,
-   "pace_vs_median": 0.12
-  },
-  "s07": {
-   "duration_s": 2.92,
-   "lufs": -19.6,
-   "true_peak": -3.7,
-   "clipped": false,
-   "speech_s": 2.92,
-   "pauses": 1,
-   "longest_pause_s": 0.39,
-   "syll_per_s": 4.45,
-   "pace_vs_median": -0.09
-  },
-  "s08": {
-   "duration_s": 2.76,
-   "lufs": -17.5,
-   "true_peak": -1.4,
-   "clipped": false,
-   "speech_s": 2.76,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.8,
-   "pace_vs_median": 0.08
-  },
-  "s09": {
-   "duration_s": 3.68,
-   "lufs": -21.2,
-   "true_peak": -3.0,
-   "clipped": false,
-   "speech_s": 3.42,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.85,
-   "pace_vs_median": 0.06
-  },
-  "s10": {
-   "duration_s": 3.32,
-   "lufs": -20.1,
-   "true_peak": -3.6,
-   "clipped": false,
-   "speech_s": 2.63,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 6.84,
-   "pace_vs_median": 0.04
-  },
-  "s11": {
-   "duration_s": 2.44,
-   "lufs": -20.5,
-   "true_peak": -3.8,
-   "clipped": false,
-   "speech_s": 2.44,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.74,
-   "pace_vs_median": 0.0
+   "pace_vs_median": -0.03
   },
   "s12": {
-   "duration_s": 5.16,
-   "lufs": -21.0,
-   "true_peak": -4.1,
+   "duration_s": 4.99,
+   "lufs": -15.9,
+   "true_peak": -0.4,
    "clipped": false,
-   "speech_s": 4.86,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.94,
-   "pace_vs_median": -0.1
+   "speech_s": 4.99,
+   "pauses": 1,
+   "longest_pause_s": 0.53,
+   "syll_per_s": 4.81,
+   "pace_vs_median": -0.12
   },
   "s13": {
-   "duration_s": 3.68,
-   "lufs": -20.1,
-   "true_peak": -2.4,
+   "duration_s": 2.59,
+   "lufs": -14.8,
+   "true_peak": -1.1,
    "clipped": false,
-   "speech_s": 3.02,
-   "pauses": 1,
-   "longest_pause_s": 0.25,
-   "syll_per_s": 4.64,
-   "pace_vs_median": -0.15
-  },
-  "s14": {
-   "duration_s": 3.64,
-   "lufs": -19.8,
-   "true_peak": -2.5,
-   "clipped": false,
-   "speech_s": 2.96,
+   "speech_s": 2.59,
    "pauses": 0,
    "longest_pause_s": 0,
-   "syll_per_s": 5.74,
+   "syll_per_s": 5.41,
    "pace_vs_median": -0.01
   },
-  "s15": {
-   "duration_s": 3.52,
-   "lufs": -20.6,
-   "true_peak": -3.9,
+  "s14": {
+   "duration_s": 3.79,
+   "lufs": -15.8,
+   "true_peak": -0.7,
    "clipped": false,
-   "speech_s": 3.12,
+   "speech_s": 3.79,
    "pauses": 0,
    "longest_pause_s": 0,
-   "syll_per_s": 5.45,
-   "pace_vs_median": 0.05
+   "syll_per_s": 4.49,
+   "pace_vs_median": -0.22
+  },
+  "s15": {
+   "duration_s": 3.32,
+   "lufs": -15.0,
+   "true_peak": -0.4,
+   "clipped": false,
+   "speech_s": 3.32,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.12,
+   "pace_vs_median": -0.02
   },
   "s16": {
-   "duration_s": 2.8,
-   "lufs": -20.3,
-   "true_peak": -4.8,
+   "duration_s": 3.55,
+   "lufs": -14.9,
+   "true_peak": -0.8,
    "clipped": false,
-   "speech_s": 2.8,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.71,
-   "pace_vs_median": 0.03
+   "speech_s": 3.55,
+   "pauses": 1,
+   "longest_pause_s": 0.57,
+   "syll_per_s": 4.51,
+   "pace_vs_median": -0.19
   },
   "s17": {
-   "duration_s": 3.28,
-   "lufs": -20.0,
-   "true_peak": -2.0,
+   "duration_s": 4.13,
+   "lufs": -14.9,
+   "true_peak": -1.3,
    "clipped": false,
-   "speech_s": 3.28,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.49,
-   "pace_vs_median": -0.0
+   "speech_s": 4.13,
+   "pauses": 1,
+   "longest_pause_s": 0.95,
+   "syll_per_s": 4.36,
+   "pace_vs_median": -0.21
   },
   "s18": {
-   "duration_s": 4.48,
-   "lufs": -19.3,
-   "true_peak": -1.8,
+   "duration_s": 7.0,
+   "lufs": -15.3,
+   "true_peak": -0.7,
    "clipped": false,
-   "speech_s": 4.04,
+   "speech_s": 4.69,
    "pauses": 1,
-   "longest_pause_s": 0.32,
-   "syll_per_s": 5.94,
-   "pace_vs_median": 0.03
+   "longest_pause_s": 0.39,
+   "syll_per_s": 5.12,
+   "pace_vs_median": -0.11
   },
   "s19": {
-   "duration_s": 2.68,
-   "lufs": -21.5,
-   "true_peak": -1.9,
+   "duration_s": 3.16,
+   "lufs": -16.1,
+   "true_peak": -0.4,
    "clipped": false,
-   "speech_s": 2.68,
+   "speech_s": 3.16,
    "pauses": 0,
    "longest_pause_s": 0,
-   "syll_per_s": 5.22,
-   "pace_vs_median": 0.02
+   "syll_per_s": 4.43,
+   "pace_vs_median": -0.13
   },
   "s20": {
-   "duration_s": 4.96,
-   "lufs": -19.6,
-   "true_peak": -3.3,
+   "duration_s": 6.43,
+   "lufs": -14.8,
+   "true_peak": -0.4,
    "clipped": false,
-   "speech_s": 4.24,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 6.84,
-   "pace_vs_median": 0.29
+   "speech_s": 6.43,
+   "pauses": 3,
+   "longest_pause_s": 0.54,
+   "syll_per_s": 4.51,
+   "pace_vs_median": -0.15
+  },
+  "p01": {
+   "duration_s": 21.79,
+   "lufs": -15.1,
+   "true_peak": -0.5,
+   "clipped": false,
+   "speech_s": 21.79,
+   "pauses": 7,
+   "longest_pause_s": 0.97
   }
  },
  "openai-tts": {
@@ -4449,7 +4752,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.0,
-   "pace_vs_median": -0.1
+   "pace_vs_median": -0.18
   },
   "s02": {
    "duration_s": 2.85,
@@ -4661,672 +4964,6 @@
    "pace_vs_median": -0.36
   }
  },
- "elevenlabs-v3-nikud": {
-  "s01": {
-   "duration_s": 1.49,
-   "lufs": -15.1,
-   "true_peak": -1.8,
-   "clipped": false,
-   "speech_s": 1.49,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 6.71,
-   "pace_vs_median": 0.21
-  },
-  "s02": {
-   "duration_s": 1.88,
-   "lufs": -14.9,
-   "true_peak": -1.2,
-   "clipped": false,
-   "speech_s": 1.88,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.79,
-   "pace_vs_median": -0.13
-  },
-  "s03": {
-   "duration_s": 2.12,
-   "lufs": -14.1,
-   "true_peak": -1.0,
-   "clipped": false,
-   "speech_s": 2.12,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.66,
-   "pace_vs_median": -0.05
-  },
-  "s04": {
-   "duration_s": 2.69,
-   "lufs": -17.1,
-   "true_peak": -1.6,
-   "clipped": false,
-   "speech_s": 2.69,
-   "pauses": 1,
-   "longest_pause_s": 0.33,
-   "syll_per_s": 3.72,
-   "pace_vs_median": -0.23
-  },
-  "s05": {
-   "duration_s": 2.69,
-   "lufs": -15.7,
-   "true_peak": -0.8,
-   "clipped": false,
-   "speech_s": 2.69,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.58,
-   "pace_vs_median": 0.0
-  },
-  "s06": {
-   "duration_s": 3.0,
-   "lufs": -14.1,
-   "true_peak": -0.4,
-   "clipped": false,
-   "speech_s": 3.0,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.67,
-   "pace_vs_median": -0.07
-  },
-  "s07": {
-   "duration_s": 2.43,
-   "lufs": -13.8,
-   "true_peak": -0.8,
-   "clipped": false,
-   "speech_s": 2.43,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.35,
-   "pace_vs_median": 0.09
-  },
-  "s08": {
-   "duration_s": 2.69,
-   "lufs": -15.5,
-   "true_peak": -0.4,
-   "clipped": false,
-   "speech_s": 2.69,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.95,
-   "pace_vs_median": 0.1
-  },
-  "s09": {
-   "duration_s": 3.63,
-   "lufs": -16.9,
-   "true_peak": -1.2,
-   "clipped": false,
-   "speech_s": 3.63,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.51,
-   "pace_vs_median": 0.0
-  },
-  "s10": {
-   "duration_s": 2.85,
-   "lufs": -14.8,
-   "true_peak": -0.7,
-   "clipped": false,
-   "speech_s": 2.85,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 6.32,
-   "pace_vs_median": -0.04
-  },
-  "s11": {
-   "duration_s": 2.51,
-   "lufs": -15.8,
-   "true_peak": -1.2,
-   "clipped": false,
-   "speech_s": 2.51,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.58,
-   "pace_vs_median": -0.03
-  },
-  "s12": {
-   "duration_s": 4.99,
-   "lufs": -15.9,
-   "true_peak": -0.4,
-   "clipped": false,
-   "speech_s": 4.99,
-   "pauses": 1,
-   "longest_pause_s": 0.53,
-   "syll_per_s": 4.81,
-   "pace_vs_median": -0.12
-  },
-  "s13": {
-   "duration_s": 2.59,
-   "lufs": -14.8,
-   "true_peak": -1.1,
-   "clipped": false,
-   "speech_s": 2.59,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.41,
-   "pace_vs_median": -0.01
-  },
-  "s14": {
-   "duration_s": 3.79,
-   "lufs": -15.8,
-   "true_peak": -0.7,
-   "clipped": false,
-   "speech_s": 3.79,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.49,
-   "pace_vs_median": -0.22
-  },
-  "s15": {
-   "duration_s": 3.32,
-   "lufs": -15.0,
-   "true_peak": -0.4,
-   "clipped": false,
-   "speech_s": 3.32,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.12,
-   "pace_vs_median": -0.02
-  },
-  "s16": {
-   "duration_s": 3.55,
-   "lufs": -14.9,
-   "true_peak": -0.8,
-   "clipped": false,
-   "speech_s": 3.55,
-   "pauses": 1,
-   "longest_pause_s": 0.57,
-   "syll_per_s": 4.51,
-   "pace_vs_median": -0.19
-  },
-  "s17": {
-   "duration_s": 4.13,
-   "lufs": -14.9,
-   "true_peak": -1.3,
-   "clipped": false,
-   "speech_s": 4.13,
-   "pauses": 1,
-   "longest_pause_s": 0.95,
-   "syll_per_s": 4.36,
-   "pace_vs_median": -0.21
-  },
-  "s18": {
-   "duration_s": 7.0,
-   "lufs": -15.3,
-   "true_peak": -0.7,
-   "clipped": false,
-   "speech_s": 4.69,
-   "pauses": 1,
-   "longest_pause_s": 0.39,
-   "syll_per_s": 5.12,
-   "pace_vs_median": -0.11
-  },
-  "s19": {
-   "duration_s": 3.16,
-   "lufs": -16.1,
-   "true_peak": -0.4,
-   "clipped": false,
-   "speech_s": 3.16,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.43,
-   "pace_vs_median": -0.13
-  },
-  "s20": {
-   "duration_s": 6.43,
-   "lufs": -14.8,
-   "true_peak": -0.4,
-   "clipped": false,
-   "speech_s": 6.43,
-   "pauses": 3,
-   "longest_pause_s": 0.54,
-   "syll_per_s": 4.51,
-   "pace_vs_median": -0.15
-  }
- },
- "gemini-flash-tts-nikud": {
-  "s01": {
-   "duration_s": 2.48,
-   "lufs": -15.3,
-   "true_peak": -2.4,
-   "clipped": false,
-   "speech_s": 1.91,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.24,
-   "pace_vs_median": -0.06
-  },
-  "s02": {
-   "duration_s": 2.08,
-   "lufs": -17.8,
-   "true_peak": -3.5,
-   "clipped": false,
-   "speech_s": 1.5,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 6.0,
-   "pace_vs_median": 0.09
-  },
-  "s03": {
-   "duration_s": 2.44,
-   "lufs": -17.1,
-   "true_peak": -2.9,
-   "clipped": false,
-   "speech_s": 1.86,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 6.45,
-   "pace_vs_median": 0.09
-  },
-  "s04": {
-   "duration_s": 2.64,
-   "lufs": -17.3,
-   "true_peak": -2.7,
-   "clipped": false,
-   "speech_s": 2.05,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.88,
-   "pace_vs_median": 0.01
-  },
-  "s05": {
-   "duration_s": 3.36,
-   "lufs": -14.7,
-   "true_peak": -1.5,
-   "clipped": false,
-   "speech_s": 2.74,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.47,
-   "pace_vs_median": -0.02
-  },
-  "s06": {
-   "duration_s": 4.12,
-   "lufs": -15.9,
-   "true_peak": -1.5,
-   "clipped": false,
-   "speech_s": 3.48,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.02,
-   "pace_vs_median": -0.2
-  },
-  "s07": {
-   "duration_s": 3.32,
-   "lufs": -15.0,
-   "true_peak": -1.6,
-   "clipped": false,
-   "speech_s": 2.69,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.83,
-   "pace_vs_median": -0.02
-  },
-  "s08": {
-   "duration_s": 4.04,
-   "lufs": -17.2,
-   "true_peak": -1.7,
-   "clipped": false,
-   "speech_s": 3.38,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.73,
-   "pace_vs_median": -0.12
-  },
-  "s09": {
-   "duration_s": 5.0,
-   "lufs": -17.2,
-   "true_peak": -1.8,
-   "clipped": false,
-   "speech_s": 4.66,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.29,
-   "pace_vs_median": -0.22
-  },
-  "s10": {
-   "duration_s": 3.92,
-   "lufs": -17.1,
-   "true_peak": -2.5,
-   "clipped": false,
-   "speech_s": 3.26,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.52,
-   "pace_vs_median": -0.16
-  },
-  "s11": {
-   "duration_s": 3.4,
-   "lufs": -16.2,
-   "true_peak": -1.6,
-   "clipped": false,
-   "speech_s": 2.79,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.02,
-   "pace_vs_median": -0.13
-  },
-  "s12": {
-   "duration_s": 5.76,
-   "lufs": -15.8,
-   "true_peak": -1.9,
-   "clipped": false,
-   "speech_s": 5.08,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.72,
-   "pace_vs_median": -0.14
-  },
-  "s13": {
-   "duration_s": 3.64,
-   "lufs": -16.1,
-   "true_peak": -1.6,
-   "clipped": false,
-   "speech_s": 3.06,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.58,
-   "pace_vs_median": -0.17
-  },
-  "s14": {
-   "duration_s": 4.16,
-   "lufs": -15.1,
-   "true_peak": -1.6,
-   "clipped": false,
-   "speech_s": 3.88,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.38,
-   "pace_vs_median": -0.24
-  },
-  "s15": {
-   "duration_s": 4.48,
-   "lufs": -14.7,
-   "true_peak": -1.6,
-   "clipped": false,
-   "speech_s": 3.88,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.38,
-   "pace_vs_median": -0.16
-  },
-  "s16": {
-   "duration_s": 3.64,
-   "lufs": -16.0,
-   "true_peak": -1.7,
-   "clipped": false,
-   "speech_s": 3.04,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.26,
-   "pace_vs_median": -0.06
-  },
-  "s17": {
-   "duration_s": 4.2,
-   "lufs": -15.2,
-   "true_peak": -1.1,
-   "clipped": false,
-   "speech_s": 3.54,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.08,
-   "pace_vs_median": -0.08
-  },
-  "s18": {
-   "duration_s": 4.28,
-   "lufs": -14.7,
-   "true_peak": -1.4,
-   "clipped": false,
-   "speech_s": 3.69,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 6.5,
-   "pace_vs_median": 0.13
-  },
-  "s19": {
-   "duration_s": 3.4,
-   "lufs": -15.5,
-   "true_peak": -1.5,
-   "clipped": false,
-   "speech_s": 2.83,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.95,
-   "pace_vs_median": -0.03
-  },
-  "s20": {
-   "duration_s": 6.2,
-   "lufs": -16.0,
-   "true_peak": -0.9,
-   "clipped": false,
-   "speech_s": 5.55,
-   "pauses": 1,
-   "longest_pause_s": 0.29,
-   "syll_per_s": 5.23,
-   "pace_vs_median": -0.01
-  }
- },
- "google-cloud-tts-nikud": {
-  "s01": {
-   "duration_s": 2.08,
-   "lufs": -20.1,
-   "true_peak": -2.9,
-   "clipped": false,
-   "speech_s": 2.08,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.81,
-   "pace_vs_median": -0.13
-  },
-  "s02": {
-   "duration_s": 2.12,
-   "lufs": -19.7,
-   "true_peak": -4.5,
-   "clipped": false,
-   "speech_s": 2.12,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.25,
-   "pace_vs_median": -0.23
-  },
-  "s03": {
-   "duration_s": 2.4,
-   "lufs": -20.9,
-   "true_peak": -5.4,
-   "clipped": false,
-   "speech_s": 2.13,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.63,
-   "pace_vs_median": -0.05
-  },
-  "s04": {
-   "duration_s": 2.32,
-   "lufs": -21.7,
-   "true_peak": -6.5,
-   "clipped": false,
-   "speech_s": 2.07,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.83,
-   "pace_vs_median": 0.0
-  },
-  "s05": {
-   "duration_s": 2.84,
-   "lufs": -21.7,
-   "true_peak": -5.0,
-   "clipped": false,
-   "speech_s": 2.58,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.81,
-   "pace_vs_median": 0.04
-  },
-  "s06": {
-   "duration_s": 3.16,
-   "lufs": -20.3,
-   "true_peak": -2.6,
-   "clipped": false,
-   "speech_s": 2.89,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.84,
-   "pace_vs_median": -0.03
-  },
-  "s07": {
-   "duration_s": 2.68,
-   "lufs": -21.8,
-   "true_peak": -6.0,
-   "clipped": false,
-   "speech_s": 2.68,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.85,
-   "pace_vs_median": -0.01
-  },
-  "s08": {
-   "duration_s": 3.28,
-   "lufs": -20.1,
-   "true_peak": -2.4,
-   "clipped": false,
-   "speech_s": 3.28,
-   "pauses": 1,
-   "longest_pause_s": 0.26,
-   "syll_per_s": 4.88,
-   "pace_vs_median": -0.09
-  },
-  "s09": {
-   "duration_s": 4.04,
-   "lufs": -22.0,
-   "true_peak": -5.7,
-   "clipped": false,
-   "speech_s": 3.78,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.29,
-   "pace_vs_median": -0.04
-  },
-  "s10": {
-   "duration_s": 3.52,
-   "lufs": -22.0,
-   "true_peak": -4.5,
-   "clipped": false,
-   "speech_s": 3.52,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.11,
-   "pace_vs_median": -0.22
-  },
-  "s11": {
-   "duration_s": 2.56,
-   "lufs": -20.4,
-   "true_peak": -3.6,
-   "clipped": false,
-   "speech_s": 2.56,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.47,
-   "pace_vs_median": -0.05
-  },
-  "s12": {
-   "duration_s": 4.84,
-   "lufs": -21.4,
-   "true_peak": -2.5,
-   "clipped": false,
-   "speech_s": 4.55,
-   "pauses": 1,
-   "longest_pause_s": 0.26,
-   "syll_per_s": 5.27,
-   "pace_vs_median": -0.04
-  },
-  "s13": {
-   "duration_s": 2.8,
-   "lufs": -21.1,
-   "true_peak": -3.7,
-   "clipped": false,
-   "speech_s": 2.5,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.6,
-   "pace_vs_median": 0.02
-  },
-  "s14": {
-   "duration_s": 3.2,
-   "lufs": -19.7,
-   "true_peak": -2.1,
-   "clipped": false,
-   "speech_s": 3.2,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.31,
-   "pace_vs_median": -0.08
-  },
-  "s15": {
-   "duration_s": 4.0,
-   "lufs": -21.1,
-   "true_peak": -3.8,
-   "clipped": false,
-   "speech_s": 4.0,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 4.25,
-   "pace_vs_median": -0.18
-  },
-  "s16": {
-   "duration_s": 3.52,
-   "lufs": -20.6,
-   "true_peak": -2.6,
-   "clipped": false,
-   "speech_s": 3.25,
-   "pauses": 1,
-   "longest_pause_s": 0.27,
-   "syll_per_s": 4.92,
-   "pace_vs_median": -0.12
-  },
-  "s17": {
-   "duration_s": 3.52,
-   "lufs": -20.8,
-   "true_peak": -5.5,
-   "clipped": false,
-   "speech_s": 3.52,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.11,
-   "pace_vs_median": -0.07
-  },
-  "s18": {
-   "duration_s": 4.48,
-   "lufs": -20.6,
-   "true_peak": -3.7,
-   "clipped": false,
-   "speech_s": 4.2,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.71,
-   "pace_vs_median": -0.01
-  },
-  "s19": {
-   "duration_s": 3.04,
-   "lufs": -21.8,
-   "true_peak": -3.7,
-   "clipped": false,
-   "speech_s": 2.74,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 5.11,
-   "pace_vs_median": 0.0
-  },
-  "s20": {
-   "duration_s": 5.04,
-   "lufs": -21.4,
-   "true_peak": -5.2,
-   "clipped": false,
-   "speech_s": 4.75,
-   "pauses": 0,
-   "longest_pause_s": 0,
-   "syll_per_s": 6.11,
-   "pace_vs_median": 0.15
-  }
- },
  "openai-tts-nikud": {
   "s01": {
    "duration_s": 3.1,
@@ -5337,7 +4974,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 4.26,
-   "pace_vs_median": -0.23
+   "pace_vs_median": -0.31
   },
   "s02": {
    "duration_s": 3.75,
@@ -5547,6 +5184,676 @@
    "longest_pause_s": 0.63,
    "syll_per_s": 2.72,
    "pace_vs_median": -0.49
+  }
+ },
+ "google-cloud-tts": {
+  "s01": {
+   "duration_s": 2.24,
+   "lufs": -23.3,
+   "true_peak": -6.6,
+   "clipped": false,
+   "speech_s": 1.48,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.76,
+   "pace_vs_median": 0.1
+  },
+  "s02": {
+   "duration_s": 1.36,
+   "lufs": -19.5,
+   "true_peak": -5.3,
+   "clipped": false,
+   "speech_s": 1.36,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.62,
+   "pace_vs_median": 0.21
+  },
+  "s03": {
+   "duration_s": 2.68,
+   "lufs": -19.6,
+   "true_peak": -4.0,
+   "clipped": false,
+   "speech_s": 1.99,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.03,
+   "pace_vs_median": 0.02
+  },
+  "s04": {
+   "duration_s": 2.8,
+   "lufs": -20.1,
+   "true_peak": -3.9,
+   "clipped": false,
+   "speech_s": 2.14,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.67,
+   "pace_vs_median": -0.03
+  },
+  "s05": {
+   "duration_s": 4.44,
+   "lufs": -21.5,
+   "true_peak": -5.5,
+   "clipped": false,
+   "speech_s": 3.98,
+   "pauses": 1,
+   "longest_pause_s": 0.97,
+   "syll_per_s": 3.77,
+   "pace_vs_median": -0.32
+  },
+  "s06": {
+   "duration_s": 2.96,
+   "lufs": -17.0,
+   "true_peak": 0.3,
+   "clipped": true,
+   "speech_s": 2.51,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.58,
+   "pace_vs_median": 0.12
+  },
+  "s07": {
+   "duration_s": 2.92,
+   "lufs": -19.6,
+   "true_peak": -3.7,
+   "clipped": false,
+   "speech_s": 2.92,
+   "pauses": 1,
+   "longest_pause_s": 0.39,
+   "syll_per_s": 4.45,
+   "pace_vs_median": -0.09
+  },
+  "s08": {
+   "duration_s": 2.76,
+   "lufs": -17.5,
+   "true_peak": -1.4,
+   "clipped": false,
+   "speech_s": 2.76,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.8,
+   "pace_vs_median": 0.08
+  },
+  "s09": {
+   "duration_s": 3.68,
+   "lufs": -21.2,
+   "true_peak": -3.0,
+   "clipped": false,
+   "speech_s": 3.42,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.85,
+   "pace_vs_median": 0.06
+  },
+  "s10": {
+   "duration_s": 3.32,
+   "lufs": -20.1,
+   "true_peak": -3.6,
+   "clipped": false,
+   "speech_s": 2.63,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.84,
+   "pace_vs_median": 0.04
+  },
+  "s11": {
+   "duration_s": 2.44,
+   "lufs": -20.5,
+   "true_peak": -3.8,
+   "clipped": false,
+   "speech_s": 2.44,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.74,
+   "pace_vs_median": 0.0
+  },
+  "s12": {
+   "duration_s": 5.16,
+   "lufs": -21.0,
+   "true_peak": -4.1,
+   "clipped": false,
+   "speech_s": 4.86,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.94,
+   "pace_vs_median": -0.1
+  },
+  "s13": {
+   "duration_s": 3.68,
+   "lufs": -20.1,
+   "true_peak": -2.4,
+   "clipped": false,
+   "speech_s": 3.02,
+   "pauses": 1,
+   "longest_pause_s": 0.25,
+   "syll_per_s": 4.64,
+   "pace_vs_median": -0.15
+  },
+  "s14": {
+   "duration_s": 3.64,
+   "lufs": -19.8,
+   "true_peak": -2.5,
+   "clipped": false,
+   "speech_s": 2.96,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.74,
+   "pace_vs_median": -0.01
+  },
+  "s15": {
+   "duration_s": 3.52,
+   "lufs": -20.6,
+   "true_peak": -3.9,
+   "clipped": false,
+   "speech_s": 3.12,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.45,
+   "pace_vs_median": 0.05
+  },
+  "s16": {
+   "duration_s": 2.8,
+   "lufs": -20.3,
+   "true_peak": -4.8,
+   "clipped": false,
+   "speech_s": 2.8,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.71,
+   "pace_vs_median": 0.03
+  },
+  "s17": {
+   "duration_s": 3.28,
+   "lufs": -20.0,
+   "true_peak": -2.0,
+   "clipped": false,
+   "speech_s": 3.28,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.49,
+   "pace_vs_median": -0.0
+  },
+  "s18": {
+   "duration_s": 4.48,
+   "lufs": -19.3,
+   "true_peak": -1.8,
+   "clipped": false,
+   "speech_s": 4.04,
+   "pauses": 1,
+   "longest_pause_s": 0.32,
+   "syll_per_s": 5.94,
+   "pace_vs_median": 0.03
+  },
+  "s19": {
+   "duration_s": 2.68,
+   "lufs": -21.5,
+   "true_peak": -1.9,
+   "clipped": false,
+   "speech_s": 2.68,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.22,
+   "pace_vs_median": 0.02
+  },
+  "s20": {
+   "duration_s": 4.96,
+   "lufs": -19.6,
+   "true_peak": -3.3,
+   "clipped": false,
+   "speech_s": 4.24,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.84,
+   "pace_vs_median": 0.29
+  },
+  "p01": {
+   "duration_s": 20.36,
+   "lufs": -20.8,
+   "true_peak": -1.4,
+   "clipped": false,
+   "speech_s": 19.68,
+   "pauses": 3,
+   "longest_pause_s": 1.09
+  }
+ },
+ "google-cloud-tts-nikud": {
+  "s01": {
+   "duration_s": 2.08,
+   "lufs": -20.1,
+   "true_peak": -2.9,
+   "clipped": false,
+   "speech_s": 2.08,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.81,
+   "pace_vs_median": -0.22
+  },
+  "s02": {
+   "duration_s": 2.12,
+   "lufs": -19.7,
+   "true_peak": -4.5,
+   "clipped": false,
+   "speech_s": 2.12,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.25,
+   "pace_vs_median": -0.23
+  },
+  "s03": {
+   "duration_s": 2.4,
+   "lufs": -20.9,
+   "true_peak": -5.4,
+   "clipped": false,
+   "speech_s": 2.13,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.63,
+   "pace_vs_median": -0.05
+  },
+  "s04": {
+   "duration_s": 2.32,
+   "lufs": -21.7,
+   "true_peak": -6.5,
+   "clipped": false,
+   "speech_s": 2.07,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.83,
+   "pace_vs_median": 0.0
+  },
+  "s05": {
+   "duration_s": 2.84,
+   "lufs": -21.7,
+   "true_peak": -5.0,
+   "clipped": false,
+   "speech_s": 2.58,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.81,
+   "pace_vs_median": 0.04
+  },
+  "s06": {
+   "duration_s": 3.16,
+   "lufs": -20.3,
+   "true_peak": -2.6,
+   "clipped": false,
+   "speech_s": 2.89,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.84,
+   "pace_vs_median": -0.03
+  },
+  "s07": {
+   "duration_s": 2.68,
+   "lufs": -21.8,
+   "true_peak": -6.0,
+   "clipped": false,
+   "speech_s": 2.68,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.85,
+   "pace_vs_median": -0.01
+  },
+  "s08": {
+   "duration_s": 3.28,
+   "lufs": -20.1,
+   "true_peak": -2.4,
+   "clipped": false,
+   "speech_s": 3.28,
+   "pauses": 1,
+   "longest_pause_s": 0.26,
+   "syll_per_s": 4.88,
+   "pace_vs_median": -0.09
+  },
+  "s09": {
+   "duration_s": 4.04,
+   "lufs": -22.0,
+   "true_peak": -5.7,
+   "clipped": false,
+   "speech_s": 3.78,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.29,
+   "pace_vs_median": -0.04
+  },
+  "s10": {
+   "duration_s": 3.52,
+   "lufs": -22.0,
+   "true_peak": -4.5,
+   "clipped": false,
+   "speech_s": 3.52,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.11,
+   "pace_vs_median": -0.22
+  },
+  "s11": {
+   "duration_s": 2.56,
+   "lufs": -20.4,
+   "true_peak": -3.6,
+   "clipped": false,
+   "speech_s": 2.56,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.47,
+   "pace_vs_median": -0.05
+  },
+  "s12": {
+   "duration_s": 4.84,
+   "lufs": -21.4,
+   "true_peak": -2.5,
+   "clipped": false,
+   "speech_s": 4.55,
+   "pauses": 1,
+   "longest_pause_s": 0.26,
+   "syll_per_s": 5.27,
+   "pace_vs_median": -0.04
+  },
+  "s13": {
+   "duration_s": 2.8,
+   "lufs": -21.1,
+   "true_peak": -3.7,
+   "clipped": false,
+   "speech_s": 2.5,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.6,
+   "pace_vs_median": 0.02
+  },
+  "s14": {
+   "duration_s": 3.2,
+   "lufs": -19.7,
+   "true_peak": -2.1,
+   "clipped": false,
+   "speech_s": 3.2,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.31,
+   "pace_vs_median": -0.08
+  },
+  "s15": {
+   "duration_s": 4.0,
+   "lufs": -21.1,
+   "true_peak": -3.8,
+   "clipped": false,
+   "speech_s": 4.0,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.25,
+   "pace_vs_median": -0.18
+  },
+  "s16": {
+   "duration_s": 3.52,
+   "lufs": -20.6,
+   "true_peak": -2.6,
+   "clipped": false,
+   "speech_s": 3.25,
+   "pauses": 1,
+   "longest_pause_s": 0.27,
+   "syll_per_s": 4.92,
+   "pace_vs_median": -0.12
+  },
+  "s17": {
+   "duration_s": 3.52,
+   "lufs": -20.8,
+   "true_peak": -5.5,
+   "clipped": false,
+   "speech_s": 3.52,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.11,
+   "pace_vs_median": -0.07
+  },
+  "s18": {
+   "duration_s": 4.48,
+   "lufs": -20.6,
+   "true_peak": -3.7,
+   "clipped": false,
+   "speech_s": 4.2,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.71,
+   "pace_vs_median": -0.01
+  },
+  "s19": {
+   "duration_s": 3.04,
+   "lufs": -21.8,
+   "true_peak": -3.7,
+   "clipped": false,
+   "speech_s": 2.74,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.11,
+   "pace_vs_median": 0.0
+  },
+  "s20": {
+   "duration_s": 5.04,
+   "lufs": -21.4,
+   "true_peak": -5.2,
+   "clipped": false,
+   "speech_s": 4.75,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.11,
+   "pace_vs_median": 0.15
+  },
+  "p01": {
+   "duration_s": 19.96,
+   "lufs": -21.5,
+   "true_peak": -0.2,
+   "clipped": false,
+   "speech_s": 19.96,
+   "pauses": 3,
+   "longest_pause_s": 0.45
+  }
+ },
+ "elevenlabs-v4": {
+  "s01": {
+   "duration_s": 1.72,
+   "lufs": -22.6,
+   "true_peak": -6.7,
+   "clipped": false,
+   "speech_s": 1.72,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.81,
+   "pace_vs_median": -0.05
+  }
+ },
+ "gemini-2.5-flash-tts": {
+  "s01": {
+   "duration_s": 1.85,
+   "lufs": -14.5,
+   "true_peak": -1.8,
+   "clipped": false,
+   "speech_s": 1.31,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 7.63,
+   "pace_vs_median": 0.24
+  }
+ },
+ "gemini-2.5-pro-tts": {
+  "s01": {
+   "duration_s": 2.09,
+   "lufs": -20.9,
+   "true_peak": -6.6,
+   "clipped": false,
+   "speech_s": 1.54,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.49,
+   "pace_vs_median": 0.06
+  }
+ },
+ "gemini-3.8-flash-lite-tts": {
+  "s01": {
+   "duration_s": 2.0,
+   "lufs": -16.2,
+   "true_peak": -1.7,
+   "clipped": false,
+   "speech_s": 1.41,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 7.09,
+   "pace_vs_median": 0.16
+  }
+ },
+ "gemini-3.8-flash-tts": {
+  "s01": {
+   "duration_s": 1.68,
+   "lufs": -16.8,
+   "true_peak": -2.1,
+   "clipped": false,
+   "speech_s": 1.37,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 7.3,
+   "pace_vs_median": 0.19
+  }
+ },
+ "inworld-tts-2": {
+  "s01": {
+   "duration_s": 1.67,
+   "lufs": -21.6,
+   "true_peak": -4.6,
+   "clipped": false,
+   "speech_s": 1.21,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 8.26,
+   "pace_vs_median": 0.35
+  }
+ },
+ "minimax-speech-2.8-hd": {
+  "s01": {
+   "duration_s": 2.13,
+   "lufs": -24.2,
+   "true_peak": -2.2,
+   "clipped": false,
+   "speech_s": 2.13,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.69,
+   "pace_vs_median": -0.23
+  }
+ },
+ "xai-tts": {
+  "s01": {
+   "duration_s": 1.91,
+   "lufs": -17.9,
+   "true_peak": -7.2,
+   "clipped": false,
+   "speech_s": 1.45,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.9,
+   "pace_vs_median": 0.13
+  }
+ },
+ "elevenlabs-v4-nikud": {
+  "s01": {
+   "duration_s": 1.88,
+   "lufs": -22.8,
+   "true_peak": -8.5,
+   "clipped": false,
+   "speech_s": 1.57,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.37,
+   "pace_vs_median": 0.04
+  }
+ },
+ "gemini-2.5-flash-tts-nikud": {
+  "s01": {
+   "duration_s": 1.93,
+   "lufs": -15.1,
+   "true_peak": -1.7,
+   "clipped": false,
+   "speech_s": 1.34,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 7.46,
+   "pace_vs_median": 0.22
+  }
+ },
+ "gemini-2.5-pro-tts-nikud": {
+  "s01": {
+   "duration_s": 2.29,
+   "lufs": -19.2,
+   "true_peak": -7.3,
+   "clipped": false,
+   "speech_s": 1.77,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.65,
+   "pace_vs_median": -0.08
+  }
+ },
+ "gemini-3.8-flash-lite-tts-nikud": {
+  "s01": {
+   "duration_s": 2.4,
+   "lufs": -13.4,
+   "true_peak": -1.7,
+   "clipped": false,
+   "speech_s": 1.84,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.43,
+   "pace_vs_median": -0.11
+  }
+ },
+ "gemini-3.8-flash-tts-nikud": {
+  "s01": {
+   "duration_s": 2.12,
+   "lufs": -13.0,
+   "true_peak": -1.7,
+   "clipped": false,
+   "speech_s": 1.58,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.33,
+   "pace_vs_median": 0.03
+  }
+ },
+ "inworld-tts-2-nikud": {
+  "s01": {
+   "duration_s": 1.84,
+   "lufs": -22.2,
+   "true_peak": -8.0,
+   "clipped": false,
+   "speech_s": 1.43,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.99,
+   "pace_vs_median": 0.14
+  }
+ },
+ "minimax-speech-2.8-hd-nikud": {
+  "s01": {
+   "duration_s": 4.82,
+   "lufs": -22.4,
+   "true_peak": -0.8,
+   "clipped": false,
+   "speech_s": 4.82,
+   "pauses": 2,
+   "longest_pause_s": 0.44,
+   "syll_per_s": 2.07,
+   "pace_vs_median": -0.66
+  }
+ },
+ "xai-tts-nikud": {
+  "s01": {
+   "duration_s": 2.23,
+   "lufs": -18.1,
+   "true_peak": -6.7,
+   "clipped": false,
+   "speech_s": 1.81,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.52,
+   "pace_vs_median": -0.1
   }
  }
 }

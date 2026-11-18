@@ -29,8 +29,17 @@
   "s17": 0.11,
   "s18": 0.12,
   "s19": 0.09,
-  "s20": 0.17
+  "s20": 0.17,
+  "p01": 0.67
  },
  "generated": "2026-11-18",
- "notes": "Input nikud: Dicta text_nikud (vowels kept) + hataama U+05AB and vocal shva U+05BD transplanted from Phonikud/phonikud-onnx diacritizer run on plain text (same as phonikud-piper) -> phonikud 0.4.1 phonemize -> piper-tts 1.8.0 phonemes_to_ids / phoneme_ids_to_audio on the noa voice (speaker 0, config defaults). Bypasses piper's native hebrew phonemizer. Symbols outside the voice's id map: []. ipa.json has the IPA per sentence."
+ "notes": "Input nikud: Dicta text_nikud (vowels kept) + hataama U+05AB and vocal shva U+05BD transplanted from Phonikud/phonikud-onnx diacritizer run on plain text (same as phonikud-piper) -> phonikud 0.4.1 phonemize -> piper-tts 1.8.0 phonemes_to_ids / phoneme_ids_to_audio on the noa voice (speaker 0, config defaults). Bypasses piper's native hebrew phonemizer. Symbols outside the voice's id map: []. ipa.json has the IPA per sentence.",
+ "rounds": {
+  "2": {
+   "items": [
+    "p01"
+   ],
+   "generated": "2026-11-18"
+  }
+ }
 }

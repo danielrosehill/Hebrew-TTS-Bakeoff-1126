@@ -1,0 +1,18 @@
+{
+ "slug": "minimax-speech-2.8-hd-nikud",
+ "hf_id": null,
+ "revision": "fal-ai/minimax/speech-2.8-hd",
+ "licence": "MiniMax Terms of Service via fal.ai",
+ "input": "nikud",
+ "voice": "Wise_Woman (fal default, female)",
+ "reference_clip": null,
+ "gpu": "API",
+ "sample_rate": 32000,
+ "load_s": null,
+ "per_sentence_s": {
+  "s01": 12.11
+ },
+ "generated": "2026-11-18",
+ "generated_via": "api:fal fal-ai/minimax/speech-2.8-hd",
+ "notes": "Given the checked nikud as text. per_sentence_s is the request round trip. Round 1: ids s01 only. language_boost Hebrew."
+}

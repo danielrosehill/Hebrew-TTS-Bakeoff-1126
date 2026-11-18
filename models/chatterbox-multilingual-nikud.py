@@ -7,7 +7,7 @@ app = modal.App(f"bakeoff-{SLUG}")
 image = (modal.Image.debian_slim(python_version="3.11")
          .apt_install("ffmpeg", "git")
          .pip_install("git+https://github.com/resemble-ai/chatterbox.git", "dicta-onnx", "soundfile", "huggingface_hub"))
-GPU = "L4"
+GPU = ["L4", "A10G"]  # any available (L4 capacity queued for long stretches on 2026-11-18)
 
 @app.function(image=image, gpu=GPU, timeout=1800)
 def synth(rows: list):

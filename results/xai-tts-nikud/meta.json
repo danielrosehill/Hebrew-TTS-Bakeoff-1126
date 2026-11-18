@@ -1,0 +1,18 @@
+{
+ "slug": "xai-tts-nikud",
+ "hf_id": null,
+ "revision": "xai/tts/v1",
+ "licence": "xAI Terms of Service via fal.ai",
+ "input": "nikud",
+ "voice": "eve (default, female)",
+ "reference_clip": null,
+ "gpu": "API",
+ "sample_rate": 24000,
+ "load_s": null,
+ "per_sentence_s": {
+  "s01": 3.61
+ },
+ "generated": "2026-11-18",
+ "generated_via": "api:fal xai/tts/v1",
+ "notes": "Given the checked nikud as text. per_sentence_s is the request round trip. Round 1: ids s01 only. language auto; Hebrew is not in the endpoint's supported list."
+}

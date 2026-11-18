@@ -446,5 +446,267 @@
    "release date",
    "Hebrew training data"
   ]
+ },
+ {
+  "slug": "gemini-3.8-flash-tts",
+  "hf_id": null,
+  "name": "Gemini 3.8 Flash TTS (API, voice Kore)",
+  "publisher": "Google (Google DeepMind / Gemini API)",
+  "publisher_type": "company",
+  "publisher_note": "Large US technology company; hosted API only, no weights.",
+  "release_date": "2026 (not checked)",
+  "release_date_source": "see sources",
+  "architecture": "LLM-based speech generation (Gemini family), generateContent with AUDIO output; details undisclosed",
+  "params": "not disclosed",
+  "base_model": "not disclosed",
+  "training_origin": "proprietary",
+  "hebrew_training_data": "Not disclosed",
+  "hebrew_input": "Plain Hebrew; nikud input given as-is (effect measured by the -nikud pair)",
+  "licence": "Google Gemini API Additional Terms of Service (commercial API use, usage-billed)",
+  "sources": [
+   "https://ai.google.dev/gemini-api/docs/speech-generation"
+  ],
+  "confirmed": [
+   "model id gemini-3.8-flash-tts accepted by generateContent (2026-11-18)",
+   "24 kHz PCM output",
+   "Hebrew output generated without error (not listened to by the script)"
+  ],
+  "inferred": [
+   "architecture",
+   "release date"
+  ]
+ },
+ {
+  "slug": "gemini-3.8-flash-lite-tts",
+  "hf_id": null,
+  "name": "Gemini 3.8 Flash Lite TTS (API, voice Kore)",
+  "publisher": "Google (Google DeepMind / Gemini API)",
+  "publisher_type": "company",
+  "publisher_note": "Large US technology company; hosted API only, no weights.",
+  "release_date": "2026 (not checked)",
+  "release_date_source": "see sources",
+  "architecture": "LLM-based speech generation (Gemini family), generateContent with AUDIO output; details undisclosed",
+  "params": "not disclosed",
+  "base_model": "not disclosed",
+  "training_origin": "proprietary",
+  "hebrew_training_data": "Not disclosed",
+  "hebrew_input": "Plain Hebrew; nikud input given as-is (effect measured by the -nikud pair)",
+  "licence": "Google Gemini API Additional Terms of Service (commercial API use, usage-billed)",
+  "sources": [
+   "https://ai.google.dev/gemini-api/docs/speech-generation"
+  ],
+  "confirmed": [
+   "model id gemini-3.8-flash-lite-tts accepted by generateContent (2026-11-18)",
+   "24 kHz PCM output",
+   "Hebrew output generated without error (not listened to by the script)"
+  ],
+  "inferred": [
+   "architecture",
+   "release date"
+  ]
+ },
+ {
+  "slug": "gemini-2.5-pro-tts",
+  "hf_id": null,
+  "name": "Gemini 2.5 Pro TTS (API, voice Kore)",
+  "publisher": "Google (Google DeepMind / Gemini API)",
+  "publisher_type": "company",
+  "publisher_note": "Large US technology company; hosted API only, no weights.",
+  "release_date": "2025 (2.5 preview TTS models; exact date not checked)",
+  "release_date_source": "see sources",
+  "architecture": "LLM-based speech generation (Gemini family), generateContent with AUDIO output; details undisclosed",
+  "params": "not disclosed",
+  "base_model": "not disclosed",
+  "training_origin": "proprietary",
+  "hebrew_training_data": "Not disclosed",
+  "hebrew_input": "Plain Hebrew; nikud input given as-is (effect measured by the -nikud pair)",
+  "licence": "Google Gemini API Additional Terms of Service (commercial API use, usage-billed)",
+  "sources": [
+   "https://ai.google.dev/gemini-api/docs/speech-generation"
+  ],
+  "confirmed": [
+   "model id gemini-2.5-pro-preview-tts accepted by generateContent (2026-11-18)",
+   "24 kHz PCM output",
+   "Hebrew output generated without error (not listened to by the script)"
+  ],
+  "inferred": [
+   "architecture",
+   "release date"
+  ]
+ },
+ {
+  "slug": "gemini-2.5-flash-tts",
+  "hf_id": null,
+  "name": "Gemini 2.5 Flash TTS (API, voice Kore)",
+  "publisher": "Google (Google DeepMind / Gemini API)",
+  "publisher_type": "company",
+  "publisher_note": "Large US technology company; hosted API only, no weights.",
+  "release_date": "2025 (2.5 preview TTS models; exact date not checked)",
+  "release_date_source": "see sources",
+  "architecture": "LLM-based speech generation (Gemini family), generateContent with AUDIO output; details undisclosed",
+  "params": "not disclosed",
+  "base_model": "not disclosed",
+  "training_origin": "proprietary",
+  "hebrew_training_data": "Not disclosed",
+  "hebrew_input": "Plain Hebrew; nikud input given as-is (effect measured by the -nikud pair)",
+  "licence": "Google Gemini API Additional Terms of Service (commercial API use, usage-billed)",
+  "sources": [
+   "https://ai.google.dev/gemini-api/docs/speech-generation"
+  ],
+  "confirmed": [
+   "model id gemini-2.5-flash-preview-tts accepted by generateContent (2026-11-18)",
+   "24 kHz PCM output",
+   "Hebrew output generated without error (not listened to by the script)"
+  ],
+  "inferred": [
+   "architecture",
+   "release date"
+  ]
+ },
+ {
+  "slug": "elevenlabs-v4",
+  "hf_id": null,
+  "name": "ElevenLabs Eleven v4 (via fal, voice Rachel)",
+  "publisher": "ElevenLabs",
+  "publisher_type": "company",
+  "publisher_note": "Voice-AI company (US/UK/Poland); hosted API, here via fal.ai.",
+  "release_date": "2026 (not checked)",
+  "release_date_source": "see sources",
+  "architecture": "Expressive multilingual TTS with audio tags and IPA input; details undisclosed",
+  "params": "not disclosed",
+  "base_model": "not disclosed",
+  "training_origin": "proprietary",
+  "hebrew_training_data": "Not disclosed",
+  "hebrew_input": "Plain Hebrew with language_code he (ISO 639-1 field in the fal schema)",
+  "licence": "ElevenLabs Terms of Service via fal.ai (commercial API use, usage-billed)",
+  "sources": [
+   "https://fal.ai/models/elevenlabs/tts/eleven-v4/api"
+  ],
+  "confirmed": [
+   "fal endpoint elevenlabs/tts/eleven-v4",
+   "language_code param exists",
+   "default MP3 44.1 kHz 128 kbps"
+  ],
+  "inferred": [
+   "Hebrew support list",
+   "release date",
+   "architecture"
+  ]
+ },
+ {
+  "slug": "minimax-speech-2.8-hd",
+  "hf_id": null,
+  "name": "MiniMax Speech 2.8 HD (via fal, voice Wise_Woman)",
+  "publisher": "MiniMax",
+  "publisher_type": "company",
+  "publisher_note": "Chinese AI company; hosted API, here via fal.ai.",
+  "release_date": "2026 (not checked)",
+  "release_date_source": "see sources",
+  "architecture": "Speech LLM TTS; details undisclosed",
+  "params": "not disclosed",
+  "base_model": "not disclosed",
+  "training_origin": "proprietary",
+  "hebrew_training_data": "Not disclosed",
+  "hebrew_input": "Plain Hebrew with language_boost Hebrew (in the fal enum)",
+  "licence": "MiniMax Terms of Service via fal.ai (commercial API use, usage-billed)",
+  "sources": [
+   "https://fal.ai/models/fal-ai/minimax/speech-2.8-hd/api"
+  ],
+  "confirmed": [
+   "fal endpoint fal-ai/minimax/speech-2.8-hd",
+   "language_boost enum includes Hebrew",
+   "API accepted Hebrew text, 32 kHz output"
+  ],
+  "inferred": [
+   "release date",
+   "architecture",
+   "whether Hebrew is intelligible (see listening)"
+  ]
+ },
+ {
+  "slug": "inworld-tts-2",
+  "hf_id": null,
+  "name": "Inworld TTS 2 (Replicate inworld/realtime-tts-2)",
+  "publisher": "Inworld AI",
+  "publisher_type": "company",
+  "publisher_note": "US voice-AI company for games and agents; hosted API, here via Replicate.",
+  "release_date": "2026-05-05 (Replicate latest version created_at)",
+  "release_date_source": "see sources",
+  "architecture": "Realtime TTS with natural-language steering; details undisclosed",
+  "params": "not disclosed",
+  "base_model": "not disclosed",
+  "training_origin": "proprietary",
+  "hebrew_training_data": "Not disclosed",
+  "hebrew_input": "Plain Hebrew with language=he (Hebrew listed among supported production languages in the schema)",
+  "licence": "Inworld AI Terms of Service via Replicate (commercial API use, usage-billed)",
+  "sources": [
+   "https://replicate.com/inworld/realtime-tts-2"
+  ],
+  "confirmed": [
+   "Hebrew (he) listed in the Replicate input schema",
+   "latest version created 2026-05-05",
+   "48 kHz output"
+  ],
+  "inferred": [
+   "architecture",
+   "Yael voice existence (see meta voice field)"
+  ]
+ },
+ {
+  "slug": "xai-tts",
+  "hf_id": null,
+  "name": "xAI TTS v1 (via fal, voice eve)",
+  "publisher": "xAI",
+  "publisher_type": "company",
+  "publisher_note": "US AI company; hosted API, here via fal.ai.",
+  "release_date": "2026 (not checked)",
+  "release_date_source": "see sources",
+  "architecture": "Speech synthesis with speech tags; details undisclosed",
+  "params": "not disclosed",
+  "base_model": "not disclosed",
+  "training_origin": "proprietary",
+  "hebrew_training_data": "Not disclosed",
+  "hebrew_input": "Plain Hebrew with language auto (Hebrew NOT in the endpoint's language enum)",
+  "licence": "xAI Terms of Service via fal.ai (commercial API use, usage-billed)",
+  "sources": [
+   "https://fal.ai/models/xai/tts/v1/api"
+  ],
+  "confirmed": [
+   "fal endpoint xai/tts/v1",
+   "documented language list lacks Hebrew",
+   "API accepted Hebrew text, 24 kHz output"
+  ],
+  "inferred": [
+   "release date",
+   "architecture",
+   "whether output is Hebrew or garbage (see listening)"
+  ]
+ },
+ {
+  "slug": "seed-speech-v2",
+  "hf_id": null,
+  "name": "ByteDance Seed Speech TTS v2 (via fal)",
+  "publisher": "ByteDance (Seed)",
+  "publisher_type": "company",
+  "publisher_note": "Chinese technology company; hosted API, here via fal.ai.",
+  "release_date": "2026 (not checked)",
+  "release_date_source": "see sources",
+  "architecture": "Speech synthesis with voice_instruction steering; details undisclosed",
+  "params": "not disclosed",
+  "base_model": "not disclosed",
+  "training_origin": "proprietary",
+  "hebrew_training_data": "Not disclosed",
+  "hebrew_input": "Hebrew REJECTED: fal returned 422 no_media_generated for Hebrew text with voice vivi_mixed_en_zh_ja_es_id; no voice preset lists Hebrew",
+  "licence": "ByteDance Terms of Service via fal.ai",
+  "sources": [
+   "https://fal.ai/models/fal-ai/bytedance/seed-speech/tts/v2/api"
+  ],
+  "confirmed": [
+   "422 no_media_generated on Hebrew (2026-11-18)",
+   "no Hebrew in voice preset names"
+  ],
+  "inferred": [
+   "only one voice tried"
+  ]
  }
 ]

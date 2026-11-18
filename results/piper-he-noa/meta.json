@@ -29,8 +29,17 @@
   "s17": 0.13,
   "s18": 0.16,
   "s19": 0.12,
-  "s20": 0.22
+  "s20": 0.22,
+  "p01": 1.06
  },
  "generated": "2026-11-18",
- "notes": "Plain Hebrew -> renikud-onnx 0.1.1 G2P (stressed IPA, as the card says the voice was trained on) -> piper-tts 1.8.0 phonemes_to_ids / phoneme_ids_to_audio with the voice config's default inference settings. piper-tts 1.8.0 phoneme_type hebrew does not use renikud (Nakdimon + own G2P); that native path was the first run, kept in nakdimon-default/. ipa.json holds the IPA fed in. Warnings: none seen in logs."
+ "notes": "Plain Hebrew -> renikud-onnx 0.1.1 G2P (stressed IPA, as the card says the voice was trained on) -> piper-tts 1.8.0 phonemes_to_ids / phoneme_ids_to_audio with the voice config's default inference settings. piper-tts 1.8.0 phoneme_type hebrew does not use renikud (Nakdimon + own G2P); that native path was the first run, kept in nakdimon-default/. ipa.json holds the IPA fed in. Warnings: none seen in logs.",
+ "rounds": {
+  "2": {
+   "items": [
+    "p01"
+   ],
+   "generated": "2026-11-18"
+  }
+ }
 }

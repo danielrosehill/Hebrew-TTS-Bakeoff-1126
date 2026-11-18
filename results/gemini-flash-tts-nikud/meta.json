@@ -29,9 +29,18 @@
   "s17": 5.02,
   "s18": 3.74,
   "s19": 3.39,
-  "s20": 4.78
+  "s20": 4.78,
+  "p01": 9.97
  },
  "generated": "2026-11-18",
  "generated_via": "api:Google Gemini API generateContent gemini-3.1-flash-tts-preview",
- "notes": "Given the checked nikud as text. per_sentence_s is the request round trip. "
+ "notes": "Given the checked nikud as text. per_sentence_s is the request round trip. ",
+ "rounds": {
+  "2": {
+   "items": [
+    "p01"
+   ],
+   "generated": "2026-11-18"
+  }
+ }
 }

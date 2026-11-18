@@ -1,0 +1,18 @@
+{
+ "slug": "inworld-tts-2-nikud",
+ "hf_id": null,
+ "revision": "inworld/realtime-tts-2",
+ "licence": "Inworld AI Terms of Service via Replicate",
+ "input": "nikud",
+ "voice": "Yael (female)",
+ "reference_clip": null,
+ "gpu": "API",
+ "sample_rate": 48000,
+ "load_s": null,
+ "per_sentence_s": {
+  "s01": 14.86
+ },
+ "generated": "2026-11-18",
+ "generated_via": "api:replicate inworld/realtime-tts-2",
+ "notes": "Given the checked nikud as text. per_sentence_s is the request round trip. Round 1: ids s01 only. language he; wav 48 kHz requested."
+}

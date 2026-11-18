@@ -34,6 +34,9 @@ EVAL = {
 }
 
 
+SCREEN = json.loads((ROOT / "data/screen_results.json").read_text()) if (ROOT / "data/screen_results.json").exists() else {}
+
+
 def runs():
     prov = {m["slug"]: m for m in json.loads((ROOT / "data/models.json").read_text())}
     sys.path.insert(0, str(ROOT / "scripts"))
@@ -52,6 +55,7 @@ def runs():
             "publisher": p.get("publisher"), "publisher_type": p.get("publisher_type"), "release_date": p.get("release_date"),
             "training_origin": p.get("training_origin"), "script": f"models/{slug.removesuffix('-plain')}.py",
             "run_notes": meta.get("notes"), "generated_via": meta.get("generated_via"),
+            **({k: SCREEN.get(slug, {}).get(k) for k in ("status", "fail_reasons", "observations", "first_fail", "annotator_words")}),
         })
     return out
 
