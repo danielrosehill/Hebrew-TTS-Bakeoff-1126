@@ -8,7 +8,7 @@ Audio: every results/<slug>/sNN.wav becomes space/audio/<slug>/sNN.mp3 (64 kbps 
 results/phonikud-piper/plain/ is listed as its own row, `phonikud-piper-plain` (the same voice without the stress marks).
 Models without a meta.json are skipped, so the page can be rebuilt as runs finish.
 """
-import json, shutil, subprocess, sys
+import json, re, shutil, subprocess, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -46,8 +46,49 @@ def runs():
     return sorted(found.items(), key=lambda kv: rank(kv[0]))
 
 
+VOWELS = set("aeiouə")
+REF = ROOT / "results/phonikud-piper/ipa.json"
+
+
+def syllables(ipa_word):
+    """Split one IPA word into syllables at each vowel (onset consonants go with the vowel, trailing ones with the last
+    syllable) and return (syllables, index of the stressed one or None). Display aid for stress tags, not phonology."""
+    w = re.sub(r"[.,!?:;\"'()]", "", ipa_word)
+    out, pend, stress = [], "", None
+    for ch in w:
+        pend += ch
+        if ch in VOWELS:
+            if "ˈ" in pend:
+                stress = len(out)
+            out.append(pend.replace("ˈ", ""))
+            pend = ""
+    if pend:
+        out = out[:-1] + [out[-1] + pend.replace("ˈ", "")] if out else [pend.replace("ˈ", "")]
+    return out, stress
+
+
+def add_words(sentences):
+    """Per-word reference for word-level annotation (Daniel, 2026-11-18: stress heard vs correct, IPA heard vs expected).
+    Source: the Phonikud IPA with stress marks (results/phonikud-piper/ipa.json, `stress`): a machine reference, so the
+    annotation UI labels it "check it"."""
+    if not REF.exists():
+        return
+    ref = json.loads(REF.read_text())
+    for s in sentences:
+        nik, ipa = s["text_nikud"].split(), ref.get(s["id"], {}).get("stress", "").split()
+        if len(nik) != len(ipa):
+            continue
+        s["words"] = []
+        for i, (n, w) in enumerate(zip(nik, ipa), 1):
+            syl, st = syllables(w)
+            s["words"].append({"position": i, "nikud": n.strip(".,!?:;\"'()"), "ipa_ref": re.sub(r"[.,!?:;\"'()]", "", w),
+                               "syllables": syl, "stress_ref": st})
+        s["words_source"] = "Phonikud phonemize() on the checked nikud with Phonikud diacritizer stress marks (machine reference)"
+
+
 def main():
     sentences = [json.loads(l) for l in open(ROOT / "data/sentences.jsonl", encoding="utf8")]
+    add_words(sentences)
     prov = {m["slug"]: m for m in json.loads((ROOT / "data/models.json").read_text())} if (ROOT / "data/models.json").exists() else {}
     if OUT.exists():
         shutil.rmtree(OUT / "audio", ignore_errors=True)
