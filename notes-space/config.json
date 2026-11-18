@@ -68,5 +68,6 @@
     "stress": "Wrong emphasis (stress)",
     "mispronunciation": "Mispronunciation"
   },
-  "rank_reject_reason": "Rejected in ranking (both bad)"
+  "rank_reject_reason": "Rejected in ranking (both bad)",
+  "notes_private": false
 }
