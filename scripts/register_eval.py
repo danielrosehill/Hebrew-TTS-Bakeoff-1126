@@ -28,6 +28,7 @@ EVAL = {
     "sentence_set_revision": "667f8dac2eaab969cb0c275ffe976d1aab9896fc",
     "results_dataset": "Hebrish/Hebrew-TTS-Bakeoff-1126",
     "listening_space": "Hebrish/Hebrew-TTS-Bakeoff-1126",
+    "leaderboard": "https://huggingface.co/spaces/danielrosehill/Hebrew-TTS-Leaderboard",
     "data_json": "https://huggingface.co/spaces/Hebrish/Hebrew-TTS-Bakeoff-1126/resolve/main/data.json",
     "repo": "https://github.com/danielrosehill/Hebrew-TTS-Bakeoff-1126",
     "annotation_axes": ["naturalness (1-5)", "clarity (1-5)", "hebrew (1-5)", "nikud (yes/no)", "use (yes/maybe/no)", "word_issues (stress, mispronunciation, minor)", "note"],

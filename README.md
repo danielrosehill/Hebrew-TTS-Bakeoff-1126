@@ -3,6 +3,8 @@
 A small listening comparison of **open Hebrew text-to-speech models**, run 2026-11-18, on 20 sentences given both
 with and without nikud.
 
+- **Leaderboard:** [Space `danielrosehill/Hebrew-TTS-Leaderboard`](https://huggingface.co/spaces/danielrosehill/Hebrew-TTS-Leaderboard): the Arena ranking, who is waiting, and who
+  failed Screening and why, live from the annotations.
 - **Listen:** [Space `Hebrish/Hebrew-TTS-Bakeoff-1126`](https://huggingface.co/spaces/Hebrish/Hebrew-TTS-Bakeoff-1126).
   Its views are by sentence, by model, nikud inference, and a table of the models.
 - **Sentences:** [`Hebrish/Hebrew-TTS-Eval-Set`](https://huggingface.co/datasets/Hebrish/Hebrew-TTS-Eval-Set),
