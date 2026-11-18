@@ -1,0 +1,18 @@
+{
+ "slug": "gemini-3.1-flash-live-nikud",
+ "hf_id": null,
+ "revision": "gemini-3.1-flash-live-preview",
+ "licence": "Google Gemini API terms",
+ "input": "nikud",
+ "voice": "Kore",
+ "reference_clip": null,
+ "gpu": "API",
+ "sample_rate": 24000,
+ "load_s": null,
+ "per_sentence_s": {
+  "s01": 3.28
+ },
+ "generated": "2026-11-18",
+ "generated_via": "api:gemini Live API gemini-3.1-flash-live-preview (native audio, instructed to read verbatim)",
+ "notes": "A conversational native-audio model used as TTS; it may paraphrase or answer instead of reading: listen for that."
+}

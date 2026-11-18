@@ -1,0 +1,20 @@
+{
+ "slug": "gemini-flash-tts-male",
+ "hf_id": null,
+ "revision": "gemini-3.1-flash-tts-preview",
+ "licence": "provider API terms",
+ "input": "plain",
+ "voice": "Charon (prebuilt, male)",
+ "voice_gender": "male",
+ "reference_clip": null,
+ "gpu": "API",
+ "sample_rate": 24000,
+ "load_s": null,
+ "per_sentence_s": {
+  "s01": 2.67,
+  "p01": 10.78
+ },
+ "generated": "2026-11-18",
+ "generated_via": "api:Google Gemini API generateContent gemini-3.1-flash-tts-preview",
+ "notes": "Given plain Hebrew. Male-voice variant of gemini-flash-tts: same model and prompt, voice Charon (prebuilt, male). per_sentence_s is the request round trip."
+}

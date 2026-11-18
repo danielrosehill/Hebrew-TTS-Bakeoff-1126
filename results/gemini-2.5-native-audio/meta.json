@@ -1,0 +1,27 @@
+{
+ "slug": "gemini-2.5-native-audio",
+ "hf_id": null,
+ "revision": "gemini-2.5-flash-native-audio-latest",
+ "licence": "Google Gemini API terms",
+ "input": "plain",
+ "voice": "Kore",
+ "reference_clip": null,
+ "gpu": "API",
+ "sample_rate": 24000,
+ "load_s": null,
+ "per_sentence_s": {
+  "s01": 6.32,
+  "p01": 28.1
+ },
+ "generated": "2026-11-18",
+ "generated_via": "api:gemini Live API gemini-2.5-flash-native-audio-latest (native audio, instructed to read verbatim)",
+ "notes": "A conversational native-audio model used as TTS; it may paraphrase or answer instead of reading: listen for that.",
+ "rounds": {
+  "2": {
+   "items": [
+    "p01"
+   ],
+   "generated": "2026-11-18"
+  }
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "slug": "gemini-3.8-flash-lite-tts-male-nikud",
+ "hf_id": null,
+ "revision": "gemini-3.8-flash-lite-tts",
+ "licence": "provider API terms",
+ "input": "nikud",
+ "voice": "Charon (prebuilt, male)",
+ "voice_gender": "male",
+ "reference_clip": null,
+ "gpu": "API",
+ "sample_rate": 24000,
+ "load_s": null,
+ "per_sentence_s": {
+  "s01": 1.7,
+  "p01": 3.47
+ },
+ "generated": "2026-11-18",
+ "generated_via": "api:Google Gemini API generateContent gemini-3.8-flash-lite-tts",
+ "notes": "Given the checked nikud as text. Male-voice variant of gemini-3.8-flash-lite-tts: same model and prompt, voice Charon (prebuilt, male). per_sentence_s is the request round trip."
+}

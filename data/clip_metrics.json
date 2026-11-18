@@ -9,7 +9,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.26,
-   "pace_vs_median": -0.09
+   "pace_vs_median": -0.13
   },
   "s02": {
    "duration_s": 1.88,
@@ -231,7 +231,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.41,
-   "pace_vs_median": -0.07
+   "pace_vs_median": -0.11
   },
   "s02": {
    "duration_s": 1.95,
@@ -453,7 +453,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.13,
-   "pace_vs_median": -0.12
+   "pace_vs_median": -0.15
   },
   "s02": {
    "duration_s": 2.05,
@@ -675,7 +675,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.13,
-   "pace_vs_median": 0.06
+   "pace_vs_median": 0.01
   },
   "s02": {
    "duration_s": 1.64,
@@ -906,7 +906,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.85,
-   "pace_vs_median": 0.01
+   "pace_vs_median": -0.03
   },
   "s02": {
    "duration_s": 1.65,
@@ -1137,7 +1137,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.94,
-   "pace_vs_median": 0.19
+   "pace_vs_median": 0.15
   },
   "s02": {
    "duration_s": 1.68,
@@ -1368,7 +1368,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.94,
-   "pace_vs_median": 0.19
+   "pace_vs_median": 0.15
   },
   "s02": {
    "duration_s": 1.68,
@@ -1599,7 +1599,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.56,
-   "pace_vs_median": -0.04
+   "pace_vs_median": -0.08
   },
   "s02": {
    "duration_s": 2.16,
@@ -1821,7 +1821,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 10.64,
-   "pace_vs_median": 0.83
+   "pace_vs_median": 0.76
   },
   "s02": {
    "duration_s": 0.81,
@@ -2043,7 +2043,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.85,
-   "pace_vs_median": 0.18
+   "pace_vs_median": 0.13
   },
   "s02": {
    "duration_s": 1.29,
@@ -2265,7 +2265,7 @@
    "pauses": 3,
    "longest_pause_s": 0.7,
    "syll_per_s": 1.44,
-   "pace_vs_median": -0.75
+   "pace_vs_median": -0.76
   },
   "s02": {
    "duration_s": 2.27,
@@ -2487,7 +2487,7 @@
    "pauses": 1,
    "longest_pause_s": 0.36,
    "syll_per_s": 4.15,
-   "pace_vs_median": -0.29
+   "pace_vs_median": -0.32
   },
   "s02": {
    "duration_s": 1.88,
@@ -2709,7 +2709,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 9.09,
-   "pace_vs_median": 0.56
+   "pace_vs_median": 0.5
   },
   "s02": {
    "duration_s": 1.36,
@@ -2940,7 +2940,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.25,
-   "pace_vs_median": 0.08
+   "pace_vs_median": 0.03
   },
   "s02": {
    "duration_s": 1.44,
@@ -3162,7 +3162,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.33,
-   "pace_vs_median": 0.09
+   "pace_vs_median": 0.04
   },
   "s02": {
    "duration_s": 2.12,
@@ -3384,7 +3384,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 4.39,
-   "pace_vs_median": -0.24
+   "pace_vs_median": -0.28
   },
   "s02": {
    "duration_s": 1.72,
@@ -3606,7 +3606,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 3.85,
-   "pace_vs_median": -0.34
+   "pace_vs_median": -0.36
   },
   "s02": {
    "duration_s": 2.55,
@@ -3828,7 +3828,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.1,
-   "pace_vs_median": -0.12
+   "pace_vs_median": -0.16
   },
   "s02": {
    "duration_s": 2.08,
@@ -4059,7 +4059,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.24,
-   "pace_vs_median": -0.1
+   "pace_vs_median": -0.14
   },
   "s02": {
    "duration_s": 2.08,
@@ -4280,6 +4280,50 @@
    "longest_pause_s": 0.64
   }
  },
+ "gemini-flash-tts-male": {
+  "s01": {
+   "duration_s": 1.96,
+   "lufs": -14.8,
+   "true_peak": -2.1,
+   "clipped": false,
+   "speech_s": 1.34,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 7.46,
+   "pace_vs_median": 0.23
+  },
+  "p01": {
+   "duration_s": 20.88,
+   "lufs": -17.8,
+   "true_peak": -1.6,
+   "clipped": false,
+   "speech_s": 20.19,
+   "pauses": 6,
+   "longest_pause_s": 0.72
+  }
+ },
+ "gemini-flash-tts-male-nikud": {
+  "s01": {
+   "duration_s": 2.24,
+   "lufs": -16.1,
+   "true_peak": -2.7,
+   "clipped": false,
+   "speech_s": 1.54,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.49,
+   "pace_vs_median": 0.07
+  },
+  "p01": {
+   "duration_s": 21.16,
+   "lufs": -18.1,
+   "true_peak": -1.3,
+   "clipped": false,
+   "speech_s": 20.59,
+   "pauses": 5,
+   "longest_pause_s": 0.75
+  }
+ },
  "elevenlabs-v3": {
   "s01": {
    "duration_s": 1.31,
@@ -4290,7 +4334,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 7.63,
-   "pace_vs_median": 0.31
+   "pace_vs_median": 0.26
   },
   "s02": {
    "duration_s": 1.49,
@@ -4521,7 +4565,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.71,
-   "pace_vs_median": 0.15
+   "pace_vs_median": 0.11
   },
   "s02": {
    "duration_s": 1.88,
@@ -4752,7 +4796,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.0,
-   "pace_vs_median": -0.14
+   "pace_vs_median": -0.17
   },
   "s02": {
    "duration_s": 2.85,
@@ -4974,7 +5018,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 4.26,
-   "pace_vs_median": -0.27
+   "pace_vs_median": -0.3
   },
   "s02": {
    "duration_s": 3.75,
@@ -5196,7 +5240,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.76,
-   "pace_vs_median": 0.16
+   "pace_vs_median": 0.12
   },
   "s02": {
    "duration_s": 1.36,
@@ -5427,7 +5471,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 4.81,
-   "pace_vs_median": -0.17
+   "pace_vs_median": -0.21
   },
   "s02": {
    "duration_s": 2.12,
@@ -5658,7 +5702,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.81,
-   "pace_vs_median": 0.0
+   "pace_vs_median": -0.04
   },
   "p01": {
    "duration_s": 20.92,
@@ -5680,7 +5724,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 7.63,
-   "pace_vs_median": 0.31
+   "pace_vs_median": 0.26
   }
  },
  "gemini-2.5-native-audio": {
@@ -5693,7 +5737,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 4.42,
-   "pace_vs_median": -0.24
+   "pace_vs_median": -0.27
   },
   "p01": {
    "duration_s": 21.92,
@@ -5715,7 +5759,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.49,
-   "pace_vs_median": 0.12
+   "pace_vs_median": 0.07
   },
   "p01": {
    "duration_s": 23.97,
@@ -5737,7 +5781,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.75,
-   "pace_vs_median": -0.01
+   "pace_vs_median": -0.05
   }
  },
  "gemini-3.8-flash-lite-tts": {
@@ -5750,7 +5794,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 7.09,
-   "pace_vs_median": 0.22
+   "pace_vs_median": 0.17
   },
   "p01": {
    "duration_s": 20.96,
@@ -5772,7 +5816,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 7.3,
-   "pace_vs_median": 0.26
+   "pace_vs_median": 0.2
   },
   "p01": {
    "duration_s": 21.0,
@@ -5794,7 +5838,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.03,
-   "pace_vs_median": -0.13
+   "pace_vs_median": -0.17
   },
   "p01": {
    "duration_s": 21.97,
@@ -5816,7 +5860,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 8.26,
-   "pace_vs_median": 0.42
+   "pace_vs_median": 0.36
   }
  },
  "minimax-speech-2.8-hd": {
@@ -5829,7 +5873,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 4.69,
-   "pace_vs_median": -0.19
+   "pace_vs_median": -0.23
   }
  },
  "openai-gpt-audio": {
@@ -5842,7 +5886,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.8,
-   "pace_vs_median": 0.17
+   "pace_vs_median": 0.12
   },
   "p01": {
    "duration_s": 21.85,
@@ -5864,7 +5908,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.9,
-   "pace_vs_median": 0.19
+   "pace_vs_median": 0.14
   },
   "p01": {
    "duration_s": 19.51,
@@ -5886,7 +5930,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.37,
-   "pace_vs_median": 0.1
+   "pace_vs_median": 0.05
   },
   "p01": {
    "duration_s": 22.36,
@@ -5908,7 +5952,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 7.46,
-   "pace_vs_median": 0.28
+   "pace_vs_median": 0.23
   }
  },
  "gemini-2.5-native-audio-nikud": {
@@ -5921,7 +5965,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 3.31,
-   "pace_vs_median": -0.43
+   "pace_vs_median": -0.45
   },
   "p01": {
    "duration_s": 27.48,
@@ -5943,7 +5987,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.65,
-   "pace_vs_median": -0.03
+   "pace_vs_median": -0.07
   },
   "p01": {
    "duration_s": 21.49,
@@ -5965,7 +6009,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.05,
-   "pace_vs_median": -0.13
+   "pace_vs_median": -0.17
   }
  },
  "gemini-3.8-flash-lite-tts-nikud": {
@@ -5978,7 +6022,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.43,
-   "pace_vs_median": -0.07
+   "pace_vs_median": -0.1
   },
   "p01": {
    "duration_s": 21.36,
@@ -6000,7 +6044,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.33,
-   "pace_vs_median": 0.09
+   "pace_vs_median": 0.04
   },
   "p01": {
    "duration_s": 20.68,
@@ -6022,7 +6066,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.24,
-   "pace_vs_median": -0.1
+   "pace_vs_median": -0.14
   },
   "p01": {
    "duration_s": 21.32,
@@ -6044,7 +6088,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.99,
-   "pace_vs_median": 0.2
+   "pace_vs_median": 0.15
   }
  },
  "minimax-speech-2.8-hd-nikud": {
@@ -6057,7 +6101,7 @@
    "pauses": 2,
    "longest_pause_s": 0.44,
    "syll_per_s": 2.07,
-   "pace_vs_median": -0.64
+   "pace_vs_median": -0.66
   }
  },
  "openai-gpt-audio-nikud": {
@@ -6070,7 +6114,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 6.49,
-   "pace_vs_median": 0.12
+   "pace_vs_median": 0.07
   },
   "p01": {
    "duration_s": 26.15,
@@ -6092,7 +6136,7 @@
    "pauses": 0,
    "longest_pause_s": 0,
    "syll_per_s": 5.52,
-   "pace_vs_median": -0.05
+   "pace_vs_median": -0.09
   },
   "p01": {
    "duration_s": 22.39,
@@ -6102,6 +6146,226 @@
    "speech_s": 22.02,
    "pauses": 8,
    "longest_pause_s": 0.6
+  }
+ },
+ "elevenlabs-v4-male": {
+  "s01": {
+   "duration_s": 1.65,
+   "lufs": -21.1,
+   "true_peak": -3.9,
+   "clipped": false,
+   "speech_s": 1.65,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.06,
+   "pace_vs_median": 0.0
+  },
+  "p01": {
+   "duration_s": 20.04,
+   "lufs": -21.6,
+   "true_peak": -1.4,
+   "clipped": false,
+   "speech_s": 20.04,
+   "pauses": 5,
+   "longest_pause_s": 0.65
+  }
+ },
+ "gemini-3.8-flash-lite-tts-male": {
+  "s01": {
+   "duration_s": 2.04,
+   "lufs": -21.4,
+   "true_peak": -5.1,
+   "clipped": false,
+   "speech_s": 1.63,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.13,
+   "pace_vs_median": 0.01
+  },
+  "p01": {
+   "duration_s": 17.64,
+   "lufs": -20.1,
+   "true_peak": -1.7,
+   "clipped": false,
+   "speech_s": 17.23,
+   "pauses": 3,
+   "longest_pause_s": 0.72
+  }
+ },
+ "gemini-3.8-flash-tts-male": {
+  "s01": {
+   "duration_s": 2.0,
+   "lufs": -18.8,
+   "true_peak": -4.9,
+   "clipped": false,
+   "speech_s": 1.44,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.94,
+   "pace_vs_median": 0.15
+  },
+  "p01": {
+   "duration_s": 19.12,
+   "lufs": -19.8,
+   "true_peak": -1.6,
+   "clipped": false,
+   "speech_s": 18.82,
+   "pauses": 6,
+   "longest_pause_s": 0.83
+  }
+ },
+ "gemini-3.8-live-male": {
+  "s01": {
+   "duration_s": 2.29,
+   "lufs": -17.9,
+   "true_peak": -4.5,
+   "clipped": false,
+   "speech_s": 2.01,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 4.98,
+   "pace_vs_median": -0.18
+  },
+  "p01": {
+   "duration_s": 21.06,
+   "lufs": -17.1,
+   "true_peak": -1.2,
+   "clipped": false,
+   "speech_s": 21.06,
+   "pauses": 6,
+   "longest_pause_s": 0.62
+  }
+ },
+ "openai-gpt-audio-male": {
+  "s01": {
+   "duration_s": 2.0,
+   "lufs": -21.9,
+   "true_peak": -5.0,
+   "clipped": false,
+   "speech_s": 1.68,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.95,
+   "pace_vs_median": -0.02
+  },
+  "p01": {
+   "duration_s": 21.85,
+   "lufs": -22.6,
+   "true_peak": -3.3,
+   "clipped": false,
+   "speech_s": 21.85,
+   "pauses": 9,
+   "longest_pause_s": 0.86
+  }
+ },
+ "elevenlabs-v4-male-nikud": {
+  "s01": {
+   "duration_s": 1.88,
+   "lufs": -20.6,
+   "true_peak": -4.2,
+   "clipped": false,
+   "speech_s": 1.53,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.54,
+   "pace_vs_median": 0.08
+  },
+  "p01": {
+   "duration_s": 22.28,
+   "lufs": -21.9,
+   "true_peak": -2.7,
+   "clipped": false,
+   "speech_s": 22.28,
+   "pauses": 7,
+   "longest_pause_s": 0.67
+  }
+ },
+ "gemini-3.8-flash-lite-tts-male-nikud": {
+  "s01": {
+   "duration_s": 2.12,
+   "lufs": -16.9,
+   "true_peak": -0.3,
+   "clipped": false,
+   "speech_s": 1.79,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.59,
+   "pace_vs_median": -0.08
+  },
+  "p01": {
+   "duration_s": 17.96,
+   "lufs": -18.9,
+   "true_peak": -1.6,
+   "clipped": false,
+   "speech_s": 17.6,
+   "pauses": 5,
+   "longest_pause_s": 0.78
+  }
+ },
+ "gemini-3.8-flash-tts-male-nikud": {
+  "s01": {
+   "duration_s": 2.12,
+   "lufs": -20.7,
+   "true_peak": -4.7,
+   "clipped": false,
+   "speech_s": 1.56,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.41,
+   "pace_vs_median": 0.06
+  },
+  "p01": {
+   "duration_s": 18.84,
+   "lufs": -20.0,
+   "true_peak": -1.5,
+   "clipped": false,
+   "speech_s": 18.29,
+   "pauses": 4,
+   "longest_pause_s": 1.0
+  }
+ },
+ "gemini-3.8-live-male-nikud": {
+  "s01": {
+   "duration_s": 2.19,
+   "lufs": -15.6,
+   "true_peak": -1.9,
+   "clipped": false,
+   "speech_s": 1.89,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 5.29,
+   "pace_vs_median": -0.13
+  },
+  "p01": {
+   "duration_s": 22.42,
+   "lufs": -16.5,
+   "true_peak": 0.5,
+   "clipped": true,
+   "speech_s": 22.17,
+   "pauses": 7,
+   "longest_pause_s": 0.58
+  }
+ },
+ "openai-gpt-audio-male-nikud": {
+  "s01": {
+   "duration_s": 2.55,
+   "lufs": -23.0,
+   "true_peak": -8.8,
+   "clipped": false,
+   "speech_s": 1.62,
+   "pauses": 0,
+   "longest_pause_s": 0,
+   "syll_per_s": 6.17,
+   "pace_vs_median": 0.02
+  },
+  "p01": {
+   "duration_s": 40.85,
+   "lufs": -22.5,
+   "true_peak": -3.2,
+   "clipped": false,
+   "speech_s": 40.4,
+   "pauses": 18,
+   "longest_pause_s": 0.71
   }
  }
 }

@@ -494,8 +494,50 @@
   "annotator_words": "",
   "annotator": "Daniel Rosehill",
   "arena": {
-   "wins": 4,
-   "played": 8
+   "wins": 7,
+   "played": 13
+  },
+  "cost": {
+   "usd_per_1k_chars": 0.0333,
+   "basis": "$20 per 1M audio output tokens (preview); ~25 tokens/s assumed",
+   "source": "https://aistudio.google.com/docs/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
+ },
+ "gemini-flash-tts-male": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null,
+  "arena": {
+   "wins": 0,
+   "played": 0
+  },
+  "cost": {
+   "usd_per_1k_chars": 0.0333,
+   "basis": "$20 per 1M audio output tokens (preview); ~25 tokens/s assumed",
+   "source": "https://aistudio.google.com/docs/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
+ },
+ "gemini-flash-tts-male-nikud": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null,
+  "arena": {
+   "wins": 0,
+   "played": 0
   },
   "cost": {
    "usd_per_1k_chars": 0.0333,
@@ -826,7 +868,7 @@
   "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 1,
-   "played": 2
+   "played": 3
   },
   "cost": {
    "usd_per_1k_chars": 0.02,
@@ -935,7 +977,7 @@
   "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 1,
-   "played": 2
+   "played": 3
   },
   "cost": {
    "usd_per_1k_chars": 0.08,
@@ -946,14 +988,16 @@
   }
  },
  "gemini-2.5-flash-tts-nikud": {
-  "status": "not screened",
-  "verdicts": {},
+  "status": "survivor",
+  "verdicts": {
+   "s01": "pass"
+  },
   "fail_reasons": [],
   "observations": [],
   "first_fail": null,
-  "gender": null,
+  "gender": "female",
   "annotator_words": "",
-  "annotator": null,
+  "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
    "played": 0
@@ -1046,7 +1090,7 @@
   "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 2
+   "played": 3
   },
   "cost": {
    "usd_per_1k_chars": 0.01,
@@ -1092,7 +1136,7 @@
   "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 1
+   "played": 2
   },
   "cost": {
    "usd_per_1k_chars": 0.02,
@@ -1166,7 +1210,7 @@
   "annotator": "Daniel Rosehill",
   "arena": {
    "wins": 0,
-   "played": 1
+   "played": 2
   },
   "cost": {
    "usd_per_1k_chars": 0.0427,
@@ -1195,6 +1239,216 @@
    "usd_per_1k_chars": 0.015,
    "basis": "$0.015 per 1k characters on fal",
    "source": "https://fal.ai/models/xai/tts/v1",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
+ },
+ "elevenlabs-v4-male": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null,
+  "arena": {
+   "wins": 0,
+   "played": 0
+  },
+  "cost": {
+   "usd_per_1k_chars": 0.08,
+   "basis": "$0.08 per 1k characters on fal (from fal's listing; page not fetched)",
+   "source": "https://fal.ai/models/elevenlabs/tts/eleven-v4",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
+ },
+ "gemini-3.8-flash-lite-tts-male": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null,
+  "arena": {
+   "wins": 0,
+   "played": 0
+  },
+  "cost": {
+   "usd_per_1k_chars": 0.01,
+   "basis": "$6 per 1M audio output tokens to 2026-12-31, then $12 ($0.020/1k chars); batch half",
+   "source": "https://aistudio.google.com/docs/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
+ },
+ "gemini-3.8-flash-tts-male": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null,
+  "arena": {
+   "wins": 0,
+   "played": 0
+  },
+  "cost": {
+   "usd_per_1k_chars": 0.015,
+   "basis": "$9 per 1M audio output tokens to 2026-12-31, then $18 ($0.030/1k chars); batch half",
+   "source": "https://aistudio.google.com/docs/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
+ },
+ "gemini-3.8-live-male": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null,
+  "arena": {
+   "wins": 0,
+   "played": 0
+  },
+  "cost": {
+   "usd_per_1k_chars": 0.02,
+   "basis": "$12 per 1M audio output tokens ($0.018/min); Live sessions also bill input",
+   "source": "https://aistudio.google.com/docs/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
+ },
+ "openai-gpt-audio-male": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null,
+  "arena": {
+   "wins": 0,
+   "played": 0
+  },
+  "cost": {
+   "usd_per_1k_chars": 0.0427,
+   "basis": "$64 per 1M audio output tokens; ~600 tokens/min assumed (unpublished)",
+   "source": "https://developers.openai.com/api/docs/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
+ },
+ "elevenlabs-v4-male-nikud": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null,
+  "arena": {
+   "wins": 0,
+   "played": 0
+  },
+  "cost": {
+   "usd_per_1k_chars": 0.08,
+   "basis": "$0.08 per 1k characters on fal (from fal's listing; page not fetched)",
+   "source": "https://fal.ai/models/elevenlabs/tts/eleven-v4",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
+ },
+ "gemini-3.8-flash-lite-tts-male-nikud": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null,
+  "arena": {
+   "wins": 0,
+   "played": 0
+  },
+  "cost": {
+   "usd_per_1k_chars": 0.01,
+   "basis": "$6 per 1M audio output tokens to 2026-12-31, then $12 ($0.020/1k chars); batch half",
+   "source": "https://aistudio.google.com/docs/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
+ },
+ "gemini-3.8-flash-tts-male-nikud": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null,
+  "arena": {
+   "wins": 0,
+   "played": 0
+  },
+  "cost": {
+   "usd_per_1k_chars": 0.015,
+   "basis": "$9 per 1M audio output tokens to 2026-12-31, then $18 ($0.030/1k chars); batch half",
+   "source": "https://aistudio.google.com/docs/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
+ },
+ "gemini-3.8-live-male-nikud": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null,
+  "arena": {
+   "wins": 0,
+   "played": 0
+  },
+  "cost": {
+   "usd_per_1k_chars": 0.02,
+   "basis": "$12 per 1M audio output tokens ($0.018/min); Live sessions also bill input",
+   "source": "https://aistudio.google.com/docs/pricing",
+   "as_of": "2026-11-18",
+   "kind": "API list price"
+  }
+ },
+ "openai-gpt-audio-male-nikud": {
+  "status": "not screened",
+  "verdicts": {},
+  "fail_reasons": [],
+  "observations": [],
+  "first_fail": null,
+  "gender": null,
+  "annotator_words": "",
+  "annotator": null,
+  "arena": {
+   "wins": 0,
+   "played": 0
+  },
+  "cost": {
+   "usd_per_1k_chars": 0.0427,
+   "basis": "$64 per 1M audio output tokens; ~600 tokens/min assumed (unpublished)",
+   "source": "https://developers.openai.com/api/docs/pricing",
    "as_of": "2026-11-18",
    "kind": "API list price"
   }

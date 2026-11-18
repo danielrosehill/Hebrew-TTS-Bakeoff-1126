@@ -19,7 +19,21 @@ ORDER = ["phonikud-piper", "piper-he-noa", "kokoro-hebrew", "bluev3", "f5-hebrew
          "zonos3-mini", "chatterbox-multilingual", "voxcpm2", "omnivoice", "fish-s2-pro",
          "gemini-flash-tts", "elevenlabs-v3", "openai-tts", "google-cloud-tts"]
 # Variants of one model sit right after it (Daniel, 2026-11-18: "the same sentence with and without the nikud").
-VARIANTS = {"-nikud": " · with our nikud", "-auto": " · its own nikud", "-plain": " · no stress marks"}
+# Longest suffix first: "-male-nikud" must match before "-nikud". Male-voice runs (models/male-voices-api.py) are
+# variants of the same model, so they share its provenance row in data/models.json.
+VARIANTS = {"-male-nikud": " · male voice, with our nikud", "-male": " · male voice", "-nikud": " · with our nikud",
+            "-auto": " · its own nikud", "-plain": " · no stress marks"}
+# Voice gender of each model's main (default) voice, for the leaderboard's "Best by voice" panel. A run's own meta
+# `voice_gender` wins (the -male runs set it). Only voices whose gender is documented or was checked by ear/pitch are
+# listed; the rest stay unset (chatterbox, f5, fish, voxcpm2, phonikud: default or cloned voices, not checked).
+VOICE_GENDER = {"gemini-flash-tts": "female", "gemini-3.8-flash-tts": "female", "gemini-3.8-flash-lite-tts": "female",
+                "gemini-2.5-pro-tts": "female", "gemini-2.5-flash-tts": "female", "gemini-3.8-live": "female",
+                "gemini-3.1-flash-live": "female", "gemini-2.5-native-audio": "female",  # Kore
+                "google-cloud-tts": "female", "elevenlabs-v3": "female", "elevenlabs-v4": "female",  # Kore, Rachel
+                "openai-tts": "female", "openai-gpt-audio": "female", "xai-tts": "female",  # coral, coral, eve
+                "inworld-tts-2": "female", "minimax-speech-2.8-hd": "female", "piper-he-noa": "female",
+                "bluev3": "female", "omnivoice": "female", "zonos3-mini": "female",  # noa, voice design "female", Savannah
+                "kokoro-hebrew": "male"}  # he_shaul (SASPEECH, one male speaker)
 
 
 def base_of(slug):
@@ -31,7 +45,8 @@ def base_of(slug):
 
 def rank(slug):
     b, v = base_of(slug)
-    return (ORDER.index(b) if b in ORDER else 99, list(VARIANTS.values()).index(v) + 1 if v else 0)
+    order = ["", " · with our nikud", " · its own nikud", " · no stress marks", " · male voice", " · male voice, with our nikud"]
+    return (ORDER.index(b) if b in ORDER else 99, order.index(v) if v in order else 9)
 
 
 def generated_via(meta):
@@ -53,6 +68,8 @@ def runs():
         m = json.loads(meta.read_text())
         m["generated_via"] = generated_via(m)
         m.setdefault("generated", "2026-11-18")
+        if not m.get("voice_gender") and VOICE_GENDER.get(base_of(slug)[0]):
+            m["voice_gender"] = VOICE_GENDER[base_of(slug)[0]]
         found[slug] = (m, meta.parent)
         if (meta.parent / "plain").is_dir():
             m = dict(found[slug][0], slug=f"{slug}-plain",

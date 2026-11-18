@@ -64,11 +64,11 @@ def run(slug, via, voice, licence, synth, notes_extra=""):
         print(sl, len(times), "ok,", len(errs), "errors", errs, "rate", rate)
 
 
-def gemini_synth(model):
+def gemini_synth(model, voice="Kore"):
     def synth(text, path):
         body = {"contents": [{"parts": [{"text": text}]}],
                 "generationConfig": {"responseModalities": ["AUDIO"],
-                                     "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": "Kore"}}}}}
+                                     "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice}}}}}
         resp = json.loads(post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent", body, {"x-goog-api-key": os.environ["GEMINI_API_KEY"]}))
         part = resp["candidates"][0]["content"]["parts"][0]["inlineData"]
         raw = base64.b64decode(part["data"])

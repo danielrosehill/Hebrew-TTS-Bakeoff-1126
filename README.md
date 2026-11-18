@@ -3,6 +3,9 @@
 A small listening comparison of **open Hebrew text-to-speech models**, run 2026-11-18, on 20 sentences given both
 with and without nikud.
 
+- **Contact:** built a Hebrew TTS model and want it included? Write to
+  [public@danielrosehill.com](mailto:public@danielrosehill.com). There is no guarantee this evaluation will be re-run
+  or kept current as models change; every result carries the date it was made.
 - **Write-up:** [Choosing a Hebrew text-to-speech voice: a first look at 26 models](https://blog.danielrosehill.com/posts/hebrew-tts-bakeoff-first-look-qjruqp/) (blog, 2026-11-18).
 - **Everything in one place:** the Hugging Face collection [Hebrew TTS Bake-off 11/26](https://huggingface.co/collections/danielrosehill/hebrew-tts-bake-off-11-26-6afdec3193ad9622ff5a3d69).
 - **Leaderboard:** [Space `danielrosehill/Hebrew-TTS-Leaderboard`](https://huggingface.co/spaces/danielrosehill/Hebrew-TTS-Leaderboard): the Arena ranking, who is waiting, and who
@@ -107,6 +110,27 @@ English or multilingual model, or trained on several languages. The Phonikud voi
 The full provenance is in `data/models.json`, with sources, and with the fields that were confirmed kept apart from
 those that were inferred. Run settings, voices, hardware and timings are in `results/<run>/meta.json`.
 
+### Male voices (added 2026-11-18)
+
+Every voice that reached the Arena was female (Kore, Rachel, coral, eve, noa). So each voice still unbeaten on
+2026-11-18 was also run with a male voice, on s01 (Screening) and p01 (Arena), plain and with our nikud:
+`models/male-voices-api.py` writes `results/<model>-male/` and `results/<model>-male-nikud/`. Same model, prompt and
+input; only the prebuilt voice changes.
+
+| Model | Male voice | Main (female) voice |
+| --- | --- | --- |
+| Gemini 3.1 Flash TTS, 3.8 Flash TTS, 3.8 Flash Lite TTS | Charon | Kore |
+| Gemini 3.8 Live | Charon | Kore |
+| ElevenLabs v4 (fal) | Brian | Rachel |
+| OpenAI gpt-audio-1.5 | cedar | coral |
+
+Checked before publishing: median pitch of every male clip is 98-167 Hz (the Kore and Rachel clips: 174-244 Hz), and
+Gemini 2.5 Flash, asked to listen, heard a male speaker in the clips nearest the female range. gpt-audio-1.5 (male,
+nikud) read p01 and then repeated its last sentences three more times (41 s against about 21 s). It is kept as
+generated. Each run's meta has `voice_gender`; `scripts/build_space.py` (`VOICE_GENDER`) fills it in for the main
+voices where the gender is documented. The leaderboard uses it for its **Best by voice** panel: the top Arena voice
+for each gender.
+
 ### Run notes
 
 - **ZONOS3-Mini** has no Hebrew voice. It speaks in its American English release voice (Savannah).
@@ -154,6 +178,9 @@ next Arena session: tie-break rematches between the leader and those four, and g
 against the leader. The recorder's ▶ Listen uses Gemini 3.1 Flash TTS (Recorder release 534); if a 3.8 model wins the
 rematches, the switch is one environment variable.
 
+**Best by voice:** the best female voice is Gemini 3.1 Flash TTS (Kore). The best male voice is not decided yet. The
+12 male runs above (six models, plain and nikud) wait for Screening, then meet in the Arena. The leaderboard shows both live.
+
 **Out at Screening:** 23 runs, each with its reason, in the table below. **Waiting for Screening:** 17 runs. These
 include a new category, multimodal models with native audio output: Gemini 3.8 Live, Gemini 3.1 Flash Live and
 Gemini 2.5 Flash native audio ($0.020 each). They are instructed to read verbatim through the Live API (v1alpha).
@@ -167,15 +194,16 @@ Every run's pass/fail record from Daniel's listening, written by `scripts/screen
 <!-- screen:begin -->
 | Run | Status | Items heard | Arena (won / played) | $ per 1k chars | Why it failed | Observations | In the annotator's words |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `elevenlabs-v4-nikud` | survivor | s01 pass | 1 / 2 | 0.08 (API) | - | - |  |
+| `elevenlabs-v4-nikud` | survivor | s01 pass | 1 / 3 | 0.08 (API) | - | - |  |
+| `gemini-2.5-flash-tts-nikud` | survivor | s01 pass | - | 0.0167 (API) | - | - |  |
 | `gemini-2.5-native-audio-nikud` | survivor | s01 pass | 0 / 1 | 0.02 (API) | - | - | Pacing is very unnaturally slow, but passing is because it's worth hearing how well it does on a longer multi-sentence narration And especially given that conditioning for speed is possible. |
 | `gemini-2.5-pro-tts-nikud` | survivor | s01 pass | 0 / 2 | 0.0333 (API) | - | - |  |
-| `gemini-3.8-flash-lite-tts-nikud` | survivor | s01 pass | 0 / 2 | 0.01 (API) | - | - |  |
+| `gemini-3.8-flash-lite-tts-nikud` | survivor | s01 pass | 0 / 3 | 0.01 (API) | - | - |  |
 | `gemini-3.8-flash-tts-nikud` | survivor | s01 pass | 1 / 2 | 0.015 (API) | - | - |  |
-| `gemini-3.8-live` | survivor | s01 pass | 1 / 2 | 0.02 (API) | - | - |  |
-| `gemini-3.8-live-nikud` | survivor | s01 pass | 0 / 1 | 0.02 (API) | - | - |  |
-| `gemini-flash-tts-nikud` | survivor | s01 pass, s02 pass, s03 pass, s04 pass, s05 pass, s06 pass | 4 / 8 | 0.0333 (API) | - | - |  |
-| `openai-gpt-audio-nikud` | survivor | s01 pass | 0 / 1 | 0.0427 (API) | - | - |  |
+| `gemini-3.8-live` | survivor | s01 pass | 1 / 3 | 0.02 (API) | - | - |  |
+| `gemini-3.8-live-nikud` | survivor | s01 pass | 0 / 2 | 0.02 (API) | - | - |  |
+| `gemini-flash-tts-nikud` | survivor | s01 pass, s02 pass, s03 pass, s04 pass, s05 pass, s06 pass | 7 / 13 | 0.0333 (API) | - | - |  |
+| `openai-gpt-audio-nikud` | survivor | s01 pass | 0 / 2 | 0.0427 (API) | - | - |  |
 | `piper-he-noa-nikud` | survivor | s01 pass, s02 pass, s03 pass, s04 pass, s05 pass, s06 pass | 1 / 3 | 0.00012 (compute) | - | - | Okay, so um female voice, אני הייתי עושה את זה שוב. Um sounds good. Tiny note, really not important but I guess just to be thorough in my annotations here. Um אני הייתי עושה את זה שוב, עושה. Um the vowelization is for fo… |
 | `xai-tts` | survivor | s01 pass | 0 / 2 | 0.015 (API) | - | - |  |
 | `xai-tts-nikud` | survivor | s01 pass | 1 / 2 | 0.015 (API) | - | - |  |
@@ -205,17 +233,28 @@ Every run's pass/fail record from Daniel's listening, written by `scripts/screen
 | `voxcpm2` | out | s02 fail | - | 0.01225 (compute) | Audio quality (noise, narrowband, muddy, level) | - | Super weird one actually here. Sounded like pronunciation correct, audio quality very poor. Sounded like some guy, sounded like a slightly angry man shouting down a bad telephone connection. Like sounded very narrowband,… |
 | `zonos3-mini` | out | s01 fail | - | 0.03721 (compute) | Not Hebrew / wrong voice | - | Okay, not sure what went wrong here, but this isn't even Hebrew. It came out as non- a non-intelligible language, whatever it was supposed to be. So yeah, this one is a this one is a hard fail. I'll be interested to know… |
 | `elevenlabs-v4` | not screened | - | - | 0.08 (API) | - | - |  |
+| `elevenlabs-v4-male` | not screened | - | - | 0.08 (API) | - | - |  |
+| `elevenlabs-v4-male-nikud` | not screened | - | - | 0.08 (API) | - | - |  |
 | `gemini-2.5-flash-tts` | not screened | - | - | 0.0167 (API) | - | - |  |
-| `gemini-2.5-flash-tts-nikud` | not screened | - | - | 0.0167 (API) | - | - |  |
 | `gemini-2.5-native-audio` | not screened | - | - | 0.02 (API) | - | - |  |
 | `gemini-2.5-pro-tts` | not screened | - | - | 0.0333 (API) | - | - |  |
 | `gemini-3.1-flash-live` | not screened | - | - | 0.02 (API) | - | - |  |
 | `gemini-3.1-flash-live-nikud` | not screened | - | - | 0.02 (API) | - | - |  |
 | `gemini-3.8-flash-lite-tts` | not screened | - | - | 0.01 (API) | - | - |  |
+| `gemini-3.8-flash-lite-tts-male` | not screened | - | - | 0.01 (API) | - | - |  |
+| `gemini-3.8-flash-lite-tts-male-nikud` | not screened | - | - | 0.01 (API) | - | - |  |
 | `gemini-3.8-flash-tts` | not screened | - | - | 0.015 (API) | - | - |  |
+| `gemini-3.8-flash-tts-male` | not screened | - | - | 0.015 (API) | - | - |  |
+| `gemini-3.8-flash-tts-male-nikud` | not screened | - | - | 0.015 (API) | - | - |  |
+| `gemini-3.8-live-male` | not screened | - | - | 0.02 (API) | - | - |  |
+| `gemini-3.8-live-male-nikud` | not screened | - | - | 0.02 (API) | - | - |  |
+| `gemini-flash-tts-male` | not screened | - | - | 0.0333 (API) | - | - |  |
+| `gemini-flash-tts-male-nikud` | not screened | - | - | 0.0333 (API) | - | - |  |
 | `inworld-tts-2` | not screened | - | - | 0.025 (API) | - | - |  |
 | `minimax-speech-2.8-hd` | not screened | - | - | 0.1 (API) | - | - |  |
 | `openai-gpt-audio` | not screened | - | - | 0.0427 (API) | - | - |  |
+| `openai-gpt-audio-male` | not screened | - | - | 0.0427 (API) | - | - |  |
+| `openai-gpt-audio-male-nikud` | not screened | - | - | 0.0427 (API) | - | - |  |
 <!-- screen:end -->
 
 ## Layout

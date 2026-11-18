@@ -1,0 +1,20 @@
+{
+ "slug": "openai-gpt-audio-male",
+ "hf_id": null,
+ "revision": "gpt-audio-1.5",
+ "licence": "provider API terms",
+ "input": "plain",
+ "voice": "cedar (male)",
+ "voice_gender": "male",
+ "reference_clip": null,
+ "gpu": "API",
+ "sample_rate": 24000,
+ "load_s": null,
+ "per_sentence_s": {
+  "s01": 2.99,
+  "p01": 6.13
+ },
+ "generated": "2026-11-18",
+ "generated_via": "api:openai chat completions, audio output gpt-audio-1.5",
+ "notes": "Given plain Hebrew. Male-voice variant of openai-gpt-audio: same model and prompt, voice cedar (male). per_sentence_s is the request round trip."
+}

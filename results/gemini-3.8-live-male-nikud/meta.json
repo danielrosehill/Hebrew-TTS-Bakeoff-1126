@@ -1,0 +1,20 @@
+{
+ "slug": "gemini-3.8-live-male-nikud",
+ "hf_id": null,
+ "revision": "gemini-3.8-live",
+ "licence": "provider API terms",
+ "input": "nikud",
+ "voice": "Charon (prebuilt, male)",
+ "voice_gender": "male",
+ "reference_clip": null,
+ "gpu": "API",
+ "sample_rate": 24000,
+ "load_s": null,
+ "per_sentence_s": {
+  "s01": 3.22,
+  "p01": 23.62
+ },
+ "generated": "2026-11-18",
+ "generated_via": "api:gemini Live API (native audio, instructed to read verbatim) gemini-3.8-live",
+ "notes": "Given the checked nikud as text. Male-voice variant of gemini-3.8-live: same model and prompt, voice Charon (prebuilt, male). per_sentence_s is the request round trip."
+}

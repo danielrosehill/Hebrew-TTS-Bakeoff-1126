@@ -1,0 +1,20 @@
+{
+ "slug": "openai-gpt-audio-male-nikud",
+ "hf_id": null,
+ "revision": "gpt-audio-1.5",
+ "licence": "provider API terms",
+ "input": "nikud",
+ "voice": "cedar (male)",
+ "voice_gender": "male",
+ "reference_clip": null,
+ "gpu": "API",
+ "sample_rate": 24000,
+ "load_s": null,
+ "per_sentence_s": {
+  "s01": 2.51,
+  "p01": 15.77
+ },
+ "generated": "2026-11-18",
+ "generated_via": "api:openai chat completions, audio output gpt-audio-1.5",
+ "notes": "Given the checked nikud as text. Male-voice variant of openai-gpt-audio: same model and prompt, voice cedar (male). per_sentence_s is the request round trip. p01 (2026-11-18): the model read the paragraph, then repeated its last sentences three more times (41 s against about 21 s); kept as generated, not retried."
+}
