@@ -184,7 +184,7 @@ a male against a female voice is mostly a judgement of the voices, not of the mo
 genders (Kokoro vs Piper, Gemini 3.1 Flash vs Chatterbox, Kokoro vs Chatterbox); they stay in the data but no longer
 count. Every decision like this is logged in the annotations dataset, `annotations/hebrew-tts-bakeoff-1126/decisions.jsonl`.
 
-Final standings for this session, 2026-11-18 at 21:08 UTC (W-T-L on p01; a voice is out at its first loss). Nearly every vote between the
+Final standings, Arena closed 2026-11-18 at 21:12 UTC (W-T-L on p01; a voice is out at its first loss). Nearly every vote between the
 leading voices is a tie: by ear on this paragraph they are not separable, so Bradley-Terry only orders them loosely.
 
 **Female bracket: decided.** Gemini 3.1 Flash TTS (Kore, nikud) never lost; five voices are unbeaten beside it, each
@@ -211,29 +211,32 @@ having drawn with it (same-clip rematches are off: a draw stays a draw, and Brad
 Chatterbox and Kokoro (plain, male voice) went out as "both bad" against each other; their other votes crossed genders
 and no longer count.
 
-**Male bracket: open.** Gemini 3.8 Flash TTS (Charon, plain) leads, 2-4-0. Five play-off matches against it were left
-unplayed (3.1 Flash Charon nikud, ElevenLabs v4 Brian nikud, 3.8 Flash Lite nikud, 3.8 Flash nikud, gpt-audio-1.5 cedar
-nikud). Gemini 3.1 Flash TTS's own male voice tied the leader.
+**Male bracket: closed with a leader.** Gemini 3.1 Flash TTS (Charon, with nikud) beat the previous leader, Gemini 3.8
+Flash (Charon, plain), and ElevenLabs v4 Brian, and tied 3.8 Flash Lite and 3.8 Live. The Arena was closed at that point
+(the annotator: "there's really not much in the remaining ones"); four play-off matches against it were left unplayed.
 
 | Voice (Charon unless named) | W-T-L | Status | The annotator |
 | --- | --- | --- | --- |
-| **Gemini 3.8 Flash TTS (plain)** | 2-4-0 | **leader** | more personality and prosody, less robotic |
-| Gemini 3.1 Flash TTS (plain) | 0-2-0 | unbeaten: tied the leader | |
-| Gemini 3.1 Flash TTS (nikud) | 0-1-0 | unbeaten: tied its plain run | |
-| Gemini 3.8 Flash Lite TTS (plain) | 0-3-0 | unbeaten | brighter audio |
-| Gemini 3.8 Flash Lite TTS (nikud) | 0-1-0 | unbeaten | "a little bit of personality": meaning carried beyond the words; his pick for a use |
-| Gemini 3.8 Flash TTS (nikud) | 0-2-0 | unbeaten | competent, not expressive |
-| ElevenLabs v4 (Brian, plain) | 0-2-0 | unbeaten | native-sounding, one non-native R (בבוקר) |
-| Gemini 3.8 Live (plain) | 0-2-0 | unbeaten | deep announcer voice: announcements and phone trees, too flat for narration |
-| ElevenLabs v4 (Brian, nikud) | 0-2-0 | unbeaten | the same: deep, announcer, too flat for narration |
-| gpt-audio-1.5 (cedar, plain) | 0-1-1 | out: lost to the leader | |
+| **Gemini 3.1 Flash TTS (nikud)** | 2-3-0 | **leader** | |
+| Gemini 3.1 Flash TTS (plain) | 0-2-0 | unbeaten | |
+| Gemini 3.8 Flash Lite TTS (plain) | 0-4-0 | unbeaten | brighter audio |
+| Gemini 3.8 Live (plain) | 0-3-0 | unbeaten | deep announcer voice: announcements and phone trees, too flat for narration |
+| Gemini 3.8 Flash TTS (nikud) | 0-2-0 | unbeaten, not played vs the leader | competent, not expressive |
+| Gemini 3.8 Flash Lite TTS (nikud) | 0-1-0 | unbeaten, not played vs the leader | "a little bit of personality": meaning carried beyond the words; his pick for a use |
+| ElevenLabs v4 (Brian, nikud) | 0-2-0 | unbeaten, not played vs the leader | deep, announcer, too flat for narration |
+| Gemini 3.8 Flash TTS (plain) | 2-4-1 | out: lost to 3.1 Flash | more personality and prosody, less robotic |
+| ElevenLabs v4 (Brian, plain) | 0-2-1 | out: lost to 3.1 Flash | native-sounding, one non-native R (בבוקר) |
+| gpt-audio-1.5 (cedar, plain) | 0-1-1 | out: lost to 3.8 Flash | |
 | Gemini 3.8 Live (nikud) | 0-0-1 | out: lost to 3.8 Flash | a little more robotic |
+
+**Outcome.** Gemini 3.1 Flash TTS given checked nikud leads both brackets and was never beaten: Kore 9-11-0, Charon
+2-3-0. Below it the good voices are not separable by ear on p01; Gemini 3.8 Flash Lite is the cheapest of those that tie
+it (about a third of the price). What still separates them is character and fit for a use (below and on the leaderboard).
 
 **Same models, both genders.** With their female and male voices alike, Gemini 3.8 Flash, 3.8 Flash Lite and ElevenLabs
 v4 are unbeaten, and gpt-audio-1.5 is out. Gemini 3.8 Live is the one model that splits, and it splits by input, not
 gender: with Kore its nikud run survived and its plain run lost; with Charon the reverse. So the preference follows the
-model, not the voice. Gemini 3.1 Flash TTS, the female winner, holds up with its male voice too: Charon on 3.1 Flash
-tied the male leader (3.8 Flash, also Charon).
+model, not the voice. Gemini 3.1 Flash TTS wins with both voices: Kore in the female bracket, Charon in the male one.
 
 **Linguistic quality vs personality.** The votes judge the reading: nikud, accuracy, pauses, naturalness. Between the
 leaders those are a tie. What does separate them for Daniel is personality and fit for a use ("the next step for
