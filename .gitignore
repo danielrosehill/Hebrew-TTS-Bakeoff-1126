@@ -1,0 +1,3 @@
+results/*/*.wav
+!results/.keep
+__pycache__/
