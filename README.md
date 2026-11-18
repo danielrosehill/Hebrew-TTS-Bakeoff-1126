@@ -102,7 +102,7 @@ those that were inferred. Run settings, voices, hardware and timings are in `res
 | `scripts/publish_results.py` | Pushes the results dataset |
 | `scripts/register_eval.py` | Registers this evaluation (`--push`) in `Hebrish/Hebrew-TTS-Evaluations` |
 | `hub/evaluations/` | That registry's Hub card and its last pushed rows |
-| `notes-space/` | A private Gradio app for listening notes |
+| (moved) | The annotation Space's config and the listening work now live in the private repo `danielrosehill/Hebrew-TTS-Listening-Notes` |
 | `hub/eval-set/` | The eval set's Hub card |
 
 The listening notes rate each clip from 1 to 5 on naturalness, clarity and Hebrew accuracy. Nikud accuracy is a yes or
