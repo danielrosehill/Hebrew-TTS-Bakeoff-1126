@@ -708,5 +708,30 @@
   "inferred": [
    "only one voice tried"
   ]
+ },
+ {
+  "slug": "openai-gpt-audio",
+  "hf_id": null,
+  "name": "OpenAI gpt-audio-1.5",
+  "publisher": "OpenAI",
+  "publisher_type": "company",
+  "publisher_note": "US AI company",
+  "release_date": null,
+  "architecture": "multimodal chat model with audio output",
+  "params": null,
+  "base_model": null,
+  "training_origin": "proprietary",
+  "hebrew_training_data": null,
+  "hebrew_input": "plain text in a chat prompt; instructed to read verbatim",
+  "licence": "OpenAI terms of service",
+  "sources": [
+   "https://platform.openai.com/docs/models"
+  ],
+  "confirmed": [
+   "model id listed by the OpenAI models API on 2026-11-18"
+  ],
+  "inferred": [
+   "release date unknown"
+  ]
  }
 ]

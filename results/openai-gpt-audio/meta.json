@@ -1,0 +1,18 @@
+{
+ "slug": "openai-gpt-audio",
+ "hf_id": null,
+ "revision": "gpt-audio-1.5",
+ "licence": "OpenAI terms of service",
+ "input": "plain",
+ "voice": "coral",
+ "reference_clip": null,
+ "gpu": "API",
+ "sample_rate": 24000,
+ "load_s": null,
+ "per_sentence_s": {
+  "s01": 3.09
+ },
+ "generated": "2026-11-18",
+ "generated_via": "api:openai gpt-audio-1.5 (chat completions, audio output)",
+ "notes": "Instructed to read the text exactly as a native Israeli speaker. A chat model, so it may paraphrase: listen for that."
+}
