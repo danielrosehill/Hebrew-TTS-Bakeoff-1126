@@ -184,15 +184,15 @@ a male against a female voice is mostly a judgement of the voices, not of the mo
 genders (Kokoro vs Piper, Gemini 3.1 Flash vs Chatterbox, Kokoro vs Chatterbox); they stay in the data but no longer
 count. Every decision like this is logged in the annotations dataset, `annotations/hebrew-tts-bakeoff-1126/decisions.jsonl`.
 
-Standings on 2026-11-18 at 20:44 UTC (W-T-L on p01; a voice is out at its first loss). Nearly every vote between the
+Final standings for this session, 2026-11-18 at 21:08 UTC (W-T-L on p01; a voice is out at its first loss). Nearly every vote between the
 leading voices is a tie: by ear on this paragraph they are not separable, so Bradley-Terry only orders them loosely.
 
-**Female bracket:** the play-off is decided. Gemini 3.1 Flash TTS (Kore, nikud) leads and has never lost; five voices are
-unbeaten beside it, each having drawn with it (same-clip rematches are off: a draw stays a draw).
+**Female bracket: decided.** Gemini 3.1 Flash TTS (Kore, nikud) never lost; five voices are unbeaten beside it, each
+having drawn with it (same-clip rematches are off: a draw stays a draw, and Bradley-Terry orders them within noise).
 
 | Voice (Kore unless named; nikud unless marked plain) | W-T-L | Status | $ / 1k chars | The annotator |
 | --- | --- | --- | --- | --- |
-| **Gemini 3.1 Flash TTS** | 7-11-0 | **leader** | 0.033 | "Superb", maybe the best Hebrew synthesis he has heard |
+| **Gemini 3.1 Flash TTS** | 9-11-0 | **winner** | 0.033 | "Superb", maybe the best Hebrew synthesis he has heard |
 | Gemini 3.8 Flash TTS (plain) | 0-1-0 | unbeaten | 0.015 | tied the leader; breaths, accent very close to it |
 | ElevenLabs v4 (Rachel, plain) | 0-3-0 | unbeaten | 0.08 | "a bit of style", cleaner and brighter: his pick for a podcast |
 | Gemini 3.8 Live (native audio) | 0-3-0 | unbeaten | 0.020 | |
@@ -202,7 +202,8 @@ unbeaten beside it, each having drawn with it (same-clip rematches are off: a dr
 | ElevenLabs v4 (Rachel) | 1-1-1 | out: lost the tie-break to the leader | 0.08 | |
 | xAI TTS (eve) | 1-0-1 | out: lost to the leader | 0.015 | |
 | gpt-audio-1.5 (coral), plain and nikud | 0-0-1, 0-1-1 | out: both lost to the leader | 0.043 | |
-| Gemini 2.5 Pro TTS | 0-1-1 | out: lost to the leader | 0.033 | |
+| Gemini 2.5 Pro TTS, nikud and plain | 0-1-1, 0-0-1 | out: both lost to the leader | 0.033 | |
+| Gemini 3.8 Flash Lite TTS (plain) | 0-0-1 | out: lost to the leader | 0.010 | |
 | Piper Hebrew noa | 0-0-3 | out | ~0.0001 (CPU) | "a preceding generation of TTS"; too fast, flat |
 | xAI TTS (eve, plain) | 0-0-2 | out | 0.015 | |
 | Gemini 2.5 Flash native audio | 0-0-1 | out | 0.020 | |
@@ -210,12 +211,15 @@ unbeaten beside it, each having drawn with it (same-clip rematches are off: a dr
 Chatterbox and Kokoro (plain, male voice) went out as "both bad" against each other; their other votes crossed genders
 and no longer count.
 
-**Male bracket** (opened 2026-11-18): Gemini 3.8 Flash TTS (Charon, plain) leads, 2-3-0. Four play-off matches against
-it are still to come (ElevenLabs v4 Brian nikud, 3.8 Flash Lite nikud, 3.8 Flash nikud, gpt-audio-1.5 cedar nikud).
+**Male bracket: open.** Gemini 3.8 Flash TTS (Charon, plain) leads, 2-4-0. Five play-off matches against it were left
+unplayed (3.1 Flash Charon nikud, ElevenLabs v4 Brian nikud, 3.8 Flash Lite nikud, 3.8 Flash nikud, gpt-audio-1.5 cedar
+nikud). Gemini 3.1 Flash TTS's own male voice tied the leader.
 
 | Voice (Charon unless named) | W-T-L | Status | The annotator |
 | --- | --- | --- | --- |
-| **Gemini 3.8 Flash TTS (plain)** | 2-3-0 | **leader** | more personality and prosody, less robotic |
+| **Gemini 3.8 Flash TTS (plain)** | 2-4-0 | **leader** | more personality and prosody, less robotic |
+| Gemini 3.1 Flash TTS (plain) | 0-2-0 | unbeaten: tied the leader | |
+| Gemini 3.1 Flash TTS (nikud) | 0-1-0 | unbeaten: tied its plain run | |
 | Gemini 3.8 Flash Lite TTS (plain) | 0-3-0 | unbeaten | brighter audio |
 | Gemini 3.8 Flash Lite TTS (nikud) | 0-1-0 | unbeaten | "a little bit of personality": meaning carried beyond the words; his pick for a use |
 | Gemini 3.8 Flash TTS (nikud) | 0-2-0 | unbeaten | competent, not expressive |
@@ -228,8 +232,8 @@ it are still to come (ElevenLabs v4 Brian nikud, 3.8 Flash Lite nikud, 3.8 Flash
 **Same models, both genders.** With their female and male voices alike, Gemini 3.8 Flash, 3.8 Flash Lite and ElevenLabs
 v4 are unbeaten, and gpt-audio-1.5 is out. Gemini 3.8 Live is the one model that splits, and it splits by input, not
 gender: with Kore its nikud run survived and its plain run lost; with Charon the reverse. So the preference follows the
-model, not the voice. The open question is Gemini 3.1 Flash TTS, the female leader: its own male voice (Charon) has
-not been screened yet.
+model, not the voice. Gemini 3.1 Flash TTS, the female winner, holds up with its male voice too: Charon on 3.1 Flash
+tied the male leader (3.8 Flash, also Charon).
 
 **Linguistic quality vs personality.** The votes judge the reading: nikud, accuracy, pauses, naturalness. Between the
 leaders those are a tie. What does separate them for Daniel is personality and fit for a use ("the next step for
@@ -239,10 +243,10 @@ voice in `voice-character.jsonl` and shown on the leaderboard next to the measur
 The recorder's ▶ Listen uses Gemini 3.1 Flash TTS (Recorder release 534); if a 3.8 model is preferred, the switch is
 one environment variable.
 
-**Screening:** 29 runs survive, 26 are out (each with its reason in the table below), 6 are not screened yet: Gemini 3.1
-Flash TTS male (plain and nikud), and the plain runs of Gemini 2.5 Flash, 2.5 Pro, 3.1 Flash Live and 3.8 Flash Lite,
-whose nikud runs he already passed. Plain-text runs pass too (ElevenLabs v4, Gemini 3.8 Flash, 3.8 Live, MiniMax,
-Inworld), so nikud is no longer the only way through.
+**Screening: complete.** 35 runs passed and 26 are out, each with its reason in the table below. Plain-text runs pass
+too (ElevenLabs v4, the Gemini 3.x and 2.5 TTS models, 3.8 Live, MiniMax, Inworld), so nikud is not the only way
+through. Gemini 2.5 Flash TTS and 3.1 Flash Live passed on plain text but have no p01 clip (only their nikud runs were
+generated for round 2), so they are not in the Arena.
 
 ## Screen results (pass 1)
 
@@ -255,22 +259,28 @@ Every run's pass/fail record from Daniel's listening, written by `scripts/screen
 | `elevenlabs-v4-male` | survivor | s01 pass | 0 / 2 | 0.08 (API) | - | - |  |
 | `elevenlabs-v4-male-nikud` | survivor | s01 pass | 0 / 2 | 0.08 (API) | - | - |  |
 | `elevenlabs-v4-nikud` | survivor | s01 pass | 1 / 3 | 0.08 (API) | - | - |  |
+| `gemini-2.5-flash-tts` | survivor | s01 pass | - | 0.0167 (API) | - | - |  |
 | `gemini-2.5-flash-tts-nikud` | survivor | s01 pass | - | 0.0167 (API) | - | - |  |
 | `gemini-2.5-native-audio-nikud` | survivor | s01 pass | 0 / 1 | 0.02 (API) | - | - | Pacing is very unnaturally slow, but passing is because it's worth hearing how well it does on a longer multi-sentence narration And especially given that conditioning for speed is possible. |
+| `gemini-2.5-pro-tts` | survivor | s01 pass | 0 / 1 | 0.0333 (API) | - | - |  |
 | `gemini-2.5-pro-tts-nikud` | survivor | s01 pass | 0 / 2 | 0.0333 (API) | - | - |  |
+| `gemini-3.1-flash-live` | survivor | s01 pass | - | 0.02 (API) | - | - |  |
 | `gemini-3.1-flash-live-nikud` | survivor | s01 pass | - | 0.02 (API) | - | - |  |
+| `gemini-3.8-flash-lite-tts` | survivor | s01 pass | 0 / 1 | 0.01 (API) | - | - |  |
 | `gemini-3.8-flash-lite-tts-male` | survivor | s01 pass | 0 / 3 | 0.01 (API) | - | - |  |
 | `gemini-3.8-flash-lite-tts-male-nikud` | survivor | s01 pass | 0 / 1 | 0.01 (API) | - | - |  |
 | `gemini-3.8-flash-lite-tts-nikud` | survivor | s01 pass | 0 / 5 | 0.01 (API) | - | - |  |
 | `gemini-3.8-flash-tts` | survivor | s01 pass | 0 / 1 | 0.015 (API) | - | - |  |
-| `gemini-3.8-flash-tts-male` | survivor | s01 pass | 2 / 5 | 0.015 (API) | - | - |  |
+| `gemini-3.8-flash-tts-male` | survivor | s01 pass | 2 / 6 | 0.015 (API) | - | - |  |
 | `gemini-3.8-flash-tts-male-nikud` | survivor | s01 pass | 0 / 2 | 0.015 (API) | - | - |  |
 | `gemini-3.8-flash-tts-nikud` | survivor | s01 pass | 2 / 5 | 0.015 (API) | - | - |  |
 | `gemini-3.8-live` | survivor | s01 pass | 1 / 3 | 0.02 (API) | - | - |  |
 | `gemini-3.8-live-male` | survivor | s01 pass | 0 / 2 | 0.02 (API) | - | - |  |
 | `gemini-3.8-live-male-nikud` | survivor | s01 pass | 0 / 1 | 0.02 (API) | - | - |  |
 | `gemini-3.8-live-nikud` | survivor | s01 pass | 0 / 3 | 0.02 (API) | - | - |  |
-| `gemini-flash-tts-nikud` | survivor | s01 pass, s02 pass, s03 pass, s04 pass, s05 pass, s06 pass | 8 / 19 | 0.0333 (API) | - | - |  |
+| `gemini-flash-tts-male` | survivor | s01 pass | 0 / 2 | 0.0333 (API) | - | - |  |
+| `gemini-flash-tts-male-nikud` | survivor | s01 pass | 0 / 1 | 0.0333 (API) | - | - |  |
+| `gemini-flash-tts-nikud` | survivor | s01 pass, s02 pass, s03 pass, s04 pass, s05 pass, s06 pass | 10 / 21 | 0.0333 (API) | - | - |  |
 | `inworld-tts-2` | survivor | s01 pass | - | 0.025 (API) | - | - |  |
 | `minimax-speech-2.8-hd` | survivor | s01 pass | - | 0.1 (API) | - | - |  |
 | `openai-gpt-audio` | survivor | s01 pass | 0 / 1 | 0.0427 (API) | - | - |  |
@@ -306,12 +316,6 @@ Every run's pass/fail record from Daniel's listening, written by `scripts/screen
 | `piper-he-noa` | out | s01 pass, s02 pass, s03 pass, s04 fail | - | 0.00012 (compute) | Mispronunciation | Slightly noisy or muddy |  |
 | `voxcpm2` | out | s02 fail | - | 0.01225 (compute) | Audio quality (noise, narrowband, muddy, level) | - | Super weird one actually here. Sounded like pronunciation correct, audio quality very poor. Sounded like some guy, sounded like a slightly angry man shouting down a bad telephone connection. Like sounded very narrowband,… |
 | `zonos3-mini` | out | s01 fail | - | 0.03721 (compute) | Not Hebrew / wrong voice | - | Okay, not sure what went wrong here, but this isn't even Hebrew. It came out as non- a non-intelligible language, whatever it was supposed to be. So yeah, this one is a this one is a hard fail. I'll be interested to know… |
-| `gemini-2.5-flash-tts` | not screened | - | - | 0.0167 (API) | - | - |  |
-| `gemini-2.5-pro-tts` | not screened | - | - | 0.0333 (API) | - | - |  |
-| `gemini-3.1-flash-live` | not screened | - | - | 0.02 (API) | - | - |  |
-| `gemini-3.8-flash-lite-tts` | not screened | - | - | 0.01 (API) | - | - |  |
-| `gemini-flash-tts-male` | not screened | - | - | 0.0333 (API) | - | - |  |
-| `gemini-flash-tts-male-nikud` | not screened | - | - | 0.0333 (API) | - | - |  |
 <!-- screen:end -->
 
 ## Layout
