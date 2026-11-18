@@ -12,7 +12,7 @@ from huggingface_hub import HfApi, hf_hub_download
 SPACE = "Hebrish/Hebrew-TTS-Bakeoff-1126"
 BASE = f"https://huggingface.co/spaces/{SPACE}/resolve/main/"
 NOTES_REPO = os.environ.get("NOTES_REPO", "danielrosehill/Hebrew-TTS-Bakeoff-1126-Notes")
-AXES = [("voice", "Voice quality"), ("hebrew", "Hebrew accuracy"), ("nikud", "Nikud accuracy")]
+AXES = [("voice", "Voice quality"), ("hebrew", "Hebrew accuracy"), ("nikud", "Nikud accuracy (vowels heard match the card)")]
 SCALE = ["1", "2", "3", "4", "5"]
 api = HfApi(token=os.environ.get("HF_TOKEN"))
 LOCAL = "/tmp/notes.jsonl"
@@ -86,7 +86,8 @@ def table():
 
 with gr.Blocks(title="TTS bake-off notes") as demo:
     gr.Markdown("## Hebrew TTS bake-off: listening notes\n1 = bad, 5 = native-perfect. Nikud accuracy: do the vowels you "
-                "hear match the pointed text?")
+                "hear match the pointed text? On a clip made from plain text (no nikud given) that score is the model's "
+                "**nikud inference**; on a clip given the nikud it is how faithfully it follows it.")
     with gr.Tab("Rate"):
         with gr.Row():
             model = gr.Dropdown(list(MODELS), value=list(MODELS)[0], label="Model")

@@ -46,6 +46,7 @@
   <nav>
     <button data-v="sent" class="on">By sentence</button>
     <button data-v="model">By model</button>
+    <button data-v="nikud">Nikud inference</button>
     <button data-v="info">Models</button>
   </nav>
 </header>
@@ -63,7 +64,7 @@ function sentHead(s) {
 }
 function bySentence() {
   return D.sentences.map((s) => `<div class="card">${sentHead(s)}<div class="lbl" style="margin-top:14px">Models</div>` +
-    D.models.map((m) => m.clips[s.id] ? `<div class="row"><div>${esc(m.name)}${inputBadge(m)}</div><audio controls preload="none" src="${m.clips[s.id]}"></audio></div>` : "").join("") +
+    D.models.map((m) => m.clips[s.id] ? `<div class="row"><div>${m.base && m.base !== m.slug ? "↳ " : ""}${esc(m.name)}${inputBadge(m)}</div><audio controls preload="none" src="${m.clips[s.id]}"></audio></div>` : "").join("") +
     `</div>`).join("");
 }
 function byModel() {
@@ -73,6 +74,18 @@ function byModel() {
   return `<div class="card"><select id="pick">${opts}</select> ${inputBadge(m)}</div>` +
     D.sentences.map((s) => `<div class="card"><div class="meta">${esc(s.id)} · ${esc(s.english)}</div><div class="he nikud">${esc(s.text_nikud)}</div>` +
       (m.clips[s.id] ? `<audio controls preload="none" src="${m.clips[s.id]}"></audio>` : `<div class="meta">no clip</div>`) + `</div>`).join("");
+}
+// Nikud inference (Daniel, 2026-11-18): any reader of unpointed Hebrew, model or person, infers the vowels. A model run
+// both on the plain text and on the checked nikud isolates that skill: the difference between the two clips is it.
+function nikudInference() {
+  const groups = {};
+  D.models.forEach((m) => (groups[m.base || m.slug] ||= []).push(m));
+  const pairs = Object.values(groups).filter((g) => g.some((m) => m.run.input === "nikud") && g.some((m) => m.run.input !== "nikud"));
+  const intro = `<div class="card"><b>Nikud inference</b>: anyone reading unpointed Hebrew, a model or a person, infers the vowels
+    from what they know. Where a model can take both, it is run on the plain text (it infers the vowels) and on the checked nikud
+    (the vowels are given). The difference between the two clips is the model's nikud inference. ${pairs.length} model${pairs.length === 1 ? "" : "s"} so far.</div>`;
+  return intro + D.sentences.map((s) => `<div class="card">${sentHead(s)}` + pairs.map((g) => `<div class="lbl" style="margin-top:14px">${esc(g[0].provenance?.name || g[0].name)}</div>` +
+    g.map((m) => m.clips[s.id] ? `<div class="row"><div>${m.run.input === "nikud" ? "Given the nikud" : "Inferring the nikud"}${inputBadge(m)}<br><span class="meta">${esc(m.name)}</span></div><audio controls preload="none" src="${m.clips[s.id]}"></audio></div>` : "").join("")).join("") + `</div>`).join("");
 }
 function info() {
   const mean = (o) => { const v = Object.values(o || {}); return v.length ? (v.reduce((a, b) => a + b, 0) / v.length).toFixed(2) + " s" : ""; };
@@ -88,7 +101,7 @@ function info() {
 }
 function render() {
   document.querySelectorAll("nav button").forEach((b) => b.classList.toggle("on", b.dataset.v === view));
-  document.getElementById("main").innerHTML = view === "sent" ? bySentence() : view === "model" ? byModel() : info();
+  document.getElementById("main").innerHTML = view === "sent" ? bySentence() : view === "model" ? byModel() : view === "nikud" ? nikudInference() : info();
   document.getElementById("pick")?.addEventListener("change", (e) => { pick = e.target.value; render(); });
 }
 document.querySelector("nav").addEventListener("click", (e) => { if (e.target.dataset.v) { view = e.target.dataset.v; render(); } });

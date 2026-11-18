@@ -15,8 +15,22 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "space"
 SPACE = "Hebrish/Hebrew-TTS-Bakeoff-1126"
 # Display order: nikud-aware first, then the Hebrew-specific plain-text models, then multilingual ones.
-ORDER = ["phonikud-piper", "phonikud-piper-plain", "piper-he-noa", "kokoro-hebrew", "bluev3", "f5-hebrew-v2",
+ORDER = ["phonikud-piper", "piper-he-noa", "kokoro-hebrew", "bluev3", "f5-hebrew-v2",
          "zonos3-mini", "chatterbox-multilingual", "voxcpm2", "omnivoice", "fish-s2-pro"]
+# Variants of one model sit right after it (Daniel, 2026-11-18: "the same sentence with and without the nikud").
+VARIANTS = {"-nikud": " · with our nikud", "-auto": " · its own nikud", "-plain": " · no stress marks"}
+
+
+def base_of(slug):
+    for suf in VARIANTS:
+        if slug.endswith(suf):
+            return slug[: -len(suf)], VARIANTS[suf]
+    return slug, ""
+
+
+def rank(slug):
+    b, v = base_of(slug)
+    return (ORDER.index(b) if b in ORDER else 99, list(VARIANTS.values()).index(v) + 1 if v else 0)
 
 
 def runs():
@@ -29,7 +43,7 @@ def runs():
                      notes="Same voice and nikud, without the Phonikud stress and vocal-shva marks (plain phonemize()): "
                            "how the recorder's Listen clips sounded before this bake-off.")
             found[f"{slug}-plain"] = (m, meta.parent / "plain")
-    return sorted(found.items(), key=lambda kv: ORDER.index(kv[0]) if kv[0] in ORDER else 99)
+    return sorted(found.items(), key=lambda kv: rank(kv[0]))
 
 
 def main():
@@ -40,7 +54,7 @@ def main():
     (OUT / "audio").mkdir(parents=True, exist_ok=True)
     models = []
     for slug, (meta, folder) in runs():
-        base = slug.removesuffix("-plain")
+        base, label = base_of(slug)
         dest = OUT / "audio" / slug
         dest.mkdir(parents=True, exist_ok=True)
         clips = {}
@@ -52,7 +66,7 @@ def main():
                 clips[s["id"]] = f"audio/{slug}/{s['id']}.mp3"
         p = prov.get(base, {})
         models.append({"slug": slug, "run": meta, "provenance": p, "clips": clips,
-                       "name": (p.get("name") or meta.get("hf_id") or slug) + (" (no stress marks)" if slug != base else "")})
+                       "base": base, "name": (p.get("name") or meta.get("hf_id") or slug) + label})
     data = {"title": "Hebrew TTS Bake-off 11/26", "built": __import__("datetime").date.today().isoformat(),
             "sentences": sentences, "models": models}
     (OUT / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1))
