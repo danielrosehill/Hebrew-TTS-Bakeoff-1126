@@ -30,7 +30,7 @@ EVAL = {
     "listening_space": "Hebrish/Hebrew-TTS-Bakeoff-1126",
     "data_json": "https://huggingface.co/spaces/Hebrish/Hebrew-TTS-Bakeoff-1126/resolve/main/data.json",
     "repo": "https://github.com/danielrosehill/Hebrew-TTS-Bakeoff-1126",
-    "annotation_axes": ["naturalness", "clarity", "hebrew", "nikud", "use", "word_issues", "note"],
+    "annotation_axes": ["naturalness (1-5)", "clarity (1-5)", "hebrew (1-5)", "nikud (yes/no)", "use (yes/maybe/no)", "word_issues (stress, mispronunciation, minor)", "note"],
 }
 
 

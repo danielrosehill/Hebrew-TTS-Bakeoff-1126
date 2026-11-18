@@ -105,10 +105,14 @@ those that were inferred. Run settings, voices, hardware and timings are in `res
 | `notes-space/` | A private Gradio app for listening notes |
 | `hub/eval-set/` | The eval set's Hub card |
 
-The listening notes rate each clip from 1 to 5 on naturalness, clarity, Hebrew accuracy and nikud accuracy (whether
-the vowels heard match the card), plus "use it as the reference voice?" (yes / maybe / no) and a note. You can go one
-sentence across every voice, blind (names hidden and order shuffled until saved), or one voice across all sentences.
-A summary tab ranks the voices. The app is a private Space; the notes go to a private dataset.
+The listening notes rate each clip from 1 to 5 on naturalness, clarity and Hebrew accuracy. Nikud accuracy is a yes or
+no: does every vowel heard match the pointed text? On a plain-text clip, that answer is the model's nikud inference.
+There is also "use it as the reference voice?" (yes / maybe / no) and an overall comment. Problems are tagged per word:
+**stress** (the syllable the voice stressed, and the one it should have stressed) and **mispronunciation** (the IPA
+heard, and the IPA expected), with a few minor tags besides. The expected values are prefilled from a machine reference
+and can be corrected. [`docs/hebrew-ipa-cliff-notes.md`](docs/hebrew-ipa-cliff-notes.md) is the IPA quick reference
+for annotators. You can go one sentence across every voice, blind (names hidden and order shuffled until saved), or one
+voice across all sentences, and a results tab ranks the voices. The app is a private Space; the notes go to a private dataset.
 
 ## Cost
 
