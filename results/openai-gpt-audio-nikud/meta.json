@@ -10,9 +10,18 @@
  "sample_rate": 24000,
  "load_s": null,
  "per_sentence_s": {
-  "s01": 2.27
+  "s01": 2.27,
+  "p01": 8.63
  },
  "generated": "2026-11-18",
  "generated_via": "api:openai gpt-audio-1.5 (chat completions, audio output)",
- "notes": "Instructed to read the text exactly as a native Israeli speaker. A chat model, so it may paraphrase: listen for that."
+ "notes": "Instructed to read the text exactly as a native Israeli speaker. A chat model, so it may paraphrase: listen for that.",
+ "rounds": {
+  "2": {
+   "items": [
+    "p01"
+   ],
+   "generated": "2026-11-18"
+  }
+ }
 }

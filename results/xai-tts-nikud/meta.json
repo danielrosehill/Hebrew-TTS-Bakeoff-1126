@@ -10,9 +10,18 @@
  "sample_rate": 24000,
  "load_s": null,
  "per_sentence_s": {
-  "s01": 3.61
+  "s01": 3.61,
+  "p01": 6.3
  },
  "generated": "2026-11-18",
  "generated_via": "api:fal xai/tts/v1",
- "notes": "Given the checked nikud as text. per_sentence_s is the request round trip. Round 1: ids s01 only. language auto; Hebrew is not in the endpoint's supported list."
+ "notes": "Given the checked nikud as text. per_sentence_s is the request round trip. Round 1: ids s01 only. language auto; Hebrew is not in the endpoint's supported list.",
+ "rounds": {
+  "2": {
+   "items": [
+    "p01"
+   ],
+   "generated": "2026-11-18"
+  }
+ }
 }

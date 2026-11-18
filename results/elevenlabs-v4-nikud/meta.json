@@ -10,9 +10,24 @@
  "sample_rate": 44100,
  "load_s": null,
  "per_sentence_s": {
-  "s01": 74.83
+  "s01": 74.83,
+  "p01": 13.88
  },
  "generated": "2026-11-18",
  "generated_via": "api:fal elevenlabs/tts/eleven-v4",
- "notes": "Given the checked nikud as text. per_sentence_s is the request round trip. Round 1: ids s01 only. language_code he."
+ "notes": "Given the checked nikud as text. per_sentence_s is the request round trip. Round 1: ids s01 only. language_code he.",
+ "rounds": {
+  "2": {
+   "items": [
+    "p01"
+   ],
+   "generated": "2026-11-18"
+  },
+  "2": {
+   "items": [
+    "p01"
+   ],
+   "generated": "2026-11-18"
+  }
+ }
 }
