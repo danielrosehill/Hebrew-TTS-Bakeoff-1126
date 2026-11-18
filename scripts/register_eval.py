@@ -23,7 +23,7 @@ EVAL = {
     "date": "2026-11-18",
     "purpose": "Pick the reference voice the Hebrish recorder plays before a learner reads a Hebrew sentence aloud from "
                "nikud; measure each model's nikud inference (plain text vs checked nikud).",
-    "scope": "Open models (weights on Hugging Face); Fish S2 Pro run through its publisher's API",
+    "scope": "Open models (weights on Hugging Face; Fish S2 Pro through its publisher's API), plus four commercial APIs added the same day (Gemini 3.1 Flash TTS, OpenAI gpt-4o-mini-tts, ElevenLabs v3 via fal, Google Cloud Chirp 3 HD)",
     "sentence_set": "Hebrish/Hebrew-TTS-Eval-Set",
     "sentence_set_revision": "667f8dac2eaab969cb0c275ffe976d1aab9896fc",
     "results_dataset": "Hebrish/Hebrew-TTS-Bakeoff-1126",
@@ -51,7 +51,7 @@ def runs():
             "generated": meta.get("generated") or EVAL["date"], "licence": p.get("licence") or meta.get("licence"),
             "publisher": p.get("publisher"), "publisher_type": p.get("publisher_type"), "release_date": p.get("release_date"),
             "training_origin": p.get("training_origin"), "script": f"models/{slug.removesuffix('-plain')}.py",
-            "run_notes": meta.get("notes"),
+            "run_notes": meta.get("notes"), "generated_via": meta.get("generated_via"),
         })
     return out
 

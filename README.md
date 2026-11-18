@@ -70,6 +70,33 @@ the sentence means *hergel* ("habit"). The raw diacritizer output is kept next t
 | `omnivoice` | OmniVoice | k2-fsa (community) | 2026-03-30 | 600+ languages, initialised from Qwen3-0.6B | Plain |
 | `fish-s2-pro`, `-nikud` | Fish Audio S2 Pro | Fish Audio (company) | 2026-03-09 | 80+ languages, initialised from Qwen3-4B | Plain; our nikud. Run via Fish's API. |
 
+### Commercial APIs (added 2026-11-18)
+
+| Run(s) | Model | Voice | Input |
+| --- | --- | --- | --- |
+| `gemini-flash-tts`, `-nikud` | Gemini 3.1 Flash TTS (`gemini-3.1-flash-tts-preview`), #1 on the ivrit.ai Hebrew TTS Arena | Kore | Plain; our nikud |
+| `openai-tts`, `-nikud` | OpenAI `gpt-4o-mini-tts`, instructed to speak as a native Israeli | coral | Plain; our nikud |
+| `elevenlabs-v3`, `-nikud` | ElevenLabs v3 via fal (`fal-ai/elevenlabs/tts/eleven-v3`, `he`) | Rachel | Plain; our nikud |
+| `google-cloud-tts`, `-nikud` | Google Cloud TTS `he-IL-Chirp3-HD-Kore` | Kore | Plain; our nikud |
+
+None rejected pointed input. The four together cost under US$1. The Gemini API now also lists `gemini-3.8-flash-tts`,
+which its docs say replaces the 3.1 preview, so it is a candidate for a follow-up.
+
+### Measured per clip
+
+`scripts/clip_metrics.py` measures every clip with ffmpeg and writes `data/clip_metrics.json`. It measures loudness
+(LUFS), true peak and clipping, pace (syllables per second, and that pace relative to the sentence's median), and
+internal pauses. The listening copies in the Space are loudness-normalised to -18 LUFS, so voices are compared at
+equal level; the raw levels are kept here.
+
+What it found on 2026-11-18:
+- **F5-Hebrew v2 is nearly silent:** about -50 LUFS, with a true peak around -32 dBTP.
+- **Clipping:** Chatterbox, VoxCPM2 and Google Cloud clip on some clips.
+- **BlueV3 is hot:** -14.7 LUFS.
+- **Quiet voices:** OpenAI (-27.5 LUFS) and Kokoro (-26.5 LUFS).
+- **Pace:** Chatterbox with nikud runs about 33% faster than the median. OpenAI runs about 30% slower and has the most
+  pauses.
+
 **No model was trained from scratch on Hebrew-only audio.** Every Hebrew-specific model is either a fine-tune of an
 English or multilingual model, or trained on several languages. The Phonikud voices are the one case left unresolved.
 

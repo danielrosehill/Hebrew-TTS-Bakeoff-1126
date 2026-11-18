@@ -16,7 +16,8 @@ OUT = ROOT / "space"
 SPACE = "Hebrish/Hebrew-TTS-Bakeoff-1126"
 # Display order: nikud-aware first, then the Hebrew-specific plain-text models, then multilingual ones.
 ORDER = ["phonikud-piper", "piper-he-noa", "kokoro-hebrew", "bluev3", "f5-hebrew-v2",
-         "zonos3-mini", "chatterbox-multilingual", "voxcpm2", "omnivoice", "fish-s2-pro"]
+         "zonos3-mini", "chatterbox-multilingual", "voxcpm2", "omnivoice", "fish-s2-pro",
+         "gemini-flash-tts", "elevenlabs-v3", "openai-tts", "google-cloud-tts"]
 # Variants of one model sit right after it (Daniel, 2026-11-18: "the same sentence with and without the nikud").
 VARIANTS = {"-nikud": " · with our nikud", "-auto": " · its own nikud", "-plain": " · no stress marks"}
 
@@ -62,6 +63,7 @@ def runs():
 
 
 VOWELS = set("aeiouə")
+METRICS = json.loads((ROOT / "data/clip_metrics.json").read_text()) if (ROOT / "data/clip_metrics.json").exists() else {}
 REF = ROOT / "results/phonikud-piper/ipa.json"
 
 
@@ -117,11 +119,13 @@ def main():
         for s in sentences:
             wav = folder / f"{s['id']}.wav"
             if wav.exists():
-                subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(wav), "-ac", "1", "-b:a", "64k",
-                                str(dest / f"{s['id']}.mp3")], check=True)
+                # Listening copies are loudness-normalised (Daniel, 2026-11-18: levels varied from near-silent F5 to clipping),
+                # so every voice plays at the same level; raw levels are kept in data/clip_metrics.json and the WAVs.
+                subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(wav), "-af", "loudnorm=I=-18:TP=-1.5:LRA=11", "-ar", "44100",
+                                "-ac", "1", "-b:a", "64k", str(dest / f"{s['id']}.mp3")], check=True)
                 clips[s["id"]] = f"audio/{slug}/{s['id']}.mp3"
         p = prov.get(base, {})
-        models.append({"slug": slug, "run": meta, "provenance": p, "clips": clips,
+        models.append({"slug": slug, "run": meta, "provenance": p, "clips": clips, "metrics": METRICS.get(slug, {}),
                        "base": base, "name": (p.get("name") or meta.get("hf_id") or slug) + label})
     data = {"title": "Hebrew TTS Bake-off 11/26", "built": __import__("datetime").date.today().isoformat(),
             "sentences": sentences, "models": models}

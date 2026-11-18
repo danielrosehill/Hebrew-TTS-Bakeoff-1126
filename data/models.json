@@ -322,5 +322,129 @@
    "hebrew_input",
    "company origin"
   ]
+ },
+ {
+  "slug": "gemini-flash-tts",
+  "hf_id": null,
+  "name": "Gemini 3.1 Flash TTS (API, voice Kore)",
+  "publisher": "Google (Google DeepMind / Gemini API)",
+  "publisher_type": "company",
+  "publisher_note": "Large US technology company; hosted API only, no weights.",
+  "release_date": "2026 (preview model id gemini-3.1-flash-tts-preview; Daniel's brief: ranked #1 on the ivrit.ai Hebrew TTS Arena)",
+  "release_date_source": "see sources",
+  "architecture": "LLM-based speech generation (Gemini family), prompt-style generateContent with AUDIO output; details undisclosed",
+  "params": "not disclosed",
+  "base_model": "Gemini 3.1 (inferred)",
+  "training_origin": "proprietary",
+  "hebrew_training_data": "Not disclosed; Hebrew listed as a supported language",
+  "hebrew_input": "Plain Hebrew; nikud input accepted by the API without error (effect measured by the -nikud pair)",
+  "licence": "Google Gemini API Additional Terms of Service (commercial API use, usage-billed)",
+  "sources": [
+   "https://ai.google.dev/gemini-api/docs/speech-generation",
+   "https://aistudio.google.com/docs/speech-generation"
+  ],
+  "confirmed": [
+   "model id gemini-3.1-flash-tts-preview listed by the models endpoint (2026-11-18)",
+   "Hebrew supported (docs)",
+   "24 kHz PCM output"
+  ],
+  "inferred": [
+   "architecture",
+   "release date",
+   "Arena rank (from the brief, not re-checked)"
+  ]
+ },
+ {
+  "slug": "openai-tts",
+  "hf_id": null,
+  "name": "OpenAI gpt-4o-mini-tts (voice coral)",
+  "publisher": "OpenAI",
+  "publisher_type": "company",
+  "publisher_note": "US AI company; hosted API only.",
+  "release_date": "2025-03-20 (snapshot gpt-4o-mini-tts-2025-03-20; newer snapshot 2025-12-15 also listed)",
+  "release_date_source": "see sources",
+  "architecture": "GPT-4o-mini-based steerable TTS (instructions parameter)",
+  "params": "not disclosed",
+  "base_model": "GPT-4o mini (inferred)",
+  "training_origin": "proprietary",
+  "hebrew_training_data": "Not disclosed",
+  "hebrew_input": "Plain Hebrew; steered by instruction 'Speak as a native Israeli Hebrew speaker, natural pace.'",
+  "licence": "OpenAI Terms of Use / Services Agreement (commercial API use, usage-billed)",
+  "sources": [
+   "https://platform.openai.com/docs/guides/text-to-speech",
+   "https://platform.openai.com/docs/models/gpt-4o-mini-tts"
+  ],
+  "confirmed": [
+   "models /v1/models lists gpt-4o-mini-tts, -2025-03-20, -2025-12-15 (2026-11-18)",
+   "no newer TTS model listed",
+   "24 kHz WAV output"
+  ],
+  "inferred": [
+   "architecture",
+   "Hebrew training data",
+   "base model"
+  ]
+ },
+ {
+  "slug": "elevenlabs-v3",
+  "hf_id": null,
+  "name": "ElevenLabs Eleven v3 (via fal, voice Rachel)",
+  "publisher": "ElevenLabs",
+  "publisher_type": "company",
+  "publisher_note": "Voice-AI company (US/UK/Poland); hosted API, here reached through fal.ai.",
+  "release_date": "2025 (Eleven v3 alpha; exact GA date not checked)",
+  "release_date_source": "see sources",
+  "architecture": "Expressive multilingual TTS with audio tags; details undisclosed",
+  "params": "not disclosed",
+  "base_model": "not disclosed",
+  "training_origin": "proprietary",
+  "hebrew_training_data": "Not disclosed; Hebrew among the 70+ languages ElevenLabs lists for v3 (from memory, not re-checked)",
+  "hebrew_input": "Plain Hebrew with language_code he; nikud input given as-is",
+  "licence": "ElevenLabs Terms of Service via fal.ai (commercial API use, usage-billed)",
+  "sources": [
+   "https://fal.ai/models/fal-ai/elevenlabs/tts/eleven-v3/api",
+   "https://elevenlabs.io/v3"
+  ],
+  "confirmed": [
+   "fal endpoint id fal-ai/elevenlabs/tts/eleven-v3",
+   "language_code param exists",
+   "default output MP3 44.1 kHz 128 kbps"
+  ],
+  "inferred": [
+   "Hebrew support list",
+   "release date",
+   "architecture"
+  ]
+ },
+ {
+  "slug": "google-cloud-tts",
+  "hf_id": null,
+  "name": "Google Cloud TTS Chirp 3: HD (he-IL-Chirp3-HD-Kore)",
+  "publisher": "Google (Google Cloud)",
+  "publisher_type": "company",
+  "publisher_note": "Large US technology company; hosted API only.",
+  "release_date": "2025 (Chirp 3 HD voices; exact date not checked)",
+  "release_date_source": "see sources",
+  "architecture": "Chirp 3: HD generative TTS voices; details undisclosed",
+  "params": "not disclosed",
+  "base_model": "not disclosed",
+  "training_origin": "proprietary",
+  "hebrew_training_data": "Not disclosed; 30 he-IL Chirp3-HD voices listed",
+  "hebrew_input": "Plain Hebrew; nikud input given as-is (plain text input, no SSML for Chirp 3 HD)",
+  "licence": "Google Cloud Terms of Service (commercial API use, usage-billed)",
+  "sources": [
+   "https://cloud.google.com/text-to-speech/docs/chirp3-hd",
+   "https://cloud.google.com/text-to-speech/docs/voices"
+  ],
+  "confirmed": [
+   "voices list for he-IL (2026-11-18) includes Chirp3-HD, Standard and Wavenet tiers",
+   "Chirp3-HD is the best he-IL tier available",
+   "24 kHz LINEAR16"
+  ],
+  "inferred": [
+   "architecture",
+   "release date",
+   "Hebrew training data"
+  ]
  }
 ]
