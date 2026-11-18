@@ -19,7 +19,9 @@ Read them with their voice notes in the [reader Space](https://huggingface.co/sp
 
 Method: **screen, then rank**. Each clip is first passed or failed as a whole (a fail carries a reason category; word-level
 detail such as the syllable stressed vs the one that should be, or IPA heard vs expected, is optional). Clips that pass
-then meet head to head, blind, ranked with Bradley-Terry.
+then meet head to head, blind, ranked with Bradley-Terry. From 2026-11-18 the Arena is split by voice gender: a voice
+only meets voices of its own gender (a first listen across genders mostly judges the voice, not the model); earlier
+votes across genders stay in `pairs.jsonl` but do not count.
 
 | Path | What |
 | --- | --- |
@@ -28,4 +30,5 @@ then meet head to head, blind, ranked with Bradley-Terry.
 | `annotations/<eval_id>/voice.jsonl` + `voice/<id>.webm` | Spoken annotations as recorded (written by the app) |
 | `annotations/<eval_id>/voice-applied.jsonl` | For each spoken note: the verbatim transcript, a lightly tidied one, and the structured reading a model applied |
 | `annotations/<eval_id>/screen-voice.jsonl` | Verdict rows derived from spoken notes (`source: "voice:<id>"`), merged with `screen.jsonl` on read |
+| `annotations/<eval_id>/decisions.jsonl` | Every method and scope decision, vote set aside and Arena exit, dated, with its source (`tts-decision/1`: id, date, kind, decision, runs, source, decided_by). Append-only |
 | `annotations/<eval_id>.jsonl` | One early annotation in the first (1-5 scale) format |

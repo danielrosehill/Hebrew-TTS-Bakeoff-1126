@@ -153,11 +153,18 @@ second (Gemini) or about 600 per minute (OpenAI) and 15 characters per second of
 warm Modal compute measured on our clips, excluding cold start. The basis and source of each figure are in
 `data/models.json` (`cost`).
 
-**Arena** (blind A vs B on the paragraph p01; 16 votes on 2026-11-18; a head-to-head loss puts a voice out):
+**Arena** (blind A vs B on the paragraph p01; a head-to-head loss puts a voice out). **Split by voice gender from
+2026-11-18:** a voice only meets voices of its own gender, each bracket with its own play-off and Bradley-Terry fit
+(annotation app config `rank.group_by: "voice_gender"`, from each run's `voice_gender`). The reason: at a first listen,
+a male against a female voice is mostly a judgement of the voices, not of the models. Three earlier votes crossed
+genders (Kokoro vs Piper, Gemini 3.1 Flash vs Chatterbox, Kokoro vs Chatterbox); they stay in the data but no longer
+count. Every decision like this is logged in the annotations dataset, `annotations/hebrew-tts-bakeoff-1126/decisions.jsonl`.
+
+Female bracket (as of 2026-11-18):
 
 | Voice (all given checked nikud unless marked plain) | Arena | $ / 1k chars | Notes |
 | --- | --- | --- | --- |
-| **Gemini 3.1 Flash TTS** | **unbeaten leader**: 4 wins (Chatterbox, Piper, xAI, Gemini 2.5 Pro), 4 ties | 0.033 | "Superb", possibly the best Hebrew synthesis he has heard |
+| **Gemini 3.1 Flash TTS** | **unbeaten leader**: 3 wins (Piper, xAI, Gemini 2.5 Pro), 4 ties (its win over Chatterbox no longer counts: voice gender unrecorded) | 0.033 | "Superb", possibly the best Hebrew synthesis he has heard |
 | Gemini 3.8 Flash TTS | unbeaten: beat xAI (plain), tied the leader | 0.015 (0.030 from 2027) | at par with the leader, half the price |
 | Gemini 3.8 Flash Lite TTS | unbeaten: tied the leader and 3.8 Live | 0.010 (0.020 from 2027) | at par with the leader, a third of the price: **best value so far** |
 | Gemini 3.8 Live (plain, native audio) | unbeaten: beat Piper, tied the leader | 0.020 | a conversational model reading verbatim |
@@ -166,10 +173,10 @@ warm Modal compute measured on our clips, excluding cold start. The basis and so
 | Gemini 3.8 Live (native audio) | unbeaten: tied 3.8 Flash Lite; not yet met the leader | 0.020 | |
 | Gemini 2.5 Pro TTS | out: lost to the leader (tied gpt-audio-1.5) | 0.033 | |
 | xAI TTS | out: lost to the leader (beat Gemini 2.5 native audio) | 0.015 | |
-| Piper Hebrew noa | out: lost to the leader and to 3.8 Live (beat Kokoro) | ~0.0001 (CPU) | "a preceding generation of TTS" |
+| Piper Hebrew noa | out: lost to the leader, to 3.8 Live and to 3.8 Flash (too fast, few pauses at punctuation) | ~0.0001 (CPU) | "a preceding generation of TTS" |
 | xAI TTS (plain) | out: lost to ElevenLabs v4 and 3.8 Flash | 0.015 | |
-| Chatterbox Multilingual | out: lost to the leader; both bad against Kokoro | ~0.13 (GPU est.) | robotic, staccato, clipped |
-| Kokoro Hebrew (plain) | out: lost to Piper; both bad against Chatterbox | ~0.0007 (CPU) | very rushed |
+| Chatterbox Multilingual | out: both bad against Kokoro (its loss to the leader no longer counts) | ~0.13 (GPU est.) | robotic, staccato, clipped |
+| Kokoro Hebrew (plain, male voice) | out: both bad against Chatterbox (its loss to Piper crossed genders and no longer counts) | ~0.0007 (CPU) | very rushed |
 | Gemini 2.5 Flash native audio | out: lost to xAI | 0.020 | |
 
 **Where it stands:** Gemini 3.1 Flash TTS has never lost, and four voices have held it to a tie by ear: Gemini 3.8 Flash, 3.8
@@ -178,8 +185,11 @@ next Arena session: tie-break rematches between the leader and those four, and g
 against the leader. The recorder's ▶ Listen uses Gemini 3.1 Flash TTS (Recorder release 534); if a 3.8 model wins the
 rematches, the switch is one environment variable.
 
-**Best by voice:** the best female voice is Gemini 3.1 Flash TTS (Kore). The best male voice is not decided yet. The
-12 male runs above (six models, plain and nikud) wait for Screening, then meet in the Arena. The leaderboard shows both live.
+**Best by voice:** the best female voice is Gemini 3.1 Flash TTS (Kore). The male bracket opened on 2026-11-18: 9 of
+the 12 male runs passed Screening on s01 (Gemini 3.1 Flash male, plain and nikud, and gpt-audio-1.5 male + nikud are
+not screened yet). First male vote: Gemini 3.8 Flash TTS (Charon, plain) beat Gemini 3.8 Live (Charon, nikud), which
+is out: "both good, very listenable"; the winner had more prosody, more variation and more personality. The
+leaderboard shows both brackets live.
 
 **Out at Screening:** 23 runs, each with its reason, in the table below. **Waiting for Screening:** 17 runs. These
 include a new category, multimodal models with native audio output: Gemini 3.8 Live, Gemini 3.1 Flash Live and
