@@ -1,0 +1,326 @@
+[
+ {
+  "slug": "phonikud-piper",
+  "hf_id": "Phonikud/phonikud-tts-checkpoints",
+  "name": "Phonikud Piper voices (Shaul, Michael) + Phonikud G2P",
+  "publisher": "Phonikud (HF/GitHub org; code under thewh1teagle/phonikud); paper authors Yakov Kolani, Maxim Melichov, Cobi Calev, Morris Alper",
+  "publisher_type": "open-source community org",
+  "publisher_note": "Israeli open-source Hebrew G2P/TTS project run mainly by individual developers (org members include HF users thewh1teagle and notmax123); paper (Interspeech 2026, arXiv 2506.12311) lists Independent Researcher, Reichman Univ., Cisco, Tel Aviv Univ./CMU. Repo is non-commercial (CC-NC).",
+  "release_date": "2025-06-02",
+  "release_date_source": "HF commit history: repo created 2025-05-28, first checkpoints uploaded 2025-06-02; Shaul ONNX 2025-06-16/17; Michael ONNX/ckpt 2026-03-24/25; arXiv paper v1 2025-06-14. Which voice the bakeoff uses decides the date.",
+  "architecture": "Piper (VITS) with Phonikud IPA phonemes (stress + vocal shva)",
+  "params": "Paper: Piper High 32M, Piper Medium 20M (ablations); checkpoints here are Lightning .ckpt ~846MB incl. discriminator",
+  "base_model": "Paper: pre-trained English TTS checkpoint (unnamed). For the released Shaul/Michael checkpoints: not stated",
+  "training_origin": "UNRESOLVED for released voices. Paper (sec 5.2) says Piper/StyleTTS2 were FINE-TUNED from pre-trained English checkpoints on 20 h of synthetic Hebrew audio (Gemini 2.5 Pro) with Phonikud IPA. Model card is empty, so whether Shaul/Michael were instead trained from scratch on SASPEECH is not confirmed. Not a confirmed Hebrew-only from-scratch model.",
+  "hebrew_training_data": "Paper: 20 h synthetic Gemini 2.5 Pro audio. Related datasets in the org: SASPEECH (13+ h single speaker, openslr/134, non-commercial, with phonikud phonemes), ILSpeech (~2 h, studio, IPA-annotated). Checkpoint filenames (auto_phonemize_exp, 'shaul') suggest SASPEECH but this is inferred.",
+  "hebrew_input": "Needs nikud/IPA: Phonikud G2P adds diacritics with an ONNX model (dictabert-char-menaked based) then rule FST -> IPA; plain Hebrew accepted through the pipeline",
+  "licence": "Non-commercial (CC-NC) per model card; G2P code CC BY 4.0",
+  "sources": [
+   "https://huggingface.co/Phonikud/phonikud-tts-checkpoints",
+   "https://github.com/thewh1teagle/phonikud",
+   "https://github.com/thewh1teagle/phonikud-tts",
+   "https://arxiv.org/abs/2506.12311",
+   "https://phonikud.github.io/",
+   "https://huggingface.co/datasets/Phonikud/saspeech"
+  ],
+  "confirmed": [
+   "publisher",
+   "license",
+   "release_date (repo/commit dates)",
+   "paper training method (fine-tune from English checkpoints, synthetic data)",
+   "hebrew_input"
+  ],
+  "inferred": [
+   "mapping paper recipe onto released Shaul/Michael checkpoints",
+   "SASPEECH as data for Shaul",
+   "exact voice used"
+  ]
+ },
+ {
+  "slug": "piper-he-noa",
+  "hf_id": "thewh1teagle/piper-he-noa",
+  "name": "Piper Hebrew noa (medium)",
+  "publisher": "thewh1teagle",
+  "publisher_type": "individual",
+  "publisher_note": "Individual open-source developer, author of Phonikud/Renikud org projects (inferred: Yakov Kolani, Phonikud first author; GitHub profile shows no real name).",
+  "release_date": "2026-10-26",
+  "release_date_source": "HF createdAt 2026-10-26; sole commit 2026-10-27",
+  "architecture": "Piper VITS medium, 22.05 kHz ONNX, multi-speaker (noa + ljspeech)",
+  "params": "not stated (Piper medium ~20M per Phonikud paper)",
+  "base_model": "en_US-ljspeech-medium Piper checkpoint (speaker conditioning zero-initialised)",
+  "training_origin": "fine-tuned for Hebrew from en_US-ljspeech-medium (which the card says was trained from scratch on LJSpeech). NOT Hebrew-only from scratch; Hebrew voice is trained on synthetic audio",
+  "hebrew_training_data": "24 h of Hebrew speech GENERATED WITH CHATTERBOX from Knesset sentences, Whisper-filtered (noa), plus ~24 h LJSpeech (English speaker). 20,322 steps. Code: github.com/thewh1teagle/piper-tts-finetune",
+  "hebrew_input": "plain Hebrew; Piper phoneme_type 'hebrew' converts to stressed IPA via renikud (no manual nikud)",
+  "licence": "CC BY 4.0",
+  "sources": [
+   "https://huggingface.co/thewh1teagle/piper-he-noa"
+  ],
+  "confirmed": [
+   "all training facts (from model card)",
+   "licence",
+   "release_date"
+  ],
+  "inferred": [
+   "publisher identity beyond handle",
+   "parameter count"
+  ]
+ },
+ {
+  "slug": "kokoro-hebrew",
+  "hf_id": "thewh1teagle/kokoro-hebrew-nc",
+  "name": "Kokoro Hebrew NC (he_shaul)",
+  "publisher": "thewh1teagle (ONNX export); original model by avris (avris/kokoro-hebrew-saspeech, gated)",
+  "publisher_type": "individual",
+  "publisher_note": "Conversion by an individual developer; the trained model is a third-party individual's (avris, no profile info). Non-commercial because derived from SASPEECH (Israeli Public Broadcasting Corp. data).",
+  "release_date": "2026-07-05",
+  "release_date_source": "HF createdAt of this ONNX repo; source model avris/kokoro-hebrew-saspeech created 2026-06-30",
+  "architecture": "Kokoro (StyleTTS2-based), ONNX",
+  "params": "82M (Kokoro-82M base; inferred)",
+  "base_model": "hexgrad/Kokoro-82M (per avris card)",
+  "training_origin": "fine-tuned for Hebrew from Kokoro-82M (two-stage, StyleTTS2 trainer 'kikiri'). Not from scratch",
+  "hebrew_training_data": "SASPEECH (openslr/134): stage 1 ~20 h automatic subset (from ~26 h, machine-vocalized with phonikud diacritizer), stage 2 ~4 h gold human-vocalized subset; single speaker Shaul Amsterdamski",
+  "hebrew_input": "Phonikud G2P (needs/adds nikud) -> IPA normalised to Kokoro's 178-token vocab",
+  "licence": "other: non-commercial (SASPEECH terms)",
+  "sources": [
+   "https://huggingface.co/thewh1teagle/kokoro-hebrew-nc",
+   "https://huggingface.co/avris/kokoro-hebrew-saspeech"
+  ],
+  "confirmed": [
+   "conversion from avris model",
+   "licence",
+   "training recipe (read from gated avris card via page fetch)"
+  ],
+  "inferred": [
+   "params 82M",
+   "release date of original beyond HF createdAt"
+  ]
+ },
+ {
+  "slug": "bluev3",
+  "hf_id": "notmax123/BlueV3",
+  "name": "BlueV3 (BlueTTS) v3.0.1",
+  "publisher": "notmax123 = Maxim Melichov (HF fullname 'Maxim Melichov'; code github.com/maxmelichov/BlueTTS, site bluetts.com)",
+  "publisher_type": "individual",
+  "publisher_note": "Israeli independent developer; HF org memberships include Kohn-AI (Kohn AI Consulting), Phonikud, Renikud, Yiddish-AI; co-author of the Phonikud paper (affil. Reichman University). Not listed as a public member of ivrit.ai.",
+  "release_date": "2026-11-14",
+  "release_date_source": "HF commits: v3.0.0 2026-11-14, v3.0.1 (checkpoint 702000) 2026-11-15. Repo itself created 2026-07-11 (earlier v1.7.3 releases); BlueTTS GitHub repo created 2026-02-27",
+  "architecture": "Flow-matching text-to-latent TTS with duration predictor and audio autoencoder (blue-codec); SupertonicTTS-style; zero-shot voice cloning; FlowTTS-GRPO RL post-training",
+  "params": "'64M layout' for T2L per training README (inferred total small, tens of millions)",
+  "base_model": "null (own architecture; blue-codec autoencoder separate)",
+  "training_origin": "trained from scratch, multilingual incl. Hebrew (7 languages: he, en, de, es, it, ru, yi); no base model named. Plus RL stage",
+  "hebrew_training_data": "not stated on card. Voices are LibriTTS-R speakers (CC BY 4.0), i.e. English reference voices speaking Hebrew",
+  "hebrew_input": "plain Hebrew; G2P RenikudPlus (ONNX, bundled) handles vowels/stress; numbers expanded; <en>..</en> for inline English",
+  "licence": "MIT (codec decoder is OpenRAIL-M derivative)",
+  "sources": [
+   "https://huggingface.co/notmax123/BlueV3",
+   "https://github.com/maxmelichov/BlueTTS",
+   "https://bluetts.com",
+   "https://huggingface.co/spaces/ivrit-ai/BlueV2",
+   "https://huggingface.co/spaces/ivrit-ai/TTS-Arena-Hebrew"
+  ],
+  "confirmed": [
+   "publisher handle/name",
+   "release dates",
+   "licence",
+   "languages",
+   "G2P",
+   "ivrit.ai hosts 'Blue V2' Space (ivrit-ai/BlueV2, created 2026-04-28, commits by notmax123, README says duplicated from thewh1teagle/lightblue-tts-hebrew and points to notmax123/BlueV2) and lists it in its Hebrew TTS Arena as an open model"
+  ],
+  "inferred": [
+   "notmax123 == maxmelichov (same name 'Maxim Melichov' on HF and GitHub, BlueTTS logo 'by Maxim Melichov')",
+   "from-scratch (no base model stated)",
+   "no formal ivrit.ai affiliation found: ivrit.ai merely hosts the V2 demo Space and arena entry; notmax123 has write access to that Space. V3 not confirmed as in the arena"
+  ]
+ },
+ {
+  "slug": "zonos3-mini",
+  "hf_id": "Zyphra/ZONOS3-Mini",
+  "name": "ZONOS3-Mini",
+  "publisher": "Zyphra",
+  "publisher_type": "company",
+  "publisher_note": "US AI company (Palo Alto/San Francisco); authors Gabriel Clark, Sofian Mejjoute, George Close, Beren Millidge (affiliation inferred Zyphra).",
+  "release_date": "2026-11-09",
+  "release_date_source": "HF createdAt 2026-11-09; arXiv 2611.16525 submitted 2026-11-12",
+  "architecture": "latent MoE backbone + Zyphra Audio Codec 1 (ZAC-1, 44.1 kHz, 15 Hz frames)",
+  "params": "886M total, ~100M active",
+  "base_model": "not stated",
+  "training_origin": "trained from scratch, multilingual incl. Hebrew (43 languages listed; base not stated, inferred from scratch)",
+  "hebrew_training_data": "null (hours/datasets not stated; Hebrew listed among 43 supported languages)",
+  "hebrew_input": "plain Hebrew text; no docs on vowelisation seen (infers vowels from plain text - inferred)",
+  "licence": "Apache-2.0",
+  "sources": [
+   "https://huggingface.co/Zyphra/ZONOS3-Mini",
+   "https://arxiv.org/abs/2611.16525",
+   "https://github.com/Zyphra/ZONOS3-Mini",
+   "https://www.zyphra.com/our-work/zonos3-mini"
+  ],
+  "confirmed": [
+   "publisher",
+   "dates",
+   "params",
+   "licence",
+   "Hebrew in language list"
+  ],
+  "inferred": [
+   "from scratch",
+   "hebrew_input behaviour"
+  ]
+ },
+ {
+  "slug": "chatterbox-multilingual",
+  "hf_id": "ResembleAI/chatterbox",
+  "name": "Chatterbox Multilingual (V3 on card; 23 languages)",
+  "publisher": "Resemble AI",
+  "publisher_type": "company",
+  "publisher_note": "US voice-AI company (resemble.ai).",
+  "release_date": "2025-09-04",
+  "release_date_source": "Card news '09/04 Chatterbox Multilingual in 23 languages' (v1); v2 update 2025-09-23; V3 T3 weights 2026-04-22, V3 card/S3Gen 2026-06-10 (HF commits). Use the version actually run.",
+  "architecture": "0.5B Llama backbone (T3) + S3Gen decoder, voice cloning, exaggeration control",
+  "params": "~500M",
+  "base_model": "null (own models; multilingual T3 extends the English Chatterbox)",
+  "training_origin": "multilingual model trained by Resemble incl. Hebrew; whether from scratch or extended from English Chatterbox not stated. Base English model: 'trained on 0.5M hours of cleaned data'",
+  "hebrew_training_data": "null (not stated)",
+  "hebrew_input": "plain Hebrew text with language tag he (no nikud); infers vowels from plain text (inferred)",
+  "licence": "MIT",
+  "sources": [
+   "https://huggingface.co/ResembleAI/chatterbox",
+   "https://github.com/resemble-ai/chatterbox"
+  ],
+  "confirmed": [
+   "publisher",
+   "licence",
+   "Hebrew in 23-language list",
+   "version dates (commits)"
+  ],
+  "inferred": [
+   "training_origin detail",
+   "hebrew_input"
+  ]
+ },
+ {
+  "slug": "voxcpm2",
+  "hf_id": "openbmb/VoxCPM2",
+  "name": "VoxCPM2",
+  "publisher": "OpenBMB",
+  "publisher_type": "open-source community org",
+  "publisher_note": "Chinese open-source AI community/lab (Tsinghua-linked) developing with ModelBest and THUHCSI (Tsinghua) per GitHub institutions list.",
+  "release_date": "2026-04-03",
+  "release_date_source": "HF createdAt; GitHub README news '2026.04'; tech report arXiv 2606.06928",
+  "architecture": "tokenizer-free diffusion autoregressive TTS (LocEnc, TSLM, RALM, LocDiT; AudioVAE V2, 48 kHz)",
+  "params": "2B",
+  "base_model": "MiniCPM-4 backbone (credited as language model foundation)",
+  "training_origin": "trained from scratch on audio objective on a MiniCPM-4 LLM backbone, multilingual incl. Hebrew (30 languages)",
+  "hebrew_training_data": "null ('over 2 million hours of multilingual speech', no breakdown)",
+  "hebrew_input": "plain text in any language, no language tag; infers vowels from plain text (inferred)",
+  "licence": "Apache-2.0",
+  "sources": [
+   "https://huggingface.co/openbmb/VoxCPM2",
+   "https://github.com/OpenBMB/VoxCPM",
+   "https://arxiv.org/abs/2606.06928"
+  ],
+  "confirmed": [
+   "params",
+   "licence",
+   "base backbone",
+   "Hebrew in 30 languages"
+  ],
+  "inferred": [
+   "publisher_type",
+   "hebrew_input"
+  ]
+ },
+ {
+  "slug": "omnivoice",
+  "hf_id": "k2-fsa/OmniVoice",
+  "name": "OmniVoice",
+  "publisher": "k2-fsa (Next-gen Kaldi); authors Han Zhu, ..., Daniel Povey",
+  "publisher_type": "open-source community org",
+  "publisher_note": "Next-gen Kaldi speech toolkit org led by Daniel Povey (Xiaomi affiliation of the group is inferred, not on pages seen); academic-style authors.",
+  "release_date": "2026-03-30",
+  "release_date_source": "HF createdAt; arXiv 2604.00688 submitted 2026-04-01",
+  "architecture": "diffusion language model-style zero-shot TTS (non-autoregressive), voice cloning/design",
+  "params": "not stated on card/GitHub (Qwen3-0.6B init suggests ~0.6B LLM part; inferred)",
+  "base_model": "Qwen/Qwen3-0.6B (HF base_model:finetune tag)",
+  "training_origin": "trained for 600+ languages incl. Hebrew, initialised from Qwen3-0.6B",
+  "hebrew_training_data": "581k-hour open-source multilingual dataset (paper), Hebrew share not stated",
+  "hebrew_input": "plain text, language inferred; infers vowels from plain text (inferred)",
+  "licence": "Code Apache-2.0; pre-trained weights CC-BY-NC (training data constraints, e.g. Emilia), per the HF card's License section",
+  "sources": [
+   "https://huggingface.co/k2-fsa/OmniVoice",
+   "https://github.com/k2-fsa/OmniVoice",
+   "https://arxiv.org/abs/2604.00688"
+  ],
+  "confirmed": [
+   "base model tag",
+   "581k hours",
+   "dates",
+   "licence"
+  ],
+  "inferred": [
+   "params",
+   "Xiaomi link",
+   "hebrew_input",
+   "Hebrew explicitly in language list not checked"
+  ]
+ },
+ {
+  "slug": "f5-hebrew-v2",
+  "hf_id": "Yzamari/f5tts-hebrew-v2",
+  "name": "F5-TTS Hebrew v2",
+  "publisher": "Yzamari (Yahav Zamari per HF profile)",
+  "publisher_type": "individual",
+  "publisher_note": "Individual developer, one model on HF; code at github.com/yzamari/hebAudio (not retrievable).",
+  "release_date": "2026-03-28",
+  "release_date_source": "HF createdAt/initial commit",
+  "architecture": "F5-TTS v1 Base, non-autoregressive flow matching DiT, 24 kHz",
+  "params": "not stated (F5-TTS Base ~335M, inferred)",
+  "base_model": "F5-TTS v1 Base",
+  "training_origin": "fine-tuned for Hebrew from F5-TTS v1 Base (320k steps)",
+  "hebrew_training_data": "158 h (68,569 segments): SASPEECH Gold/Auto (openslr/134), google/fleurs, imvladikon/hebrew_speech_campus; all re-vocalized with Phonikud G2P",
+  "hebrew_input": "Phonikud-vocalized text with stress marks (nikud required via Phonikud; 'all data re-vocalized')",
+  "licence": "Apache-2.0 on card (SASPEECH data is non-commercial: conflict)",
+  "sources": [
+   "https://huggingface.co/Yzamari/f5tts-hebrew-v2"
+  ],
+  "confirmed": [
+   "all training facts from card"
+  ],
+  "inferred": [
+   "params",
+   "input requirement for inference"
+  ]
+ },
+ {
+  "slug": "fish-s2-pro",
+  "hf_id": "fishaudio/s2-pro",
+  "name": "Fish Audio S2 Pro",
+  "publisher": "Fish Audio",
+  "publisher_type": "company",
+  "publisher_note": "Fish Audio, commercial TTS company (fish.audio) with open fish-speech project; likely Chinese-founded (inferred).",
+  "release_date": "2026-03-09",
+  "release_date_source": "HF createdAt; technical report arXiv 2603.08823",
+  "architecture": "Dual-AR (slow AR 4B + fast AR 400M) with RVQ codec (10 codebooks)",
+  "params": "~4.4B (4B + 0.4B) plus 446M codec",
+  "base_model": "Qwen3-4B (Slow AR backbone, per technical report)",
+  "training_origin": "trained for 80+ languages incl. Hebrew ('he' in list), Qwen3-4B initialised, with RL alignment",
+  "hebrew_training_data": "null (10M+ hours over ~80 languages, no Hebrew figure; report doesn't mention Hebrew)",
+  "hebrew_input": "plain Hebrew text; infers vowels from plain text (inferred)",
+  "licence": "Fish Audio Research License (non-commercial, gated)",
+  "sources": [
+   "https://huggingface.co/fishaudio/s2-pro",
+   "https://huggingface.co/papers/2603.08823",
+   "https://github.com/fishaudio/fish-speech"
+  ],
+  "confirmed": [
+   "architecture",
+   "base Qwen3-4B",
+   "10M h",
+   "licence",
+   "he in language list"
+  ],
+  "inferred": [
+   "hebrew_input",
+   "company origin"
+  ]
+ }
+]

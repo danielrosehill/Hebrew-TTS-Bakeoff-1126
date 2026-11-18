@@ -1,11 +1,11 @@
 # Model script contract
 
-One Modal app per candidate: `models/<slug>.py`, app name `bakeoff-<slug>`, run in Modal workspace
-`dsrhmodeltraining` from residencehome:
+One Modal app per candidate: `models/<slug>.py`, app name `bakeoff-<slug>`, run from the repo root on any machine
+with Modal set up (the local entrypoint writes the results locally):
 
-    rsync -a ./ residencehome:~/tmp/hebrew-tts-bakeoff/
-    ssh residencehome 'cd ~/tmp/hebrew-tts-bakeoff && ~/.local/bin/modal-dsr run models/<slug>.py'
-    rsync -a residencehome:~/tmp/hebrew-tts-bakeoff/results/<slug>/ results/<slug>/
+    modal run models/<slug>.py
+
+Exception: `models/fish-s2-pro-api.py` calls Fish Audio's hosted API (`FISH_API_KEY`), no Modal.
 
 - Input: `data/sentences.jsonl` (20 rows), read by the local entrypoint and passed to the remote function.
   A model that phonemizes vocalized Hebrew by rule gets `text_nikud`; every other model gets `text` (no nikud).
@@ -16,4 +16,5 @@ One Modal app per candidate: `models/<slug>.py`, app name `bakeoff-<slug>`, run 
   no tuning per sentence. If the model needs a reference clip, use the sample clip its own repo or demo ships
   and name it in `reference_clip`.
 - Budget: about US$0.20 per model. Smallest GPU that runs it (L4 / A10G), or CPU for small ONNX models.
-- Nothing runs on the laptop.
+- Models never run on a laptop; Modal (or the publisher's API) does the work.
+- Variants of one model: `<slug>-nikud` (given `text_nikud`), `<slug>-auto` (the model's own diacritizer), `<slug>/plain/` (Phonikud without stress marks).

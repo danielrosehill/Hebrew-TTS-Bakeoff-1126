@@ -1,0 +1,229 @@
+{
+ "charsets": {
+  "renikud_plain": [
+   " ",
+   ",",
+   ".",
+   "a",
+   "b",
+   "d",
+   "e",
+   "f",
+   "h",
+   "i",
+   "j",
+   "k",
+   "l",
+   "m",
+   "n",
+   "o",
+   "p",
+   "s",
+   "t",
+   "u",
+   "v",
+   "z",
+   "ɡ",
+   "ʁ",
+   "ʃ",
+   "ʔ",
+   "ˈ",
+   "χ"
+  ],
+  "phonikud_nikud_marks": [
+   " ",
+   ",",
+   ".",
+   "a",
+   "b",
+   "d",
+   "e",
+   "f",
+   "h",
+   "i",
+   "j",
+   "k",
+   "l",
+   "m",
+   "n",
+   "o",
+   "p",
+   "s",
+   "t",
+   "u",
+   "v",
+   "z",
+   "ɡ",
+   "ʁ",
+   "ʃ",
+   "ʒ",
+   "ʔ",
+   "ˈ",
+   "χ"
+  ]
+ },
+ "phonikud_chars_outside_kokoro_vocab": [],
+ "renikud_chars_outside_kokoro_vocab": [],
+ "sentences": {
+  "s01": {
+   "renikud_plain": "ʔanˈi hajˈiti ʔosˈe ʔˈet zˈe ʃˈuv.",
+   "phonikud_nikud_marks": "ʔanˈi hajˈiti ʔosˈe ʔˈet zˈe ʃˈuv.",
+   "phonikud_nikud_unmarked": "ʔanˈi hajitˈi ʔosˈe ʔˈet zˈe ʃˈuv.",
+   "transplanted": true,
+   "nikud_used": "אֲנִי הָיִ֫יתִי עוֹשֶׂה אֶת זֶה שׁוּב.",
+   "outside_kokoro_vocab": []
+  },
+  "s02": {
+   "renikud_plain": "zˈe lˈo kaʃˈe ʔˈim ʔatˈa lomˈed.",
+   "phonikud_nikud_marks": "zˈe lˈo kaʃˈe ʔˈim ʔatˈa lomˈed.",
+   "phonikud_nikud_unmarked": "zˈe lˈo kaʃˈe ʔˈim ʔatˈa lomˈed.",
+   "transplanted": true,
+   "nikud_used": "זֶה לֹא קָשֶׁה אִם אַתָּה לוֹמֵד.",
+   "outside_kokoro_vocab": []
+  },
+  "s03": {
+   "renikud_plain": "hamatanˈa hazˈot hˈi laχavˈeʁ ʃelˈi.",
+   "phonikud_nikud_marks": "hamatanˈa hazˈot hˈi leχavˈeʁ ʃelˈi.",
+   "phonikud_nikud_unmarked": "hamatanˈa hazˈot hˈi leχavˈeʁ ʃelˈi.",
+   "transplanted": true,
+   "nikud_used": "הַמַּתָּנָה הַזֹּאת הִיא לֶחָבֵר שֶׁלִּי.",
+   "outside_kokoro_vocab": []
+  },
+  "s04": {
+   "renikud_plain": "hazhˈeʁ pˈen tiʃbˈoʁ ʔˈet habetsˈim.",
+   "phonikud_nikud_marks": "hizˈaheʁ pˈen tiʃbˈoʁ ʔˈet habetsˈim.",
+   "phonikud_nikud_unmarked": "hizahˈeʁ pˈen tiʃbˈoʁ ʔˈet habetsˈim.",
+   "transplanted": true,
+   "nikud_used": "הִזָּ֫הֵר פֶּן תִּשְׁבּוֹר אֶת הַבֵּיצִים.",
+   "outside_kokoro_vocab": []
+  },
+  "s05": {
+   "renikud_plain": "baʁˈeɡa ʃetihjˈe lˈi hizdamnˈut, ʔavˈo levakˈeʁ.",
+   "phonikud_nikud_marks": "baʁˈeɡa ʃetihjˈe lˈi hizdamnˈut, ʔavˈo levakˈeʁ.",
+   "phonikud_nikud_unmarked": "baʁeɡˈa ʃetihjˈe lˈi hizdamnˈut, ʔavˈo lvakˈeʁ.",
+   "transplanted": true,
+   "nikud_used": "בָּרֶ֫גַע שֶׁתִּהְיֶה לִי הִזְדַּמְּנוּת, אָבוֹא לְֽבַקֵּר.",
+   "outside_kokoro_vocab": []
+  },
+  "s06": {
+   "renikud_plain": "kibˈalnu hoʁaʔˈot ʔˈejχ lehaχˈin sˈal mibambuk.",
+   "phonikud_nikud_marks": "kibˈalnu hoʁaʔˈot ʔˈejχ lehaχˈin sˈal mibambˈok.",
+   "phonikud_nikud_unmarked": "kibalnˈu hoʁaʔˈot ʔˈejχ lhaχˈin sˈal mibambˈok.",
+   "transplanted": true,
+   "nikud_used": "קִיבַּ֫לְנוּ הוֹרָאוֹת אֵיךְ לְֽהָכִין סַל מִבַּמְבּוֹק.",
+   "outside_kokoro_vocab": []
+  },
+  "s07": {
+   "renikud_plain": "ʔolamˈenu hˈu ʁˈak χˈelek katˈan mehajekˈum.",
+   "phonikud_nikud_marks": "ʔolamˈenu hˈu ʁˈak χˈelek katˈan mehajkˈum.",
+   "phonikud_nikud_unmarked": "ʔolamenˈu hˈu ʁˈak χelˈek katˈan mehajkˈum.",
+   "transplanted": true,
+   "nikud_used": "עוֹלָמֵ֫נוּ הוּא רַק חֵ֫לֶק קָטָן מֵהַיְּקוּם.",
+   "outside_kokoro_vocab": []
+  },
+  "s08": {
+   "renikud_plain": "hˈaʁ pˈoɡi hˈu hahˈaʁ haɡavˈoa bejotˈeʁ bejapˈan.",
+   "phonikud_nikud_marks": "hˈaʁ pudʒˈi hˈu hahˈaʁ haɡavoˈa bejotˈeʁ bejˈapan.",
+   "phonikud_nikud_unmarked": "hˈaʁ pudʒˈi hˈu hahˈaʁ haɡavoˈa bjotˈeʁ bjapˈan.",
+   "transplanted": true,
+   "nikud_used": "הַר פּוּגִ'י הוּא הָהָר הַגָּבוֹהַּ בְּֽיוֹתֵר בְּֽיַ֫פָּן.",
+   "outside_kokoro_vocab": []
+  },
+  "s09": {
+   "renikud_plain": "ɡˈuɡel siχakˈa tafkˈid χaʃˈuv behanɡaʃˈat hamejdˈa baʔˈinteʁnet.",
+   "phonikud_nikud_marks": "ɡuɡˈel siχakˈa tafkˈid χaʃˈuv behanɡaʃˈat hamedˈa baʔinteʁnˈet.",
+   "phonikud_nikud_unmarked": "ɡuɡˈel siχakˈa tafkˈid χaʃˈuv bhanɡaʃˈat hamedˈa baʔinteʁnˈet.",
+   "transplanted": true,
+   "nikud_used": "גּוּגֶל שִׂיחֲקָה תַּפְקִיד חָשׁוּב בְּֽהַנְגָּשַׁת הַמֵּידָע בָּאִינְטֶרְנֵט.",
+   "outside_kokoro_vocab": []
+  },
+  "s10": {
+   "renikud_plain": "kaʃˈe lehitnaʔˈeʁ mehaʁˈeɡel leʔaχˈaʁ ʃehˈu mitkabˈea.",
+   "phonikud_nikud_marks": "kaʃˈe lehitnaʔˈeʁ meheʁˈɡel leʔaχˈaʁ ʃehˈu mitkabˈea.",
+   "phonikud_nikud_unmarked": "kaʃˈe lhitnaʔˈeʁ meheʁɡˈel lʔaχˈaʁ ʃehˈu mitkabeˈa.",
+   "transplanted": true,
+   "nikud_used": "קָשֶׁה לְֽהִתְנַעֵר מֵהֶרְ֫גֵּל לְֽאַחַר שֶׁהוּא מִתְקַבֵּ֫עַ.",
+   "outside_kokoro_vocab": []
+  },
+  "s11": {
+   "renikud_plain": "ʔanˈi koʁˈe sˈefeʁ baʔˈeʁev lejˈad haχalˈon.",
+   "phonikud_nikud_marks": "ʔanˈi koʁˈe sˈefeʁ baeʔˈeʁev lejˈad haχalˈon.",
+   "phonikud_nikud_unmarked": "ʔanˈi koʁˈe sefˈeʁ baʔeʁˈev ljˈad haχalˈon.",
+   "transplanted": true,
+   "nikud_used": "אֲנִי קוֹרֵא סֵ֫פֶר בָּֽעֶ֫רֶב לְֽיַד הַחַלּוֹן.",
+   "outside_kokoro_vocab": []
+  },
+  "s12": {
+   "renikud_plain": "hasˈefeʁ mehaʃχunˈa safˈaʁ ʔˈet hakˈesef vemijˈad sipˈeʁ lˈi ʔˈet kˈol hasipˈuʁ.",
+   "phonikud_nikud_marks": "hasˈapaʁ mehaʃχunˈa safˈaʁ ʔˈet hakˈesef umijˈad sipˈeʁ lˈi ʔˈet kˈol hasipˈuʁ.",
+   "phonikud_nikud_unmarked": "hasapˈaʁ mehaʃχunˈa safˈaʁ ʔˈet hakesˈef umijˈad sipˈeʁ lˈi ʔˈet kˈol hasipˈuʁ.",
+   "transplanted": true,
+   "nikud_used": "הַסַּ֫פָּר מֵהַשְּׁכוּנָה סָפַר אֶת הַכֶּ֫סֶף וּמִיָּד סִיפֵּר לִי אֶת כׇּל הַסִּיפּוּר.",
+   "outside_kokoro_vocab": []
+  },
+  "s13": {
+   "renikud_plain": "hajˈeled halˈaχ laɡˈan babˈokeʁ ʔˈim hakˈelev.",
+   "phonikud_nikud_marks": "hajˈeled halˈaχ laɡˈan babˈokeʁ ʔˈim hakˈelev.",
+   "phonikud_nikud_unmarked": "hajelˈed halˈaχ laɡˈan babokˈeʁ ʔˈim hakelˈev.",
+   "transplanted": true,
+   "nikud_used": "הַיֶּ֫לֶד הָלַךְ לַגַּ֫ן בַּבּ֫וֹקֶר עִם הַכֶּ֫לֶב.",
+   "outside_kokoro_vocab": []
+  },
+  "s14": {
+   "renikud_plain": "ʔanˈi ʁotsˈe leʔeχˈol lˈeχem ʔˈim χemʔˈa veʃˈemen zˈajit.",
+   "phonikud_nikud_marks": "ʔanˈi ʁotsˈa leʔeχˈol lˈeχem ʔˈim χemʔˈa veʃˈemen zˈajit.",
+   "phonikud_nikud_unmarked": "ʔanˈi ʁotsˈa leʔeχˈol leχˈem ʔˈim χemʔˈa veʃemˈen zajˈit.",
+   "transplanted": true,
+   "nikud_used": "אֲנִי רוֹצָה לֶאֱכוֹל לֶ֫חֶם עִם חֶמְאָה וְֽשֶׁ֫מֶן זַ֫יִת.",
+   "outside_kokoro_vocab": []
+  },
+  "s15": {
+   "renikud_plain": "hapɡiʃˈa nikbeʔˈa lejˈom ʃliʃˈi beʃaʔˈa ʃtˈajim vaχˈetsi.",
+   "phonikud_nikud_marks": "hapɡiʃˈa nikbʔˈa lejˈom ʃliʃˈi beʃaʔˈa ʃtˈajim vaχˈetsˈi.",
+   "phonikud_nikud_unmarked": "hapɡiʃˈa nikbʔˈa ljˈom ʃliʃˈi bʃaʔˈa ʃtajˈim vaχetsˈi.",
+   "transplanted": true,
+   "nikud_used": "הַפְּגִישָׁה נִקְבְּעָה לְֽיוֹם שְׁלִישִׁי בְּֽשָׁעָה שְׁתַּ֫יִים וָחֵ֫צִ֫י.",
+   "outside_kokoro_vocab": []
+  },
+  "s16": {
+   "renikud_plain": "ʃemˈi daniʔˈel ʁozhˈil veʔanˈi ɡˈaʁ bjeʁuʃalˈajim.",
+   "phonikud_nikud_marks": "ʃmˈi danijeʔˈel ʁozhˈil vaʔanˈi ɡˈaʁ biʁuʃalˈajim.",
+   "phonikud_nikud_unmarked": "ʃmˈi danijeʔˈel ʁozhˈil vaʔanˈi ɡˈaʁ biʁuʃalajˈim.",
+   "transplanted": true,
+   "nikud_used": "שְׁמִי דָּנִיֵּאֵל רוֹזְהִיל וַאֲנִי גָּר בִּירוּשָׁלַ֫יִם.",
+   "outside_kokoro_vocab": []
+  },
+  "s17": {
+   "renikud_plain": "ʔanˈi meʔamˈen modˈel zihˈuj dibˈuʁ ʔˈal haklatˈot ʃˈel ʔatsmˈi.",
+   "phonikud_nikud_marks": "ʔanˈi meʔamˈen mˈodel zihˈuj dibˈuʁ ʔˈal haklatˈot ʃˈel ʔatsmˈi.",
+   "phonikud_nikud_unmarked": "ʔanˈi mʔamˈen modˈel zihˈuj dibˈuʁ ʔˈal haklatˈot ʃˈel ʔatsmˈi.",
+   "transplanted": true,
+   "nikud_used": "אֲנִי מְֽאַמֵּן מ֫וֹדֶל זִיהוּי דִּיבּוּר עַל הַקְלָטוֹת שֶׁל עַצְמִי.",
+   "outside_kokoro_vocab": []
+  },
+  "s18": {
+   "renikud_plain": "tasˈim ʔˈet haʔaʁɡˈaz ʔˈal hamiʃtˈaχ vetaʔavˈiʁ ʔotˈo ʔˈim hamalɡazˈe lamaχsˈan.",
+   "phonikud_nikud_marks": "tasˈim ʔˈet haʔaʁɡˈaz ʔˈal hamiʃtˈaχ vetaʔavˈiʁ ʔotˈo ʔˈim hamalɡezˈa lamaχsˈan.",
+   "phonikud_nikud_unmarked": "tasˈim ʔˈet haʔaʁɡˈaz ʔˈal hamiʃtˈaχ vetaʔavˈiʁ ʔotˈo ʔˈim hamalɡezˈa lamaχsˈan.",
+   "transplanted": true,
+   "nikud_used": "תָּשִׂים אֶת הָאַרְגָּז עַל הַמִּשְׁטָח וְֽתַעֲבִיר אוֹתוֹ עִם הַמַּלְגֵּזָה לַמַּחְסָן.",
+   "outside_kokoro_vocab": []
+  },
+  "s19": {
+   "renikud_plain": "ʃalˈaχti leχˈa mˈejl ʔˈim halˈink lekˈovets bedʁˈajev.",
+   "phonikud_nikud_marks": "ʃalˈaχti leχˈa mˈel ʔˈim halˈink lakˈovets badʁˈav.",
+   "phonikud_nikud_unmarked": "ʃalaχtˈi lχˈa mˈel ʔˈim halˈink lakovˈets badʁˈav.",
+   "transplanted": true,
+   "nikud_used": "שָׁלַ֫חְתִּי לְֽךָ מֵייל עִם הַלִּינְק לַקּ֫וֹבֶץ בַּדְּרַייב.",
+   "outside_kokoro_vocab": []
+  },
+  "s20": {
+   "renikud_plain": "ʔˈim lˈo jiʁˈed ɡˈeʃem maχˈaʁ, nisˈa lajˈam, noχˈal ʔaʁuχˈat tsohoʁˈajim venaχzˈoʁ lifnˈej haʃkiʔˈa.",
+   "phonikud_nikud_marks": "ʔˈim lˈo jeʁˈed ɡˈeʃem maχˈaʁ, nisˈa lajˈam, noχˈal ʔaʁuχˈat tsohoʁajˈim venaχzˈoʁ lifnˈej haʃkiʔˈa.",
+   "phonikud_nikud_unmarked": "ʔˈim lˈo jeʁˈed ɡeʃˈem maχˈaʁ, nisˈa lajˈam, noχˈal ʔaʁuχˈat tsohoʁajˈim venaχzˈoʁ lifnˈej haʃkiʔˈa.",
+   "transplanted": true,
+   "nikud_used": "אִם לֹא יֵירֵד גֶּ֫שֶׁם מָחָר, נִיסַּע לַיָּם, נֹאכַל אֲרוּחַת צׇהֳרַיִים וְֽנַחְזוֹר לִפְנֵי הַשְּׁקִיעָה.",
+   "outside_kokoro_vocab": []
+  }
+ }
+}
