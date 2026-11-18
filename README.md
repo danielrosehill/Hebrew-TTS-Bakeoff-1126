@@ -110,6 +110,30 @@ English or multilingual model, or trained on several languages. The Phonikud voi
 The full provenance is in `data/models.json`, with sources, and with the fields that were confirmed kept apart from
 those that were inferred. Run settings, voices, hardware and timings are in `results/<run>/meta.json`.
 
+### Voice profile: measured, not judged (added 2026-11-18)
+
+To help pick a voice by type, every run also gets an objective profile from its own clips, with no listening:
+`scripts/voice_profile.py` writes `data/voice_profiles.json`, and `scripts/build_space.py` puts it on each run as
+`profile` in the clip manifest, which the leaderboard shows under **Find a voice by type**.
+
+- **Words per minute:** pooled over all of a run's clips: source words / seconds of speech (leading and trailing silence
+  trimmed, internal pauses kept) x 60. A run below 0.65x or above 1.4x the median is flagged; that is nearly always
+  skipped, repeated or truncated text rather than pace (gpt-audio-1.5 male + nikud repeats the end of p01, so it reads
+  low; several runs that dropped words read at 250-320 WPM).
+- **Pitch:** median F0 of voiced frames, the 10th-90th percentile range, and its spread in semitones (intonation).
+  Praat autocorrelation, tracked in 60-250 Hz for male voices and 100-450 Hz for female ones.
+- **Brightness:** spectral centre of gravity of the 500-8000 Hz band.
+- **Clarity:** harmonics-to-noise ratio (high = clean, low = breathy or rough).
+- **Labels:** register is absolute per gender (male < 110 / 140 Hz, female < 185 / 225 Hz). Intonation, brightness and
+  clarity are thirds among the runs of the same gender, so they rank voices against this field and are not absolute.
+  Pace is relative to the median WPM.
+
+Alongside it, Daniel's own freeform view of what a voice suits (audiobooks, podcasts, learner reference...) is kept in
+the annotations dataset as `voice-character.jsonl` and shown beside the measurements.
+
+Not everything in a WAV header can be trusted: the Fish S2 Pro WAVs carry a streamed header (data size 0xFFFFFFFF), so
+Praat's reader tried to allocate 16 GB. Clips are decoded through ffmpeg instead.
+
 ### Male voices (added 2026-11-18)
 
 Every voice that reached the Arena was female (Kore, Rachel, coral, eve, noa). So each voice still unbeaten on
@@ -277,6 +301,8 @@ Every run's pass/fail record from Daniel's listening, written by `scripts/screen
 | `models/<run>.py` | One Modal app per run. See `models/CONTRACT.md`. `fish-s2-pro-api.py` calls Fish's API instead. |
 | `results/<run>/` | `meta.json`, plus `ipa.json` / `phonemes.json` / `nikud.json` where they exist. The WAVs are gitignored; they are in the results dataset. |
 | `scripts/build_space.py` | Builds and pushes the listening Space (`--push`) |
+| `scripts/voice_profile.py` | Objective voice profile per run (WPM, pitch, intonation, brightness, clarity) → `data/voice_profiles.json` |
+| `scripts/clip_metrics.py` | Level, peak, speech time, pauses and pace per clip → `data/clip_metrics.json` |
 | `scripts/publish_results.py` | Pushes the results dataset |
 | `scripts/register_eval.py` | Registers this evaluation (`--push`) in `Hebrish/Hebrew-TTS-Evaluations` |
 | `hub/evaluations/` | That registry's Hub card and its last pushed rows |

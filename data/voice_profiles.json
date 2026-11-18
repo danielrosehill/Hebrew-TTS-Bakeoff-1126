@@ -1,0 +1,1937 @@
+{
+ "phonikud-piper": {
+  "wpm": 144.8,
+  "wpm_clips": 20,
+  "wpm_by_clip": {
+   "s01": 189.5,
+   "s02": 191.5,
+   "s03": 148.5,
+   "s04": 165.7,
+   "s05": 134.8,
+   "s06": 128.6,
+   "s07": 135.8,
+   "s08": 123.9,
+   "s09": 107.7,
+   "s10": 132.8,
+   "s11": 150.6,
+   "s12": 155.3,
+   "s13": 151.3,
+   "s14": 166.7,
+   "s15": 133.3,
+   "s16": 125.4,
+   "s17": 165.1,
+   "s18": 143.5,
+   "s19": 153.3,
+   "s20": 143.6
+  },
+  "voice_gender": null,
+  "f0_median_hz": 129.7,
+  "f0_p10_hz": 101.6,
+  "f0_p90_hz": 199.4,
+  "f0_range_st": 11.7,
+  "f0_sd_st": 4.64,
+  "centroid_hz": 1189,
+  "hnr_db": 11.9,
+  "labels": {
+   "intonation": "moderate",
+   "brightness": "darker",
+   "clarity": "cleaner",
+   "pace": "average"
+  },
+  "pace_vs_median": 0.09
+ },
+ "phonikud-piper-auto": {
+  "wpm": 144.7,
+  "wpm_clips": 20,
+  "wpm_by_clip": {
+   "s01": 194.6,
+   "s02": 184.6,
+   "s03": 146.3,
+   "s04": 165.7,
+   "s05": 131.4,
+   "s06": 133.8,
+   "s07": 136.4,
+   "s08": 138.2,
+   "s09": 107.7,
+   "s10": 130.9,
+   "s11": 147.5,
+   "s12": 157.1,
+   "s13": 156.5,
+   "s14": 163.3,
+   "s15": 125.7,
+   "s16": 129.0,
+   "s17": 167.2,
+   "s18": 140.2,
+   "s19": 141.4,
+   "s20": 145.0
+  },
+  "voice_gender": null,
+  "f0_median_hz": 128.6,
+  "f0_p10_hz": 101.4,
+  "f0_p90_hz": 208.0,
+  "f0_range_st": 12.4,
+  "f0_sd_st": 4.74,
+  "centroid_hz": 1254,
+  "hnr_db": 11.9,
+  "labels": {
+   "intonation": "moderate",
+   "brightness": "darker",
+   "clarity": "cleaner",
+   "pace": "average"
+  },
+  "pace_vs_median": 0.09
+ },
+ "phonikud-piper-plain": {
+  "wpm": 145.9,
+  "wpm_clips": 20,
+  "wpm_by_clip": {
+   "s01": 184.6,
+   "s02": 175.6,
+   "s03": 144.9,
+   "s04": 161.3,
+   "s05": 131.9,
+   "s06": 133.8,
+   "s07": 127.7,
+   "s08": 131.7,
+   "s09": 115.7,
+   "s10": 141.7,
+   "s11": 156.5,
+   "s12": 157.9,
+   "s13": 157.2,
+   "s14": 170.2,
+   "s15": 132.1,
+   "s16": 125.0,
+   "s17": 172.5,
+   "s18": 139.5,
+   "s19": 155.0,
+   "s20": 142.6
+  },
+  "voice_gender": null,
+  "f0_median_hz": 127.5,
+  "f0_p10_hz": 100.3,
+  "f0_p90_hz": 197.4,
+  "f0_range_st": 11.7,
+  "f0_sd_st": 4.6,
+  "centroid_hz": 1204,
+  "hnr_db": 11.8,
+  "labels": {
+   "intonation": "flatter",
+   "brightness": "darker",
+   "clarity": "moderate",
+   "pace": "average"
+  },
+  "pace_vs_median": 0.1
+ },
+ "piper-he-noa": {
+  "wpm": 134.4,
+  "wpm_clips": 21,
+  "wpm_by_clip": {
+   "s01": 220.9,
+   "s02": 219.5,
+   "s03": 135.7,
+   "s04": 137.0,
+   "s05": 107.1,
+   "s06": 124.6,
+   "s07": 132.4,
+   "s08": 145.3,
+   "s09": 109.4,
+   "s10": 110.8,
+   "s11": 142.3,
+   "s12": 141.6,
+   "s13": 136.4,
+   "s14": 166.7,
+   "s15": 112.3,
+   "s16": 121.2,
+   "s17": 156.1,
+   "s18": 141.8,
+   "s19": 152.2,
+   "s20": 136.8,
+   "p01": 123.3
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 178.9,
+  "f0_p10_hz": 151.2,
+  "f0_p90_hz": 220.3,
+  "f0_range_st": 6.5,
+  "f0_sd_st": 2.53,
+  "centroid_hz": 1193,
+  "hnr_db": 15.6,
+  "labels": {
+   "register": "low",
+   "intonation": "flatter",
+   "brightness": "darker",
+   "clarity": "cleaner",
+   "pace": "average"
+  },
+  "pace_vs_median": 0.01
+ },
+ "piper-he-noa-nikud": {
+  "wpm": 138.0,
+  "wpm_clips": 21,
+  "wpm_by_clip": {
+   "s01": 210.5,
+   "s02": 218.2,
+   "s03": 138.9,
+   "s04": 141.5,
+   "s05": 115.8,
+   "s06": 118.8,
+   "s07": 142.9,
+   "s08": 141.4,
+   "s09": 108.2,
+   "s10": 129.0,
+   "s11": 140.1,
+   "s12": 137.8,
+   "s13": 132.4,
+   "s14": 157.9,
+   "s15": 128.8,
+   "s16": 128.6,
+   "s17": 167.7,
+   "s18": 146.7,
+   "s19": 141.9,
+   "s20": 135.4,
+   "p01": 130.8
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 177.6,
+  "f0_p10_hz": 151.1,
+  "f0_p90_hz": 221.9,
+  "f0_range_st": 6.7,
+  "f0_sd_st": 2.59,
+  "centroid_hz": 1192,
+  "hnr_db": 15.3,
+  "labels": {
+   "register": "low",
+   "intonation": "flatter",
+   "brightness": "darker",
+   "clarity": "cleaner",
+   "pace": "average"
+  },
+  "pace_vs_median": 0.04
+ },
+ "kokoro-hebrew": {
+  "wpm": 167.1,
+  "wpm_clips": 21,
+  "wpm_by_clip": {
+   "s01": 250.0,
+   "s02": 259.0,
+   "s03": 163.0,
+   "s04": 179.6,
+   "s05": 151.3,
+   "s06": 142.9,
+   "s07": 158.6,
+   "s08": 170.7,
+   "s09": 125.4,
+   "s10": 142.3,
+   "s11": 165.9,
+   "s12": 176.0,
+   "s13": 163.6,
+   "s14": 174.5,
+   "s15": 140.9,
+   "s16": 144.6,
+   "s17": 197.8,
+   "s18": 163.9,
+   "s19": 164.7,
+   "s20": 170.7,
+   "p01": 171.0
+  },
+  "voice_gender": "male",
+  "f0_median_hz": 171.7,
+  "f0_p10_hz": 128.4,
+  "f0_p90_hz": 224.6,
+  "f0_range_st": 9.7,
+  "f0_sd_st": 3.69,
+  "centroid_hz": 1051,
+  "hnr_db": 14.6,
+  "labels": {
+   "register": "high",
+   "intonation": "flatter",
+   "brightness": "darker",
+   "clarity": "cleaner",
+   "pace": "fast"
+  },
+  "pace_vs_median": 0.26
+ },
+ "kokoro-hebrew-nikud": {
+  "wpm": 165.9,
+  "wpm_clips": 21,
+  "wpm_by_clip": {
+   "s01": 250.0,
+   "s02": 257.1,
+   "s03": 163.0,
+   "s04": 169.5,
+   "s05": 151.3,
+   "s06": 140.6,
+   "s07": 165.9,
+   "s08": 157.9,
+   "s09": 125.7,
+   "s10": 142.9,
+   "s11": 160.0,
+   "s12": 172.3,
+   "s13": 163.6,
+   "s14": 169.6,
+   "s15": 137.3,
+   "s16": 147.5,
+   "s17": 197.8,
+   "s18": 160.9,
+   "s19": 178.7,
+   "s20": 169.2,
+   "p01": 170.4
+  },
+  "voice_gender": "male",
+  "f0_median_hz": 172.4,
+  "f0_p10_hz": 129.2,
+  "f0_p90_hz": 226.8,
+  "f0_range_st": 9.7,
+  "f0_sd_st": 3.68,
+  "centroid_hz": 1051,
+  "hnr_db": 14.7,
+  "labels": {
+   "register": "high",
+   "intonation": "flatter",
+   "brightness": "darker",
+   "clarity": "cleaner",
+   "pace": "fast"
+  },
+  "pace_vs_median": 0.25
+ },
+ "bluev3": {
+  "wpm": 140.9,
+  "wpm_clips": 20,
+  "wpm_by_clip": {
+   "s01": 200.0,
+   "s02": 201.1,
+   "s03": 126.6,
+   "s04": 140.2,
+   "s05": 107.8,
+   "s06": 128.1,
+   "s07": 146.9,
+   "s08": 139.5,
+   "s09": 119.3,
+   "s10": 118.0,
+   "s11": 151.9,
+   "s12": 150.7,
+   "s13": 141.2,
+   "s14": 143.7,
+   "s15": 130.4,
+   "s16": 130.0,
+   "s17": 165.6,
+   "s18": 143.9,
+   "s19": 142.4,
+   "s20": 138.8
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 187.7,
+  "f0_p10_hz": 168.7,
+  "f0_p90_hz": 232.2,
+  "f0_range_st": 5.5,
+  "f0_sd_st": 2.52,
+  "centroid_hz": 1365,
+  "hnr_db": 14.0,
+  "labels": {
+   "register": "mid",
+   "intonation": "flatter",
+   "brightness": "neutral",
+   "clarity": "cleaner",
+   "pace": "average"
+  },
+  "pace_vs_median": 0.06
+ },
+ "f5-hebrew-v2": {
+  "wpm": 322.7,
+  "wpm_clips": 20,
+  "wpm_by_clip": {
+   "s01": 383.0,
+   "s02": 444.4,
+   "s03": 326.1,
+   "s04": 555.6,
+   "s05": 283.5,
+   "s06": 270.7,
+   "s07": 321.4,
+   "s08": 325.6,
+   "s09": 240.0,
+   "s10": 279.1,
+   "s11": 333.3,
+   "s12": 336.7,
+   "s13": 600.0,
+   "s14": 347.8,
+   "s15": 265.8,
+   "s16": 270.7,
+   "s17": 315.8,
+   "s18": 348.8,
+   "s19": 300.0,
+   "s20": 303.5
+  },
+  "voice_gender": null,
+  "f0_median_hz": 127.3,
+  "f0_p10_hz": 110.0,
+  "f0_p90_hz": 160.7,
+  "f0_range_st": 6.6,
+  "f0_sd_st": 3.62,
+  "centroid_hz": 3760,
+  "hnr_db": 10.4,
+  "flags": [
+   "pace far outside the other voices: check for skipped, repeated or truncated text"
+  ],
+  "labels": {
+   "intonation": "flatter",
+   "brightness": "brighter",
+   "clarity": "breathier",
+   "pace": "fast"
+  },
+  "pace_vs_median": 1.43
+ },
+ "f5-hebrew-v2-nikud": {
+  "wpm": 188.7,
+  "wpm_clips": 20,
+  "wpm_by_clip": {
+   "s01": 246.6,
+   "s02": 279.1,
+   "s03": 180.7,
+   "s04": 223.9,
+   "s05": 155.8,
+   "s06": 162.9,
+   "s07": 203.4,
+   "s08": 186.7,
+   "s09": 152.2,
+   "s10": 169.0,
+   "s11": 203.4,
+   "s12": 207.5,
+   "s13": 189.5,
+   "s14": 217.2,
+   "s15": 158.5,
+   "s16": 151.3,
+   "s17": 216.9,
+   "s18": 169.0,
+   "s19": 175.0,
+   "s20": 207.4
+  },
+  "voice_gender": null,
+  "f0_median_hz": 128.4,
+  "f0_p10_hz": 112.2,
+  "f0_p90_hz": 159.4,
+  "f0_range_st": 6.1,
+  "f0_sd_st": 3.15,
+  "centroid_hz": 3235,
+  "hnr_db": 10.3,
+  "flags": [
+   "pace far outside the other voices: check for skipped, repeated or truncated text"
+  ],
+  "labels": {
+   "intonation": "flatter",
+   "brightness": "brighter",
+   "clarity": "breathier",
+   "pace": "fast"
+  },
+  "pace_vs_median": 0.42
+ },
+ "zonos3-mini": {
+  "wpm": 91.2,
+  "wpm_clips": 20,
+  "wpm_by_clip": {
+   "s01": 51.9,
+   "s02": 220.9,
+   "s03": 70.4,
+   "s04": 146.3,
+   "s05": 63.4,
+   "s06": 84.3,
+   "s07": 72.0,
+   "s08": 58.7,
+   "s09": 99.8,
+   "s10": 142.3,
+   "s11": 83.1,
+   "s12": 150.3,
+   "s13": 45.8,
+   "s14": 122.4,
+   "s15": 98.6,
+   "s16": 91.8,
+   "s17": 90.2,
+   "s18": 134.2,
+   "s19": 84.2,
+   "s20": 124.4
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 211.1,
+  "f0_p10_hz": 175.1,
+  "f0_p90_hz": 289.1,
+  "f0_range_st": 8.7,
+  "f0_sd_st": 3.48,
+  "centroid_hz": 1376,
+  "hnr_db": 15.3,
+  "labels": {
+   "register": "mid",
+   "intonation": "flatter",
+   "brightness": "neutral",
+   "clarity": "cleaner",
+   "pace": "slow"
+  },
+  "pace_vs_median": -0.31
+ },
+ "chatterbox-multilingual": {
+  "wpm": 165.4,
+  "wpm_clips": 20,
+  "wpm_by_clip": {
+   "s01": 149.4,
+   "s02": 235.3,
+   "s03": 170.5,
+   "s04": 241.9,
+   "s05": 155.2,
+   "s06": 168.2,
+   "s07": 174.8,
+   "s08": 145.8,
+   "s09": 147.9,
+   "s10": 176.5,
+   "s11": 115.4,
+   "s12": 175.1,
+   "s13": 130.0,
+   "s14": 220.2,
+   "s15": 162.8,
+   "s16": 88.0,
+   "s17": 206.9,
+   "s18": 193.5,
+   "s19": 175.0,
+   "s20": 193.1
+  },
+  "voice_gender": null,
+  "f0_median_hz": 143.1,
+  "f0_p10_hz": 97.6,
+  "f0_p90_hz": 225.1,
+  "f0_range_st": 14.5,
+  "f0_sd_st": 5.71,
+  "centroid_hz": 1526,
+  "hnr_db": 11.0,
+  "labels": {
+   "intonation": "livelier",
+   "brightness": "brighter",
+   "clarity": "moderate",
+   "pace": "fast"
+  },
+  "pace_vs_median": 0.25
+ },
+ "chatterbox-multilingual-nikud": {
+  "wpm": 184.0,
+  "wpm_clips": 21,
+  "wpm_by_clip": {
+   "s01": 327.3,
+   "s02": 356.4,
+   "s03": 177.5,
+   "s04": 169.5,
+   "s05": 195.7,
+   "s06": 179.1,
+   "s07": 186.5,
+   "s08": 185.8,
+   "s09": 146.9,
+   "s10": 165.9,
+   "s11": 227.8,
+   "s12": 191.9,
+   "s13": 190.5,
+   "s14": 201.7,
+   "s15": 159.7,
+   "s16": 175.6,
+   "s17": 221.3,
+   "s18": 208.3,
+   "s19": 196.3,
+   "s20": 161.5,
+   "p01": 163.5
+  },
+  "voice_gender": null,
+  "f0_median_hz": 148.5,
+  "f0_p10_hz": 97.2,
+  "f0_p90_hz": 226.8,
+  "f0_range_st": 14.7,
+  "f0_sd_st": 5.66,
+  "centroid_hz": 1672,
+  "hnr_db": 9.7,
+  "labels": {
+   "intonation": "livelier",
+   "brightness": "brighter",
+   "clarity": "breathier",
+   "pace": "fast"
+  },
+  "pace_vs_median": 0.39
+ },
+ "voxcpm2": {
+  "wpm": 164.3,
+  "wpm_clips": 20,
+  "wpm_by_clip": {
+   "s01": 225.0,
+   "s02": 250.0,
+   "s03": 170.5,
+   "s04": 104.2,
+   "s05": 216.9,
+   "s06": 173.1,
+   "s07": 187.5,
+   "s08": 164.1,
+   "s09": 114.1,
+   "s10": 150.0,
+   "s11": 125.0,
+   "s12": 206.2,
+   "s13": 187.5,
+   "s14": 230.8,
+   "s15": 154.4,
+   "s16": 140.6,
+   "s17": 146.7,
+   "s18": 150.0,
+   "s19": 125.0,
+   "s20": 203.1
+  },
+  "voice_gender": null,
+  "f0_median_hz": 132.0,
+  "f0_p10_hz": 94.6,
+  "f0_p90_hz": 234.5,
+  "f0_range_st": 15.7,
+  "f0_sd_st": 5.98,
+  "centroid_hz": 1515,
+  "hnr_db": 10.6,
+  "labels": {
+   "intonation": "livelier",
+   "brightness": "neutral",
+   "clarity": "moderate",
+   "pace": "fast"
+  },
+  "pace_vs_median": 0.24
+ },
+ "omnivoice": {
+  "wpm": 149.9,
+  "wpm_clips": 20,
+  "wpm_by_clip": {
+   "s01": 227.8,
+   "s02": 169.8,
+   "s03": 131.6,
+   "s04": 131.6,
+   "s05": 149.4,
+   "s06": 153.8,
+   "s07": 132.4,
+   "s08": 158.5,
+   "s09": 126.5,
+   "s10": 119.2,
+   "s11": 162.9,
+   "s12": 175.5,
+   "s13": 192.5,
+   "s14": 191.2,
+   "s15": 124.3,
+   "s16": 136.4,
+   "s17": 183.1,
+   "s18": 142.5,
+   "s19": 140.0,
+   "s20": 130.0
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 258.5,
+  "f0_p10_hz": 214.1,
+  "f0_p90_hz": 330.7,
+  "f0_range_st": 7.5,
+  "f0_sd_st": 2.96,
+  "centroid_hz": 1265,
+  "hnr_db": 13.5,
+  "labels": {
+   "register": "high",
+   "intonation": "flatter",
+   "brightness": "darker",
+   "clarity": "moderate",
+   "pace": "fast"
+  },
+  "pace_vs_median": 0.13
+ },
+ "fish-s2-pro": {
+  "wpm": 132.2,
+  "wpm_clips": 20,
+  "wpm_by_clip": {
+   "s01": 157.9,
+   "s02": 209.3,
+   "s03": 153.8,
+   "s04": 150.0,
+   "s05": 81.6,
+   "s06": 119.2,
+   "s07": 119.2,
+   "s08": 136.8,
+   "s09": 117.3,
+   "s10": 129.0,
+   "s11": 151.9,
+   "s12": 156.0,
+   "s13": 138.5,
+   "s14": 139.5,
+   "s15": 111.7,
+   "s16": 127.2,
+   "s17": 127.7,
+   "s18": 120.7,
+   "s19": 164.7,
+   "s20": 128.3
+  },
+  "voice_gender": null,
+  "f0_median_hz": 143.3,
+  "f0_p10_hz": 93.3,
+  "f0_p90_hz": 208.5,
+  "f0_range_st": 13.9,
+  "f0_sd_st": 5.44,
+  "centroid_hz": 1294,
+  "hnr_db": 12.8,
+  "labels": {
+   "intonation": "livelier",
+   "brightness": "neutral",
+   "clarity": "cleaner",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.0
+ },
+ "fish-s2-pro-nikud": {
+  "wpm": 103.6,
+  "wpm_clips": 20,
+  "wpm_by_clip": {
+   "s01": 138.5,
+   "s02": 141.2,
+   "s03": 131.6,
+   "s04": 97.7,
+   "s05": 96.8,
+   "s06": 106.2,
+   "s07": 106.2,
+   "s08": 107.7,
+   "s09": 63.3,
+   "s10": 79.1,
+   "s11": 141.2,
+   "s12": 126.9,
+   "s13": 109.1,
+   "s14": 113.5,
+   "s15": 83.7,
+   "s16": 83.3,
+   "s17": 109.8,
+   "s18": 90.4,
+   "s19": 128.4,
+   "s20": 107.0
+  },
+  "voice_gender": null,
+  "f0_median_hz": 146.4,
+  "f0_p10_hz": 97.8,
+  "f0_p90_hz": 219.8,
+  "f0_range_st": 14.0,
+  "f0_sd_st": 5.32,
+  "centroid_hz": 1288,
+  "hnr_db": 14.7,
+  "labels": {
+   "intonation": "moderate",
+   "brightness": "neutral",
+   "clarity": "cleaner",
+   "pace": "slow"
+  },
+  "pace_vs_median": -0.22
+ },
+ "gemini-flash-tts": {
+  "wpm": 130.6,
+  "wpm_clips": 21,
+  "wpm_by_clip": {
+   "s01": 183.7,
+   "s02": 246.6,
+   "s03": 154.6,
+   "s04": 136.4,
+   "s05": 137.9,
+   "s06": 118.8,
+   "s07": 116.5,
+   "s08": 128.8,
+   "s09": 111.7,
+   "s10": 125.9,
+   "s11": 129.5,
+   "s12": 132.3,
+   "s13": 114.6,
+   "s14": 116.5,
+   "s15": 109.7,
+   "s16": 118.4,
+   "s17": 159.8,
+   "s18": 142.5,
+   "s19": 160.3,
+   "s20": 128.9,
+   "p01": 121.9
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 198.5,
+  "f0_p10_hz": 135.8,
+  "f0_p90_hz": 314.3,
+  "f0_range_st": 14.5,
+  "f0_sd_st": 5.48,
+  "centroid_hz": 1546,
+  "hnr_db": 11.1,
+  "labels": {
+   "register": "mid",
+   "intonation": "livelier",
+   "brightness": "neutral",
+   "clarity": "breathier",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.02
+ },
+ "gemini-flash-tts-nikud": {
+  "wpm": 129.7,
+  "wpm_clips": 21,
+  "wpm_by_clip": {
+   "s01": 188.5,
+   "s02": 240.0,
+   "s03": 161.3,
+   "s04": 146.3,
+   "s05": 131.4,
+   "s06": 103.4,
+   "s07": 133.8,
+   "s08": 124.3,
+   "s09": 90.1,
+   "s10": 110.4,
+   "s11": 129.0,
+   "s12": 129.9,
+   "s13": 117.6,
+   "s14": 123.7,
+   "s15": 108.2,
+   "s16": 118.4,
+   "s17": 152.5,
+   "s18": 162.6,
+   "s19": 148.4,
+   "s20": 140.5,
+   "p01": 121.8
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 197.7,
+  "f0_p10_hz": 137.8,
+  "f0_p90_hz": 325.2,
+  "f0_range_st": 14.9,
+  "f0_sd_st": 5.53,
+  "centroid_hz": 1609,
+  "hnr_db": 11.1,
+  "labels": {
+   "register": "mid",
+   "intonation": "livelier",
+   "brightness": "neutral",
+   "clarity": "breathier",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.02
+ },
+ "gemini-flash-tts-male": {
+  "wpm": 133.8,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 268.7,
+   "p01": 124.8
+  },
+  "voice_gender": "male",
+  "f0_median_hz": 147.3,
+  "f0_p10_hz": 89.2,
+  "f0_p90_hz": 221.4,
+  "f0_range_st": 15.7,
+  "f0_sd_st": 5.61,
+  "centroid_hz": 1812,
+  "hnr_db": 9.3,
+  "labels": {
+   "register": "high",
+   "intonation": "livelier",
+   "brightness": "neutral",
+   "clarity": "moderate",
+   "pace": "average"
+  },
+  "pace_vs_median": 0.01
+ },
+ "gemini-flash-tts-male-nikud": {
+  "wpm": 130.1,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 233.8,
+   "p01": 122.4
+  },
+  "voice_gender": "male",
+  "f0_median_hz": 147.7,
+  "f0_p10_hz": 85.9,
+  "f0_p90_hz": 213.2,
+  "f0_range_st": 15.7,
+  "f0_sd_st": 5.69,
+  "centroid_hz": 2677,
+  "hnr_db": 9.3,
+  "labels": {
+   "register": "high",
+   "intonation": "livelier",
+   "brightness": "brighter",
+   "clarity": "moderate",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.02
+ },
+ "elevenlabs-v3": {
+  "wpm": 149.5,
+  "wpm_clips": 21,
+  "wpm_by_clip": {
+   "s01": 274.8,
+   "s02": 241.6,
+   "s03": 174.4,
+   "s04": 137.0,
+   "s05": 139.0,
+   "s06": 153.2,
+   "s07": 158.6,
+   "s08": 167.3,
+   "s09": 129.6,
+   "s10": 133.8,
+   "s11": 158.6,
+   "s12": 148.6,
+   "s13": 176.5,
+   "s14": 178.4,
+   "s15": 140.0,
+   "s16": 122.9,
+   "s17": 194.9,
+   "s18": 165.3,
+   "s19": 162.2,
+   "s20": 144.2,
+   "p01": 125.3
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 203.2,
+  "f0_p10_hz": 166.7,
+  "f0_p90_hz": 263.4,
+  "f0_range_st": 7.9,
+  "f0_sd_st": 3.19,
+  "centroid_hz": 1198,
+  "hnr_db": 11.8,
+  "labels": {
+   "register": "mid",
+   "intonation": "flatter",
+   "brightness": "darker",
+   "clarity": "moderate",
+   "pace": "fast"
+  },
+  "pace_vs_median": 0.13
+ },
+ "elevenlabs-v3-nikud": {
+  "wpm": 128.4,
+  "wpm_clips": 21,
+  "wpm_by_clip": {
+   "s01": 241.6,
+   "s02": 191.5,
+   "s03": 141.5,
+   "s04": 111.5,
+   "s05": 133.8,
+   "s06": 120.0,
+   "s07": 148.1,
+   "s08": 156.1,
+   "s09": 115.7,
+   "s10": 126.3,
+   "s11": 143.4,
+   "s12": 132.3,
+   "s13": 139.0,
+   "s14": 126.6,
+   "s15": 126.5,
+   "s16": 101.4,
+   "s17": 130.8,
+   "s18": 127.9,
+   "s19": 132.9,
+   "s20": 121.3,
+   "p01": 115.6
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 199.6,
+  "f0_p10_hz": 164.9,
+  "f0_p90_hz": 265.3,
+  "f0_range_st": 8.2,
+  "f0_sd_st": 3.19,
+  "centroid_hz": 1231,
+  "hnr_db": 11.7,
+  "labels": {
+   "register": "mid",
+   "intonation": "flatter",
+   "brightness": "darker",
+   "clarity": "breathier",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.03
+ },
+ "openai-tts": {
+  "wpm": 104.8,
+  "wpm_clips": 20,
+  "wpm_by_clip": {
+   "s01": 180.0,
+   "s02": 165.1,
+   "s03": 97.7,
+   "s04": 90.6,
+   "s05": 110.8,
+   "s06": 111.5,
+   "s07": 96.5,
+   "s08": 102.4,
+   "s09": 76.4,
+   "s10": 84.5,
+   "s11": 108.4,
+   "s12": 122.7,
+   "s13": 103.7,
+   "s14": 117.6,
+   "s15": 86.6,
+   "s16": 97.0,
+   "s17": 121.1,
+   "s18": 107.1,
+   "s19": 108.2,
+   "s20": 91.8
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 197.7,
+  "f0_p10_hz": 152.1,
+  "f0_p90_hz": 260.7,
+  "f0_range_st": 9.3,
+  "f0_sd_st": 3.54,
+  "centroid_hz": 1594,
+  "hnr_db": 13.7,
+  "labels": {
+   "register": "mid",
+   "intonation": "moderate",
+   "brightness": "neutral",
+   "clarity": "cleaner",
+   "pace": "slow"
+  },
+  "pace_vs_median": -0.21
+ },
+ "openai-tts-nikud": {
+  "wpm": 87.9,
+  "wpm_clips": 20,
+  "wpm_by_clip": {
+   "s01": 153.2,
+   "s02": 105.0,
+   "s03": 102.0,
+   "s04": 111.5,
+   "s05": 49.7,
+   "s06": 90.0,
+   "s07": 94.5,
+   "s08": 78.5,
+   "s09": 66.1,
+   "s10": 72.6,
+   "s11": 102.6,
+   "s12": 106.5,
+   "s13": 79.5,
+   "s14": 107.9,
+   "s15": 76.4,
+   "s16": 87.4,
+   "s17": 102.7,
+   "s18": 94.0,
+   "s19": 107.4,
+   "s20": 73.2
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 196.2,
+  "f0_p10_hz": 149.4,
+  "f0_p90_hz": 263.5,
+  "f0_range_st": 9.8,
+  "f0_sd_st": 3.63,
+  "centroid_hz": 1568,
+  "hnr_db": 13.4,
+  "labels": {
+   "register": "mid",
+   "intonation": "moderate",
+   "brightness": "neutral",
+   "clarity": "moderate",
+   "pace": "slow"
+  },
+  "pace_vs_median": -0.34
+ },
+ "google-cloud-tts": {
+  "wpm": 141.7,
+  "wpm_clips": 21,
+  "wpm_by_clip": {
+   "s01": 243.2,
+   "s02": 264.7,
+   "s03": 150.8,
+   "s04": 140.2,
+   "s05": 90.5,
+   "s06": 143.4,
+   "s07": 123.3,
+   "s08": 152.2,
+   "s09": 122.8,
+   "s10": 136.9,
+   "s11": 147.5,
+   "s12": 135.8,
+   "s13": 119.2,
+   "s14": 162.2,
+   "s15": 134.6,
+   "s16": 128.6,
+   "s17": 164.6,
+   "s18": 148.5,
+   "s19": 156.7,
+   "s20": 184.0,
+   "p01": 128.0
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 202.5,
+  "f0_p10_hz": 154.6,
+  "f0_p90_hz": 293.2,
+  "f0_range_st": 11.1,
+  "f0_sd_st": 4.3,
+  "centroid_hz": 1139,
+  "hnr_db": 13.7,
+  "labels": {
+   "register": "mid",
+   "intonation": "moderate",
+   "brightness": "darker",
+   "clarity": "cleaner",
+   "pace": "average"
+  },
+  "pace_vs_median": 0.07
+ },
+ "google-cloud-tts-nikud": {
+  "wpm": 134.8,
+  "wpm_clips": 21,
+  "wpm_by_clip": {
+   "s01": 173.1,
+   "s02": 169.8,
+   "s03": 140.8,
+   "s04": 144.9,
+   "s05": 139.5,
+   "s06": 124.6,
+   "s07": 134.3,
+   "s08": 128.0,
+   "s09": 111.1,
+   "s10": 102.3,
+   "s11": 140.6,
+   "s12": 145.1,
+   "s13": 144.0,
+   "s14": 150.0,
+   "s15": 105.0,
+   "s16": 110.8,
+   "s17": 153.4,
+   "s18": 142.9,
+   "s19": 153.3,
+   "s20": 164.2,
+   "p01": 126.3
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 207.4,
+  "f0_p10_hz": 155.7,
+  "f0_p90_hz": 307.1,
+  "f0_range_st": 11.8,
+  "f0_sd_st": 4.55,
+  "centroid_hz": 1151,
+  "hnr_db": 13.1,
+  "labels": {
+   "register": "mid",
+   "intonation": "livelier",
+   "brightness": "darker",
+   "clarity": "moderate",
+   "pace": "average"
+  },
+  "pace_vs_median": 0.02
+ },
+ "elevenlabs-v4": {
+  "wpm": 127.2,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 209.3,
+   "p01": 120.5
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 207.1,
+  "f0_p10_hz": 165.3,
+  "f0_p90_hz": 281.7,
+  "f0_range_st": 9.2,
+  "f0_sd_st": 3.54,
+  "centroid_hz": 1544,
+  "hnr_db": 9.6,
+  "labels": {
+   "register": "mid",
+   "intonation": "moderate",
+   "brightness": "neutral",
+   "clarity": "breathier",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.04
+ },
+ "gemini-2.5-flash-tts": {
+  "wpm": 274.8,
+  "wpm_clips": 1,
+  "wpm_by_clip": {
+   "s01": 274.8
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 198.5,
+  "f0_p10_hz": 157.0,
+  "f0_p90_hz": 259.1,
+  "f0_range_st": 8.7,
+  "f0_sd_st": 3.53,
+  "centroid_hz": 1700,
+  "hnr_db": 11.8,
+  "flags": [
+   "pace far outside the other voices: check for skipped, repeated or truncated text"
+  ],
+  "labels": {
+   "register": "mid",
+   "intonation": "moderate",
+   "brightness": "brighter",
+   "clarity": "moderate",
+   "pace": "fast"
+  },
+  "pace_vs_median": 1.07
+ },
+ "gemini-2.5-native-audio": {
+  "wpm": 120.5,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 159.3,
+   "p01": 116.5
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 206.5,
+  "f0_p10_hz": 131.8,
+  "f0_p90_hz": 286.4,
+  "f0_range_st": 13.4,
+  "f0_sd_st": 5.17,
+  "centroid_hz": 1251,
+  "hnr_db": 13.5,
+  "labels": {
+   "register": "mid",
+   "intonation": "livelier",
+   "brightness": "darker",
+   "clarity": "moderate",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.09
+ },
+ "gemini-2.5-pro-tts": {
+  "wpm": 115.5,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 233.8,
+   "p01": 107.7
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 197.6,
+  "f0_p10_hz": 152.3,
+  "f0_p90_hz": 272.4,
+  "f0_range_st": 10.1,
+  "f0_sd_st": 3.85,
+  "centroid_hz": 1352,
+  "hnr_db": 12.8,
+  "labels": {
+   "register": "mid",
+   "intonation": "moderate",
+   "brightness": "neutral",
+   "clarity": "moderate",
+   "pace": "slow"
+  },
+  "pace_vs_median": -0.13
+ },
+ "gemini-3.1-flash-live": {
+  "wpm": 206.9,
+  "wpm_clips": 1,
+  "wpm_by_clip": {
+   "s01": 206.9
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 238.0,
+  "f0_p10_hz": 180.2,
+  "f0_p90_hz": 333.9,
+  "f0_range_st": 10.7,
+  "f0_sd_st": 4.33,
+  "centroid_hz": 1624,
+  "hnr_db": 14.3,
+  "flags": [
+   "pace far outside the other voices: check for skipped, repeated or truncated text"
+  ],
+  "labels": {
+   "register": "high",
+   "intonation": "moderate",
+   "brightness": "neutral",
+   "clarity": "cleaner",
+   "pace": "fast"
+  },
+  "pace_vs_median": 0.56
+ },
+ "gemini-3.8-flash-lite-tts": {
+  "wpm": 132.4,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 255.3,
+   "p01": 123.8
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 165.5,
+  "f0_p10_hz": 128.3,
+  "f0_p90_hz": 258.4,
+  "f0_range_st": 12.1,
+  "f0_sd_st": 4.48,
+  "centroid_hz": 1683,
+  "hnr_db": 10.9,
+  "labels": {
+   "register": "low",
+   "intonation": "livelier",
+   "brightness": "brighter",
+   "clarity": "breathier",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.0
+ },
+ "gemini-3.8-flash-tts": {
+  "wpm": 132.6,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 262.8,
+   "p01": 123.8
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 168.1,
+  "f0_p10_hz": 128.9,
+  "f0_p90_hz": 220.1,
+  "f0_range_st": 9.3,
+  "f0_sd_st": 3.42,
+  "centroid_hz": 1656,
+  "hnr_db": 9.4,
+  "labels": {
+   "register": "low",
+   "intonation": "flatter",
+   "brightness": "brighter",
+   "clarity": "breathier",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.0
+ },
+ "gemini-3.8-live": {
+  "wpm": 120.2,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 180.9,
+   "p01": 114.7
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 200.9,
+  "f0_p10_hz": 150.2,
+  "f0_p90_hz": 292.8,
+  "f0_range_st": 11.6,
+  "f0_sd_st": 4.66,
+  "centroid_hz": 1747,
+  "hnr_db": 10.7,
+  "labels": {
+   "register": "mid",
+   "intonation": "livelier",
+   "brightness": "brighter",
+   "clarity": "breathier",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.09
+ },
+ "inworld-tts-2": {
+  "wpm": 297.5,
+  "wpm_clips": 1,
+  "wpm_by_clip": {
+   "s01": 297.5
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 209.5,
+  "f0_p10_hz": 162.4,
+  "f0_p90_hz": 344.3,
+  "f0_range_st": 13.0,
+  "f0_sd_st": 4.49,
+  "centroid_hz": 889,
+  "hnr_db": 16.1,
+  "flags": [
+   "pace far outside the other voices: check for skipped, repeated or truncated text"
+  ],
+  "labels": {
+   "register": "mid",
+   "intonation": "livelier",
+   "brightness": "darker",
+   "clarity": "cleaner",
+   "pace": "fast"
+  },
+  "pace_vs_median": 1.24
+ },
+ "minimax-speech-2.8-hd": {
+  "wpm": 169.0,
+  "wpm_clips": 1,
+  "wpm_by_clip": {
+   "s01": 169.0
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 198.8,
+  "f0_p10_hz": 154.9,
+  "f0_p90_hz": 263.3,
+  "f0_range_st": 9.2,
+  "f0_sd_st": 3.54,
+  "centroid_hz": 1635,
+  "hnr_db": 14.5,
+  "labels": {
+   "register": "mid",
+   "intonation": "moderate",
+   "brightness": "brighter",
+   "clarity": "cleaner",
+   "pace": "fast"
+  },
+  "pace_vs_median": 0.27
+ },
+ "openai-gpt-audio": {
+  "wpm": 125.2,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 244.9,
+   "p01": 117.0
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 190.4,
+  "f0_p10_hz": 151.0,
+  "f0_p90_hz": 251.2,
+  "f0_range_st": 8.8,
+  "f0_sd_st": 3.35,
+  "centroid_hz": 2322,
+  "hnr_db": 12.4,
+  "labels": {
+   "register": "mid",
+   "intonation": "flatter",
+   "brightness": "brighter",
+   "clarity": "moderate",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.06
+ },
+ "xai-tts": {
+  "wpm": 137.4,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 248.3,
+   "p01": 129.2
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 190.7,
+  "f0_p10_hz": 159.7,
+  "f0_p90_hz": 249.5,
+  "f0_range_st": 7.7,
+  "f0_sd_st": 2.94,
+  "centroid_hz": 1491,
+  "hnr_db": 17.7,
+  "labels": {
+   "register": "mid",
+   "intonation": "flatter",
+   "brightness": "neutral",
+   "clarity": "cleaner",
+   "pace": "average"
+  },
+  "pace_vs_median": 0.03
+ },
+ "elevenlabs-v4-nikud": {
+  "wpm": 120.4,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 229.3,
+   "p01": 112.7
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 207.2,
+  "f0_p10_hz": 161.4,
+  "f0_p90_hz": 274.2,
+  "f0_range_st": 9.2,
+  "f0_sd_st": 3.53,
+  "centroid_hz": 1671,
+  "hnr_db": 10.8,
+  "labels": {
+   "register": "mid",
+   "intonation": "moderate",
+   "brightness": "brighter",
+   "clarity": "breathier",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.09
+ },
+ "gemini-2.5-flash-tts-nikud": {
+  "wpm": 268.7,
+  "wpm_clips": 1,
+  "wpm_by_clip": {
+   "s01": 268.7
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 159.7,
+  "f0_p10_hz": 111.1,
+  "f0_p90_hz": 291.6,
+  "f0_range_st": 16.7,
+  "f0_sd_st": 6.55,
+  "centroid_hz": 3653,
+  "hnr_db": 11.5,
+  "flags": [
+   "pace far outside the other voices: check for skipped, repeated or truncated text"
+  ],
+  "labels": {
+   "register": "low",
+   "intonation": "livelier",
+   "brightness": "brighter",
+   "clarity": "breathier",
+   "pace": "fast"
+  },
+  "pace_vs_median": 1.02
+ },
+ "gemini-2.5-native-audio-nikud": {
+  "wpm": 95.3,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 119.2,
+   "p01": 92.6
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 218.8,
+  "f0_p10_hz": 140.5,
+  "f0_p90_hz": 277.9,
+  "f0_range_st": 11.8,
+  "f0_sd_st": 4.39,
+  "centroid_hz": 1851,
+  "hnr_db": 12.9,
+  "labels": {
+   "register": "mid",
+   "intonation": "moderate",
+   "brightness": "brighter",
+   "clarity": "moderate",
+   "pace": "slow"
+  },
+  "pace_vs_median": -0.28
+ },
+ "gemini-2.5-pro-tts-nikud": {
+  "wpm": 127.1,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 203.4,
+   "p01": 120.6
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 198.2,
+  "f0_p10_hz": 143.5,
+  "f0_p90_hz": 274.8,
+  "f0_range_st": 11.2,
+  "f0_sd_st": 4.37,
+  "centroid_hz": 1765,
+  "hnr_db": 13.7,
+  "labels": {
+   "register": "mid",
+   "intonation": "moderate",
+   "brightness": "brighter",
+   "clarity": "cleaner",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.04
+ },
+ "gemini-3.1-flash-live-nikud": {
+  "wpm": 181.8,
+  "wpm_clips": 1,
+  "wpm_by_clip": {
+   "s01": 181.8
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 202.6,
+  "f0_p10_hz": 138.2,
+  "f0_p90_hz": 306.4,
+  "f0_range_st": 13.8,
+  "f0_sd_st": 4.89,
+  "centroid_hz": 2275,
+  "hnr_db": 12.5,
+  "labels": {
+   "register": "mid",
+   "intonation": "livelier",
+   "brightness": "brighter",
+   "clarity": "moderate",
+   "pace": "fast"
+  },
+  "pace_vs_median": 0.37
+ },
+ "gemini-3.8-flash-lite-tts-nikud": {
+  "wpm": 126.1,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 195.7,
+   "p01": 120.1
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 181.8,
+  "f0_p10_hz": 136.0,
+  "f0_p90_hz": 267.3,
+  "f0_range_st": 11.7,
+  "f0_sd_st": 4.45,
+  "centroid_hz": 1207,
+  "hnr_db": 11.5,
+  "labels": {
+   "register": "low",
+   "intonation": "moderate",
+   "brightness": "darker",
+   "clarity": "breathier",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.05
+ },
+ "gemini-3.8-flash-tts-nikud": {
+  "wpm": 131.1,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 227.8,
+   "p01": 123.6
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 150.5,
+  "f0_p10_hz": 121.0,
+  "f0_p90_hz": 249.0,
+  "f0_range_st": 12.5,
+  "f0_sd_st": 4.6,
+  "centroid_hz": 1554,
+  "hnr_db": 10.8,
+  "labels": {
+   "register": "low",
+   "intonation": "livelier",
+   "brightness": "neutral",
+   "clarity": "breathier",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.01
+ },
+ "gemini-3.8-live-nikud": {
+  "wpm": 125.6,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 188.5,
+   "p01": 119.9
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 228.2,
+  "f0_p10_hz": 156.7,
+  "f0_p90_hz": 347.2,
+  "f0_range_st": 13.8,
+  "f0_sd_st": 5.25,
+  "centroid_hz": 1718,
+  "hnr_db": 12.2,
+  "labels": {
+   "register": "high",
+   "intonation": "livelier",
+   "brightness": "brighter",
+   "clarity": "moderate",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.05
+ },
+ "inworld-tts-2-nikud": {
+  "wpm": 251.7,
+  "wpm_clips": 1,
+  "wpm_by_clip": {
+   "s01": 251.7
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 234.7,
+  "f0_p10_hz": 158.8,
+  "f0_p90_hz": 348.4,
+  "f0_range_st": 13.6,
+  "f0_sd_st": 4.59,
+  "centroid_hz": 1073,
+  "hnr_db": 15.0,
+  "flags": [
+   "pace far outside the other voices: check for skipped, repeated or truncated text"
+  ],
+  "labels": {
+   "register": "high",
+   "intonation": "livelier",
+   "brightness": "darker",
+   "clarity": "cleaner",
+   "pace": "fast"
+  },
+  "pace_vs_median": 0.9
+ },
+ "minimax-speech-2.8-hd-nikud": {
+  "wpm": 74.7,
+  "wpm_clips": 1,
+  "wpm_by_clip": {
+   "s01": 74.7
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 205.1,
+  "f0_p10_hz": 138.0,
+  "f0_p90_hz": 287.8,
+  "f0_range_st": 12.7,
+  "f0_sd_st": 5.09,
+  "centroid_hz": 1567,
+  "hnr_db": 17.0,
+  "flags": [
+   "pace far outside the other voices: check for skipped, repeated or truncated text"
+  ],
+  "labels": {
+   "register": "mid",
+   "intonation": "livelier",
+   "brightness": "neutral",
+   "clarity": "cleaner",
+   "pace": "slow"
+  },
+  "pace_vs_median": -0.44
+ },
+ "openai-gpt-audio-nikud": {
+  "wpm": 105.4,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 233.8,
+   "p01": 97.7
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 178.8,
+  "f0_p10_hz": 143.9,
+  "f0_p90_hz": 247.3,
+  "f0_range_st": 9.4,
+  "f0_sd_st": 3.62,
+  "centroid_hz": 2237,
+  "hnr_db": 11.8,
+  "labels": {
+   "register": "low",
+   "intonation": "moderate",
+   "brightness": "brighter",
+   "clarity": "moderate",
+   "pace": "slow"
+  },
+  "pace_vs_median": -0.21
+ },
+ "xai-tts-nikud": {
+  "wpm": 120.9,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 198.9,
+   "p01": 114.4
+  },
+  "voice_gender": "female",
+  "f0_median_hz": 193.7,
+  "f0_p10_hz": 156.8,
+  "f0_p90_hz": 264.1,
+  "f0_range_st": 9.0,
+  "f0_sd_st": 3.36,
+  "centroid_hz": 1302,
+  "hnr_db": 14.8,
+  "labels": {
+   "register": "mid",
+   "intonation": "flatter",
+   "brightness": "darker",
+   "clarity": "cleaner",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.09
+ },
+ "elevenlabs-v4-male": {
+  "wpm": 132.8,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 218.2,
+   "p01": 125.7
+  },
+  "voice_gender": "male",
+  "f0_median_hz": 112.3,
+  "f0_p10_hz": 81.2,
+  "f0_p90_hz": 166.7,
+  "f0_range_st": 12.4,
+  "f0_sd_st": 4.69,
+  "centroid_hz": 2200,
+  "hnr_db": 6.8,
+  "labels": {
+   "register": "mid",
+   "intonation": "livelier",
+   "brightness": "brighter",
+   "clarity": "breathier",
+   "pace": "average"
+  },
+  "pace_vs_median": 0.0
+ },
+ "gemini-3.8-flash-lite-tts-male": {
+  "wpm": 152.7,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 220.9,
+   "p01": 146.3
+  },
+  "voice_gender": "male",
+  "f0_median_hz": 98.8,
+  "f0_p10_hz": 77.4,
+  "f0_p90_hz": 147.8,
+  "f0_range_st": 11.2,
+  "f0_sd_st": 4.46,
+  "centroid_hz": 1722,
+  "hnr_db": 7.9,
+  "labels": {
+   "register": "low",
+   "intonation": "moderate",
+   "brightness": "neutral",
+   "clarity": "moderate",
+   "pace": "fast"
+  },
+  "pace_vs_median": 0.15
+ },
+ "gemini-3.8-flash-tts-male": {
+  "wpm": 142.2,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 250.0,
+   "p01": 133.9
+  },
+  "voice_gender": "male",
+  "f0_median_hz": 107.4,
+  "f0_p10_hz": 85.3,
+  "f0_p90_hz": 159.3,
+  "f0_range_st": 10.8,
+  "f0_sd_st": 4.23,
+  "centroid_hz": 1874,
+  "hnr_db": 8.4,
+  "labels": {
+   "register": "low",
+   "intonation": "moderate",
+   "brightness": "neutral",
+   "clarity": "moderate",
+   "pace": "average"
+  },
+  "pace_vs_median": 0.07
+ },
+ "gemini-3.8-live-male": {
+  "wpm": 124.8,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 179.1,
+   "p01": 119.7
+  },
+  "voice_gender": "male",
+  "f0_median_hz": 93.5,
+  "f0_p10_hz": 73.8,
+  "f0_p90_hz": 135.1,
+  "f0_range_st": 10.5,
+  "f0_sd_st": 4.13,
+  "centroid_hz": 2757,
+  "hnr_db": 9.8,
+  "labels": {
+   "register": "low",
+   "intonation": "moderate",
+   "brightness": "brighter",
+   "clarity": "cleaner",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.06
+ },
+ "openai-gpt-audio-male": {
+  "wpm": 122.4,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 214.3,
+   "p01": 115.3
+  },
+  "voice_gender": "male",
+  "f0_median_hz": 135.8,
+  "f0_p10_hz": 106.9,
+  "f0_p90_hz": 174.6,
+  "f0_range_st": 8.5,
+  "f0_sd_st": 3.23,
+  "centroid_hz": 1584,
+  "hnr_db": 10.9,
+  "labels": {
+   "register": "mid",
+   "intonation": "flatter",
+   "brightness": "darker",
+   "clarity": "cleaner",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.08
+ },
+ "elevenlabs-v4-male-nikud": {
+  "wpm": 121.0,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 235.3,
+   "p01": 113.1
+  },
+  "voice_gender": "male",
+  "f0_median_hz": 111.7,
+  "f0_p10_hz": 80.6,
+  "f0_p90_hz": 164.8,
+  "f0_range_st": 12.4,
+  "f0_sd_st": 4.76,
+  "centroid_hz": 2321,
+  "hnr_db": 7.4,
+  "labels": {
+   "register": "mid",
+   "intonation": "livelier",
+   "brightness": "brighter",
+   "clarity": "breathier",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.09
+ },
+ "gemini-3.8-flash-lite-tts-male-nikud": {
+  "wpm": 148.5,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 201.1,
+   "p01": 143.2
+  },
+  "voice_gender": "male",
+  "f0_median_hz": 101.6,
+  "f0_p10_hz": 80.8,
+  "f0_p90_hz": 157.8,
+  "f0_range_st": 11.6,
+  "f0_sd_st": 4.5,
+  "centroid_hz": 1883,
+  "hnr_db": 7.4,
+  "labels": {
+   "register": "low",
+   "intonation": "livelier",
+   "brightness": "neutral",
+   "clarity": "breathier",
+   "pace": "fast"
+  },
+  "pace_vs_median": 0.12
+ },
+ "gemini-3.8-flash-tts-male-nikud": {
+  "wpm": 145.1,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 230.8,
+   "p01": 137.8
+  },
+  "voice_gender": "male",
+  "f0_median_hz": 104.2,
+  "f0_p10_hz": 80.1,
+  "f0_p90_hz": 148.5,
+  "f0_range_st": 10.7,
+  "f0_sd_st": 4.08,
+  "centroid_hz": 1617,
+  "hnr_db": 7.3,
+  "labels": {
+   "register": "low",
+   "intonation": "moderate",
+   "brightness": "darker",
+   "clarity": "breathier",
+   "pace": "average"
+  },
+  "pace_vs_median": 0.09
+ },
+ "gemini-3.8-live-male-nikud": {
+  "wpm": 119.7,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 190.5,
+   "p01": 113.7
+  },
+  "voice_gender": "male",
+  "f0_median_hz": 106.7,
+  "f0_p10_hz": 78.0,
+  "f0_p90_hz": 151.9,
+  "f0_range_st": 11.5,
+  "f0_sd_st": 4.41,
+  "centroid_hz": 2232,
+  "hnr_db": 8.5,
+  "labels": {
+   "register": "low",
+   "intonation": "moderate",
+   "brightness": "brighter",
+   "clarity": "moderate",
+   "pace": "average"
+  },
+  "pace_vs_median": -0.1
+ },
+ "openai-gpt-audio-male-nikud": {
+  "wpm": 68.5,
+  "wpm_clips": 2,
+  "wpm_by_clip": {
+   "s01": 222.2,
+   "p01": 62.4
+  },
+  "voice_gender": "male",
+  "f0_median_hz": 139.9,
+  "f0_p10_hz": 112.0,
+  "f0_p90_hz": 185.1,
+  "f0_range_st": 8.7,
+  "f0_sd_st": 3.34,
+  "centroid_hz": 1874,
+  "hnr_db": 12.1,
+  "flags": [
+   "repeats the end of p01 three times: wpm reads low",
+   "pace far outside the other voices: check for skipped, repeated or truncated text"
+  ],
+  "labels": {
+   "register": "mid",
+   "intonation": "flatter",
+   "brightness": "neutral",
+   "clarity": "cleaner",
+   "pace": "slow"
+  },
+  "pace_vs_median": -0.48
+ }
+}

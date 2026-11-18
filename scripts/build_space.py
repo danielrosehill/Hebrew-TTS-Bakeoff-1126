@@ -36,6 +36,15 @@ VOICE_GENDER = {"gemini-flash-tts": "female", "gemini-3.8-flash-tts": "female", 
                 "kokoro-hebrew": "male"}  # he_shaul (SASPEECH, one male speaker)
 
 
+def run_name(name, meta):
+    """The provenance name gives the model's main voice ("... voice Kore)"). A run with another voice (the -male runs:
+    meta voice "Charon (prebuilt, male)") gets its own voice in the name (fixed 2026-11-18: the male runs read "voice Kore")."""
+    v = (meta.get("voice") or "").split(" (")[0].strip()
+    if v and meta.get("voice_gender") == "male" and re.search(r"voice [^,)]+", name):
+        return re.sub(r"voice [^,)]+", "voice " + v, name, count=1)
+    return name
+
+
 def base_of(slug):
     for suf in VARIANTS:
         if slug.endswith(suf):
@@ -80,6 +89,8 @@ def runs():
 
 
 VOWELS = set("aeiouə")
+# Objective voice profile per run (scripts/voice_profile.py): wpm, pitch, intonation, brightness, clarity, with labels.
+PROFILES = json.loads((ROOT / "data/voice_profiles.json").read_text()) if (ROOT / "data/voice_profiles.json").exists() else {}
 METRICS = json.loads((ROOT / "data/clip_metrics.json").read_text()) if (ROOT / "data/clip_metrics.json").exists() else {}
 REF = ROOT / "results/phonikud-piper/ipa.json"
 
@@ -156,7 +167,8 @@ def main():
                 clips[s["id"]] = f"audio/{slug}/{s['id']}.mp3"
         p = prov.get(base, {})
         models.append({"slug": slug, "run": meta, "provenance": p, "clips": clips, "metrics": METRICS.get(slug, {}),
-                       "base": base, "name": (p.get("name") or meta.get("hf_id") or slug) + label})
+                       "base": base, "name": run_name(p.get("name") or meta.get("hf_id") or slug, meta) + label,
+                       "profile": PROFILES.get(slug)})
     data = {"title": "Hebrew TTS Bake-off 11/26", "built": __import__("datetime").date.today().isoformat(),
             "sentences": sentences, "models": models}
     (OUT / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1))
