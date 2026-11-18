@@ -3,6 +3,7 @@
 A small listening comparison of **open Hebrew text-to-speech models**, run 2026-11-18, on 20 sentences given both
 with and without nikud.
 
+- **Write-up:** [Choosing a Hebrew text-to-speech voice: a first look at 26 models](https://blog.danielrosehill.com/posts/hebrew-tts-bakeoff-first-look-qjruqp/) (blog, 2026-11-18).
 - **Everything in one place:** the Hugging Face collection [Hebrew TTS Bake-off 11/26](https://huggingface.co/collections/danielrosehill/hebrew-tts-bake-off-11-26-6afdec3193ad9622ff5a3d69).
 - **Leaderboard:** [Space `danielrosehill/Hebrew-TTS-Leaderboard`](https://huggingface.co/spaces/danielrosehill/Hebrew-TTS-Leaderboard): the Arena ranking, who is waiting, and who
   failed Screening and why, live from the annotations.
